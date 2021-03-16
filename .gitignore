@@ -1,3 +1,5 @@
 # OS generated files
 .DS_Store
 Thumbs.db
+/_site/
+/node_modules/
