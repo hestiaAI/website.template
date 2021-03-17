@@ -12,18 +12,38 @@ public_folder: "/static/img"
 local_backend: true
 publish_mode: editorial_workflow
 
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [en, de, fr]
+
 collections:
 - label: "Pages"
   name: "pages"
   editor:
     preview: false
+  i18n:
+    structure: single_file
   files:
     - label: "Home"
       name: "home"
       file: "src/index.md"
+      i18n: false
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
+    - label: "i18ntest"
+      name: "i18ntest"
+      file: "src/i18ntest.md"
+      i18n: true
+      fields:
+        - { label: "Title", name: "title", widget: "string", i18n: true }
+        - { label: "Body", name: "body", widget: "markdown", i18n: true }
   # - label: "Blog"
   #   name: "blog"
   #   folder: "src/posts"

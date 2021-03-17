@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "HestiaLabs main website",
   "scripts": {
-    "eleveenty": "eleventy --serve",
+    "eleventy": "eleventy --serve",
     "cms-proxy": "netlify-cms-proxy-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
