@@ -2,7 +2,6 @@
 title: HestiaLabs
 layout: default
 ---
-
 # HestiaLabs
 
-Welcome
+Welcome dear visitor
