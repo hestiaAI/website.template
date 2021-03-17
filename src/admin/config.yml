@@ -17,34 +17,97 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
+  structure: single_file
 
   # Required - a list of locales to show in the editor UI
-  locales: [en, de, fr]
+  locales: [en, fr]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: en
 
 collections:
-- label: "Pages"
-  name: "pages"
+
+- label: Monolingual Pages
+  name: monolingual-pages
   editor:
     preview: false
-  i18n:
-    structure: single_file
   files:
-    - label: "Home"
-      name: "home"
-      file: "src/index.md"
+    - label: Home
+      name: home
+      file: src/mono/index.md
       i18n: false
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Body", name: "body", widget: "markdown" }
-    - label: "i18ntest"
-      name: "i18ntest"
-      file: "src/i18ntest.md"
+- label: Single File i18n Pages
+  name: si-pages
+  # Configure i18n for this collection.
+  i18n:
+    structure: single_file
+  files:
+    - label: About
+      name: about
+      file: src/multi/about.md
+      editor:
+        preview: false
+      # Enable i18n for this file.
       i18n: true
       fields:
-        - { label: "Title", name: "title", widget: "string", i18n: true }
+        - { label: Title, name: title, widget: string, i18n: true }
         - { label: "Body", name: "body", widget: "markdown", i18n: true }
-  # - label: "Blog"
+
+- label: Multiple Folders i18n Pages
+  name: i18n-pages
+  # Configure i18n for this collection.
+  folder: src
+  extension: md
+  editor:
+    preview: false
+  create: true
+  i18n:
+    structure: multiple_folders
+  fields:
+    - { label: Title, name: title, widget: string, i18n: true }
+    - { label: "Body", name: "body", widget: "markdown", i18n: true }
+- label: Blog posts
+  name: blog-posts
+  # Configure i18n for this collection.
+  folder: src/posts
+  extension: md
+  editor:
+    preview: false
+  create: true
+  i18n:
+    structure: multiple_folders
+  fields:
+    - { label: Title, name: title, widget: string, i18n: true }
+    - { label: "Body", name: "body", widget: "markdown", i18n: true }
+# - name: i18n_content
+#   i18n: true
+#   files:
+#     - label: i18n content
+#       file: src/i18ntest.md
+#       i18n:
+#         structure: single_file
+#         locales: [en, de, fr]
+#       fields:
+#         - { label: "Title", name: "title", widget: "string", i18n: true }
+#     - name: pages
+#     label: Pages
+#     # Configure i18n for this collection.
+#     i18n:
+#       structure: single_file
+#       locales: [en, de, fr]
+#     files:
+#       - name: about
+#         label: About Page
+#         file: site/content/about.yml
+#         # Enable i18n for this file.
+#         i18n: true
+#         fields:
+#           - { label: Title, name: title, widget: string, i18n: true }# - label: "Blog"
+#
   #   name: "blog"
   #   folder: "src/posts"
   #   create: true

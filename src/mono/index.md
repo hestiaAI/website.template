@@ -5,4 +5,4 @@ path: home
 ---
 # HestiaLabs
 
-Welcome dear visitor
+Welcome dear visitors :)
