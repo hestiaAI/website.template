@@ -1,10 +1,14 @@
 {
   "en": {
     "contact": "contact us",
-    "about": "about us"
+    "about": "about us",
+    "home": "home",
+    "blog": "blog"
   },
   "fr": {
     "contact": "contactez-nous",
-    "about": "à propos de nous"
+    "about": "à propos de nous",
+    "home": "chez nous",
+    "blog": "le blog"
   }
 }

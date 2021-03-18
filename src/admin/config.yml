@@ -39,6 +39,8 @@ collections:
       fields:
         - { label: Contact, name: contact, widget: string, i18n: true }
         - { label: About, name: about, widget: string, i18n: true }
+        - { label: Home, name: home, widget: string, i18n: true }
+        - { label: Blog, name: blog, widget: string, i18n: true }
 - label: Home
   name: home
   # Configure i18n for this collection.
@@ -51,10 +53,10 @@ collections:
     structure: multiple_folders
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
-    - { label: "Subtitle 1", name: subtitle_1, widget: text, i18n: true }
+    - { label: "Subtitle 1", name: subtitle_1, widget: string, i18n: true }
     - { label: "Paragraph 1.1", name: paragraph_1_1, widget: text, i18n: true }
     - { label: "Paragraph 1.2", name: paragraph_1_2, widget: text, i18n: true }
-    - { label: "Subtitle 2", name: subtitle_2, widget: text, i18n: true }
+    - { label: "Subtitle 2", name: subtitle_2, widget: string, i18n: true }
     - { label: "Paragraph 2.1", name: paragraph_2_1, widget: text, i18n: true }
     - { label: "Paragraph 2.2", name: paragraph_2_2, widget: text, i18n: true }
 - label: About us

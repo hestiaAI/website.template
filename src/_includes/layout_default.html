@@ -9,8 +9,19 @@
     {% endif %}
   </head>
   <body>
-    <header><a href="/{{locale}}">home</a> | <a href="/blog/{{locale}}">blog</a><header>
+    <header>
+      <a href="/{{locale}}">{{texts[locale].home}}</a> |
+      <a href="/blog/{{locale}}">{{texts[locale].blog}}</a> |
+      {% for translation in translations %}
+        {% if not loop.first %}/{% endif %}
+
+      <a href="{{translation.url}}">{{translation.locale}}</a>
+      {% endfor %}
+    </header>
     {{ content | safe }}
-    <footer> {{texts[locale].contact}} | <a href="/about/{{locale}}">{{texts[locale].about}}</a></footer>
+    <footer>
+      {{texts[locale].contact}} |
+      <a href="/about/{{locale}}">{{texts[locale].about}}</a>
+    </footer>
   </body>
 </html>
