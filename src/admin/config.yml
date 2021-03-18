@@ -17,7 +17,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: single_file
+  structure: multiple_folders
 
   # Required - a list of locales to show in the editor UI
   locales: [en, fr]
@@ -27,37 +27,23 @@ i18n:
   default_locale: en
 
 collections:
-
-- label: Monolingual Pages
-  name: monolingual-pages
-  editor:
-    preview: false
-  files:
-    - label: Home
-      name: home
-      file: src/mono/index.md
-      i18n: false
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Body", name: "body", widget: "markdown" }
-- label: Multilingual texts
-  name: si-pages
-  # Configure i18n for this collection.
+- label: global texts
+  name: global-texts
   i18n:
     structure: single_file
   files:
-    - label: Footer texts
-      name: footer-texts
-      file: src/_data/footer.json
+    - label: texts
+      name: texts
+      file: src/_data/texts.json
       i18n: true
       fields:
         - { label: Contact, name: contact, widget: string, i18n: true }
         - { label: About, name: about, widget: string, i18n: true }
-- label: Multilingual Pages
-  name: i18n-pages
+- label: Home
+  name: home
   # Configure i18n for this collection.
-  folder: src
-  extension: md
+  folder: src/home
+  extension: html
   editor:
     preview: false
   create: false
@@ -65,16 +51,43 @@ collections:
     structure: multiple_folders
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
+    - { label: "Subtitle 1", name: subtitle_1, widget: text, i18n: true }
+    - { label: "Paragraph 1.1", name: paragraph_1_1, widget: text, i18n: true }
+    - { label: "Paragraph 1.2", name: paragraph_1_2, widget: text, i18n: true }
+    - { label: "Subtitle 2", name: subtitle_2, widget: text, i18n: true }
+    - { label: "Paragraph 2.1", name: paragraph_2_1, widget: text, i18n: true }
+    - { label: "Paragraph 2.2", name: paragraph_2_2, widget: text, i18n: true }
+- label: About us
+  name: about
+  folder: src/about
+  extension: md
+  editor:
+    preview: false
+  create: false
+  i18n: true
+  fields:
+    - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
-- label: Multilingual Blog posts
-  name: blog-posts
+- label: Blog main page
+  name: blog
+  # Configure i18n for this collection.
   folder: src/blog
+  extension: html
+  editor:
+    preview: false
+  create: false
+  i18n: true
+  fields:
+    - { label: Title, name: title, widget: string, i18n: true }
+    - { label: Introduction, name: introduction, widget: string, i18n: true }
+- label: Blog posts
+  name: blog-posts
+  folder: src/posts
   extension: md
   editor:
     preview: false
   create: true
-  i18n:
-    structure: multiple_folders
+  i18n: true
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }

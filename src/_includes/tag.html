@@ -1,0 +1,14 @@
+---
+layout: layout_default
+---
+<div class="container max-w-3xl mt-6 px-6">
+    <h1>{{name}}</h1>
+    <p>{{description}}</p>
+    <section class="mt-15">
+      {% for post in collections.blog %}
+        {% if post.data.tags.includes(name) %}
+          {% include "./partials/post-description.html" %}
+        {% endif %}
+      {% endfor %}
+    </section>
+</div>

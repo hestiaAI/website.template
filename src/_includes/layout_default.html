@@ -9,8 +9,8 @@
     {% endif %}
   </head>
   <body>
-    <header> header </header>
+    <header><a href="/{{locale}}">home</a> | <a href="/blog/{{locale}}">blog</a><header>
     {{ content | safe }}
-    <footer> {{footer[locale].contact}} | {{footer[locale].about}}</footer>
+    <footer> {{texts[locale].contact}} | <a href="/about/{{locale}}">{{texts[locale].about}}</a></footer>
   </body>
 </html>
