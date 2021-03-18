@@ -1,7 +1,8 @@
 ---
 title: labs
+path: home
 ---
 
 <p>layout={{layout}}</p>
-{{global}}
+locale = {{locale}}<br>
 hênn

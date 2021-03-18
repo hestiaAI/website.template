@@ -22,6 +22,14 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml"
   });
 
+  // date filter (localized)
+  // https://www.webstoemp.com/blog/multilingual-sites-eleventy/
+  eleventyConfig.addNunjucksFilter("date", function (date, format, locale) {
+    locale = locale ? locale : "en";
+    moment.locale(locale);
+    return moment(date).format(format);
+  });
+
   // Copy Image Folder to /_site
   // eleventyConfig.addPassthroughCopy("./src/static/img");
 

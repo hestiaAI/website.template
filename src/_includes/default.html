@@ -11,6 +11,6 @@
   <body>
     <header> header </header>
     {{ content | safe }}
-    <footer> footer </footer>
+    <footer> {{footer[locale].contact}} | {{footer[locale].about}}</footer>
   </body>
 </html>
