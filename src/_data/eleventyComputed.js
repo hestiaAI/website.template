@@ -23,12 +23,22 @@ const findTranslations = (data) => {
           data.collections.all
                .map(page => {
                    const locale = determineLocale(page);
-                   return {locale, page,
-                           defaultLocale: locale == locales[0],
-                           key: determineTranslationKey(page)};
+                   const translation = {
+                       locale, page,
+                       defaultLocale: locale == locales[0],
+                       key: determineTranslationKey(page)};
+                   if(translation.key == pageKey
+                      && pageKey && pageKey.startsWith('/tagf/')
+                      && translation.key && translation.key.startsWith('/tagf')){
+                       console.log('found t', data.page.url, page.url)
+                   }
+                   return translation;
                })
                .filter(t => t.locale != pageLocale && t.key == pageKey)
                .sort((t1,t2) => t1.locale > t2.locale);
+    if(pageKey && pageKey.startsWith('/tagf')){
+        console.log(pageKey, translations.length)
+    }
     return translations;
 };
 
@@ -57,7 +67,6 @@ const findDefaultLocalePostTagsF = (data) => {
           data.translations.find(t => t.defaultLocale);
     const foundTags = found ? found.page.data.post_tagsf : [];
     const tagSet = new Set(foundTags.concat(data.post_tagsf));
-    console.log('p',data.title, data.locale, [...tagSet])
     return [...tagSet];
 } ;
 // https://www.11ty.dev/docs/data-computed/

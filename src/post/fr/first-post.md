@@ -1,6 +1,7 @@
 ---
 title: notre premier post
-post_tagsf: []
+post_tagsf:
+  - hot
 ---
 mmmmm
 **mmmmmmm**

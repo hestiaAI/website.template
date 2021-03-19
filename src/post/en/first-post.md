@@ -4,6 +4,7 @@ post_tags:
   - hapay
 post_tagsf:
   - hot
+  - silly
 ---
 multo
 
