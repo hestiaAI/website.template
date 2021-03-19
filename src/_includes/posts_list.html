@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<p>{{introduction}}</p>
+<ul>
+    {% for post in collections.post %}
+        {% if post.data.locale == locale %}
+        <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<h2>{{tags_title}}</h2>
+<ul>
+    {% for tag in collections.post_tag %}
+        {% if tag.data.locale == locale %}
+            <li><a href="{{tag.data.page.url}}">{{tag.data.name}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+<h2>{{tags_title}} ff</h2>
+<ul>
+    {% for tag in collections.post_tagf %}
+    <li><a href="/tagf/{{tag.data.en.name}}/{{locale}}/">
+            {{tag.data[locale].name}}
+    </a></li>
+    {% endfor %}
+</ul>

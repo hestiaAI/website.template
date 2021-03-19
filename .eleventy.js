@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-// const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -34,19 +34,19 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addPassthroughCopy("./src/static/img");
 
   // Minify HTML
-  // eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-  //   // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-  //   if (outputPath.endsWith(".html")) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true
-  //     });
-  //     return minified;
-  //   }
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if (outputPath && outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
 
-  //   return content;
-  // });
+    return content;
+  });
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk

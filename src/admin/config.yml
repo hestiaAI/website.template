@@ -82,9 +82,10 @@ collections:
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: Introduction, name: introduction, widget: string, i18n: true }
+    - { label: Tags title, name: tags_title, widget: string, i18n: true }
 - label: Blog posts
   name: blog-posts
-  folder: src/posts
+  folder: src/post
   extension: md
   editor:
     preview: false
@@ -93,95 +94,58 @@ collections:
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
-# - name: i18n_content
-#   i18n: true
-#   files:
-#     - label: i18n content
-#       file: src/i18ntest.md
-#       i18n:
-#         structure: single_file
-#         locales: [en, de, fr]
-#       fields:
-#         - { label: "Title", name: "title", widget: "string", i18n: true }
-#     - name: pages
-#     label: Pages
-#     # Configure i18n for this collection.
-#     i18n:
-#       structure: single_file
-#       locales: [en, de, fr]
-#     files:
-#       - name: about
-#         label: About Page
-#         file: site/content/about.yml
-#         # Enable i18n for this file.
-#         i18n: true
-#         fields:
-#           - { label: Title, name: title, widget: string, i18n: true }# - label: "Blog"
+    - label: "tags"
+      name: "post_tags"
+      widget: relation
+      collection: post_tags
+      i18n: true
+      value_field: "name"
+      multiple: true
+      search_fields: ["name"]
+    - label: "tagsf"
+      name: "post_tagsf"
+      widget: relation
+      collection: post_tagsf
+      value_field: "name"
+      multiple: true
+      search_fields: ["name"]
+- label: Tags
+  name: post_tags
+  folder: src/tag
+  create: true
+  editor:
+    preview: false
+  preview_path: tags/{{slug}}
+  identifier_field: name
+  i18n: true
+  # i18n:
+  #   structure: single_file
+  fields:
+    - { label: Name, name: name, widget: string, i18n: true }
+    - { label: Description, name: description, widget: string, i18n: true }
+- label: Tags f
+  name: post_tagsf
+  folder: src/tagf
+  create: true
+  editor:
+    preview: false
+  preview_path: tags/{{slug}}
+  identifier_field: name
+  i18n:
+    structure: single_file
+  fields:
+    - { label: Name, name: name, widget: string, i18n: true }
+    - { label: Description, name: description, widget: string, i18n: true }
+    - {label: "Tags", name: "tags", widget: "hidden", default: "[ en_post_tag, fr_post_tag ]"}
+# solution for tags
+# use post-tag instead of tags which are the names of collections
+# monolingual relation post to post-tag: cms sets post-tag on english post
+# eleventyComputed adds the tags (and id) from the en post to the fr post
+# when it has a french post, finds the english post and copies the post-tags
 #
-  #   name: "blog"
-  #   folder: "src/posts"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   preview_path: posts/{{slug}}
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Description", name: "description", widget: "string" }
-  #     - { label: "Author", name: "author", widget: "string" }
-  #     - { label: "Publish Date", name: "date", widget: "datetime" }
-  #     - { label: "Body", name: "body", widget: "markdown" }
-  #     - label: "tags"
-  #       name: "tags"
-  #       widget: relation
-  #       collection: tag
-  #       value_field: name
-  #       multiple: true
-  #       search_fields: ["name"]
-  # - label: "Tag"
-  #   name: "tag"
-  #   folder: "src/tag"
-  #   create: true
-  #   editor:
-  #     preview: false
-  #   preview_path: tag/{{slug}}
-  #   identifier_field: name
-  #   fields:
-  #     - { label: "Name", name: "name", widget: "string" }
-  #     - { label: "Description", name: "description", widget: "string" }
-
-  # - label: "Settings"
-  #   name: "settings"
-  #   editor:
-  #     preview: false
-  #   files:
-  #     - label: "Navigation"
-  #       name: "items"
-  #       file: "src/_data/navigation.yaml"
-  #       fields:
-  #         - label: Nav Items
-  #           name: items
-  #           widget: list
-  #           allow_add: false
-  #           collapsed: false
-  #           fields:
-  #             - { label: Title, name: text, widget: string }
-  #             - { label: URL, name: url, widget: string }
-  #     - label: "Quick Links"
-  #       name: "links"
-  #       file: "src/_data/quicklinks.yaml"
-  #       fields:
-  #         - label: Nav Items
-  #           name: links
-  #           widget: list
-  #           collapsed: false
-  #           fields:
-  #             - { label: Title, name: title, widget: string }
-  #             - { label: URL, name: url, widget: string }
-  #             - { label: Description, name: desc, widget: string }
-  #     - label: "Meta Settings"
-  #       name: "settings"
-  #       file: "src/_data/settings.yaml"
-  #       fields:
-  #         - { label: Name, name: name, widget: string }
-  #         - { label: Author, name: author, widget: string }
-  #         - { label: URL, name: url, widget: string }
+#problems:
+#- multiple_file tags: not seen by monolingual relation
+#  ? i18n relation and group all tags together :(
+#- single_file tags: how to generate language specific pages ?
+#   each file has tags en_post_tag fr_post_tag, but suppressed permalink
+#   two templates page on each one, permalink : /tag/en/{slug}  /tag/fr/{slug}

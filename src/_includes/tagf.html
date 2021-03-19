@@ -1,0 +1,12 @@
+{% set tag_name = tag.data[locale].name %}
+<h1>{{tag_name}}</h1>
+<ul>
+    {% for post in collections.post %}
+        {% set post_tags = post.data.post_tagsf %}
+        {% set tag_ok = post_tags and post_tags.includes(tag_name) %}
+        {% set locale_ok = (post.data.locale == locale) %}
+        {% if locale_ok and tag_ok %}
+        <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
