@@ -22,7 +22,7 @@ const findTranslations = (data) => {
                            url: p.url,
                            key: determineTranslationKey(p)}))
                .filter(t => t.locale != pageLocale && t.key == pageKey)
-               .sort();
+               .sort((t1,t2) => t1.locale > t2.locale);
 };
 
 module.exports = {

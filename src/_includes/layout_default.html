@@ -14,8 +14,7 @@
       <a href="/blog/{{locale}}">{{texts[locale].blog}}</a> |
       {% for translation in translations %}
         {% if not loop.first %}/{% endif %}
-
-      <a href="{{translation.url}}">{{translation.locale}}</a>
+        <a href="{{translation.url}}">{{translation.locale}}</a>
       {% endfor %}
     </header>
     {{ content | safe }}
