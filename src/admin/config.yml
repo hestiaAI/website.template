@@ -51,6 +51,7 @@ collections:
   create: false
   i18n:
     structure: multiple_folders
+  preview_path: /en/
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Subtitle 1", name: subtitle_1, widget: string, i18n: true }
@@ -67,6 +68,7 @@ collections:
     preview: false
   create: false
   i18n: true
+  preview_path: /about/en/
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
@@ -78,6 +80,7 @@ collections:
     preview: false
   create: false
   i18n: true
+  preview_path: blog/en/
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: Introduction, name: introduction, widget: string, i18n: true }
@@ -90,6 +93,7 @@ collections:
     preview: false
   create: true
   i18n: true
+  preview_path: /post/en/{{slug}}
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
@@ -114,7 +118,7 @@ collections:
   create: true
   editor:
     preview: false
-  preview_path: tags/{{slug}}
+  preview_path: tag/en/{{slug}}
   identifier_field: name
   i18n: true
   # i18n:
@@ -128,7 +132,7 @@ collections:
   create: true
   editor:
     preview: false
-  preview_path: tags/{{slug}}
+  preview_path: tagf/{{slug}}/en/
   identifier_field: name
   i18n:
     structure: single_file
@@ -136,15 +140,3 @@ collections:
     - { label: Name, name: name, widget: string, i18n: true }
     - { label: Description, name: description, widget: string, i18n: true }
     - {label: "Tags", name: "tags", widget: "hidden", default: "[ en_post_tag, fr_post_tag ]"}
-# solution for tags
-# use post-tag instead of tags which are the names of collections
-# monolingual relation post to post-tag: cms sets post-tag on english post
-# eleventyComputed adds the tags (and id) from the en post to the fr post
-# when it has a french post, finds the english post and copies the post-tags
-#
-#problems:
-#- multiple_file tags: not seen by monolingual relation
-#  ? i18n relation and group all tags together :(
-#- single_file tags: how to generate language specific pages ?
-#   each file has tags en_post_tag fr_post_tag, but suppressed permalink
-#   two templates page on each one, permalink : /tag/en/{slug}  /tag/fr/{slug}
