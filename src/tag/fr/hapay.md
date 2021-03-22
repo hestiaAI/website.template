@@ -1,4 +1,4 @@
 ---
-name: conten
-description: jhihi
+name: content
+description: hihi
 ---
