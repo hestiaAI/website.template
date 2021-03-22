@@ -7,6 +7,6 @@ post_tags:
 post_tagsf:
   - hot
 ---
-multo<br>
+This also works as a template for nunjucks. Here's my locale: {{locale}}<br>
 POST TAGS: {{post_tags}}<br>
 {{post_tagsf}}
