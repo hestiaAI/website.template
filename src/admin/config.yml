@@ -74,7 +74,6 @@ collections:
   name: blog
   # Configure i18n for this collection.
   folder: src/blog
-  extension: html
   editor:
     preview: false
   create: false
@@ -98,7 +97,7 @@ collections:
       name: "post_tags"
       widget: relation
       collection: post_tags
-      i18n: true
+      # i18n: true
       value_field: "name"
       multiple: true
       search_fields: ["name"]

@@ -1,7 +1,7 @@
 // the locales in admin/config.yml must all be here
 const locales = ["en", "fr"]
 const localeRegex = new RegExp(`\/(${locales.join('|')})\/`);
-const defaultLocale = 'en';
+const defaultLocale = locales[0];
 
 const determineLocale = (page) => {
     const matches = localeRegex.exec(page.inputPath);
@@ -25,20 +25,11 @@ const findTranslations = (data) => {
                    const locale = determineLocale(page);
                    const translation = {
                        locale, page,
-                       defaultLocale: locale == locales[0],
                        key: determineTranslationKey(page)};
-                   if(translation.key == pageKey
-                      && pageKey && pageKey.startsWith('/tagf/')
-                      && translation.key && translation.key.startsWith('/tagf')){
-                       console.log('found t', data.page.url, page.url)
-                   }
                    return translation;
                })
                .filter(t => t.locale != pageLocale && t.key == pageKey)
                .sort((t1,t2) => t1.locale > t2.locale);
-    if(pageKey && pageKey.startsWith('/tagf')){
-        console.log(pageKey, translations.length)
-    }
     return translations;
 };
 
@@ -50,7 +41,7 @@ const findDefaultLocalePostTags = (data) => {
     // thank heavens there's a second pass
     if(!data.translations){return data.post_tags; }
     const found =
-          data.translations.find(t => t.defaultLocale);
+          data.translations.find(t => t.locale == defaultLocale);
     const foundTags = found ? found.page.data.post_tags : [];
     const tagSet = new Set(foundTags.concat(data.post_tags));
     return [...tagSet];
@@ -64,11 +55,12 @@ const findDefaultLocalePostTagsF = (data) => {
     // thank heavens there's a second pass
     if(!data.translations){return data.post_tagsf; }
     const found =
-          data.translations.find(t => t.defaultLocale);
+          data.translations.find(t => t.locale == defaultLocale);
     const foundTags = found ? found.page.data.post_tagsf : [];
     const tagSet = new Set(foundTags.concat(data.post_tagsf));
     return [...tagSet];
-} ;
+};
+
 // https://www.11ty.dev/docs/data-computed/
 // It is important to note that Computed Data is computed
 // right before templates are rendered. Therefore Computed Data
@@ -76,12 +68,10 @@ const findDefaultLocalePostTagsF = (data) => {
 // to configure templates (e.g. layout, pagination, tags etc.).
 module.exports = {
     locale: data => determineLocale(data.page),
+    // eleventy is smart enough to use locale here even
+    // thought it was only declared in the line above.
+    has_default_locale: data => data.locale == defaultLocale,
     translations: findTranslations,
     post_tags: findDefaultLocalePostTags,
     post_tagsf: findDefaultLocalePostTagsF
 }
-
-// module.exports = {
-//     locale: data => determineLocale(data.page),
-//     translations: findTranslations
-// }
