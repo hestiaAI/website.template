@@ -14,6 +14,15 @@ const determineTranslationKey = (page) => {
     return page.url.replace(locale+'/', '');
 };
 
+const compareTranslations = (t1, t2) => {
+    if (t1.locale == t2.locale){ return 0; }
+    // default locale comes first
+    if (t1.locale == defaultLocale){ return -1; }
+    if (t2.locale == defaultLocale){ return 1; }
+    // alphabetically
+    return t1.locale < t2.locale ? -1 : 1;
+};
+
 // inpired by
 // https://www.webstoemp.com/blog/language-switcher-multilingual-jamstack-sites/
 const findTranslations = (data) => {
@@ -29,7 +38,7 @@ const findTranslations = (data) => {
                    return translation;
                })
                .filter(t => t.locale != pageLocale && t.key == pageKey)
-               .sort((t1,t2) => t1.locale > t2.locale);
+               .sort(compareTranslations);
     return translations;
 };
 

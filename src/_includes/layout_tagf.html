@@ -5,8 +5,9 @@ pagination:
     addAllPagesToCollections: true
 ---
 {% set original_name = tag.data.en.name %}
-
-<h1>{{tag.data[locale].name}}</h1>
+{% set locale_data = tag.data[locale] %}
+<h1>{{locale_data.name}}</h1>
+<p>{{locale_data.description}}</p>
 <ul>
     {% for post in collections.post %}
         {% set post_tags = post.data.post_tagsf %}
