@@ -1,60 +1,38 @@
 // the locales in admin/config.yml must all be here
 const locales = ["en", "fr"]
-const localeRegex = new RegExp(`\/(${locales.join('|')})\/`);
 const defaultLocale = locales[0];
 
-const determineLocale = (page) => {
-    const matches = localeRegex.exec(page.inputPath);
-    return matches && matches[1] ? matches[1] : defaultLocale;
-};
+const getLocales = (data) =>
+      data.collections.locales[data.page.inputPath];
 
-const determineTranslationKey = (page) => {
-    if(!page.url) { return page.url; }
-    const locale = determineLocale(page);
-    return page.url.replace(locale+'/', '');
-};
+const findLocale = (data) =>
+      getLocales(data) && getLocales(data).locale;
 
-const compareTranslations = (t1, t2) => {
-    if (t1.locale == t2.locale){ return 0; }
-    // default locale comes first
-    if (t1.locale == defaultLocale){ return -1; }
-    if (t2.locale == defaultLocale){ return 1; }
-    // alphabetically
-    return t1.locale < t2.locale ? -1 : 1;
-};
+const findTranslations = (data) =>
+      getLocales(data) && getLocales(data).translations;
 
-// inpired by
-// https://www.webstoemp.com/blog/language-switcher-multilingual-jamstack-sites/
-const findTranslations = (data) => {
-    const pageLocale = determineLocale(data.page);
-    const pageKey = determineTranslationKey(data.page);
-    const translations =
-          data.collections.all
-               .map(page => {
-                   const locale = determineLocale(page);
-                   const translation = {
-                       locale, page,
-                       key: determineTranslationKey(page)};
-                   return translation;
-               })
-               .filter(t => t.locale != pageLocale && t.key == pageKey)
-               .sort(compareTranslations);
-    return translations;
-};
+const findDefaultTranslation = (data) =>
+      getLocales(data) && getLocales(data).defaultTranslation;
 
-const findDefaultLocalePostTags = (data) => {
-    // https://www.11ty.dev/docs/data-computed/#declaring-your-dependencies
-    // We do try our best to automatically detect
-    // dependencies between eleventyComputed keys
-    if(!data.tags || !data.tags.includes('post')){ return undefined }
-    // thank heavens there's a second pass
-    if(!data.translations){return data.post_tags; }
-    const found =
-          data.translations.find(t => t.locale == defaultLocale);
-    const foundTags = found ? found.page.data.post_tags : [];
-    const tagSet = new Set(foundTags.concat(data.post_tags));
+const findPostTags = (data) => {
+    // this is only relevant for posts
+    if(!data.tags || !data.tags.includes('post')){ return undefined; }
+
+    // Concatenate tags of all translations of this post.
+    // in case netlifyCMS only stores the tag on the default translation.
+    // At least older versions of the cms did this.
+    const locales =
+          data.collections.locales[data.page.inputPath];
+    const own_post_tags = data.post_tags || [];
+    if(!locales){return own_post_tags;}
+    const tagsOfTranslated = locales.translations
+          .filter(t => t.page.data.post_tags)
+          .map(t => t.page.data.post_tags);
+    const tagsOfAllTranslations = tagsOfTranslated.reduce(
+        (concats, tags) => concats.concat(tags), own_post_tags);
+    const tagSet = new Set(tagsOfAllTranslations);
     return [...tagSet];
-} ;
+};
 
 const findDefaultLocalePostTagsF = (data) => {
     // https://www.11ty.dev/docs/data-computed/#declaring-your-dependencies
@@ -76,11 +54,9 @@ const findDefaultLocalePostTagsF = (data) => {
 // cannot be used to modify the special data properties used
 // to configure templates (e.g. layout, pagination, tags etc.).
 module.exports = {
-    locale: data => determineLocale(data.page),
-    // eleventy is smart enough to use locale here even
-    // thought it was only declared in the line above.
-    has_default_locale: data => data.locale == defaultLocale,
+    locale: findLocale,
+    defaultTranslation: findDefaultTranslation,
     translations: findTranslations,
-    post_tags: findDefaultLocalePostTags,
+    post_tags: findPostTags,
     post_tagsf: findDefaultLocalePostTagsF
 }

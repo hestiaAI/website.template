@@ -1,11 +1,8 @@
 ---
 title: Deuxième post
-post_tags:
-  - hapay
-  - sleepy
-  - unshakable
 post_tagsf:
   - silly
+  - hot
 ---
 # Oui?
 

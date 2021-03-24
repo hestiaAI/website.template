@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 
+
+
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
@@ -49,6 +51,34 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
+  eleventyConfig.addCollection("locales", function(collectionApi) {
+    // inpired by
+    // https://www.webstoemp.com/blog/language-switcher-multilingual-jamstack-sites/
+    const translationsByKey = collectionApi.getAll().reduce(
+      (transByKey, page)=>{
+        const locale = determineLocale(page);
+        const key = determineTranslationKey(page);
+        transByKey[key] = transByKey[key] || {};
+        const translations = transByKey[key];
+        translations[locale] = {locale, page};
+        return transByKey;
+      },{});
+    const localesByPath = Object.values(translationsByKey).reduce(
+      (locsByPath, ts) => {
+        const defaultTranslation = ts[DEFAULT_LOCALE];
+        Object.values(ts).forEach(t => {
+          const {locale, page} = t;
+          const translations = LOCALES
+                .filter(loc => loc != locale )
+                .map(loc => ts[loc]);
+          locsByPath[page.inputPath] =
+            {locale, page, defaultTranslation, translations};
+        });
+        return locsByPath;
+      },{});
+    return localesByPath;
+  });
+
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
@@ -58,4 +88,19 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
   };
+};
+
+const LOCALES = ["en", "fr"]
+const LOCALE_REGEX = new RegExp(`\/(${LOCALES.join('|')})\/`);
+const DEFAULT_LOCALE = LOCALES[0];
+
+const determineLocale = (page) => {
+    const matches = LOCALE_REGEX.exec(page.inputPath);
+    return matches && matches[1] ? matches[1] : DEFAULT_LOCALE;
+};
+
+const determineTranslationKey = (page) => {
+    if(!page.url) { return page.url; }
+    const locale = determineLocale(page);
+    return page.url.replace(locale+'/', '');
 };

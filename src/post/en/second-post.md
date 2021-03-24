@@ -1,9 +1,8 @@
 ---
 title: Second post
 post_tags:
-  - hapay
-  - sleepy
-  - unshakable
+  - chill
+  - euphoric
 post_tagsf:
   - silly
   - hot

@@ -1,11 +1,7 @@
 ---
 layout: layout_default
 ---
-{% if has_default_locale %}
-  {% set original_name = name %}
-{% else %}
-  {% set original_name = translations[0].page.data.name %}
-{% endif %}
+{% set original_name = defaultTranslation.page.data.name %}
 <h1>{{name}}</h1>
 <p>{{description}}</p>
 <ul>
