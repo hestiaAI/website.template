@@ -1,7 +1,3 @@
-// the locales in admin/config.yml must all be here
-const locales = ["en", "fr"]
-const defaultLocale = locales[0];
-
 const getLocales = (data) =>
       data.collections.locales[data.page.inputPath];
 
@@ -34,20 +30,6 @@ const findPostTags = (data) => {
     return [...tagSet];
 };
 
-const findDefaultLocalePostTagsF = (data) => {
-    // https://www.11ty.dev/docs/data-computed/#declaring-your-dependencies
-    // We do try our best to automatically detect
-    // dependencies between eleventyComputed keys
-    if(!data.tags || !data.tags.includes('post')){ return undefined }
-    // thank heavens there's a second pass
-    if(!data.translations){return data.post_tagsf; }
-    const found =
-          data.translations.find(t => t.locale == defaultLocale);
-    const foundTags = found ? found.page.data.post_tagsf : [];
-    const tagSet = new Set(foundTags.concat(data.post_tagsf));
-    return [...tagSet];
-};
-
 // https://www.11ty.dev/docs/data-computed/
 // It is important to note that Computed Data is computed
 // right before templates are rendered. Therefore Computed Data
@@ -58,5 +40,4 @@ module.exports = {
     defaultTranslation: findDefaultTranslation,
     translations: findTranslations,
     post_tags: findPostTags,
-    post_tagsf: findDefaultLocalePostTagsF
 }

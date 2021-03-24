@@ -126,17 +126,3 @@ collections:
   fields:
     - { label: Name, name: name, widget: string, i18n: true }
     - { label: Description, name: description, widget: string, i18n: true }
-- label: Tags f
-  name: post_tagsf
-  folder: src/tagf
-  create: true
-  editor:
-    preview: false
-  preview_path: tagf/{{slug}}/en/
-  identifier_field: name
-  i18n:
-    structure: single_file
-  fields:
-    - { label: Name, name: name, widget: string, i18n: true }
-    - { label: Description, name: description, widget: string, i18n: true }
-    - {label: "Tags", name: "tags", widget: "hidden", default: "[ en_post_tag, fr_post_tag ]"}

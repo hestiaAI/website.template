@@ -18,11 +18,3 @@ layout: layout_default
         {% endif %}
     {% endfor %}
 </ul>
-<h2>{{tags_title}} ff</h2>
-<ul>
-    {% for tag in collections.post_tagf %}
-    <li><a href="/tagf/{{tag.data.en.name}}/{{locale}}/">
-            {{tag.data[locale].name}}
-    </a></li>
-    {% endfor %}
-</ul>
