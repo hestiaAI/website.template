@@ -21,9 +21,10 @@ const findPostTags = (data) => {
           data.collections.locales[data.page.inputPath];
     const own_post_tags = data.post_tags || [];
     if(!locales){return own_post_tags;}
-    const tagsOfTranslated = locales.translations
-          .filter(t => t.page.data.post_tags)
-          .map(t => t.page.data.post_tags);
+    const tagsOfTranslated =
+          locales.translations
+                 .filter(t => t && t.page.data.post_tags)
+                 .map(t => t.page.data.post_tags);
     const tagsOfAllTranslations = tagsOfTranslated.reduce(
         (concats, tags) => concats.concat(tags), own_post_tags);
     const tagSet = new Set(tagsOfAllTranslations);
