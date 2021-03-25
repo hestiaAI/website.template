@@ -1,3 +1,0 @@
-# https://docs.netlify.com/routing/redirects/
-/* /fr/:splat  302 Language=fr
-/* /en/:splat  302
