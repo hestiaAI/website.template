@@ -79,7 +79,12 @@ module.exports = function (eleventyConfig) {
       },{});
     return localesByPath;
   });
-
+  
+  eleventyConfig.addNunjucksShortcode("creditedImage", function(href, alt, title, credits) {
+    var caption = credits ? `copyright ${credits}` : '';
+    return `<div><img src="${href}" alt="${alt}" title="${title}" ><div>${caption}</div></div>`;
+  });
+  
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
   return {
