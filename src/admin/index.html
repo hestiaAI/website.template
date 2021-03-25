@@ -26,7 +26,7 @@
         // Visible label
         label: "Credited image",
         // Fields the user need to fill out when adding an instance of the component
-        fields: [{name: 'src', label: 'Image', widget: 'image'},
+        fields: [{name: 'src', label: 'Image (credits in file name, ex: bla-c-cartier-bresson-c-.jpg )', widget: 'image'},
                  {name: 'alt', label: 'Alternative text', widget: 'string'},
                  {name: 'title', label: 'Title', widget: 'string'}
                 ],
@@ -44,18 +44,16 @@
         },
         // Function to create a text block from an instance of this component
         toBlock: function(obj) {
-            console.log('obj', obj);
             var credits = extractCredits(obj.src);
-            if(credits)
-                //{% raw %}
-                return `{% creditedImage "${obj.src}", "${obj.alt}", "${obj.title}", "${credits}" %}`;
+            //{% raw %}
+            return `{% creditedImage "${obj.src}", "${obj.alt}", "${obj.title}", "${credits}" %}`;
             //{% endraw %}
         },
         // Preview output for this component. Can either be a string or a React component
         // (component gives better render performance)
         toPreview: function(obj) {
             return (
-                '<img src="http://img.youtube.com/vi/' + obj.id + '/maxresdefault.jpg" alt="Youtube Video"/>'
+                `<div><img src="${obj.src}" "/><div></div></div>`
             );
         }
     });
