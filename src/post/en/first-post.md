@@ -8,11 +8,9 @@ post_tagsf:
   - hot
 ---
 This also works as a template for nunjucks. Here's my locale: {{locale}}<br>
-POST TAGS: {{post_tags}}<br>
-{{post_tagsf}}
 
-youtube /static/img/EngagementM_f_rgb.jpg
+{% creditedImage "/static/img/kitten-c-lachlan-rogers-c-.jpg", "a kitten", "how cute", "Lachlan Rogers" %}
 
+Another credited image
 
-
-{% creditedImage "/static/img/kitten-c-lachlan-rogers-c-.jpg", "undefined", "undefined", "Lachlan Rogers" %}
+![grilling marshmallows](/static/img/pexels-c-maria-orlova-c-4906149.jpg "marshmallows")
