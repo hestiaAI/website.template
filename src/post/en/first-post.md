@@ -9,8 +9,7 @@ post_tagsf:
 ---
 This also works as a template for nunjucks. Here's my locale: {{locale}}<br>
 
-
-{% creditedImage "/static/img/kitten-c-lachlan-rogers-c-.jpg", "undefined", "undefined", "Lachlan Rogers" %}
+{% creditedImage "/static/img/kitten-c-lachlan-rogers-c-.jpg", "a kitten", "how cute", "Lachlan Rogers" %}
 
 Another credited image
 
