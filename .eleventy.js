@@ -4,8 +4,9 @@ const { creditedImage } = require('./config/creditedImage')
 module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy("./src/static/css");
-  eleventyConfig.addPassthroughCopy("./src/_redirects");
+  eleventyConfig.addPassthroughCopy("./src/netlify.toml");
   eleventyConfig.addPassthroughCopy("./src/static/img");
+  eleventyConfig.addPassthroughCopy("./src/admin/*js");
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml"
   });
