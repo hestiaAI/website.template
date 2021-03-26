@@ -1,17 +1,35 @@
 {
-  "name": "hestia-labs-website",
-  "version": "1.0.0",
-  "description": "HestiaLabs main website",
+  "name": "@hestia/website-labs",
+  "version": "0.1.0",
+  "description": "HestiaLabs.org main website",
+  "license": "UNLICENSED",
+  "author": "Charles Foucault-Dumas",
+  "contributors": [
+    "Paul-Olivier Dehaye",
+    "Marie-Pierre Vidonne",
+    "Andréas Kündig",
+    "Olivier Lange"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
   "scripts": {
+    "postinstall": "npm dedupe",
     "build": "eleventy",
     "eleventy": "eleventy --serve",
     "cms-proxy": "netlify-cms-proxy-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "UNLICENSED",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "netlify-cms-proxy-server": "^1.3.11"
+  },
+  "homepage": "https://github.com/hestiaAI/website.labs",
+  "bugs": {
+    "url": "https://github.com/hestiaAI/website.labs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hestiaAI/website.labs.git"
   }
 }
