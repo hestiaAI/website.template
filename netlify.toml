@@ -21,6 +21,11 @@
   NODE_VERSION = "14"
 
 [[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  status = 302
+
+[[redirects]]
   from = "/*"
   to = "/fr/:splat"
   status = 302
