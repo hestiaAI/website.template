@@ -1,6 +1,12 @@
 # OS generated files
 .DS_Store
 Thumbs.db
-/_site/
-/node_modules/
-/.log/
+
+# Build files (11ty and Snowpack)
+build/
+
+# Package dependencies
+node_modules/
+
+# Log files
+.log/
