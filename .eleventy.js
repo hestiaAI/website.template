@@ -1,6 +1,6 @@
-// Eleventy configuration file
+// Eleventy configuration, integrated with Snowpack
 // https://www.11ty.dev/docs/config/
-/* eslint-env node */
+///* eslint-env node */
 
 const { buildLocalesCollection} = require('./conf/11ty/locales');
 const { creditedImage } = require('./conf/11ty/creditedImage')
@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   // So that we can use .html instead of .njk
   return {
     dir: {
-      output: "build/11ty",
+      output: "build/11ty",     // linked to Snowpack `mount` setting
       input: "src",
       data: "_data",            // (default value) relative to `dir.input`
       includes: "_includes",    // (default value) relative to `dir.input`

@@ -1,4 +1,4 @@
-# Netlify build configuration file
+# Netlify build configuration, integrated with Snowpack and Eleventy
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 
 # Settings in the [build] context are global and are applied to all contexts
@@ -13,10 +13,10 @@
   # the build. This is relative to the base directory if one has been set, or the
   # root directory if a base has not been set. This sample publishes the
   # directory located at the absolute path "root/project/build-output"
-  publish = "build/snowpack/"
+  publish = "build/snowpack/"   # linked to Snowpack `buildOptions.out` setting
 
   # Default build command.
-  command = "npm run build"
+  command = "npm run build"     # triggers Eleventy and Snowpack builds in sequence
 
 [build.environment]
   NODE_VERSION = "14"
