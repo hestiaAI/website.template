@@ -2,8 +2,8 @@
 // https://www.11ty.dev/docs/config/
 /* eslint-env node */
 
-const { buildLocalesCollection} = require('./config/locales');
-const { creditedImage } = require('./config/creditedImage')
+const { buildLocalesCollection} = require('./conf/11ty/locales');
+const { creditedImage } = require('./conf/11ty/creditedImage')
 
 module.exports = function (eleventyConfig) {
   // Copy static files to `dir.output`
