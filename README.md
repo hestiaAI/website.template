@@ -4,13 +4,15 @@
 
 Our HestiaLabs main website:
 
-* [`hestialabs.netlify.app`](https://hestialabs.netlify.app) ⟵ is currently accessible here;
-* `hestialabs.org` ⟵ will be accessible here on public launch.
+* [`hestialabs.netlify.app/{fr,en}`](https://hestialabs.netlify.app/en/) ⟵ is currently accessible here;
+* [`hestialabs.org/{fr,en}`](https://hestialabs.org/en/) ⟵ will be accessible here on public launch.
 
-The website provides two major deliverables; whose sources are available in this repository:
+# Deliverables
 
-* [`hestialabs.netlify.app`](https://hestialabs.netlify.app): publicly accessible website of HestiaLabs;
-* [`hestialabs.netlify.app/admin`](https://hestialabs.netlify.app): our [content-authoring & management system (_aka_ NetlifyCMS)](https://www.netlifycms.org), accessible thru invite only.
+The website is currently made of two major deliverables; whose sources are available in this repository:
+
+1. [`hestialabs.netlify.app`](https://hestialabs.netlify.app): publicly accessible website of HestiaLabs, in french and english;
+2. [`hestialabs.netlify.app/admin`](https://hestialabs.netlify.app/admin/): our [content-authoring system (_aka_ NetlifyCMS)](https://www.netlifycms.org), accessible thru invite only.
 
 # TODO
 
@@ -26,17 +28,15 @@ The website provides two major deliverables; whose sources are available in this
 
 Would you need _editorial access_ to the website contents — that is, to our NetlifyCMS content-authoring & management system:
 
-* Ask [@olange](https://github.com/olange) or [@andreaskundig](https://github.com/andreaskundig) for an invite to the HestiaLabs site, they administer all of our Netlify deployment platform and the sites;
-* Access is defined from [Netlify › Hestia _team_ › HestiaLabs _site_ › Identity](https://app.netlify.com/sites/hestialabs/identity) webpage.
+* ask [@olange](https://github.com/olange) or [@andreaskundig](https://github.com/andreaskundig) for an invite to the HestiaLabs site;
+* access is defined from [Netlify › Hestia _team_ › HestiaLabs _site_ › Identity](https://app.netlify.com/sites/hestialabs/identity) webpage.
 
-## Netlify CB/CD/CDN & Identity services
+## Netlify
 
-Would you need to _administer_ the deployment infrastructure — that is, the ‹Netlify› continuous build, deploy & hosting infrastructure, as well as the ‹Netlify Identity› authentication services we use:
+Would you need to _administer_ our Netlify deployment & hosting infrastructure:
 
-* Ask [@olange](https://github.com/olange) or [@andreaskundig](https://github.com/andreaskundig) to share their access with you to the [Netlify › Hestia Team](https://app.netlify.com/teams/hestia/overview) account;
-* where they would sign-in with a shared `service-owners+netlify` Netlify account (2FA-enabled).
-
-`NOTE` Messages sent to the E-mail address linked to the `service-owners+netlify` Netlify account, go exclusively to [@pdehaye](https://github.com/pdehaye) and [@olange](https://github.com/olange) — via forwards defined on our Fastmail messaging infrastructure. Ask them, would you need access to those messages.
+* ask [@olange](https://github.com/olange) or [@andreaskundig](https://github.com/andreaskundig) to share access with you to the [Netlify › Hestia Team](https://app.netlify.com/teams/hestia/overview) account;
+* we sign-in with a single shared `service-owners+netlify` Netlify account (2FA-enabled), to run our hosting with [Netlify's Starter Free Plan](https://www.netlify.com/pricing).
 
 # Repository contents
 
@@ -97,29 +97,27 @@ Would you need to _administer_ the deployment infrastructure — that is, the �
 
 ### Build, serve & watch sequence · Snowpack and 11ty
 
-1. First comes Snowpack, which reads its config from `.snowpack.config.js`
-2. … and invokes 11ty thru its `run-script` plugin.
-3. Then follows the _build sequence_ described hereafter
+3. First come the _build sequence_ described [hereafter](#build-sequence--snowpack-and-11ty);
 4. Both 11ty and Snowpack watch for subsequent changes:
-5. … 11ty watches for changes in `src/` subfolders and produces the static website again, as described hereafter
-6. … Snowpack watches for changes in `build/11ty` and its source folders, and any one change will produce a new Snowpack build, as described hereafter.
+5. … 11ty watches for changes in `src` subfolders and produces the static website again in `build/11ty`, as described hereafter
+6. … Snowpack watches for changes in `build/11ty`, as well as in the source folders for ES modules and Web Components to rebuild, and any one change will produce a new Snowpack build, as described hereafter.
 
 ### Build sequence · Snowpack and 11ty
 
 1. First comes 11ty, which reads its config from `.eleventy.js`
-2. … reads source contents from `src/` subfolders
-3. … and produces a static website in the `build/11ty/` folder.
-4. Then comes Snowpack, which reads contents from `build/11ty/` folder
-5. … and source code of our runtime dependencies from `node_modules/` subfolders.
+2. … reads source contents from `src` subfolders
+3. … and produces a static website in the `build/11ty` folder.
+4. Then comes Snowpack, which reads contents from `build/11ty` folder
+5. … and source code of our runtime dependencies from `node_modules` subfolders.
 6. And Snowpack produces …
-7. … a copy of the website generated by 11ty in same `build/snowpack/` folder
-8. … along with independently bundled ES modules in `build/snowpack/modules/`
-9. … and independent plain JS scripts in `build/snowpack/**`.
+7. … a copy of the website generated by 11ty in same `build/snowpack` folder
+8. … along with independently bundled ES modules in `build/snowpack/modules`
+9. … and Web Components in `build/snowpack/components`.
 
 ### Deployment sequence · GitHub and Netlify
 
-1. Netlify picks up any change pushed to the repository
-2. … triggers the above build sequence in its CB environment
+1. Netlify picks up any change pushed to this GitHub repository
+2. … then triggers the above build sequence in its CB environment
 3. … and, if the build was successful, deploys the result to its CDN & hosting infrastructure
 4. … along with the URL redirect rules, HTTP-header overrides and role-based access restrictions defined in the `netlify.toml` config file.
 
@@ -129,11 +127,12 @@ Would you need to _administer_ the deployment infrastructure — that is, the �
 
 `TODO`
 
-Most of our setup follows Snowpack, 11ty & NetlifyCMS standards.
+Most of our setup follows Snowpack, 11ty & NetlifyCMS standards. Combining
+those tools, and satisfying our i18n requirements, however required a few 
+_not-so-obvious_ and sometimes _complected_ design decisions, which should
+be described hereafter.
 
-Combining those tools, and satisfying our i18n requirements, however required a few _not-so-obvious_ and _complected_ design decisions.
-
-### Structural constraints
+### Structural & functional constraints
 
 * Website URL space
 * NetlifyCMS i18n support
