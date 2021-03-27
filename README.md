@@ -45,9 +45,9 @@ Would you need to _administer_ the deployment infrastructure — that is, the �
 ```ascii
 / ....................... NPM, 11ty & Netlify scripts for assembly, publishing & deployment
 |
-+-- conf/ ............... Config. of our publish & deploy pipeline
-|   +-- eleventy/ ....... TODO
-|   +-- netlifycms/ ..... TODO
++-- conf/ ............... Config of our publish & deploy pipeline
+|   +-- 11ty/ ........... Eleventy config files included from .eleventy.js
+|   +-- netlifycms/ ..... NetlifyCMS config file, deployed to admin/ upon build
 |
 +-- src/ ................ Actual sources (en/fr) of the website
 |   +-- static/ ......... Static assets, such as stylesheets and images
@@ -73,7 +73,7 @@ Would you need to _administer_ the deployment infrastructure — that is, the �
 +-- .eleventy.js ......... In-/out folders and config of 11ty build process
 +-- .snowpack.config.js .. In-/out folders and config of Snowpack dev & build processes
 |
-+-- src/admin/
++-- conf/netlifycms/
     +-- config.yml ....... NetlifyCMS runtime config
 ```
 
