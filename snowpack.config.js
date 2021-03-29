@@ -30,8 +30,8 @@
 //   or Web Components, that Snowpack would need to process.
 //
 //   If the `src/components/` folder would contain Web Components,
-//   which we'd want to import from URL `/components/XYZ` in an
-//   HTML script element, config might be ajusted like this:
+//   which we'd want to import from URL `components/componentXYZ`
+//   in an HTML script element, config might be ajusted like this:
 //
 //       mount: {
 //         'build/11ty': { url: '/', static: true },

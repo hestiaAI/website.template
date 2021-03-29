@@ -10,9 +10,9 @@ module.exports = function (eleventyConfig) {
   // but not recognized by Eleventy as valid template files.
   // Note: Passthrough File Copy entries are relative to the root
   // of the project and not Eleventy `dir.input` directory.
-  eleventyConfig.addPassthroughCopy("src/static/css");
-  eleventyConfig.addPassthroughCopy("src/static/img");
-  eleventyConfig.addPassthroughCopy("src/admin/*.js");
+  eleventyConfig.addPassthroughCopy("src/site/static/css");
+  eleventyConfig.addPassthroughCopy("src/site/static/img");
+  eleventyConfig.addPassthroughCopy("src/site/admin/*.js");
   eleventyConfig.addPassthroughCopy({ "conf/netlifycms/config.yml": "admin/config.yml" });
 
   eleventyConfig.addCollection("locales", buildLocalesCollection);
@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       output: "build/11ty",     // linked to Snowpack `mount` setting
-      input: "src",
+      input: "src/site",
       data: "_data",            // (default value) relative to `dir.input`
       includes: "_includes",    // (default value) relative to `dir.input`
       layouts:  "_includes",    // (default value) relative to `dir.input`

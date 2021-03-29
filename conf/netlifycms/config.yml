@@ -1,11 +1,11 @@
+# NetlifyCMS config file
+# https://www.netlifycms.org/docs/configuration-options/
+
 backend:
-  # Use netlify identity as backend
+  # Use Netlify Identity as backend
   name: git-gateway
   branch: main
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
-media_folder: "src/static/img"
+media_folder: "src/site/static/img"
 public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
@@ -35,7 +35,7 @@ collections:
   files:
     - label: texts
       name: texts
-      file: src/_data/texts.json
+      file: src/site/_data/texts.json
       i18n: true
       fields:
         - { label: Contact, name: contact, widget: string, i18n: true }
@@ -45,7 +45,7 @@ collections:
 - label: Home
   name: home
   # Configure i18n for this collection.
-  folder: src/home
+  folder: src/site/home
   extension: html
   editor:
     preview: false
@@ -63,7 +63,7 @@ collections:
     - { label: "Paragraph 2.2", name: paragraph_2_2, widget: text, i18n: true }
 - label: About us
   name: about
-  folder: src/about
+  folder: src/site/about
   extension: md
   editor:
     preview: false
@@ -76,7 +76,7 @@ collections:
 - label: Blog main page
   name: blog
   # Configure i18n for this collection.
-  folder: src/blog
+  folder: src/site/blog
   editor:
     preview: false
   create: false
@@ -88,7 +88,7 @@ collections:
     - { label: Tags title, name: tags_title, widget: string, i18n: true }
 - label: Blog posts
   name: blog-posts
-  folder: src/post
+  folder: src/site/post
   extension: md
   editor:
     preview: false
@@ -115,7 +115,7 @@ collections:
       search_fields: ["name"]
 - label: Tags
   name: post_tags
-  folder: src/tag
+  folder: src/site/tag
   create: true
   editor:
     preview: false
@@ -127,3 +127,5 @@ collections:
   fields:
     - { label: Name, name: name, widget: string, i18n: true }
     - { label: Description, name: description, widget: string, i18n: true }
+
+# eof
