@@ -1,7 +1,7 @@
 
 /* eslint-env node */
 
-// this must match the cms locales in src/admin/config.yml
+// this must match the CMS locales declared in conf/netlifycms/config.yml
 const LOCALES = ["en", "fr"]
 const LOCALE_REGEX = new RegExp(`\/(${LOCALES.join('|')})\/`);
 const DEFAULT_LOCALE = LOCALES[0];
