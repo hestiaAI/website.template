@@ -11,6 +11,6 @@ post_tagsf:
 
 Et chez vous quoi de neuf?
 
-![(sponsor logo)](/static/img/EngagementM_f_rgb.jpg "our dear sponsor")
+![(sponsor logo)](/assets/img/EngagementM_f_rgb.jpg "our dear sponsor")
 
-{% creditedImage "/static/img/EngagementM_f_rgb.jpg", "our dear sponsor", "title", "migros" %}
+{% creditedImage "/assets/img/EngagementM_f_rgb.jpg", "our dear sponsor", "title", "migros" %}

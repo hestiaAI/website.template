@@ -54,7 +54,7 @@ Would you need to _administer_ our Netlify deployment & hosting infrastructure:
 |   +-- site/ ........... Actual contents of website, along with layouts and assets
 |       +-- _data/ ...... Fragments of data consumed by 11ty to generate static pages
 |       +-- _includes/ .. Layouts and includes consumed by 11ty to generate static pages
-|       +-- static/ ..... Media assets, such as stylesheets and images
+|       +-- assets/ ..... Media assets, such as stylesheets and images used by theme or uploaded by users
 |       +-- admin/ ...... NetlifyCMS single-page app, to edit contents online
 |       +-- home/ ....... Main homepage
 |       +-- about/ ...... About us page

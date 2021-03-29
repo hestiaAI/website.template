@@ -10,8 +10,7 @@ module.exports = function (eleventyConfig) {
   // but not recognized by Eleventy as valid template files.
   // Note: Passthrough File Copy entries are relative to the root
   // of the project and not Eleventy `dir.input` directory.
-  eleventyConfig.addPassthroughCopy("src/site/static/css");
-  eleventyConfig.addPassthroughCopy("src/site/static/img");
+  eleventyConfig.addPassthroughCopy("src/site/assets");
   eleventyConfig.addPassthroughCopy("src/site/admin/*.js");
   eleventyConfig.addPassthroughCopy({ "conf/netlifycms/config.yml": "admin/config.yml" });
 
