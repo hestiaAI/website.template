@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <a href="/{{locale}}">{{texts[locale].home}}</a> |
-      <a href="/{{locale}}/blog/">{{texts[locale].blog}}</a> |
+      <a href="/{{locale}}">{{i18n.globals[locale].home}}</a> |
+      <a href="/{{locale}}/blog/">{{i18n.globals[locale].blog}}</a> |
       {% for translation in translations %}
         {% if not loop.first %}/{% endif %}
         <a href="{{translation.page.url}}">{{translation.locale}}</a>
@@ -19,8 +19,8 @@
     </header>
     {{ content | safe }}
     <footer>
-      {{texts[locale].contact}} |
-      <a href="/{{locale}}/about/">{{texts[locale].about}}</a>
+      {{i18n.globals[locale].contact}} |
+      <a href="/{{locale}}/about/">{{i18n.globals[locale].about}}</a>
     </footer>
   </body>
 </html>

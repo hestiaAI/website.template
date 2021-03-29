@@ -28,14 +28,14 @@ i18n:
   default_locale: en
 
 collections:
-- label: global texts
-  name: global-texts
+- label: ‹Text fragments›
+  name: fragments
   i18n:
     structure: single_file
   files:
-    - label: texts
-      name: texts
-      file: src/site/_data/texts.json
+    - label: Global i18n texts
+      name: i18n-globals
+      file: src/site/_data/i18n/globals.json
       i18n: true
       fields:
         - { label: Contact, name: contact, widget: string, i18n: true }
