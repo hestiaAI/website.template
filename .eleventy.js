@@ -1,6 +1,6 @@
 // Eleventy configuration, integrated with Snowpack
 // https://www.11ty.dev/docs/config/
-///* eslint-env node */
+/* eslint-env node */
 
 const { buildLocalesCollection} = require('./conf/11ty/locales');
 const { creditedImage } = require('./conf/11ty/creditedImage')

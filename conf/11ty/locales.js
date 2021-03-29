@@ -1,4 +1,6 @@
 
+/* eslint-env node */
+
 // this must match the cms locales in src/admin/config.yml
 const LOCALES = ["en", "fr"]
 const LOCALE_REGEX = new RegExp(`\/(${LOCALES.join('|')})\/`);
