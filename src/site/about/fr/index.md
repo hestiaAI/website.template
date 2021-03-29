@@ -1,5 +1,5 @@
 ---
-layout: layout_default
+layout: default
 title: A propos de nous
 permalink: "/fr/about/index.html"
 ---

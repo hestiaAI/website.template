@@ -1,5 +1,5 @@
 ---
-layout: layout_default
+layout: default
 title: About us
 permalink: /en/about/index.html
 ---

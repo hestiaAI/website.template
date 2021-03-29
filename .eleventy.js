@@ -26,7 +26,7 @@ module.exports = function (eleventyConfig) {
       input: "src/site",
       data: "_data",            // (default value) relative to `dir.input`
       includes: "_includes",    // (default value) relative to `dir.input`
-      layouts:  "_includes",    // (default value) relative to `dir.input`
+      layouts:  "_layouts",     // (overrides default) still relative to `dir.input`
     },
     // templateFormats: ["html", "md", "njk"],
     markdownTemplateEngine: "njk",

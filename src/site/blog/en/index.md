@@ -1,5 +1,5 @@
 ---
-layout: layout_blog
+layout: blog
 title: Our Blog posts
 introduction: "This is what you can read about here:"
 tags_title: tags

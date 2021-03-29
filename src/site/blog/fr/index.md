@@ -1,5 +1,5 @@
 ---
-layout: layout_blog
+layout: blog
 title: Nos fabuleux posts de blog
 introduction: "Voici voilà:"
 tags_title: tags
