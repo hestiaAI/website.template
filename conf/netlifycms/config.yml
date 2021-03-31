@@ -69,7 +69,7 @@ collections:
     preview: false
   create: false
   i18n: true
-  preview_path: /about/en/
+  preview_path: /en/about/
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
@@ -89,11 +89,12 @@ collections:
     preview: false
   create: false
   i18n: true
-  preview_path: blog/en/
+  preview_path: /en/blog/
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: Introduction, name: introduction, widget: string, i18n: true }
     - { label: Categories title, name: categories_title, widget: string, i18n: true }
+    - { label: Categories title, name: authors_title, widget: string, i18n: true }
 - label: Blog posts
   name: blog-posts
   folder: src/site/post
@@ -102,7 +103,7 @@ collections:
     preview: false
   create: true
   i18n: true
-  preview_path: /post/en/{{slug}}
+  preview_path: /en/post/{{slug}}
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
@@ -114,14 +115,22 @@ collections:
       value_field: "id"
       multiple: true
       search_fields: ["name", "id", "description"]
+    - label: "author"
+      name: "post_authors"
+      widget: relation
+      collection: post_authors
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
 - label: Categories
   name: post_categories
   folder: src/site/category
   create: true
   editor:
     preview: false
-  preview_path: category/en/{{slug}}
-  identifier_field: name
+  preview_path: /en/category/{{slug}}
+  identifier_field: id
   i18n: true
   # i18n:
   #   structure: single_file
@@ -130,4 +139,19 @@ collections:
     - { label: "Name", name: name, widget: string, i18n: true }
     - { label: Description, name: description, widget: string, i18n: true }
 
+- label: Authors
+  name: post_authors
+  folder: src/site/author
+  create: true
+  editor:
+    preview: false
+  preview_path: /en/author/{{slug}}
+  identifier_field: id
+  i18n: true
+  # i18n:
+  #   structure: single_file
+  fields:
+    - { label: "Id (set at creation and never change afterwards)", name: id, widget: string }
+    - { label: "Name", name: name, widget: string, i18n: true}
+    - { label: Description, name: description, widget: string, i18n: true }
 # eof

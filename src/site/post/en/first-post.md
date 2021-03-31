@@ -4,6 +4,8 @@ post_categories:
   - euphoric
   - chill
   - sleepy
+post_authors:
+  - dan brown
 ---
 This also works as a template for nunjucks. Here's my locale: {{locale}}<br>
 

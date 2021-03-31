@@ -4,6 +4,8 @@ post_categories:
   - chill
   - euphoric
   - hapay
+post_authors:
+  - proust
 ---
 # Nothing
 

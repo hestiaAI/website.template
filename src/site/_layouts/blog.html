@@ -18,3 +18,12 @@ layout: default
         {% endif %}
     {% endfor %}
 </ul>
+
+<h2>{{authors_title}}</h2>
+<ul>
+    {% for author in collections.post_author %}
+        {% if author.data.locale == locale %}
+            <li><a href="{{author.data.page.url}}">{{author.data.name}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
