@@ -4,8 +4,6 @@ post_tags:
   - hapay
   - euphoric
   - chill
-post_tagsf:
-  - hot
 ---
 This also works as a template for nunjucks. Here's my locale: {{locale}}<br>
 

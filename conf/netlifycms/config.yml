@@ -114,13 +114,6 @@ collections:
       value_field: "name"
       multiple: true
       search_fields: ["name"]
-    - label: "tagsf"
-      name: "post_tagsf"
-      widget: relation
-      collection: post_tagsf
-      value_field: "name"
-      multiple: true
-      search_fields: ["name"]
 - label: Tags
   name: post_tags
   folder: src/site/tag

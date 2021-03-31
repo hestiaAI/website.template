@@ -3,9 +3,6 @@ title: Deuxième post
 post_tags:
   - chill
   - euphoric
-post_tagsf:
-  - silly
-  - hot
 ---
 # Oui?
 
