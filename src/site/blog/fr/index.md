@@ -2,6 +2,6 @@
 layout: blog
 title: Nos fabuleux posts de blog
 introduction: "Voici voilà:"
-tags_title: tags
+categories_title: categories
 permalink: /fr/blog/index.html
 ---

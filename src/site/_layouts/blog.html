@@ -10,11 +10,11 @@ layout: default
         {% endif %}
     {% endfor %}
 </ul>
-<h2>{{tags_title}}</h2>
+<h2>{{categories_title}}</h2>
 <ul>
-    {% for tag in collections.post_tag %}
-        {% if tag.data.locale == locale %}
-            <li><a href="{{tag.data.page.url}}">{{tag.data.name}}</a></li>
+    {% for category in collections.post_category %}
+        {% if category.data.locale == locale %}
+            <li><a href="{{category.data.page.url}}">{{category.data.name}}</a></li>
         {% endif %}
     {% endfor %}
 </ul>

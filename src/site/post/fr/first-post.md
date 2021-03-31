@@ -1,7 +1,6 @@
 ---
 title: notre premier post
-post_tags:
-  - hapay
+post_categories:
   - euphoric
   - chill
 ---
@@ -9,5 +8,5 @@ mmmmm
 **mmmmmmm**
 
 # **MMMMMMMMMM**
-{{post_tags}}
+{{post_categories}}
 {{locale}}

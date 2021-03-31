@@ -1,8 +1,9 @@
 ---
 title: Deuxième post
-post_tags:
+post_categories:
   - chill
   - euphoric
+  - hapay
 ---
 # Oui?
 

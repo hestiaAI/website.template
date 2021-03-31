@@ -10,7 +10,7 @@ const findTranslations = (data) =>
 const findDefaultTranslation = (data) =>
       getLocales(data) && getLocales(data).defaultTranslation;
 
-const findPostTags = (data) => {
+const findPostCategories = (data) => {
     // this is only relevant for posts
     if(!data.tags || !data.tags.includes('post')){ return undefined; }
 
@@ -19,15 +19,15 @@ const findPostTags = (data) => {
     // At least older versions of the cms did this.
     const locales =
           data.collections.locales[data.page.inputPath];
-    const own_post_tags = data.post_tags || [];
-    if(!locales){return own_post_tags;}
-    const tagsOfTranslated =
+    const own_post_categories = data.post_categories || [];
+    if(!locales){return own_post_categories;}
+    const catsOfTranslated =
           locales.translations
-                 .filter(t => t && t.page.data.post_tags)
-                 .map(t => t.page.data.post_tags);
-    const tagsOfAllTranslations = tagsOfTranslated.reduce(
-        (concats, tags) => concats.concat(tags), own_post_tags);
-    const tagSet = new Set(tagsOfAllTranslations);
+                 .filter(t => t && t.page.data.post_categories)
+                 .map(t => t.page.data.post_categories);
+    const catsOfAllTranslations = catsOfTranslated.reduce(
+        (concats, tags) => concats.concat(tags), own_post_categories);
+    const tagSet = new Set(catsOfAllTranslations);
     return [...tagSet];
 };
 
@@ -40,5 +40,5 @@ module.exports = {
     locale: findLocale,
     defaultTranslation: findDefaultTranslation,
     translations: findTranslations,
-    post_tags: findPostTags,
+    post_categories: findPostCategories,
 }

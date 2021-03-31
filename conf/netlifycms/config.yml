@@ -93,7 +93,7 @@ collections:
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: Introduction, name: introduction, widget: string, i18n: true }
-    - { label: Tags title, name: tags_title, widget: string, i18n: true }
+    - { label: Categories title, name: categories_title, widget: string, i18n: true }
 - label: Blog posts
   name: blog-posts
   folder: src/site/post
@@ -106,27 +106,28 @@ collections:
   fields:
     - { label: Title, name: title, widget: string, i18n: true }
     - { label: "Body", name: "body", widget: "markdown", i18n: true }
-    - label: "tags"
-      name: "post_tags"
+    - label: "categories"
+      name: "post_categories"
       widget: relation
-      collection: post_tags
+      collection: post_categories
       # i18n: true
-      value_field: "name"
+      value_field: "id"
       multiple: true
-      search_fields: ["name"]
-- label: Tags
-  name: post_tags
-  folder: src/site/tag
+      search_fields: ["name", "id", "description"]
+- label: Categories
+  name: post_categories
+  folder: src/site/category
   create: true
   editor:
     preview: false
-  preview_path: tag/en/{{slug}}
+  preview_path: category/en/{{slug}}
   identifier_field: name
   i18n: true
   # i18n:
   #   structure: single_file
   fields:
-    - { label: Name, name: name, widget: string, i18n: true }
+    - { label: "Id (set at creation and never change afterwards)", name: id, widget: string }
+    - { label: "Name", name: name, widget: string, i18n: true }
     - { label: Description, name: description, widget: string, i18n: true }
 
 # eof
