@@ -28,12 +28,12 @@ i18n:
   default_locale: en
 
 collections:
-- label: ‹Text fragments›
+- label: ‹Dictionary i18n›
   name: fragments
   i18n:
     structure: single_file
   files:
-    - label: Global i18n texts
+    - label: Global text fragments
       name: i18n-globals
       file: src/site/_data/i18n/globals.json
       i18n: true
