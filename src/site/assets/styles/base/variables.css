@@ -2,7 +2,7 @@
   --font-family-display: 'Roboto', sans-serif;
   --font-family: 'Assistant', sans-serif;
 
-  --font-size-base: 16px;
+  --font-size-base: 16px;           /* 30/30 */
   --font-weight-base: 400;
 
   --line-height-half: 0.75rem;
@@ -25,7 +25,7 @@
 
   --text-xs-font-size: 0.6rem;      /* 18/30 */
   --text-sm-font-size: 0.8rem;      /* 24/30 */
-  --text-base-font-size: 1rem;
+  --text-base-font-size: 1rem;      /* 30/30 */
   --text-lg-font-size: 1.33333rem;  /* 40/30 */
   --text-xl-font-size: 1.5rem;
 

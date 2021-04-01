@@ -8,20 +8,26 @@
       <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
   </head>
-  <body>
+  <body class="container">
     <header>
-      <a href="/{{locale}}">{{i18n.globals[locale].home}}</a> |
-      <a href="/{{locale}}/blog/">{{i18n.globals[locale].blog}}</a> |
-      {% for translation in translations %}
-        {% if not loop.first %}/{% endif %}
-        <a href="{{translation.page.url}}">{{translation.locale}}</a>
-      {% endfor %}
+      <p>
+        <a href="/{{locale}}">{{i18n.globals[locale].home}}</a> |
+        <a href="/{{locale}}/blog/">{{i18n.globals[locale].blog}}</a> |
+        {% for translation in translations %}
+          {% if not loop.first %}/{% endif %}
+          <a href="{{translation.page.url}}">{{translation.locale}}</a>
+        {% endfor %}
+      </p>
     </header>
-    {{ content | safe }}
+    <main>
+      {{ content | safe }}
+    </main>
     <footer>
-      {{i18n.globals[locale].contact}} |
-      <a href="/{{locale}}/about/">{{i18n.globals[locale].about}}</a> |
-      <a href="/{{locale}}/impressum/">{{i18n.globals[locale].impressum}}</a>
+      <p>
+        {{i18n.globals[locale].contact}} |
+        <a href="/{{locale}}/about/">{{i18n.globals[locale].about}}</a> |
+        <a href="/{{locale}}/impressum/">{{i18n.globals[locale].impressum}}</a>
+      </p>
     </footer>
   </body>
 </html>
