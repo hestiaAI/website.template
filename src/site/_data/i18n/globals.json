@@ -3,12 +3,14 @@
     "contact": "contact us",
     "about": "about us",
     "home": "home",
-    "blog": "blog"
+    "blog": "blog",
+    "impressum": "impressum"
   },
   "fr": {
     "contact": "contactez-nous",
     "about": "à propos de nous",
     "home": "chez nous",
-    "blog": "le blog"
+    "blog": "le blog",
+    "impressum": "impressum"
   }
 }

@@ -42,6 +42,7 @@ collections:
         - { label: About, name: about, widget: string, i18n: true }
         - { label: Home, name: home, widget: string, i18n: true }
         - { label: Blog, name: blog, widget: string, i18n: true }
+        - { label: Impressum, name: impressum, widget: string, i18n: true }
     - label: Signup text fragments
       name: i18n-signup
       file: src/site/_data/i18n/signup.json
@@ -157,6 +158,20 @@ collections:
       fields:
         - {label: "Date", name: name, widget: date}
         - {label: Description, name: description, widget: text }
+
+- label: Impressum
+  name: impressum
+  folder: src/site/impressum
+  extension: md
+  editor:
+    preview: false
+  create: false
+  i18n: true
+  preview_path: /en/impressum/
+  fields:
+    - { label: "Browser tab title", name: title, widget: string, i18n: true }
+    - { label: Hero , name: hero, widget: markdown, i18n: true }
+    - { label: Body , name: body, widget: markdown, i18n: true }
 
 - label: Blog main page
   name: blog
