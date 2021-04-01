@@ -1,0 +1,23 @@
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0; margin-bottom: 0.5rem;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+header, footer {
+  font-family: var(--font-family-display);
+  font-size: 86%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
