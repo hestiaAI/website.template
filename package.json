@@ -44,5 +44,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hestiaAI/website.labs.git"
+  },
+  "dependencies": {
+    "luxon": "^1.26.0"
   }
 }

@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div>{% markdown hero %}</div>
+<h1>{{story_title}}</h1>
+<div>{% markdown story %}</div>
+
+<h1>{{people_title}}</h1>
+{% for person in people %}
+<div>
+  <h2>{{person.name}}</h2>
+  <p>{{person.description}}</p>
+</div>
+{% endfor %}
+
+<h1>{{contact_title}}</h1>
+<div>
+  <div>
+    {{contact_project}}
+  </div>
+  <div>
+    <a href="#" onclick="alert('not implemented')">{{contact_project_action}}</a>
+  </div>
+</div>
+<div>
+  <div>
+    {{contact_sharer}}
+  </div>
+  <div>
+    <a href="#" onclick="alert('not implemented')">{{contact_sharer_action}}</a>
+  </div>
+</div>
+<div>
+  <div>
+    {{contact_media}}
+  </div>
+  <div>
+    <a href="#" onclick="alert('not implemented')">{{contact_media_action}}</a>
+  </div>
+</div>
+<div>
+  <div>{{contact_other}}</div>
+</div>
+
+<h1>{{timeline_title}}</h1>
+
+{% for event in timeline_events %}
+<div>
+  <h2>{{event.name | readableDate}}</h2>
+  <p>{{event.description}}</p>
+</div>
+{% endfor %}

@@ -54,13 +54,37 @@ collections:
     structure: multiple_folders
   preview_path: /en/
   fields:
-    - { label: Title, name: title, widget: string, i18n: true }
-    - { label: "Subtitle 1", name: subtitle_1, widget: string, i18n: true }
-    - { label: "Paragraph 1.1", name: paragraph_1_1, widget: text, i18n: true }
-    - { label: "Paragraph 1.2", name: paragraph_1_2, widget: text, i18n: true }
-    - { label: "Subtitle 2", name: subtitle_2, widget: string, i18n: true }
-    - { label: "Paragraph 2.1", name: paragraph_2_1, widget: text, i18n: true }
-    - { label: "Paragraph 2.2", name: paragraph_2_2, widget: text, i18n: true }
+    - { label: "Browser tab title", name: title, widget: string, i18n: true }
+    - { label: Hero , name: hero, widget: markdown, i18n: true }
+    - { label: "Paragraph 1 title", name: paragraph1_title, widget: string, i18n: true }
+    - { label: "Problem title", name: problem_title, widget: string, i18n: true }
+    - { label: "Problem description", name: problem_description, widget: markdown, i18n: true }
+    - { label: "Strategy title", name: strategy_title, widget: string, i18n: true }
+    - { label: "Strategy description", name: strategy_description, widget: markdown, i18n: true }
+    - { label: "Strategy link text", name: strategy_link_text, widget: string, i18n: true }
+    - { label: "Join title", name: join_title, widget: string, i18n: true }
+    - { label: "Join description", name: join_description, widget: markdown, i18n: true }
+    - { label: "Join link text", name: join_link_text, widget: string, i18n: true }
+    - { label: "Partners title", name: partners_title, widget: string, i18n: true }
+    - { label: "Partners description", name: partners_description, widget: markdown, i18n: true }
+    - { label: "Partners link text", name: partners_link_text, widget: string, i18n: true }
+    - { label: "Projects title", name: projects_title, widget: string, i18n: true }
+    - label: "Projects"
+      name: "projects"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.name}}'
+      fields:
+        - {label: Name, name: name, widget: string}
+        - {label: Description, name: description, widget: text }
+        - {label: Image, name: image, widget: image}
+# projects...
+# relations (news & events):
+# - post1: post
+# - post2: post
+# - post3: post
+#
+
 - label: About us
   name: about
   folder: src/site/about
@@ -71,8 +95,19 @@ collections:
   i18n: true
   preview_path: /en/about/
   fields:
-    - { label: Title, name: title, widget: string, i18n: true }
-    - { label: "Body", name: "body", widget: "markdown", i18n: true }
+    - { label: "Browser tab title", name: title, widget: string, i18n: true }
+    - { label: Hero , name: hero, widget: markdown, i18n: true }
+    - { label: "Story title", name: story_title, widget: string, i18n: true }
+    - { label: "Story", name: story, widget: string, i18n: true }
+    - { label: "Contact title", name: contact_title, widget: string, i18n: true }
+    - { label: "Contact project", name: contact_project, widget: string, i18n: true }
+    - { label: "Contact project action", name: contact_project_action, widget: string, i18n: true }
+    - { label: "Contact sharer", name: contact_sharer, widget: string, i18n: true }
+    - { label: "Contact sharer action", name: contact_sharer_action, widget: string, i18n: true }
+    - { label: "Contact media", name: contact_media, widget: string, i18n: true }
+    - { label: "Contact media action", name: contact_media_action, widget: string, i18n: true }
+    - { label: "Contact other", name: contact_other, widget: string, i18n: true }
+    - { label: "People title", name: people_title, widget: string, i18n: true }
     - label: "People"
       name: "people"
       widget: "list"
@@ -80,7 +115,17 @@ collections:
       summary: '{{fields.name}}'
       fields:
         - {label: Name, name: name, widget: string}
-        - {label: Description, name: description, widget: string }
+        - {label: Description, name: description, widget: text }
+    - { label: "Timeline title", name: timeline_title, widget: string, i18n: true }
+    - label: "Timeline events"
+      name: "timeline_events"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.date}}'
+      fields:
+        - {label: "Date", name: name, widget: date}
+        - {label: Description, name: description, widget: text }
+
 - label: Blog main page
   name: blog
   # Configure i18n for this collection.

@@ -4,6 +4,8 @@
 
 const { buildLocalesCollection} = require('./conf/11ty/locales');
 const { creditedImage } = require('./conf/11ty/creditedImage')
+const { markdown } = require('./conf/11ty/markdown')
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   // Copy to `dir.output` those files required by the website,
@@ -16,7 +18,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("locales", buildLocalesCollection);
 
+  eleventyConfig.addFilter("readableDate", (dateObj) =>
+    DateTime.fromJSDate(dateObj, { zone: "utc" })
+            .toFormat("dd LLL yyyy")
+  );
   eleventyConfig.addNunjucksShortcode("creditedImage", creditedImage);
+  eleventyConfig.addNunjucksShortcode("markdown", markdown);
 
   // Let Eleventy transform HTML files as Nunjucks
   // So that we can use .html instead of .njk

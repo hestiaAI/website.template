@@ -1,21 +1,69 @@
 ---
+join_title: Rejoignez-..
+partners_title: Par..
 path: home
-subtitle_1: Vos données sont importantes
+strategy_link_text: En savoir plus
+join_description: par là
+partners_description: "[Engagement Migros](https://www.engagement-migros.ch/fr/kuhne-vorhaben-fr)"
 layout: default
-subtitle_2: Nous soutenons les collectifs de données
 permalink: fr/index.html
 title: HestiaLabs
-paragraph_1_1: Elles révélent plein de choses
-paragraph_1_2: Vous devriez nous les donner
-paragraph_2_1: De plein de manières
-paragraph_2_2: C'est super
+hero: |-
+  Vous êtes au seuil d'un monde digital où
+
+  **les utilisateurs reprennent le contrôle de leurs données**
+
+  Prêt?
+paragraph1_title: Nous créons...
+problem_title: Le problème ...
+problem_description: oulala
+strategy_title: Notre str...
+strategy_description: par ici
+join_link_text: Proposer un projet
+partners_link_text: En savoir plus
+projects_title: Projets en cours
+projects:
+  - name: Dating privacy
+    description: oui
+    image: https://placekitten.com/300/179
+  - name: Chauffeurs Uber
+    description: eh oui
+    image: https://placekitten.com/300/178
+  - name: Journalisme de données (?)
+    description: tout à fait
+    image: https://placekitten.com/300/185
 ---
-<h1>{{title}}</h1>
-<h2>{{subtitle_1}}</h2>
-<p>{{paragraph_1_1}}</p>
-<p style="color:red">{{paragraph_1_2}}</p>
+{#
+If we're sure the html will the same as in the english version
+we can avoid the code duplication by moving it to a common template.
+#}
+<div>{% markdown hero %}<div>
+<h1>{{paragraph1_title}}</h1>
+<h2>{{problem_title}}</h2>
+<div>
+  {% markdown problem_description %}
+</div>
+<h2>{{strategy_title}}</h2>
+<div>
+  {% markdown strategy_description %}
+  <a href="/{{locale}}/strategy">{{strategy_link_text}}</a>
+</div>
+<h2>{{join_title}}</h2>
+<div>
+  {% markdown join_description %}
+  <a href="#" onclick="alert('should this open an email to hestia.ai?')" >{{join_link_text}}</a>
+</div>
+<h2>{{partners_title}}</h2>
+<div>
+  {% markdown partners_description %}
+  <a href="/{{locale}}/partners">{{partners_link_text}}</a>
+</div>
 
-
-<h2>{{subtitle_2}}</h2>
-<p>{{paragraph_2_1}}</p>
-<p>{{paragraph_2_2}}</p>
+<h1>{{projects_title}}</h1>
+{% for project in projects %}
+<div>
+  <img src="{{project.image}}">
+  <h2>{{project.name}}</h2>
+  <p>{{project.description}}</p>
+</div>
+{% endfor %}

@@ -1,22 +1,95 @@
 ---
+join_title: Join us
+partners_title: Partners we can trust
 path: home
+strategy_link_text: Learn more
+join_description: >-
+  You have a meaningful project in mind that requires data? Happy to help! 
+
+  HestiaLabs supports you in creating the data collective and the community of people willing to share their data for your project (the data sharers). **For free!**
+partners_description: We are very grateful to those who believe in us since the
+  beginning, especially the [Migros Pioneer
+  Fund](https://www.engagement-migros.ch/en/kuhne-vorhaben). They allow us to
+  carry out our **public interest mission** without the constant pressure of
+  profitability.
 subtitle_1: Your data is important
 layout: default
 subtitle_2: We support data collectives
 permalink: en/index.html
 title: HestiaLabs
-paragraph_1_1: It reveals a lot of things
-paragraph_1_2: You should give it to us
-paragraph_2_1: In many ways
-paragraph_2_2: It's great. SUPER AWESOME
+hero: |-
+  You're just about to enter a digital world where
+
+  **users take back control over their data**
+
+  Ready?
+paragraph1_title: We create a new relationship to personal data
+problem_title: The problem we solve
+problem_description: >-
+  Artificial intelligence is changing the world. This revolution must benefit
+  the many and not the few. For this to happen, individuals and organisations
+  must be able to understand the algorithms behind the digital services they
+  provide data to and what they get in return. 
+
+
+
+  This paradigm shift will only be possible by building sustainable and trustable bridges between the people willing to share their data for a specific purpose and those with the know-how to achieve these goals. This led us to the creation of what we call “data collectives”.
+strategy_title: Our strategy
+strategy_description: >-
+  **Small shifts in personal habits lead to major societal changes**. People
+  need concrete examples to understand the power of the data they generate. To
+  prime the pump, HestiaLabs helps those who are already ready to reinvent our
+  data future. 
+
+  We support **community projects around personal data collectives**. We put our **skills** (technical, legal, advocacy) and **networks** at their disposal.
+join_link_text: Submit a project
+partners_link_text: Learn more
+projects_title: Running projects
+projects:
+  - name: Dating privacy
+    description: " Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat. "
+    image: https://placekitten.com/300/180
+  - name: Uber drivers
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    image: https://placekitten.com/300/181
+  - name: Data journalism
+    image: https://placekitten.com/300/182
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
-<h1>{{key}}</h1>
-<h1>{{title}}</h1>
-<h2>{{subtitle_1}}</h2>
-<p>{{paragraph_1_1}}</p>
-<p>{{paragraph_1_2}}</p>
+{#
+If we're sure the html will stay the same as in the french version
+we can avoid the code duplication by moving it to a common template.
+#}
+<div>{% markdown hero %}<div>
+<h1>{{paragraph1_title}}</h1>
+<h2>{{problem_title}}</h2>
+<div>
+  {% markdown problem_description %}
+</div>
+<h2>{{strategy_title}}</h2>
+<div>
+  {% markdown strategy_description %}
+  <a href="/{{locale}}/strategy">{{strategy_link_text}}</a>
+</div>
+<h2>{{join_title}}</h2>
+<div>
+  {% markdown join_description %}
+  <a href="#" onclick="alert('should this open an email to hestia.ai?')" >{{join_link_text}}</a>
+</div>
+<h2>{{partners_title}}</h2>
+<div>
+  {% markdown partners_description %}
+  <a href="/{{locale}}/partners">{{partners_link_text}}</a>
+</div>
 
-
-<h2>{{subtitle_2}}</h2>
-<p>{{paragraph_2_1}}</p>
-<p>{{paragraph_2_2}}</p>
+<h1>{{projects_title}}</h1>
+{% for project in projects %}
+<div>
+  <img src="{{project.image}}">
+  <h2>{{project.name}}</h2>
+  <p>{{project.description}}</p>
+</div>
+{% endfor %}
