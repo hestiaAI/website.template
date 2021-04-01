@@ -1,6 +1,7 @@
 @import './base/variables.css';
 @import './base/fonts.css';
 @import './base/typography.css';
+@import './vendor/normalize.css';
 
 body {
   background-color: #fefefe;
