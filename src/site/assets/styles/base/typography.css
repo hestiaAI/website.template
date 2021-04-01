@@ -1,3 +1,7 @@
+html {
+  font-size: var( --font-size-base);
+}
+
 body {
   font-family: var(--font-family);
   font-weight: 400;
@@ -17,7 +21,6 @@ h1 {
 
 header, footer {
   font-family: var(--font-family-display);
-  font-size: 86%;
   font-weight: 400;
   text-transform: uppercase;
 }
