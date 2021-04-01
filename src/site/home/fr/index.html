@@ -22,16 +22,13 @@ strategy_description: par ici
 join_link_text: Proposer un projet
 partners_link_text: En savoir plus
 projects_title: Projets en cours
-projects:
-  - name: Dating privacy
-    description: oui
-    image: https://placekitten.com/300/179
-  - name: Chauffeurs Uber
-    description: eh oui
-    image: https://placekitten.com/300/178
-  - name: Journalisme de données (?)
-    description: tout à fait
-    image: https://placekitten.com/300/185
+featured_projects:
+  - dating privacy
+  - uber drivers
+  - mobility
+news_title: Nouvelles et événements
+news:
+  - " a second post"
 ---
 {#
 If we're sure the html will the same as in the english version
@@ -59,11 +56,24 @@ we can avoid the code duplication by moving it to a common template.
   <a href="/{{locale}}/partners">{{partners_link_text}}</a>
 </div>
 
+
 <h1>{{projects_title}}</h1>
-{% for project in projects %}
-<div>
-  <img src="{{project.image}}">
-  <h2>{{project.name}}</h2>
-  <p>{{project.description}}</p>
-</div>
+{% for project in collections.project %}
+  {% if project.data.locale == locale %}
+  <div>
+    <img src="{{project.data.image}}">
+    <h2>{{project.data.name}}</h2>
+    <p>{{project.data.description}}</p>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<h1>{{news_title}}</h1>
+{% for edito in collections.editorial %}
+    {% if edito.data.locale == locale
+    and edito.data.id in news %}
+    <div>
+        <li><a href="{{edito.url}}">{{edito.data.title}}</a></li>
+    </div>
+    {% endif %}
 {% endfor %}

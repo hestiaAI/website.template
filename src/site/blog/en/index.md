@@ -1,10 +1,11 @@
 ---
-layout: blog
-title: Our Blog posts
 editorials_title: Latest posts
-categories_title: categories
 authors_title: authors
-permalink: /en/blog/index.html
+layout: blog
 interviews_title: Special guests
+permalink: /en/blog/index.html
+title: Data stories
+lead: Our wonderfuls posts
 infographics_title: Infographics
+categories_title: categories
 ---

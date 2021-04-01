@@ -7,12 +7,13 @@ const LOCALE_REGEX = new RegExp(`\/(${LOCALES.join('|')})\/`);
 const DEFAULT_LOCALE = LOCALES[0];
 
 const determineLocale = (page) => {
-    const matches = LOCALE_REGEX.exec(page.inputPath);
-    return matches && matches[1] ? matches[1] : DEFAULT_LOCALE;
+  const matches = LOCALE_REGEX.exec(page.inputPath);
+  const locale = matches && matches[1] ? matches[1] : DEFAULT_LOCALE;
+  return locale;
 };
 
 const determineTranslationKey = (page) => {
-    if(!page.url) { return page.url; }
+    if(!page.url) { return page.inputPath; }
     const locale = determineLocale(page);
     return page.url.replace(locale+'/', '');
 };

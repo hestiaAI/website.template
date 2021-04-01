@@ -45,19 +45,14 @@ strategy_description: >-
 join_link_text: Submit a project
 partners_link_text: Learn more
 projects_title: Running projects
-projects:
-  - name: Dating privacy
-    description: " Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat. "
-    image: https://placekitten.com/300/180
-  - name: Uber drivers
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    image: https://placekitten.com/300/181
-  - name: Data journalism
-    image: https://placekitten.com/300/182
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+featured_projects:
+  - dating privacy
+  - disinformation
+  - uber drivers
+news_title: News and events
+news:
+  - a first blog post
+  - " a second post"
 ---
 {#
 If we're sure the html will stay the same as in the french version
@@ -86,10 +81,23 @@ we can avoid the code duplication by moving it to a common template.
 </div>
 
 <h1>{{projects_title}}</h1>
-{% for project in projects %}
-<div>
-  <img src="{{project.image}}">
-  <h2>{{project.name}}</h2>
-  <p>{{project.description}}</p>
-</div>
+{% for project in collections.project %}
+{% if project.data.locale == locale
+   and project.data.id in featured_projects%}
+  <div>
+    <img src="{{project.data.image}}">
+    <h2>{{project.data.name}}</h2>
+    <p>{{project.data.description}}</p>
+  </div>
+  {% endif %}
+{% endfor %}
+
+<h1>{{news_title}}</h1>
+{% for edito in collections.editorial %}
+    {% if edito.data.locale == locale
+    and edito.data.id in news %}
+    <div>
+        <li><a href="{{edito.url}}">{{edito.data.title}}</a></li>
+    </div>
+    {% endif %}
 {% endfor %}

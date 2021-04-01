@@ -17,8 +17,7 @@ const findPostAttributes = (data, attributeName) => {
     // Concatenate tags of all translations of this post.
     // in case netlifyCMS only stores the attribute on the default translation.
     // At least some versions of the cms do this.
-    const locales =
-          data.collections.locales[data.page.inputPath];
+    const locales = getLocales(data);
     const own_post_attr = data[attributeName] || [];
     if(!locales){return own_post_attr;}
     const attrsOfTranslated =
@@ -29,6 +28,15 @@ const findPostAttributes = (data, attributeName) => {
         (concats, tags) => concats.concat(tags), own_post_attr);
     const tagSet = new Set(attrsOfAllTranslations);
     return [...tagSet];
+};
+
+const findId = (data) => {
+  if(data.id){ return data.id; }
+  const defaultTranslation = findDefaultTranslation(data);
+  if(defaultTranslation){
+    return defaultTranslation.page.data.id;
+  }
+  return data.id;
 };
 
 // https://www.11ty.dev/docs/data-computed/
@@ -43,4 +51,5 @@ module.exports = {
   // post_categories: findPostCategories,
   post_categories: data => findPostAttributes(data, 'post_categories'),
   post_authors: data => findPostAttributes(data, 'post_authors'),
+  id: findId
 }

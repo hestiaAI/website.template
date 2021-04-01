@@ -1,0 +1,14 @@
+{
+  "en": {
+    "title": "Sign up to our newsletter",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Email address"
+  },
+  "fr": {
+    "title": "Recevez encore plus d'emails",
+    "email": "Adresse email",
+    "last_name": "Nom de famille",
+    "first_name": "Prénom"
+  }
+}

@@ -1,10 +1,11 @@
 ---
-layout: blog
-title: Nos fabuleux posts de blog
 editorials_title: Derniers posts
-categories_title: categories
 authors_title: auteurs
-permalink: /fr/blog/index.html
+layout: blog
 interviews_title: Invités spéciaux
+permalink: /fr/blog/index.html
+title: Histoires de données
+lead: Nos très intéressants articles
 infographics_title: Infographiques
+categories_title: categories
 ---

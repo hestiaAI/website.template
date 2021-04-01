@@ -1,5 +1,8 @@
 ---
+id: a first blog post
 title: A first blog post
+image: https://placekitten.com/200/300
+lead: An attention-grabbing lead
 post_categories:
   - euphoric
   - chill
