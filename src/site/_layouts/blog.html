@@ -3,13 +3,36 @@ layout: default
 ---
 <h1>{{title}}</h1>
 <p>{{introduction}}</p>
+{% if collections.editorial %}
+<h2>{{editorials_title}}</h2>
 <ul>
-    {% for post in collections.post %}
+    {% for post in collections.editorial %}
         {% if post.data.locale == locale %}
         <li><a href="{{post.url}}">{{post.data.title}}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
+{% endif %}
+{% if collections.interview %}
+<h2>{{interviews_title}}</h2>
+<ul>
+    {% for post in collections.interview %}
+        {% if post.data.locale == locale %}
+        <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
+{% if collections.infographic %}
+<h2>{{infographics_title}}</h2>
+<ul>
+    {% for post in collections.infographic %}
+        {% if post.data.locale == locale %}
+        <li><a href="{{post.url}}">{{post.data.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
 <h2>{{categories_title}}</h2>
 <ul>
     {% for category in collections.post_category %}

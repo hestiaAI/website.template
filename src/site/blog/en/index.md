@@ -1,8 +1,10 @@
 ---
 layout: blog
 title: Our Blog posts
-introduction: "This is what you can read about here:"
+editorials_title: Latest posts
 categories_title: categories
 authors_title: authors
 permalink: /en/blog/index.html
+interviews_title: Special guests
+infographics_title: Infographics
 ---
