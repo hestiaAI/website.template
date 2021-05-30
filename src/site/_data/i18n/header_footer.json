@@ -1,0 +1,22 @@
+{
+  "en": {
+    "home": "home",
+    "blog": "blog",
+    "mission": "mission",
+    "partners": "partners",
+    "media": "media",
+    "legal": "legal",
+    "community": "community",
+    "contact": "contact us"
+  },
+  "fr": {
+    "home": "accueil",
+    "blog": "blog",
+    "mission": "mission",
+    "partners": "partenaires",
+    "media": "médias",
+    "legal": "mentions légales",
+    "community": "communauté",
+    "contact": "contactez-nous"
+  }
+}

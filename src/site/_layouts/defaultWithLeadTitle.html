@@ -1,0 +1,22 @@
+---
+locale: en
+---
+<!DOCTYPE html>
+<html lang="{{locale}}">
+  {% include "head.njk" %}
+  <body>
+    {% include "header.njk" %}
+    <main>
+      <section id="hero" class="normhero with-no-space">
+        <div class="responsive-wrapper">
+          <h1>{% inlineMarkdownP %}{% renderLiquid "title", pageData %}{% endinlineMarkdownP %}</h1>
+          {% markdown lead %}
+        </div>
+      </section>
+      <div class="responsive-wrapper">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% include "footer.njk" %}
+  </body>
+</html>

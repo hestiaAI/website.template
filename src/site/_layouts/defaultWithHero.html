@@ -1,0 +1,25 @@
+---
+title: HestiaLabs
+locale: en
+---
+<!DOCTYPE html>
+<html lang="{{locale}}">
+  {% include "head.njk" %}
+  <body>
+    {% include "header.njk" %}
+    <main>
+      <section id="hero" class="masthero{% if inverse %} inverse{% endif %} with-no-space"
+        role="img" aria-label="(Hero background image)"
+        style="{{lead_image | backgroundImage}}">
+        <div class="responsive-wrapper">
+          {% markdown lead %}
+        </div>
+        <figcaption>{% inlineMarkdown lead_image_caption %}</figcaption>
+      </section>
+      <div class="responsive-wrapper">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% include "footer.njk" %}
+  </body>
+</html>

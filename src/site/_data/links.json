@@ -1,8 +1,8 @@
 {
-  "canonical_base_url": "https://dating-privacy.hestialabs.org",
+  "canonical_base_url": "https://‹SITE-URL›.hestialabs.org",
   "twitter_label": "Twitter",
-  "twitter_account": "@datingprivacy",
-  "twitter_url": "https://twitter.com/datingprivacy",
+  "twitter_account": "@‹SITE-NAME›",
+  "twitter_url": "https://twitter.com/‹SITE-NAME›",
   "forum_label": "Forum",
-  "forum_url": "https://forum.personaldata.io/"
+  "forum_url": "https://forum.‹SITE-URL›.hestialabs.org/"
 }
