@@ -1,0 +1,12 @@
+/* Form design
+   https://css-tricks.com/form-design/ */
+
+input[list],
+input[type=text],
+input[type=email] {
+  padding: 0 0.25rem;
+}
+
+textarea {
+  padding: 0.5rem;
+}

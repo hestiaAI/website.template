@@ -1,0 +1,75 @@
+
+/* Base styling of all links (header, main, footer) */
+
+a, a:link {
+  color: var(--link-normal-text-color);
+  text-decoration: var(--link-text-deco);
+  text-decoration-thickness: var(--link-text-decoration-thickness);
+  text-underline-position: var(--link-text-underline-pos);
+  text-decoration-skip: var(--link-text-deco-skip);
+}
+
+/* Styling of links appearing within main content */
+
+main a:visited {
+  color: var(--link-visited-text-color);
+}
+
+main a:hover {
+  color: var(--link-hover-text-color);
+  background-color: var(--link-hover-text-bg);
+}
+
+main a:active {
+  color: var(--link-active-text-color);
+  background-color: var(--link-active-text-bg);
+}
+
+main a:focus {
+  outline: var(--link-focus-outline);
+}
+
+/* Style all links that include mailto: at the beginning */
+main a[href^="mailto:"]::after {
+  content: " (e-mail)";
+}
+
+/* */
+
+a[target=_blank]::after {
+  background: url(/assets/img/icon-external-link.svg) 50%/contain no-repeat;
+  content: "";
+  margin: 0 .15rem;
+  padding-right: .65rem;
+}
+
+/* Style all links that include .pdf|.csv|.doc[x]|.xls[x]|.zip at the end */
+main a[href$=".pdf"]::after {
+  content: " (PDF)";
+}
+
+main a[href$=".csv"]::after {
+  content: " (CSV)";
+}
+
+main a[href$=".zip"]::after {
+  content: " (ZIP)";
+}
+
+main a[href$=".doc"]::after,
+main a[href$=".docx"]::after {
+  content: " (Word)";
+}
+
+main a[href$=".xls"]::after,
+main a[href$=".xlsx"]::after {
+  content: " (Excel)";
+}
+
+/* Styling links for print */
+@media print {
+  /* For links in content, visually display the link */
+  main a::after {
+    content: " (" attr(href) ")";
+  }
+}

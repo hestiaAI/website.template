@@ -1,0 +1,262 @@
+:root {
+  /* === REFERENCE LAYER === === === === === === === === === === === === */
+
+  /* NOTE: The following variable definitions provide our «design
+     system» foundation, with available metrics, colors and effects.
+
+     The variable definitions of the REFERENCE LAYER should and will
+     rarely be used in CSS rules directly; rather, they should and
+     will be used by other variable definitions of the FUNCTIONAL
+     LAYER (which is defined hereafter).
+
+     Moreover, the variable definitions of this REFERENCE LAYER
+     should not be overriden in CSS- or Web Components stylesheets.
+     Only the variables of the FUNCTIONAL LAYER can and should be
+     overriden — and the variables of this REFERENCE LAYER should
+     be used whenever applicable for those overrides, instead of
+     primitive values. Hope this makes sense — and the reference
+     layer is possibly missing definitions; complete it as needed. */
+
+  /* DEFAULT THEME COLORS */
+
+  /* NOTE: for the definition of the LightenDarkenColor() function used hereafter,
+     see see https://css-tricks.com/snippets/javascript/lighten-darken-color/ */
+
+  /* Following variables can and should be overridden in ../main.css */
+  --theme-color-primary:           #04650f;
+  --theme-color-secondary:         #e4ffef;           /* LightenDarkenColor(var(--theme-color-primary),224) */
+
+  /* FONT FAMILIES */
+
+  --font-family-display: 'Roboto', sans-serif;
+  --font-family: 'Assistant', sans-serif;
+
+  /* REFERENCE VALUES */
+
+  --font-size-base: 20px;           /* 30/30 */
+
+  /* From here on, all metrics should be expressed in REM units,
+     relative to the previous base font size definition, which
+     has to be applied on the <html> element (done in main.css).
+
+     Additionally, `rfs()` aka _responsive font-size_ could be
+     applied on font metrics, eventually on paddings/margins also,
+     to scale them, when the view width changes (not implemented yet) */
+
+  /* Line heights */
+
+  --line-height-quarter: 0.375rem;                    /* calc( --line-height-base / 4) */
+  --line-height-half: 0.75rem;                        /* calc( --line-height-base / 2) */
+  --line-height-base: 1.5rem;
+  --line-height-double: 3rem;                         /* calc( --line-height-base * 2) */
+
+  /* Text bodies */
+
+  --text-xs-font-size: 0.6rem;                        /* 18/30 */
+  --text-sm-font-size: 0.8rem;                        /* 24/30 */
+  --text-base-font-size: 1rem;                        /* 30/30 (meant to be used for body font-size, while allowing for `rfs()`) */
+  --text-base-font-weight: 400;
+  --text-bold-font-weight: 700;
+  --text-lg-font-size: 1.33333rem;                    /* 40/30 */
+  --text-xl-font-size: 1.5rem;                        /* @assert( --text-xl-font-size <= --line-height-base) */
+
+  /* Layout breakpoints */
+
+  --breakpoint-text-line-wraps-at: 48rem;             /* Maximum line width (approx. 17-18 words at 1rem font size) */
+
+  /* Following widths are meant to be used for media queries,
+     although `env(--breakpoint-width-xx)` can't be used yet
+     in ‹media feature› specifications.
+
+     Instead, would you want to update those widths, perform
+     a search of the variable names `--breakpoint-width-xx`
+     in the CSS source files — those names have been placed
+     as usage markers in comments near the media queries,
+     wherever one of these values were used — and manually
+     update the corresponding literal values. */
+
+  --breakpoint-width-xs: 0px;
+  --breakpoint-width-sm: 544px;                       /* Small screen / phone */
+  --breakpoint-width-md: 768px;                       /* Medium screen / tablet */
+  --breakpoint-width-lg: 1012px;                      /* Large screen / desktop (980 + (12 * 2)) <= container + gutters */
+  --breakpoint-width-xl: 1280px;                      /* Extra large screen / wide desktop */
+
+  /* COLOR PALETTE / FUNCTIONAL COLORS */
+
+  /* Shadows palette */
+  --shadow-small:                  0 1px 0 rgba(27,31,35,0.04);
+  --shadow-medium:                 0 3px 6px rgba(149,157,165,0.15);
+  --shadow-medium-dark:            0 3px 6px rgba(27,31,35,0.8);
+  --shadow-large:                  0 8px 24px rgba(149,157,165,0.2);
+  --shadow-highlight:              inset 0 1px 0 rgba(255,255,255,0.25);
+  --shadow-text-on-image:          1px 2px 4px rgba(255,255,255,0.8);
+  --shadow-text-on-image-inverse:  1px 2px 4px rgba(27,31,35,0.8);
+
+  /* Backgrounds */
+  --color-bg-canvas:               #ffffff;
+  --color-bg-primary:              var(--theme-color-secondary);  /* NOTE: although names seems apparently contradictory, it is no */
+  --color-bg-secondary:            var(--theme-color-primary);    /* typing error (however a conceptual one, which we'll fix later) */
+  --color-bg-tertiary:             #f6f8fa;
+  --color-bg-info:                 #f1f8ff;
+  --color-bg-info-inverse:         #0366d6;
+  --color-bg-danger:               #ffeef0;
+  --color-bg-danger-inverse:       #d73a49;
+  --color-bg-success:              #dcffe4;
+  --color-bg-success-inverse:      #28a745;
+  --color-bg-warning:              #fff5b1;
+  --color-bg-warning-inverse:      #ffd33d;
+
+  /* Text colors */
+  --color-text-primary:            #24292e;
+  --color-text-secondary:          #4f4e50;
+  --color-text-tertiary:           #6a737d;
+  --color-text-placeholder:        #6a737d;
+  --color-text-disabled:           #959da5;
+  --color-text-inverse:            var(--color-bg-canvas);
+  --color-text-link:               var(--color-bg-secondary); /* was orange (#f49600) at first */
+  --color-text-danger:             #cb2431;
+  --color-text-success:            #22863a;
+  --color-text-warning:            #b08800;
+  --color-text-white:              #ffffff;
+
+  /* Button colors */
+  --color-btn-text:                 var(--color-text-link);
+  --color-btn-bg:                   var(--color-text-white);
+  --color-btn-border:               calc(var(--text-base-font-size) / 6) solid var(--color-text-link);
+  --color-btn-shadow:               var(--shadow-small);
+  --color-btn-hover-text:           var(--color-text-white);
+  --color-btn-hover-bg:             var(--color-text-link);
+  --color-btn-hover-border:         var(--color-btn-border);
+  --color-btn-hover-shadow:         var(--shadow-medium);
+
+  --color-btn-primary-text:         var(--color-text-white);
+  --color-btn-primary-bg:           var(--color-text-link);
+  --color-btn-primary-border:       calc(var(--text-base-font-size) / 6) solid var(--color-text-link);
+  --color-btn-primary-shadow:       var(--color-btn-shadow);
+  --color-btn-primary-hover-text:   var(--color-text-link);
+  --color-btn-primary-hover-bg:     var(--color-text-white);
+  --color-btn-primary-hover-border: var(--color-btn-primary-border);
+  --color-btn-primary-hover-shadow: var(--color-btn-hover-shadow);
+
+  /* === FUNCTIONAL LAYER === === === === === === === === === === === === */
+
+  /* Actual applications of the REFERENCE LAYER fundamental variables,
+     which will and should be used by CSS rules of the CSS- and Web
+     Components stylesheets.
+
+     Conceptually, the variable definitions of the FUNCTIONAL LAYER
+     lay the foundation for «theming» (day/night/dimmed) our website;
+     but we have not come so far yet, as to implement various themes.
+
+     These FUNCTIONAL LAYER variable definitions can and are meant to
+     be overridden, from within CSS stylesheets of Web Components; or
+     by user-agent variable definitions. You can play changing them
+     in the Inspector of your browser, to effect the «theme» globally. */
+
+  /* ELEMENTS */
+
+  /* Globals */
+  --selection-bg-color:             var(--color-bg-secondary); /* same as --footer-bg-color and --body-bg-color */
+  --selection-text-color:           var(--color-text-inverse);
+  --scrollbar-track-bg:             var(--color-bg-tertiary);
+  --scrollbar-thumb-bg:             linear-gradient(243.12deg, var(--selection-bg-color) 0%, var(--color-bg-danger-inverse) 100%);
+  --scrollbar-width:                0.65rem;
+
+  /* Body */
+  --body-text-font-family:          var(--font-family);
+  --body-text-font-weight:          var(--text-base-font-weight);
+  --body-text-bold-font-weight:     var(--text-bold-font-weight);
+  --body-text-font-size:            var(--text-base-font-size);
+  --body-text-color:                var(--color-text-secondary);
+  --body-line-height:               var(--line-height-base);
+  --body-bg-color:                  var(--color-bg-secondary); /* same as --footer-bg-color and --selection-bg-color */
+  --main-bg-color:                  var(--color-bg-canvas);
+
+  /* Paragraphs and headings */
+  --headings-space-before:          var(--line-height-base);
+  --paragraph-space-between:        var(--line-height-half);
+  --paragraph-space-around:         var(--line-height-double); /* that is, more space than in between paragraphs, while preserving line-height interval */
+
+  /* Callout blocks */
+  --blocks-border:                  none;
+  --blocks-bg-color:                var(--color-bg-tertiary);
+  --blocks-alt-border:              .25rem solid var(--blocks-bg-color);
+  --blocks-alt-bg-color:            inherit;
+  --blocks-space-around:            var(--line-height-base);
+  --blocks-space-inside:            var(--line-height-double);
+
+  /* Tables */
+  --tables-space-around:            var(--line-height-base);
+  --tables-head-text-color:         var(--color-bg-secondary);
+  --tables-head-text-weight:        var(--body-text-bold-font-weight);
+  --tables-head-border:             2px solid var(--color-bg-secondary);
+  --tables-row-border:              1px solid var(--color-bg-secondary);
+  --tables-row-zebra-strip-bg:      var(--color-bg-tertiary);
+  --tables-cell-padding:            var(--paragraph-space-between) 0.5rem var(--paragraph-space-between) 0.5rem;
+
+  /* Links */
+  --link-text-deco:                 underline;
+  --link-text-decoration-thickness: 0.11rem;
+  --link-text-deco-skip:            edges;            /* fixes WEBSITE.LABS#57 (avoid dot after PDF suffix) */
+  --link-text-underline-pos:        under;            /* websites peculiar visual identity & also fixes WEBSITE.LABS#57 */
+  --link-normal-text-color:         var(--body-text-color);
+  --link-visited-text-color:        var(--body-text-color);
+  --link-current-text-color:        var(--link-hover-text-color);
+  --link-hover-text-color:          var(--color-text-link);
+  --link-hover-text-bg:             var(--color-bg-primary);
+  --link-active-text-color:         var(--link-hover-text-bg);
+  --link-active-text-bg:            var(--link-hover-text-color);
+  --link-focus-outline:             3px solid var(--color-text-link);
+
+  /* Lists */
+  --list-bullet-color:              var(--color-bg-secondary);
+  --list-space-sides:               var(--line-height-base);
+  --list-space-between:             var(--line-height-quarter);
+
+  /* Headings */
+
+  --h1-font-size:                   2.33333rem;       /* 70/30 */
+  --h2-font-size:                   2rem;             /* 60/30 */
+  --h3-font-size:                   1.33333rem;       /* 40/30 */
+  --h4-font-size:                   1rem;             /* 30/30 */
+  --h5-font-size:                   var(--h4-font-size);
+  --h6-font-size:                   var(--h4-font-size);
+
+  --h1-font-weight:                 700;              /* (Roboto) Bold */
+  --h2-font-weight:                 500;              /* (Roboto) Medium */
+  --h3-font-weight:                 300;              /* (Roboto) Light */
+  --h4-font-weight:                 var(--h3-font-weight);
+  --h5-font-weight:                 var(--h4-font-weight);
+  --h6-font-weight:                 var(--h4-font-weight);
+
+  --hx-text-color:                  var(--color-text-primary);
+  --hx-font-family:                 var(--font-family-display);
+
+  /* Header & footer */
+  --header-height-outer:            5rem;
+  --header-height-inner:            3rem;
+  --header-height-diff:             calc(var(--header-height-inner) - var(--header-height-outer)); /* negative value actually, on purpose */
+  --header-font-family:             var(--font-family-display);
+  --header-font-size:               var(--text-sm-font-size);
+  --header-font-weight:             var(--h2-font-weight);
+  --header-text-color:              var(--color-text-secondary);
+  --header-bg-color:                var(--color-bg-canvas);
+
+  --footer-height-outer:            8rem;
+  --footer-height-inner:            7rem;
+  --footer-font-family:             var(--font-family-display);
+  --footer-font-size:               var(--text-sm-font-size);
+  --footer-font-weight:             var(--h2-font-weight);
+  --footer-text-color:              var(--color-text-white);
+  --footer-bg-color:                var(--color-bg-secondary); /* same as --body-bg-color and --selection-bg-color */
+
+  /* Breakouts, cards, boxes */
+  --breakout-bg-color:              var(--color-bg-tertiary);
+  --breakout-text-color:            var(--color-text-tertiary);
+  --breakout-shadow:                var(--shadow-medium);
+  --breakout-img-shadow:            var(--shadow-medium-dark);
+  --breakout-padding:               1rem;
+  --breakout-border-width:          0.5rem;
+  --breakout-border-offset:         calc(var(--breakout-border-width) * -1.0);
+  --breakout-border:                var(--breakout-border-width) solid var(--color-bg-canvas);
+}

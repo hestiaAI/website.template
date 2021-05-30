@@ -1,0 +1,24 @@
+/* CSS Tricks › Finally, it Will Be Easy to Change the Color of List Bullets
+   https://css-tricks.com/finally-it-will-be-easy-to-change-the-color-of-list-bullets/ */
+
+/* Basics: spacing and marker color */
+
+ul {
+  padding-left: var(--list-space-sides);
+  padding-right: var(--list-space-sides);
+}
+
+li::marker {
+  color: var(--list-bullet-color);
+}
+
+li {
+  margin-bottom: var(--list-space-between);
+}
+
+
+/* In case you'd like to evolve the styling of lists,
+   I'd recommend this article:
+
+   CSS Tricks › List Style Recipes
+   https://css-tricks.com/list-style-recipes/ */

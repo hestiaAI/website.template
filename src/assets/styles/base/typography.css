@@ -1,0 +1,114 @@
+html {
+  font-size: var( --font-size-base);
+}
+
+/* @media (max-width: env(--breakpoint-width-md)) */
+@media (max-width: 768px) {
+  html {
+    font-size: calc( var( --font-size-base) * 0.7);
+  }
+}
+
+body {
+  font-family: var(--body-text-font-family);
+  font-weight: var(--body-text-font-weight);
+  font-size:   var(--body-text-font-size);
+  line-height: var(--body-line-height);
+  color: var(--body-text-color);
+  font-kerning: normal;
+}
+
+strong, b {
+  font-weight: var(--body-text-bold-font-weight);
+}
+
+h1 strong, h1 b,
+h2 strong, h2 b,
+h3 strong, h3 b,
+h4 strong, h4 b,
+h5 strong, h5 b,
+h6 strong, h6 b {
+  color: var(--selection-bg-color);
+}
+
+header {
+  color: var(--header-text-color);
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  text-transform: uppercase;
+}
+
+footer {
+  color: var(--footer-text-color);
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  font-weight: var(--footer-font-weight);
+  text-transform: uppercase;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+section.masthero,
+section.normhero {
+  color: var(--hx-text-color);
+  letter-spacing: -0.015rem;
+  /* The `text-rendering` property is non-standard; and should be
+     applied to headings only, not to body; see following article:
+     https://css-tricks.com/almanac/properties/t/text-rendering/ */
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: var(--hx-font-family);
+}
+
+section.masthero {
+  font-size: calc( var(--h1-font-size) * 1.5);
+  line-height: 1;
+}
+
+section.normhero {
+  font-size: calc( var(--h3-font-size));
+  line-height: var( --line-height-base);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var( --line-height-double);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var( --line-height-double);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  font-weight: var(--h6-font-weight);
+}
+
+/* .big elements share font size with h3, but
+    neither font-family nor letter-spacing */
+.big {
+  font-size: var(--text-lg-font-size);
+}

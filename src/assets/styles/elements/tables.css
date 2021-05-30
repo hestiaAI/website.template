@@ -1,0 +1,28 @@
+/* A Complete Guide to the Table Element
+   https://css-tricks.com/complete-guide-table-element/ */
+
+table {
+  border-collapse: collapse;
+  border-top: var(--tables-row-border);
+  width: 100%;
+}
+
+thead, tbody, tfoot {
+  border-bottom: var(--tables-head-border);
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--tables-row-zebra-strip-bg);
+}
+
+td, th {
+  border-bottom: var(--tables-row-border);
+  padding: var(--tables-cell-padding);
+  text-align: left;
+}
+
+th {
+  color: var(--tables-head-text-color);
+  font-weight: var(--tables-head-text-weight);
+}

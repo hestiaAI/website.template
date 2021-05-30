@@ -1,0 +1,95 @@
+@import './vendor/normalize.css';
+@import './base/variables.css';
+@import './base/fonts.css';
+@import './base/typography.css';
+@import './base/links.css';
+@import './base/layout.css';
+@import './base/spacing.css';
+@import './elements/buttons.css';
+@import './elements/callouts.css';
+@import './elements/header-footer.css';
+@import './elements/section-hero.css';
+@import './elements/section-newsletter.css';
+@import './elements/tables.css';
+@import './elements/forms.css';
+@import './elements/lists.css';
+
+/* NOTE: for the definition of the LightenDarkenColor() function used hereafter,
+   see see https://css-tricks.com/snippets/javascript/lighten-darken-color/ */
+
+:root {
+  --theme-color-primary:           #04650f;
+  --theme-color-secondary:         #e4ffef;           /* LightenDarkenColor(var(--theme-color-primary),224) */
+}
+
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--main-bg-color);
+}
+
+main.splash {
+  min-height: 80vh;
+}
+
+.responsive-wrapper {
+  width: 90%;
+  max-width: var(--breakpoint-text-line-wraps-at);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+main img {
+  content-visibility: auto;
+}
+
+/* A fancy dash of «signature» colors */
+
+::selection {
+  background: var(--selection-bg-color);
+  color: var(--selection-text-color);
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-bg);
+}
+
+/* Revisiting prefers-reduced-motion, the reduced motion media query
+   https://css-tricks.com/revisiting-prefers-reduced-motion-the-reduced-motion-media-query/ */
+
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

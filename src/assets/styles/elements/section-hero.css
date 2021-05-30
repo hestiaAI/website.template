@@ -1,0 +1,58 @@
+.normhero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  min-height: 20vh;
+  overflow: hidden;
+  padding-top: calc( 4.0 * var(--line-height-base));
+  padding-bottom: var(--line-height-base);
+}
+
+.masthero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-color: var(--color-bg-tertiary);   /* default background color */
+  background-image: url('section-hero-bg.svg'); /* default background image */
+  /* the above `background-image` CSS property is expected to be overridden
+     by the hero section elements themselves, thru their `style` attribute:
+     `style="background-image: url(media.jpg)"` (alternatively, use the
+     `style="{{lead_image | backgroundImage}}"` shortcode) */
+}
+
+section.masthero {
+  text-shadow: var(--shadow-text-on-image);
+}
+
+section.masthero.inverse {
+  text-shadow: var(--shadow-text-on-image-inverse);
+  color: var(--color-text-white);
+}
+
+section.masthero figcaption {
+  display: none;
+}
+
+/*
+section.masthero figcaption {
+  display: none;
+  position: absolute;
+  right: var(--line-height-base);
+}
+
+section.masthero figcaption > * {
+  font-size: var(--text-sm-font-size);
+}
+*/

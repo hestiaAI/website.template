@@ -1,0 +1,26 @@
+/* Quoting in HTML: Quotations, Citations, and Blockquotes
+   https://css-tricks.com/quoting-in-html-quotations-citations-and-blockquotes/ */
+
+/* Callout quote */
+blockquote {
+  margin-left: var(--blocks-space-around);
+  margin-right: var(--blocks-space-around);
+  background-color: var(--blocks-bg-color);
+  padding: var(--blocks-space-inside);
+  border-radius: 0.5rem;
+}
+
+/* Callout sections */
+
+section.callout {
+  margin-left: calc( var(--blocks-space-inside) * -1);
+  margin-right: calc( var(--blocks-space-inside) * -1);
+  padding: var(--blocks-space-inside);
+  background-color: var(--blocks-bg-color);
+  border-radius: 1.5rem;
+}
+
+section.callout.alt {
+  background-color: var(--blocks-alt-bg);
+  border: var(--blocks-alt-border);
+}

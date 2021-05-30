@@ -1,0 +1,16 @@
+section.newsletter {
+  background-color: var(--breakout-bg-color);
+  box-shadow: var(--breakout-shadow);
+  margin-left: var(--breakout-border-offset);
+  margin-right: var(--breakout-border-offset);
+  padding: var(--breakout-padding);
+  border: var(--breakout-border);
+}
+
+section.newsletter.floating-on-hero {
+  max-width: calc(60%);
+  margin-top: -8rem;
+  margin-right: 2rem;
+  margin-left: auto;
+  margin-bottom: -3rem;
+}

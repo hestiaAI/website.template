@@ -1,0 +1,9 @@
+# Disallow indexing of french part of website, which is not ready yet
+# (see https://github.com/hestiaAI/website.labs/issues/23)
+
+User-agent: *
+Disallow: /fr/
+
+# To learn more about robots.txt file syntax:
+# Google Search Central › Create a robots.txt file
+# https://developers.google.com/search/docs/advanced/robots/create-robots-txt

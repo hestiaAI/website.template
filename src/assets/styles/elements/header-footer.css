@@ -1,0 +1,123 @@
+.header-outer,
+.footer-outer {
+  display: flex;
+  align-items: center;
+}
+
+.header-inner,
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*  Sticky Shrinking Header — the height, position and top
+    attributes on .header-outer and .header-inner are special
+    (the negative top of .header-outer namely) and go together.
+
+    «How to Create a Shrinking Header on Scroll Without JavaScript»
+    https://css-tricks.com/how-to-create-a-shrinking-header-on-scroll-without-javascript/ */
+.header-outer {
+  height: var(--header-height-outer);
+  position: sticky;
+  top: var(--header-height-diff); /* a negative value, on purpose */
+  background-color: var(--header-bg-color);
+  box-shadow: var(--shadow-medium);
+  z-index: 1000;
+}
+
+.header-inner {
+  height: var(--header-height-inner);
+  position: sticky;
+  top: 0;
+}
+
+.footer-outer {
+  height: var(--footer-height-outer);
+  background-color: var(--footer-bg-color);
+}
+
+.footer-inner {
+  height: var(--footer-height-inner);
+}
+
+.header-cell-one-third,
+.footer-cell-one-third,
+.header-cell-two-thirds,
+.footer-cell-two-thirds {
+  flex: 1;
+}
+
+.header-cell-one-third,
+.footer-cell-one-third {
+  min-width: 32%;
+  max-width: 32%;
+}
+
+.header-cell-two-thirds,
+.footer-cell-two-thirds {
+  min-width: 64%;
+  max-width: 64%;
+}
+
+.header-logo img,
+.footer-logo img {
+  display: inline-block;
+}
+
+.header-navigation,
+.footer-navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.header-navigation a,
+.footer-navigation a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 1.75rem;
+  position: relative;
+}
+
+.header-navigation a {
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  color: var(--header-text-color);
+}
+
+.footer-navigation a {
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  font-weight: var(--footer-font-weight);
+  color: var(--footer-text-color);
+}
+
+.header-navigation a[aria-current="page"],
+.header-navigation a[aria-current="lang"] {
+  color: var(--link-current-text-color);
+}
+
+.header-navigation a:hover {
+  color: var(--link-hover-text-color);
+}
+
+.header-navigation a:hover:after,
+.footer-navigation a:hover:after {
+  transform: scalex(1);
+}
+
+.header-navigation a:after,
+.footer-navigation a:after {
+  transition: 0.25s ease;
+  content: "";
+  display: block;
+  width: 100%;
+  height: var(--link-text-decoration-thickness);
+  background-color: currentcolor;
+  transform: scalex(0);
+  position: absolute;
+  bottom: calc(-1 * var(--link-text-decoration-thickness));
+  left: 0;
+}
