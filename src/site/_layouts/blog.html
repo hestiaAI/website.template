@@ -1,0 +1,96 @@
+---
+layout: defaultWithHero
+---
+<section id="newsletter" class="newsletter floating-on-hero with-no-space">
+  <newsletter-signup
+    lang="{{locale}}" layout="compact"
+    form-name="‹NEWSLETTER-FORM-NAME›">
+  </newsletter-signup>
+</section>
+
+{% if collections.editorial %}
+  <section id="editorials">
+    <h1>{% inlineMarkdown editorials_title %}</h1>
+    <div class="grid-layout-halves with-gutters">
+      {% for post in collections.editorial %}
+        {% if post.data.locale == locale %}
+          <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}" img-src="{{post.data.image | url}}">
+            <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+            <h2>{% inlineMarkdown post.data.title %}</h2>
+            {% markdown post.data.lead %}
+            <button>{{i18n.globals[locale].read_more}}</button>
+          </article-breakout>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% if collections.interview %}
+  <section id="interviews">
+    <h1>{% inlineMarkdown interviews_title %}</h1>
+    <div class="grid-layout-halves with-gutters">
+      {% for post in collections.interview %}
+        {% if post.data.locale == locale %}
+          <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}" img-src="{{post.data.image | url}}">
+            <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+            <h2>{% inlineMarkdown post.data.title %}</h2>
+            {% markdown post.data.lead %}
+            <button>{{i18n.globals[locale].read_more}}</button>
+          </article-breakout>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+{% if collections.infographic %}
+  <section id="infographics">
+    <h1>{% inlineMarkdown infographics_title %}</h1>
+    <div class="grid-layout-halves with-gutters">
+      {% for post in collections.infographic %}
+        {% if post.data.locale == locale %}
+          <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}" img-src="{{post.data.image | url}}">
+            <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+            <h2>{% inlineMarkdown post.data.title %}</h2>
+            {% markdown post.data.lead %}
+            <button>{{i18n.globals[locale].read_more}}</button>
+          </article-breakout>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
+<section id="categories">
+  <h1>{% inlineMarkdown categories_title %}</h1>
+  <ul>
+    {% for category in collections.post_category %}
+      {% if category.data.locale == locale %}
+        <li><a href="{{category.data.page.url | url}}">{{category.data.name}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="authors">
+  <h1>{% inlineMarkdown authors_title %}</h1>
+  <ul>
+    {% for author in collections.post_author %}
+      {% if author.data.locale == locale %}
+        <li><a href="{{author.data.page.url | url}}">{{author.data.name}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<script type="module">
+  import '/components/article-breakout.js';
+  import '/components/newsletter-signup.js';
+</script>

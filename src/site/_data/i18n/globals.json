@@ -1,0 +1,18 @@
+{
+  "en": {
+    "suggested_posts_title": "You might also **like** to read",
+    "share": "Share this",
+    "read_more": "Read more",
+    "ask_your_data": "Ask for your data",
+    "by_author": "by",
+    "published_on": "published on"
+  },
+  "fr": {
+    "suggested_posts_title": "À **lire** aussi",
+    "share": "Partager",
+    "read_more": "Lisez l'article",
+    "ask_your_data": "Demandez vos données",
+    "by_author": "par",
+    "published_on": "publié le"
+  }
+}

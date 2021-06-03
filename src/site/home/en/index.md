@@ -5,7 +5,8 @@ path: home
 title: ‹SITE-NAME›
 lead: The community of **‹SITE-NAME›**
 lead_image: /assets/media/home-hero-image.jpg
-lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman) on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
+lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
+  on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
 paragraph1_title: We define a new relationship to data
 community_title: We are a collective of users
 community_description: "‹SITE-NAME› is you and me: app users and
@@ -35,8 +36,9 @@ partners_description: >-
 partners_link_text: Contact us
 news_title: News and events
 news_editorials:
-  - grindr-profile-data
   - dating-apps-share-your-data
 news_interviews:
-  - interview-jessica-pidoux-journal-le-temps
+  - interview-de-jessica-pidoux-journal-le-temps
+news_infographics:
+  - what-bumble-collects-about-you
 ---

@@ -1,0 +1,3 @@
+{
+    "title": {"path": "i18n.blog.en.stories_by"},
+    "permalink": "/en/blog/author/{{page.fileSlug}}/index.html"}
