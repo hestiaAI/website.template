@@ -1,8 +1,8 @@
 {
-  "canonical_base_url": "https://‹SITE-URL›.hestialabs.org",
+  "canonical_base_url": "‹SITE-URL›",
   "twitter_label": "Twitter",
-  "twitter_account": "@‹SITE-NAME›",
-  "twitter_url": "https://twitter.com/‹SITE-NAME›",
+  "twitter_account": "@‹TWITTER-ACCOUNT-NAME›",
+  "twitter_url": "https://twitter.com/‹TWITTER-ACCOUNT-NAME›",
   "forum_label": "Forum",
-  "forum_url": "https://forum.‹SITE-URL›.hestialabs.org/"
+  "forum_url": "‹FORUM-SITE-URL›"
 }

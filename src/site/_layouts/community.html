@@ -1,0 +1,52 @@
+---
+layout: defaultWithHero
+---
+<section id="story">
+  <h1>{% inlineMarkdown story_title %}</h1>
+  {% markdown story %}
+  <div class="stack-layout with-gutters">
+    {% for person in people %}
+      <contact-card class="stack-cell"
+          name="{{person.name}}"
+          img-src="{{person.image}}">
+        <h2>{{person.name}}</h2>
+        {% markdown person.description %}
+        <p>
+          {% if person.twitter %}
+            <a href="{{person.twitter}}" target="_blank">twitter</a>
+          {% endif %}
+          {% if person.linkedin %}
+            <a href="{{person.linkedin}}" target="_blank">linkedin</a>
+          {% endif %}
+          {% if person.email %}
+            <a href="{{person.email}}">email</a>
+          {% endif %}
+        </p>
+      </contact-card>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="timeline" class="callout alt">
+  <h1>{{timeline_title}}</h1>
+  {% for event in timeline_events %}
+    <h2>{{event.date | readableDate(locale, "LLLL yyyy")}}</h2>
+    {% markdown event.description %}
+  {% endfor %}
+</section>
+
+{% if chat_groups | length %}
+  <section id="join-conversation" class="callout">
+    <h1>{{chat_groups_title}}</h1>
+    {% for group in chat_groups %}
+      <p><a href="{{group.link}}" target="_blank">
+        <img src="{{group.image}}">
+        <span>{{group.name}}</span>
+      </a></p>
+    {% endfor %}
+  </section>
+{% endif %}
+
+<script type="module">
+  import '/components/contact-card.js';
+</script>
