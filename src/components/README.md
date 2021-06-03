@@ -6,6 +6,7 @@ Web Components of our website.
 
 * `<article-breakout href="…"> …text… </article-breakout>`
 * `<contact-card img-src="portrait.jpg"> …text… </contact-card>`
+* `<contact-form form-name="contact" lang="en" subject="…text…"></contact-form>`
 * `<newsletter-signup form-name="newsletter-signup" lang="en"></newsletter-signup>`
 * `<video-player src="…" img-src="…"> …text… </video-player>`
 

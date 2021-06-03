@@ -1,0 +1,40 @@
+---
+layout: defaultWithHero
+---
+{% for link in i18n.contact_page[locale].links %}
+  {% if loop.first %}
+    <section id="contacts">
+  {% endif %}
+  <h3>{{link.title}}</h3>
+  {% if link.contact[0].type == "link" %}
+    <p><a href="{{link.contact[0].url}}">{{link.description}}</a></p>
+  {% elif link.contact[0].type == "contact" %}
+    <p><a href="{% contactUrl locale, link.contact[0].channel %}">{{link.description}}</a></p>
+  {% endif %}
+  {% if loop.last %}
+    </section>
+  {% endif %}
+{% endfor %}
+
+<section id="contact-form" class="callout">
+  <h3>{{title}}</h3>
+  <contact-form
+    lang="{{locale}}"
+    form-name="{{form_name}}"
+    subject="{{subject}}"></contact-form>
+</section>
+
+<!-- A little help for the Netlify post-processing bots -->
+<!-- for use with web-component contact-form -->
+<form name="{{form_name}}" method="POST" data-netlify="true">
+      <input type="hidden" name="email">
+      <input type="hidden" name="first-name">
+      <input type="hidden" name="last-name">
+      <input type="hidden" name="subject">
+      <input type="hidden" name="message">
+      <input type="hidden" name="lang" />
+</form>
+
+<script type="module">
+  import '/components/contact-form.js';
+</script>
