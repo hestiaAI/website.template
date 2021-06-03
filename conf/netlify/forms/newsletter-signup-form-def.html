@@ -1,0 +1,26 @@
+<!--
+  ‹Newsletter signup› Netlify Form definition, as static HTML,
+  for the buildbots of Netlify.
+
+  Must match the fields of the form rendered client-side
+  by the ‹newsletter-signup› Web Component (see source
+  code in `src/components/newsletter-signup.js`).
+
+Note:
+  Netlify buildbots find the forms by parsing the static HTML
+  of the site when the build completes. As Web Components render
+  their forms client-side, the buildbots don't find those forms.
+  To work around this, a «shadow form» with similar structure
+  must be added as static HTML, somewhere within the site,
+  to be picked up and parsed by the buildbots.
+
+See also:
+  Netlify Docs › Forms setup › JavaScript forms
+  https://docs.netlify.com/forms/setup/#work-with-javascript-rendered-forms
+-->
+<form name="‹NEWSLETTER-FORM-NAME›" method="POST" data-netlify="true">
+  <input type="hidden" name="email">
+  <input type="hidden" name="first-name">
+  <input type="hidden" name="last-name">
+  <input type="hidden" name="lang" />
+</form>
