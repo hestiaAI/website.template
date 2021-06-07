@@ -35,10 +35,11 @@ partners_description: >-
   We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
 partners_link_text: Contact us
 news_title: News and events
-news_editorials:
-  - dating-apps-share-your-data
-news_interviews:
-  - interview-de-jessica-pidoux-journal-le-temps
-news_infographics:
-  - what-bumble-collects-about-you
+news:
+  - type: infographic
+    infographic: what-bumble-collects-about-you
+  - type: editorial
+    editorial: dating-apps-share-your-data
+  - type: interview
+    interview: interview-de-jessica-pidoux-journal-le-temps
 ---

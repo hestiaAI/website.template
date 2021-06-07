@@ -170,42 +170,48 @@ collections:
     - { label: "Partners link text", name: partners_link_text, required: false, widget: string, i18n: true }
     - { label: "News title", name: news_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: "News editorials"
-      name: "news_editorials"
+    - label: "News"
+      name: "news"
       widget: "list"
       i18n: true
-      field:
-        name: "Editorial"
-        widget: relation
-        collection: editorials
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "News interviews"
-      name: "news_interviews"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Interview"
-        widget: relation
-        collection: interviews
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "News infographics"
-      name: "news_infographics"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Infographic"
-        widget: relation
-        collection: infographics
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
+      max: 3
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.editorial}}'
+          fields:
+          - label: Editorial
+            name: "editorial"
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.interview}}'
+          fields:
+          - label: Interview
+            name: "interview"
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.infographic}}'
+          fields:
+          - label: Infographic
+            name: "infographic"
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
 
 - label: Community
   name: community
@@ -460,42 +466,47 @@ collections:
       value_field: "id"
       multiple: true
       search_fields: ["name", "id", "description"]
-    - label: "Suggested editorials"
-      name: "suggested_editorials"
+    - label: "Suggested"
+      name: "suggested"
       widget: "list"
       i18n: true
-      field:
-        name: "Editorial"
-        widget: relation
-        collection: editorials
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested interviews"
-      name: "suggested_interviews"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Interview"
-        widget: relation
-        collection: interviews
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested infographics"
-      name: "suggested_infographics"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Infographic"
-        widget: relation
-        collection: infographics
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.editorial}}'
+          fields:
+          - label: Editorial
+            name: "editorial"
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.interview}}'
+          fields:
+          - label: Interview
+            name: "interview"
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.infographic}}'
+          fields:
+          - label: Infographic
+            name: "infographic"
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
     - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
 
 - label: Blog › Interviews
@@ -534,42 +545,47 @@ collections:
       value_field: "id"
       multiple: true
       search_fields: ["name", "id", "description"]
-    - label: "Suggested editorials"
-      name: "suggested_editorials"
+    - label: "Suggested"
+      name: "suggested"
       widget: "list"
       i18n: true
-      field:
-        name: "Editorial"
-        widget: relation
-        collection: editorials
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested interviews"
-      name: "suggested_interviews"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Interview"
-        widget: relation
-        collection: interviews
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested infographics"
-      name: "suggested_infographics"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Infographic"
-        widget: relation
-        collection: infographics
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.editorial}}'
+          fields:
+          - label: Editorial
+            name: "editorial"
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.interview}}'
+          fields:
+          - label: Interview
+            name: "interview"
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.infographic}}'
+          fields:
+          - label: Infographic
+            name: "infographic"
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
     - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
 
 - label: Blog › Infographics
@@ -607,42 +623,47 @@ collections:
       value_field: "id"
       multiple: true
       search_fields: ["name", "id", "description"]
-    - label: "Suggested editorials"
-      name: "suggested_editorials"
+    - label: "Suggested"
+      name: "suggested"
       widget: "list"
       i18n: true
-      field:
-        name: "Editorial"
-        widget: relation
-        collection: editorials
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested interviews"
-      name: "suggested_interviews"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Interview"
-        widget: relation
-        collection: interviews
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
-    - label: "Suggested infographics"
-      name: "suggested_infographics"
-      widget: "list"
-      i18n: true
-      field:
-        name: "Infographic"
-        widget: relation
-        collection: infographics
-        value_field: "id"
-        display_fields: ["title"]
-        multiple: false
-        search_fields: ["title", "body"]
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.editorial}}'
+          fields:
+          - label: Editorial
+            name: "editorial"
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.interview}}'
+          fields:
+          - label: Interview
+            name: "interview"
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.infographic}}'
+          fields:
+          - label: Infographic
+            name: "infographic"
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
     - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
 
 - label: Blog › Categories

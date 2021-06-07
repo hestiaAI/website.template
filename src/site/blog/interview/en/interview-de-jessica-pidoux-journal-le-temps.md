@@ -8,8 +8,9 @@ post_categories:
   - news
 post_authors:
   - mpv
-suggested_editorials:
-  - dating-apps-share-your-data
+suggested:
+  - type: editorial
+    editorial: dating-apps-share-your-data
 ---
 [Jessica Pidoux, l'algorithme de Tinder dans la peau](https://www.letemps.ch/societe/jessica-pidoux-lalgorithme-tinder-peau)  \
   by Florian Delafoi, published on 24 February 2020 in the Swiss newspaper «Le Temps».

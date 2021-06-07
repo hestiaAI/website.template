@@ -27,31 +27,30 @@ inverse: true
   </div>
 </section>
 
-<section id="news">
-  <h1>{% inlineMarkdown news_title %}</h1>
-  <noscript>You need JavaScript enabled to see
-    the additional news articles hereafter.</noscript>
-  <div class="grid-layout-halves with-gutters">
-    {% set news = {editorial: news_editorials,
-                   interview: news_interviews,
-                   infographic: news_infographics} %}
-    {% for news_type, news_ids in news %}
-      {% for edito in collections[news_type] %}
-        {% if edito.data.locale == locale and news_ids
-           and edito.data.id in news_ids %}
+{% if news | length %}
+  <section id="news">
+    <h1>{% inlineMarkdown news_title %}</h1>
+    <noscript>You need JavaScript enabled to see
+      the additional news articles hereafter.</noscript>
+    <div class="grid-layout-halves with-gutters">
+    {% for item in news %}
+      {% set newsId = item[item.type] %}
+      {% for post in collections[item.type] %}
+        {% if post.data.locale == locale and post.data.id == newsId %}
           <article-breakout
               class="grid-cell" layout="box"
-              href="{{edito.url | url}}" img-src="{{edito.data.image | url}}">
-            <span slot="caption">{% inlineMarkdown edito.data.image_caption %}</span>
-            <h2>{% inlineMarkdown edito.data.title %}</h2>
-            {% markdown edito.data.lead %}
+              href="{{post.url | url}}" img-src="{{post.data.image | url}}">
+            <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+            <h2>{% inlineMarkdown post.data.title %}</h2>
+            {% markdown post.data.lead %}
             <button>{{i18n.globals[locale].read_more}}</button>
           </article-breakout>
         {% endif %}
       {% endfor %}
     {% endfor %}
-  </div>
-</section>
+    </div>
+  </section>
+{% endif %}
 
 <section id="newsletter" class="newsletter">
   <newsletter-signup
