@@ -3,7 +3,7 @@ layout: community
 inverse: true
 permalink: /en/community/index.html
 title: Community
-lead: "**‹SITE-NAME›**'s community"
+lead: "**‹SITE-TITLE›**'s community"
 lead_image: /assets/media/community-hero-image.jpg
 lead_image_caption: Illustration by [Pascale Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
 story_title: A short story about us

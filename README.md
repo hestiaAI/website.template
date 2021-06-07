@@ -4,7 +4,7 @@
 
 ---
 
-# ‹SITE-NAME› website
+# ‹SITE-TITLE› website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/‹SITE-UUID›/deploy-status)](https://app.netlify.com/sites/‹SITE-NAME›/deploys) ⟵ `TODO`: update ‹SITE-UUID› and ‹SITE-NAME›
 

@@ -2,14 +2,14 @@
 layout: home
 permalink: /en/index.html
 path: home
-title: ‹SITE-NAME›
-lead: The community of **‹SITE-NAME›**
+title: ‹SITE-TITLE›
+lead: The community of **‹SITE-TITLE›**
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
 paragraph1_title: We define a new relationship to data
 community_title: We are a collective of users
-community_description: "‹SITE-NAME› is you and me: app users and
+community_description: "‹SITE-TITLE› is you and me: app users and
   people keen to understand privacy in relationships formed online. The
   collective is worried about the way our intimate life is being coded and
   exposed online. We aim to retake control of personal data on apps,
