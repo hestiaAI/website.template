@@ -411,6 +411,8 @@ collections:
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
     - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Latest posts title, name: latest_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Editorials title, name: editorials_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Interviews title, name: interviews_title, required: false, i18n: true,

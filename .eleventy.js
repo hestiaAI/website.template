@@ -3,6 +3,7 @@
 /* eslint-env node */
 
 const { buildLocalesCollection, formatDate} = require('./conf/11ty/locales');
+const { buildPosts } = require('./conf/11ty/blogPosts');
 const { backgroundImage } = require('./conf/11ty/backgroundImage')
 const { creditedImage } = require('./conf/11ty/creditedImage')
 const { contactUrl } = require('./conf/11ty/contactUrl')
@@ -26,6 +27,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "conf/netlify/forms/*.html": "admin/forms/" });
 
   eleventyConfig.addCollection("locales", buildLocalesCollection);
+  eleventyConfig.addCollection("blogPosts", buildPosts);
 
   eleventyConfig.addFilter("readableDate", formatDate);
   eleventyConfig.addFilter("backgroundImage", backgroundImage);

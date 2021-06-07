@@ -60,4 +60,4 @@ const formatDate = (date, locale, format) => {
   return formattedDate;
 }
 
-module.exports = { buildLocalesCollection, formatDate };
+module.exports = { buildLocalesCollection, formatDate, determineLocale };
