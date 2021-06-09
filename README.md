@@ -2,7 +2,7 @@
 >
 > 🎯 To create a new website based on this template repository, follow the step-by-step guide [«How-to create a new website from WEBSITE.TEMPLATE»](https://github.com/hestiaAI/website.docs/tree/main/website-new) in the [`WEBSITE.DOCS`](https://github.com/hestiaAI/website.docs/) repository.
 >
-> 💡 To report issues about this template repository itself, or to understand why it's not owned by the [@hestiaAI](https://github.com/hestiaAI) org, please head to the [WEBSITE.TEMPLATE.factory](https://github.com/hestiaAI/website.template.factory) repository.
+> 💡 To report issues about this template repository itself, please head to the [WEBSITE.TEMPLATE.factory](https://github.com/hestiaAI/website.template.factory) repository.
 
 ---
 
@@ -30,8 +30,9 @@
 # How-to?
 
 * [Get access rights](https://github.com/hestiaAI/website.docs/tree/main/website-access-rights) — _would you need _editorial access_ to the website contents; or to _administer_ our Netlify deployment & hosting infrastructure_
+* [Setup your dev environment](https://github.com/hestiaAI/website.docs/tree/main/website-dev-setup) — _develop features of the website, install prequisite tools and dependencies and start the dev server_
 * [Execute the dev, build and deployment sequences](https://github.com/hestiaAI/website.docs/tree/main/website-execution) — _understand the execution modes, environments and how-to execute the dev, build and deployment sequences_
-* [Contribute to codebase](https://github.com/hestiaAI/website.docs/tree/main/website-contrib) — _Design decisions you should know about and how-to submit code changes_
+* [Contribute to codebase](https://github.com/hestiaAI/website.docs/tree/main/website-contrib) — _design decisions you should know about and how-to submit code changes_
 
 # Repository contents
 
