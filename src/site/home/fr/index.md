@@ -16,6 +16,7 @@ community_description: "‹SITE-TITLE› is you and me: app users and
   understand the privacy problems they create, and work to improve data
   literacy."
 community_link_text: Join us
+mission_title: We work to understand what's being done
 mission_description: >-
   We want to understand many privacy risks that we, as app users, are
   confronted with when looking for a date online: unwanted ads, discrimination
@@ -26,7 +27,6 @@ mission_description: >-
   Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
 mission_link_text: Learn more
 partners_title: We connect with many partners
-mission_title: We work to understand what's being done
 partners_description: >-
   We are looking to collaborate with journalists, academics, researchers,
   activists and NGOs in data protection and other related themes.
