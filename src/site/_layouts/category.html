@@ -8,7 +8,7 @@ layout: defaultWithLeadTitle
       {% if post.data.locale == locale
         and id in post_categories %}
         <article-breakout class="grid-cell" layout="box"
-            href="{{post.url | url}}" img-src="{{post.data.image | url}}">
+            href="{{post.url | url}}" img-src="{{post.data.image | url}}">
           <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
           <h2>{% inlineMarkdown post.data.title %}</h2>
           {% markdown post.data.lead %}

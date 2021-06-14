@@ -6,7 +6,7 @@ layout: defaultWithLeadTitle
     {{i18n.globals[locale].by_author}} {% for author in collections.post_author %}
       {% if author.data.id in post_authors
          and author.data.locale == locale %}
-        <a href="{{author.data.page.url | url}}">{{author.data.name}}</a>
+        <a href="{{author.data.page.url | url}}">{{author.data.name}}</a>
       {% endif %}
     {% endfor %}
     {{i18n.globals[locale].published_on}} {{ date | readableDate(locale)}}
@@ -20,12 +20,10 @@ layout: defaultWithLeadTitle
     {% endfor %}
   </p>
   <figure>
-    <img src="{{image | url}}">
+    <img src="{{image | url}}">
     <figcaption>{% inlineMarkdown image_caption %}</figcaption>
   </figure>
-  <div>
-    {{ content | safe }}
-  </div>
+  {{ content | safe }}
 </section>
 
 {% if suggested | length %}

@@ -20,9 +20,10 @@ layout: defaultWithLeadTitle
     {% endfor %}
   </p>
   <figure>
-    <img src="{{image}}">
+    <img src="{{image | url}}">
     <figcaption>{% inlineMarkdown image_caption %}</figcaption>
   </figure>
+  {{ content | safe }}
 </section>
 
 {% if suggested | length %}
