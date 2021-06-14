@@ -2,11 +2,17 @@
 
 function internalLink(content, page, destination, destinationLocale) {
     let href = destination;
-    if(destinationLocale){
-        href = `/${destinationLocale}/${destination}/`;
+    const hasAnchor = href.match(/#[^/]*$/);
+    if(destinationLocale) {
+        href = `/${destinationLocale}/${destination}`;
+        if(!hasAnchor) {
+            href += '/';
+        }
     }
-    const ariaCurrent =
-          page.url == href ? ' aria-current="page"' : '';
+    const hrefWithoutAnchor =
+          href.match(/(^\/.*?[^/]\/)(#\w+)?$/)[1] ;
+    const isCurrent = page.url === hrefWithoutAnchor;
+    const ariaCurrent = isCurrent ? ' aria-current="page"' : '';
     return `<a href="${href}"${ariaCurrent}>${content}</a>`;
 }
 
