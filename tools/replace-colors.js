@@ -2,7 +2,8 @@ const {
   findMatchingFiles,
   replaceRegexes,
   SETUP_LOGGER_NAME
-} = require('./utils')
+} = require('./replacement-utils')
+const{hexColorValidator} = require('./prompt-utils');
 const {loggers} = require('winston');
 const logger = loggers.get(SETUP_LOGGER_NAME)
 
@@ -51,14 +52,6 @@ function LightenDarkenColor(col, amt) {
     else if (g < 0) g = 0;
     return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
 }
-
-const hexColorValidator = value => {
-  if (/^#[0-9A-Fa-f]{6}$/i.test(value)) {
-    return true;
-  } else {
-    return 'Color needs to be in hex format (#rrggbb)';
-  }
-};
 
 const Q_PRIMARY_COLOR = 'primaryColor';
 const Q_SECONDARY_COLOR = 'secondaryColor';

@@ -3,7 +3,13 @@ const {
   findMatchingFiles,
   replaceRegexes,
   SETUP_LOGGER_NAME
-} = require('./utils')
+} = require('./replacement-utils');
+const{
+  urlPartValidator,
+  urlValidator,
+  twitterNoAmpersandValidator,
+  makeLogPrompt,
+} = require('./prompt-utils');
 const {
   COLOR_QUESTIONS,
   areColorsReplaced,
@@ -59,35 +65,6 @@ const allPlaceholders = (sourcePlaceholders, derivations) =>
 
 const TARGET_PATHS = ['src/**', 'conf/**', 'README.md', 'package.json'];
 
-const requiredValidator =
-      value => value.length > 0 || 'Please enter a value';
-
-const urlPartValidator = value => {
-  if(encodeURIComponent(value) != value){
-    return `The name should be valid in an url`
-  }
-  return true;
-};
-
-const urlValidator = value => {
-  // not mandatory
-  if(!value){return true;}
-  try {
-    new URL('http://' + value);
-    return true;
-  } catch (error) {
-    return "Invalid url";
-  }
-};
-
-const twitterValidator = value =>
-      value.startsWith('@') ? 'Please remove the @' : true;
-
-const composeValidators = (...validators) => (value) =>
-  validators.reduce(
-    (result, validator) => result === true ? validator(value) : result,
-    true);
-
 const PLACEHOLDER_QUESTIONS = [
   {
     type: 'text',
@@ -130,7 +107,7 @@ const PLACEHOLDER_QUESTIONS = [
     type: 'text',
     name: P_TWITTER_ACCOUNT_NAME,
     message: 'Twitter handle (without @)',
-    validate: twitterValidator
+    validate: twitterNoAmpersandValidator
   },
   {
     type: 'text',
@@ -141,10 +118,10 @@ const PLACEHOLDER_QUESTIONS = [
 ];
 
 const CONFIRM_QUESTION = {
-    type: 'confirm',
-    name: Q_CONFIRM,
-    message: 'Run script to replace placeholders in files ?',
-  };
+  type: 'confirm',
+  name: Q_CONFIRM,
+  message: 'Run script to replace placeholders in files ?',
+};
 
 const deriveValues = (vals, derivations) =>
       Object.entries(vals).reduce(
@@ -191,15 +168,6 @@ async function replacePlaceHolders(response) {
   }
 };
 
-function logPrompt(prompt, answer) {
-  try {
-    logger.info(`user chooses ${prompt.name} = ${answer}`);
-  } catch (error) {
-    console.error(error);
-    logger.error(error);
-  }
-}
-
 const main = async () => {
   console.log();
   ["Change files by replacing placeholders with values that you choose.",
@@ -222,7 +190,8 @@ const main = async () => {
         .filter(q => placeholders.todo.includes(q.name))
         .concat(colorsDone ? [] : COLOR_QUESTIONS)
         .concat([CONFIRM_QUESTION]);
-  const response = await prompts(unanswered, {onSubmit: logPrompt});
+  const response =
+        await prompts(unanswered, { onSubmit: makeLogPrompt(logger) });
   const confirm = response[Q_CONFIRM];
   if(confirm){
     await replacePlaceHolders(response);
