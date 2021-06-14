@@ -79,6 +79,9 @@ const urlValidator = value => {
   }
 };
 
+const twitterValidator = value =>
+      value.startsWith('@') ? 'Please remove the @' : true;
+
 const composeValidators = (...validators) => (value) =>
   validators.reduce(
     (result, validator) => result === true ? validator(value) : result,
@@ -125,7 +128,8 @@ const questions = [
   {
     type: 'text',
     name: P_TWITTER_ACCOUNT_NAME,
-    message: 'Twitter handle',
+    message: 'Twitter handle (without @)',
+    validate: twitterValidator
   },
   {
     type: 'text',
@@ -148,36 +152,48 @@ const deriveValues = (vals, derivations) =>
         },
         Object.assign({}, vals));
 
-async function replacePlaceholders(placeholders, value, paths, dry){
+async function findPlaceholderFiles(placeholders, paths){
   // see https://github.com/adamreisnz/replace-in-file#basic-usage
   const options = {
     files: paths,
     from: placeholders.map(p => new RegExp(p, 'g')),
-    to: value,
-    dry
+    to: '<:o)',
+    dry: true
   };
-  if(!dry){
-    const message = `replacing ${placeholders.join(' ')} with ${value}`;
-    console.log(message);
-    logger.info(message);
-  }
   const results = await replace(options);
   const files = results.filter(result => result.hasChanged)
     .map(result => result.file);
-  if (!dry) {
-    files.forEach(f => {
-      const message = `replaced ${placeholders.join(' ')} in ${f}`;
-      console.log(message);
-      logger.info(message);
-    });
-  }
+  return files;
+}
+
+async function replacePlaceholders(placeholders, values, paths){
+  // see https://github.com/adamreisnz/replace-in-file#basic-usage
+  const options = {
+    files: paths,
+    from: placeholders.map(p => new RegExp(p, 'g')),
+    to: values,
+  };
+  placeholders.forEach((p, i) => {
+    const message = `replacing ${p} with "${values[i]}"`;
+    console.log(message);
+    logger.info(message);
+  });
+  const results = await replace(options);
+  const files = results.filter(result => result.hasChanged)
+    .map(result => result.file);
+  console.log(`replaced ${placeholders.length} placeholders`,
+    ` in ${files.length} files`);
+  files.forEach(f => {
+    console.log(`wrote ${f}`);
+    logger.info(`replaced ${placeholders.join(' ')} in ${f}`);
+  });
   return files;
 }
 
 async function placeholderTodos(placeholders, derivations, path){
   const filesToProcess = await Promise.all(placeholders.map(p => {
     const derived = derivations[p]?.map(d => d.name) || [];
-    return replacePlaceholders(derived.concat(p), '<:-D', path, true);
+    return findPlaceholderFiles(derived.concat(p), path);
   }));
   return placeholders.reduce(
     (partition, p, i) => {
@@ -193,14 +209,16 @@ const main = async () => {
   console.log("This script changes files by replacing placeholders with values that you choose.")
   console.log("It will not replace the placeholders for which you give no value.")
   console.log("Run the script again to replace remaining placeholders.")
-  const placeholders = await placeholderTodos(SOURCE_PLACEHOLDERS, DERIVATIONS, TARGET_PATHS);
+  const placeholders =
+        await placeholderTodos(SOURCE_PLACEHOLDERS, DERIVATIONS, TARGET_PATHS);
   if(placeholders.done.length > 0){
     logger.info(`placeholders not found in files ${placeholders.done.join(' ')}`);
     console.log('The following placeholders have already been replaced:\n',
                 placeholders.done.join('\n'));
   }
   logger.info(`unreplaced placeholders ${placeholders.todo.join(' ')}`);
-  const unanswered = questions.filter(q => placeholders.todo.includes(q.name));
+  const unanswered = questions.filter(
+    q => placeholders.todo.includes(q.name));
   const response = await prompts(unanswered, {
     onSubmit: (prompt, answer) => {
       try{
@@ -211,19 +229,15 @@ const main = async () => {
       }
     }});
   const allValues = deriveValues(response, DERIVATIONS);
-  allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS)
-    .forEach(async (placeholder) => {
-      try{
-        const value = allValues[placeholder];
-        if (value) {
-          console.log(`${placeholder} = ${value}`);
-          await replacePlaceholders([placeholder], value, TARGET_PATHS, false);
-        }
-      }catch(error){
-        console.error(error);
-        logger.error(error);
-      }
-    });
+  const toReplace  = allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS)
+        .filter(p => allValues[p]);
+  const replacements = toReplace.map(p => allValues[p]);
+  try {
+    await replacePlaceholders(toReplace, replacements, TARGET_PATHS, false);
+  } catch (error) {
+    console.error(error);
+    logger.error(error);
+  }
 };
 
 try {
