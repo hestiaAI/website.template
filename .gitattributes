@@ -2,3 +2,5 @@ src/assets/large-media/** filter=lfs diff=lfs merge=lfs -text
 src/assets/large-media/README.md !filter !diff !merge text
 src/assets/media/** filter=lfs diff=lfs merge=lfs -text
 src/assets/media/README.md !filter !diff !merge text
+src/assets/media/*.png filter=lfs diff=lfs merge=lfs -text
+src/assets/media/*.jpeg filter=lfs diff=lfs merge=lfs -text

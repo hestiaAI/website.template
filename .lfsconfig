@@ -1,11 +1,2 @@
-# `TODO` enable Large Media support for this repository
-# by executing `netlify link` and `netlify lm:setup`
-# in the project root folder; then remove those comments
-# and commit this updated file; finally update status in
-# the issue #1, linked to this repository, on GitHub.
-#
-# See also: https://docs.netlify.com/large-media/setup/
-
-# Netlify Large Media support
-#[lfs]
-#  url = https://‹SITE-UUID›.netlify.app/.netlify/large-media
+[lfs]
+  url = https://a2f2b31f-b95b-4f30-83b9-6e9d5e4d201e.netlify.app/.netlify/large-media
