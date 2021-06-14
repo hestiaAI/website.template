@@ -12,7 +12,7 @@ articles_title: Last articles
 read_button: Read
 contact_title: Contact
 contact_channel: media
-contact_description: our contact form
+contact_description: Our contact form
 download_title: Media kit
 download_button: Coming soon
 press_releases_title: Press releases

@@ -33,8 +33,8 @@ inverse: true
 <section id="press-releases" class="callout">
   <h1>{% inlineMarkdown press_releases_title %}</h1>
   {% for release in press_releases %}
-    <p>{{release.date | readableDate(locale)}}</p>
-    <h3><a href="{{release.url}}"> {% inlineMarkdown release.title %}</h3>
+    <h3>{{release.date | readableDate(locale)}}</h3>
+    <p><a href="{{release.url}}">{% inlineMarkdown release.title %}</a></p>
   {% endfor %}
 </section>
 
