@@ -69,6 +69,7 @@ registerTranslateConfig({
  *         <input type="hidden" name="first-name">
  *         <input type="hidden" name="last-name">
  *         <input type="hidden" name="email">
+ *         <input type="hidden" name="lang" />
  *     </form>
  *
  *     <newsletter-signup
