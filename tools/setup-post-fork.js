@@ -6,7 +6,7 @@ const path = require('path');
 const {createLogger, format, transports} = require('winston');
 
 const logFile = path.join(process.cwd(),'setup-post-fork.log');
-console.log(`logs written to ${logFile}`);
+console.log(`Logs are written to ${logFile}`);
 const logger = createLogger({
   format: format.simple(),
   transports: [new transports.File({ filename: logFile, handleExceptions: true })]
@@ -189,6 +189,10 @@ async function placeholderTodos(placeholders, derivations, path){
 }
 
 const main = async () => {
+  console.log();
+  console.log("This script changes files by replacing placeholders with values that you choose.")
+  console.log("It will not replace the placeholders for which you give no value.")
+  console.log("Run the script again to replace remaining placeholders.")
   const placeholders = await placeholderTodos(SOURCE_PLACEHOLDERS, DERIVATIONS, TARGET_PATHS);
   if(placeholders.done.length > 0){
     logger.info(`placeholders not found in files ${placeholders.done.join(' ')}`);
