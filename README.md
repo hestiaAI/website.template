@@ -1,19 +1,11 @@
-> Template repository, with code and issues common to every new ‹data community› website, meant to be forked to create new websites.
->
-> 🎯 To create a new website based on this template repository, follow the step-by-step guide [«How-to create a new website from WEBSITE.TEMPLATE»](https://github.com/hestiaAI/website.docs/tree/main/website-new) in the [`WEBSITE.DOCS`](https://github.com/hestiaAI/website.docs/) repository.
->
-> 💡 To report issues about this template repository itself, please head to the [WEBSITE.TEMPLATE.factory](https://github.com/hestiaAI/website.template.factory) repository.
+# ‹Eyeballs› website
 
----
-
-# ‹SITE-TITLE› website
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/‹SITE-UUID›/deploy-status)](https://app.netlify.com/sites/‹SITE-NAME›/deploys) ⟵ `TODO`: update ‹SITE-UUID› and ‹SITE-NAME›
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a2f2b31f-b95b-4f30-83b9-6e9d5e4d201e/deploy-status)](https://app.netlify.com/sites/hestialabs-eye/deploys)
 
 # Access
 
-* [`‹SITE-URL›/{fr,en}/`](https://‹SITE-URL›/en/) ⟵ since public launch;
-* [`‹SITE-NAME›.netlify.app/{fr,en}/`](https://‹SITE-NAME›.netlify.app/en/) ⟵ for development, prior to public launch.
+* [`eyeballs.hestialabs.org/{fr,en}/`](https://eyeballs.hestialabs.org/en/) ⟵ since public launch;
+* [`hestialabs-eye.netlify.app/{fr,en}/`](https://hestialabs-eye.netlify.app/en/) ⟵ for development, prior to public launch.
 
 # Features
 
@@ -22,10 +14,10 @@
 - Static publication system with [Eleventy](https://11ty.dev)
 - Authentication/authorization with [Netlify Identity](https://app.netlify.com/sites/hestialabs/identity)
 - Hosting and CDN with [Netlify Hosting](https://app.netlify.com/sites/hestialabs/overview)
-- [Static homepage](https://‹SITE-URL›/en/) & site specific pages
-- [Blog system](https://‹SITE-URL›/en/blog/)
-- [Contact form](https://‹SITE-URL›/en/about/#contact), with Netlify Forms
-- [Newsletter sign-up form](https://‹SITE-URL›/en/#newsletter), with Netlify Forms
+- [Static homepage](https://eyeballs.hestialabs.org/en/) & site specific pages
+- [Blog system](https://eyeballs.hestialabs.org/en/blog/)
+- [Contact form](https://eyeballs.hestialabs.org/en/about/#contact), with Netlify Forms
+- [Newsletter sign-up form](https://eyeballs.hestialabs.org/en/#newsletter), with Netlify Forms
 
 # How-to?
 
@@ -40,8 +32,8 @@
 
 The website is made of two major deliverables, whose sources are available in this repository:
 
-1. [WEBSITE](https://‹SITE-NAME›.netlify.app): publicly accessible website of HestiaLabs, in french and english;
-2. [CMS](https://‹SITE-NAME›.netlify.app/admin/): our content-authoring system (_aka_ [Netlify CMS](https://www.netlifycms.org)) web app, accessible thru invite only.
+1. [WEBSITE](https://eyeballs.hestialabs.org): publicly accessible website of HestiaLabs, in french and english;
+2. [CMS](https://eyeballs.hestialabs.org/admin/): our content-authoring system (_aka_ [Netlify CMS](https://www.netlifycms.org)) web app, accessible thru invite only.
 
 ## Repository structure
 
