@@ -42,7 +42,7 @@ const SOURCE_PLACEHOLDERS = [
 const DERIVATIONS = {
   [P_SITE_SHORTNAME]: [
     {name: P_REPO_PACKAGE_NAME, derive: p => `website-${p}`},
-    {name: P_NEWSLETTER_FORM_NAME, derive: p => `newletter-${p}-signup`},
+    {name: P_NEWSLETTER_FORM_NAME, derive: p => `newsletter-${p}-signup`},
     {name: P_CONTACT_FORM_NAME_INFO, derive: p => `contact-${p}-info`},
     {name: P_CONTACT_FORM_NAME_MEDIA, derive: p => `contact-${p}-media`},
     {name: P_CONTACT_FORM_NAME_PARTNERS, derive: p => `contact-${p}-partners`},
