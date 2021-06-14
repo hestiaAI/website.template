@@ -3,7 +3,7 @@ id: info
 layout: contact
 title: Let's talk about anything else
 subject: ""
-form_name: ‹CONTACT-FORM-NAME-INFO›
+form_name: contact-eye-info
 lead: |-
   A problem with a dating app? \
   Ideas, skills or goodwill to share? \

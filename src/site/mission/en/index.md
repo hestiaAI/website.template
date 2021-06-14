@@ -3,7 +3,7 @@ layout: mission
 permalink: /en/mission/index.html
 inverse: true
 title: Mission
-lead: "**‹SITE-TITLE›**'s mission"
+lead: "**The Eyeballs**'s mission"
 lead_image: /assets/media/mission-hero-image.jpg
 lead_image_caption: Photo by [Mojtaba Mohammadi](https://unsplash.com/@mojitaba)
   on [Unsplash](https://unsplash.com/photos/yioTsD3fLkA)
