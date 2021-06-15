@@ -43,8 +43,10 @@ async function replaceRegexes(regexes, values, paths){
   const results = await replace(options);
   const files = results.filter(result => result.hasChanged)
     .map(result => result.file);
-  console.log(`replaced ${regexes.length} regexes`,
-    ` in ${files.length} files`);
+  if (files.length > 0) {
+    console.log(`replaced ${regexes.length} regexes`,
+      ` in ${files.length} files`);
+  }
   files.forEach(f => {
     console.log(`wrote ${f}`);
     logger.info(`replaced ${regexes.join(' ')} in ${f}`);
