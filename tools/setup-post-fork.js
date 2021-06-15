@@ -213,7 +213,7 @@ const main = async () => {
       'The following placeholders have already been replaced:\n' +
       placeholders.done.join('\n'));
   }
-  const colorsDone = !areColorsReplaced();
+  const colorsDone = await areColorsReplaced();
   if(colorsDone){
     console.log("The theme colors have already been set.")
   }
