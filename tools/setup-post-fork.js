@@ -215,7 +215,7 @@ const main = async () => {
   }
   const colorsDone = !areColorsReplaced();
   if(colorsDone){
-    console.log("The primary and secondary colors have already been set.")
+    console.log("The theme colors have already been set.")
   }
   logger.info(`unreplaced placeholders ${placeholders.todo.join(' ')}`);
   const unanswered = PLACEHOLDER_QUESTIONS
