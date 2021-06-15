@@ -33,7 +33,7 @@ Optional at this stage, but have to be defined before site public launch:
 - [ ] Run `npm install` on the command-line `TODO` 
 - [ ] Commit your changes to `package.json` and the updated `package-lock.json` `TODO` 
 - [ ] Run `npm run setup-post-fork` on the command-line, set the four main placeholders `TODO` 
-- [ ] Optionally run `npm run setup-post-fork` on the command-line, set the remaining placeholders `TODO` 
+- [ ] Optionally run `npm run setup-post-fork` on the command-line, set the remaining placeholders and theme colors `TODO` 
 
 #### Basic configuration
 
@@ -57,19 +57,11 @@ Optional at this stage, but have to be defined before site public launch:
 
 #### Theme configuration
 
-- [ ] Define the primary theme color `TODO`  template defaults to `#04650f`
-- [ ] Define the secondary theme color `TODO`  evaluate [`LightenDarkenColor( "#‹primary color›",224)`](https://css-tricks.com/snippets/javascript/lighten-darken-color/)
-- [ ] Set the primary theme color in the **`--theme-color-primary`** CSS variable in [`src/assets/styles/main.css`](../blob/main/src/assets/styles/main.css) `TODO` 
-- [ ] Set the secondary lightened theme color in the **`--theme-color-secondary`** CSS variable in [`src/assets/styles/main.css`](../blob/main/src/assets/styles/main.css) `TODO` 
-- [ ] Set the primary theme color in the **`style="fill:rgb(4,101,15);"`** CSS rule in [`src/site/favicon.svg`](../blob/main/src/site/favicon.svg#L9) (`<path>` element on line 9) `TODO` 
-- [ ] Set the primary theme color in the **`fill="#04650f"`** SVG attribute in [`src/assets/img/icon-external-link.svg`](../blob/main/src/assets/img/icon-external-link.svg#L3) (`<path>` element on line 3) `TODO` 
-- [ ] Commit your changes `TODO` 
-
 `TODO` update logo
 
 #### Cleanup
 
-- [ ] Run `npm run setup-post-fork` on the command-line, set all known remaining placeholders `TODO` 
+- [ ] Run `npm run setup-post-fork` on the command-line, set all known remaining placeholders and colors`TODO` 
 - [ ] Commit your changes `TODO` 
 
 ### Hand-over to site owner
