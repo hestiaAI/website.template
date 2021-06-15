@@ -8,11 +8,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
     <g id="eyeballs-logo" serif:id="eyeballs logo" transform="matrix(1,0,0,1,-324.692,-593.654)">
         <g id="ellipse" transform="matrix(1.36387,-0.178665,0.152718,1.16581,308.178,539.901)">
-            <ellipse cx="378.936" cy="289.032" rx="361.257" ry="162.053" style="fill:rgb(228,255,239);"/>
+            <ellipse cx="378.936" cy="289.032" rx="361.257" ry="162.053" style="fill:#e0ffff;"/>
         </g>
         <g id="text" transform="matrix(1,0,0,1,324.692,602.654)">
-            <text x="35.565px" y="164.236px" style="font-family:'FiraCode-Regular', 'Fira Code', monospace;font-size:192px;fill:rgb(4,101,15);">‹<tspan x="155.639px 275.713px 395.786px 515.86px 635.934px 756.008px 876.082px " y="164.236px 164.236px 164.236px 164.236px 164.236px 164.236px 164.236px ">Website</tspan></text>
-            <text x="155.639px" y="356.236px" style="font-family:'FiraCode-Regular', 'Fira Code', monospace;font-size:192px;fill:rgb(4,101,15);"><tspan x="155.639px 275.713px 395.786px 515.86px 635.934px " y="356.236px 356.236px 356.236px 356.236px 356.236px ">logo›</tspan></text>
+            <text x="35.565px" y="164.236px" style="font-family:'FiraCode-Regular', 'Fira Code', monospace;font-size:192px;fill:#007a99;">‹<tspan x="155.639px 275.713px 395.786px 515.86px 635.934px 756.008px 876.082px " y="164.236px 164.236px 164.236px 164.236px 164.236px 164.236px 164.236px ">Website</tspan></text>
+            <text x="155.639px" y="356.236px" style="font-family:'FiraCode-Regular', 'Fira Code', monospace;font-size:192px;fill:#007a99;"><tspan x="155.639px 275.713px 395.786px 515.86px 635.934px " y="356.236px 356.236px 356.236px 356.236px 356.236px ">logo›</tspan></text>
         </g>
     </g>
 </svg>
