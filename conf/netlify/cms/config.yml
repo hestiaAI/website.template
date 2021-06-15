@@ -253,16 +253,32 @@ collections:
       fields:
         - {label: "Date", name: date, required: false, widget: date, format: "YYYY-MM", date_format: "YYYY-MM", picker_utc: true }
         - {label: Description, name: description, required: false, widget: markdown }
-    - { label: "Chat groups title", name: chat_groups_title, required: false, widget: string, i18n: true }
-    - label: "Chat groups"
-      name: "chat_groups"
+    - { label: "Conversation channels title", name: converstion_channels_title, required: false, widget: string, i18n: true }
+    - label: "Conversation channels"
+      name: "conversation_channels"
       widget: "list"
       i18n: true
       summary: '{{fields.name}}'
-      fields:
-        - {label: Name, name: name, required: false, widget: text }
-        - {label: Link, name: link, required: false, widget: file }
-        - {label: Image, name: image, required: false, widget: image }
+      types:
+        - label: "Generic url"
+          name: generic_url
+          fields:
+            - {label: Name, name: name, required: false, widget: string}
+            - {label: Image, name: image, required: false, widget: image}
+            - {label: URL, name: url, required: false, widget: file}
+            # - {label: 'type', name: type, widget: "hidden", default: "link"}
+        - label: "Forum (see ‹Configuration›)"
+          name: "forum_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Forum",
+               hint: "This channel will have the forum URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
+        - label: "Twitter (see ‹Configuration›)"
+          name: "twitter_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Twitter",
+               hint: "This channel will have the twitter URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
 
 - label: Contact forms
   name: contact_channel

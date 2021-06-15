@@ -13,7 +13,7 @@
      https://css-tricks.com/essential-meta-tags-social-media/ #}
   {% set canonical_url = links.canonical_base_url + page.url %}
   <meta name="twitter:card" content="summary" >
-  <meta name="twitter:site" content="{{links.twitter_account}}" >
+  <meta name="twitter:site" content="@{{links.twitter_url | replace("https://twitter.com/", "")}}" >
   <meta name="twitter:title" content="{% inlineMarkdownP "plain" %}{% renderLiquid "title", pageData %}{% endinlineMarkdownP %}" >
   <meta property="og:title" content="{% inlineMarkdownP "plain" %}{% renderLiquid "title", pageData %}{% endinlineMarkdownP %}">
   <meta property="og:type" content="article" >

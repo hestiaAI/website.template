@@ -47,6 +47,22 @@ layout: defaultWithHero
   </section>
 {% endif %}
 
+{% if conversation_channels | length %}
+  <section id="join-conversation" class="callout">
+    <h1>{{conversation_channels_title}}</h1>
+    {% for channel in conversation_channels %}
+      {% if channel.url %}
+        {% set channel_link = channel.url %}
+      {% else %}
+        {% set channel_link = links[channel.type] %}
+      {% endif %}
+      <p><a href="{{channel_link}}" target="_blank">
+        <img src="{{channel.image}}">
+        <span>{{channel.name}}</span>
+      </a></p>
+    {% endfor %}
+  </section>
+{% endif %}
 <script type="module">
   import '/components/contact-card.js';
 </script>
