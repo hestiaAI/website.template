@@ -9,7 +9,8 @@ const logger = loggers.get(SETUP_LOGGER_NAME)
 const REGEX_PRIMARY_COLOR_CSS = /(--theme-color-primary: *)#04650f/
 const REGEX_SECONDARY_COLOR_CSS = /(--theme-color-secondary: *)#e4ffef/;
 const REGEX_PRIMARY_COLOR_SVG_1 = /(fill=")#04650f/
-const REGEX_PRIMARY_COLOR_SVG_2 = /(fill:)rgb\(4,101,15\)/
+const REGEX_PRIMARY_COLOR_SVG_2 = /(fill:)rgb\(4,101,15\)/g
+const REGEX_SECONDARY_COLOR_SVG = /(fill:)rgb\(228,255,239\)/g;
 const PRIMARY_REGEXES = [
   REGEX_PRIMARY_COLOR_CSS,
   REGEX_PRIMARY_COLOR_SVG_1,
@@ -18,6 +19,7 @@ const PRIMARY_REGEXES = [
 
 const SECONDARY_REGEXES = [
   REGEX_SECONDARY_COLOR_CSS,
+  REGEX_SECONDARY_COLOR_SVG,
 ];
 
 const replacingString = hexColor => `$1${hexColor}`;
@@ -26,6 +28,7 @@ const TARGET_PATHS = [
   './src/assets/styles/main.css',
   './src/assets/styles/base/variables.css',
   'src/assets/img/icon-external-link.svg',
+  'src/assets/img/placeholder-logo-web.export.svg',
   'src/site/favicon.svg'
 ];
 
