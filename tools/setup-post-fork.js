@@ -56,6 +56,7 @@ const DERIVATIONS = {
     {name: P_CONTACT_FORM_NAME_RESEARCHERS, derive: p => `contact-${p}-researchers`},
   ]
 };
+
 const allPlaceholders = (sourcePlaceholders, derivations) =>
       [ ...sourcePlaceholders,
         ...sourcePlaceholders
@@ -64,6 +65,17 @@ const allPlaceholders = (sourcePlaceholders, derivations) =>
           .flat()]
 
 const TARGET_PATHS = ['src/**', 'conf/**', 'README.md', 'package.json'];
+
+const makeDerivedInitial = (derivedPlaceholder, srcPlaceholder) =>
+  (_, vals) => {
+    const srcValue = vals[srcPlaceholder];
+    const derivation = DERIVATIONS[srcPlaceholder].find(
+      d => d.name === derivedPlaceholder);
+    if (srcValue && derivation?.derive) {
+      return derivation.derive(srcValue);
+    }
+    return '';
+  };
 
 const PLACEHOLDER_QUESTIONS = [
   {
@@ -81,6 +93,48 @@ const PLACEHOLDER_QUESTIONS = [
     type: 'text',
     name: P_SITE_SHORTNAME,
     message: 'A short name for the website (ex: "shoca")',
+  },
+  {
+    type: 'text',
+    name: P_REPO_PACKAGE_NAME,
+    message: 'Package name (ex: "website-shoca")',
+    // A derived value must come after its source placeholder,
+    // so that it can be derived from the user's input for the source.
+    initial: makeDerivedInitial(P_REPO_PACKAGE_NAME, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_NEWSLETTER_FORM_NAME,
+    message: 'Newsletter form name (ex: "newsletter-shoca-signup")',
+    initial: makeDerivedInitial(P_NEWSLETTER_FORM_NAME, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_INFO,
+    message: 'Default contact form name (ex: "contact-shoca-info")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_INFO, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_MEDIA,
+    message: 'Media contact form name (ex: "contact-shoca-media")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_MEDIA, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_PARTNERS,
+    message: 'Partner contact form name (ex: "contact-shoca-partners")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_PARTNERS, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_RESEARCHERS,
+    message: 'Researcher contact form name (ex: "contact-shoca-researchers")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_RESEARCHERS, P_SITE_SHORTNAME),
   },
   {
     type: 'text',
@@ -123,22 +177,11 @@ const CONFIRM_QUESTION = {
   message: 'Run script to replace placeholders in files ?',
 };
 
-const deriveValues = (vals, derivations) =>
-      Object.entries(vals).reduce(
-        (allVals, [ph, val] ) => {
-          if (val) {
-            derivations[ph]?.forEach(d => {
-              allVals[d.name] = d.derive(val);
-            })
-          }
-          return allVals;
-        },
-        Object.assign({}, vals));
-
 const makeRegex = p => new RegExp(p, 'g');
 
 async function placeholderTodos(){
-  const placeholders = SOURCE_PLACEHOLDERS;
+  // const placeholders = SOURCE_PLACEHOLDERS;
+  const placeholders = allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS);
   const derivations = DERIVATIONS;
   const paths = TARGET_PATHS;
   const filesToProcess = await Promise.all(placeholders.map(p => {
@@ -155,7 +198,8 @@ async function placeholderTodos(){
 }
 
 async function replacePlaceHolders(response) {
-  const allValues = deriveValues(response, DERIVATIONS);
+  // const allValues = deriveValues(response, DERIVATIONS);
+  const allValues = response;
   const toReplace = allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS)
     .filter(p => allValues[p]);
   const replacements = toReplace.map(p => allValues[p]);
