@@ -1,14 +1,22 @@
+#!/usr/bin/env node
 const prompts = require('prompts');
 const {
   findMatchingFiles,
   replaceRegexes,
   SETUP_LOGGER_NAME
-} = require('./utils')
+} = require('./lib/replacement-utils');
+const{
+  urlPartValidator,
+  urlValidator,
+  twitterNoAmpersandValidator,
+  makeLogPrompt,
+} = require('./lib/prompt-utils');
 const {
   COLOR_QUESTIONS,
   areColorsReplaced,
   replaceColors
-} = require('./replace-colors')
+} = require('./lib/replace-colors');
+const { assertNodeVersion } = require('./lib/check-runtime-env');
 const {loggers} = require('winston');
 const logger = loggers.get(SETUP_LOGGER_NAME)
 
@@ -50,6 +58,7 @@ const DERIVATIONS = {
     {name: P_CONTACT_FORM_NAME_RESEARCHERS, derive: p => `contact-${p}-researchers`},
   ]
 };
+
 const allPlaceholders = (sourcePlaceholders, derivations) =>
       [ ...sourcePlaceholders,
         ...sourcePlaceholders
@@ -59,34 +68,16 @@ const allPlaceholders = (sourcePlaceholders, derivations) =>
 
 const TARGET_PATHS = ['src/**', 'conf/**', 'README.md', 'package.json'];
 
-const requiredValidator =
-      value => value.length > 0 || 'Please enter a value';
-
-const urlPartValidator = value => {
-  if(encodeURIComponent(value) != value){
-    return `The name should be valid in an url`
-  }
-  return true;
-};
-
-const urlValidator = value => {
-  // not mandatory
-  if(!value){return true;}
-  try {
-    new URL('http://' + value);
-    return true;
-  } catch (error) {
-    return "Invalid url";
-  }
-};
-
-const twitterValidator = value =>
-      value.startsWith('@') ? 'Please remove the @' : true;
-
-const composeValidators = (...validators) => (value) =>
-  validators.reduce(
-    (result, validator) => result === true ? validator(value) : result,
-    true);
+const makeDerivedInitial = (derivedPlaceholder, srcPlaceholder) =>
+  (_, vals) => {
+    const srcValue = vals[srcPlaceholder];
+    const derivation = DERIVATIONS[srcPlaceholder].find(
+      d => d.name === derivedPlaceholder);
+    if (srcValue && derivation?.derive) {
+      return derivation.derive(srcValue);
+    }
+    return '';
+  };
 
 const PLACEHOLDER_QUESTIONS = [
   {
@@ -104,6 +95,48 @@ const PLACEHOLDER_QUESTIONS = [
     type: 'text',
     name: P_SITE_SHORTNAME,
     message: 'A short name for the website (ex: "shoca")',
+  },
+  {
+    type: 'text',
+    name: P_REPO_PACKAGE_NAME,
+    message: 'Package name (ex: "website-shoca")',
+    // A derived value must come after its source placeholder,
+    // so that it can be derived from the user's input for the source.
+    initial: makeDerivedInitial(P_REPO_PACKAGE_NAME, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_NEWSLETTER_FORM_NAME,
+    message: 'Newsletter form name (ex: "newsletter-shoca-signup")',
+    initial: makeDerivedInitial(P_NEWSLETTER_FORM_NAME, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_INFO,
+    message: 'Default contact form name (ex: "contact-shoca-info")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_INFO, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_MEDIA,
+    message: 'Media contact form name (ex: "contact-shoca-media")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_MEDIA, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_PARTNERS,
+    message: 'Partner contact form name (ex: "contact-shoca-partners")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_PARTNERS, P_SITE_SHORTNAME),
+  },
+  {
+    type: 'text',
+    name: P_CONTACT_FORM_NAME_RESEARCHERS,
+    message: 'Researcher contact form name (ex: "contact-shoca-researchers")',
+    initial:
+    makeDerivedInitial(P_CONTACT_FORM_NAME_RESEARCHERS, P_SITE_SHORTNAME),
   },
   {
     type: 'text',
@@ -130,7 +163,7 @@ const PLACEHOLDER_QUESTIONS = [
     type: 'text',
     name: P_TWITTER_ACCOUNT_NAME,
     message: 'Twitter handle (without @)',
-    validate: twitterValidator
+    validate: twitterNoAmpersandValidator
   },
   {
     type: 'text',
@@ -141,27 +174,16 @@ const PLACEHOLDER_QUESTIONS = [
 ];
 
 const CONFIRM_QUESTION = {
-    type: 'confirm',
-    name: Q_CONFIRM,
-    message: 'Run script to replace placeholders in files ?',
-  };
-
-const deriveValues = (vals, derivations) =>
-      Object.entries(vals).reduce(
-        (allVals, [ph, val] ) => {
-          if (val) {
-            derivations[ph]?.forEach(d => {
-              allVals[d.name] = d.derive(val);
-            })
-          }
-          return allVals;
-        },
-        Object.assign({}, vals));
+  type: 'confirm',
+  name: Q_CONFIRM,
+  message: 'Run script to replace placeholders in files ?',
+};
 
 const makeRegex = p => new RegExp(p, 'g');
 
 async function placeholderTodos(){
-  const placeholders = SOURCE_PLACEHOLDERS;
+  // const placeholders = SOURCE_PLACEHOLDERS;
+  const placeholders = allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS);
   const derivations = DERIVATIONS;
   const paths = TARGET_PATHS;
   const filesToProcess = await Promise.all(placeholders.map(p => {
@@ -178,7 +200,8 @@ async function placeholderTodos(){
 }
 
 async function replacePlaceHolders(response) {
-  const allValues = deriveValues(response, DERIVATIONS);
+  // const allValues = deriveValues(response, DERIVATIONS);
+  const allValues = response;
   const toReplace = allPlaceholders(SOURCE_PLACEHOLDERS, DERIVATIONS)
     .filter(p => allValues[p]);
   const replacements = toReplace.map(p => allValues[p]);
@@ -191,16 +214,7 @@ async function replacePlaceHolders(response) {
   }
 };
 
-function logPrompt(prompt, answer) {
-  try {
-    logger.info(`user chooses ${prompt.name} = ${answer}`);
-  } catch (error) {
-    console.error(error);
-    logger.error(error);
-  }
-}
-
-const main = async () => {
+async function main() {
   console.log();
   ["Change files by replacing placeholders with values that you choose.",
     "The placeholders for which you give no value will not be replaced.",
@@ -222,7 +236,8 @@ const main = async () => {
         .filter(q => placeholders.todo.includes(q.name))
         .concat(colorsDone ? [] : COLOR_QUESTIONS)
         .concat([CONFIRM_QUESTION]);
-  const response = await prompts(unanswered, {onSubmit: logPrompt});
+  const response =
+        await prompts(unanswered, { onSubmit: makeLogPrompt(logger) });
   const confirm = response[Q_CONFIRM];
   if(confirm){
     await replacePlaceHolders(response);
@@ -231,7 +246,9 @@ const main = async () => {
 };
 
 try {
+  assertNodeVersion('v14');
   main();
 } catch (error) {
+  logger.error(error);
   console.error(error);
 }
