@@ -1,20 +1,22 @@
+#!/usr/bin/env node
 const prompts = require('prompts');
 const {
   findMatchingFiles,
   replaceRegexes,
   SETUP_LOGGER_NAME
-} = require('./replacement-utils');
+} = require('./lib/replacement-utils');
 const{
   urlPartValidator,
   urlValidator,
   twitterNoAmpersandValidator,
   makeLogPrompt,
-} = require('./prompt-utils');
+} = require('./lib/prompt-utils');
 const {
   COLOR_QUESTIONS,
   areColorsReplaced,
   replaceColors
-} = require('./replace-colors')
+} = require('./lib/replace-colors');
+const { assertNodeVersion } = require('./lib/check-runtime-env');
 const {loggers} = require('winston');
 const logger = loggers.get(SETUP_LOGGER_NAME)
 
@@ -212,7 +214,7 @@ async function replacePlaceHolders(response) {
   }
 };
 
-const main = async () => {
+async function main() {
   console.log();
   ["Change files by replacing placeholders with values that you choose.",
     "The placeholders for which you give no value will not be replaced.",
@@ -244,7 +246,9 @@ const main = async () => {
 };
 
 try {
+  assertNodeVersion('v14');
   main();
 } catch (error) {
+  logger.error(error);
   console.error(error);
 }

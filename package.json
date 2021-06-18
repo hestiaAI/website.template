@@ -15,7 +15,6 @@
     "access": "restricted"
   },
   "scripts": {
-    "setup-post-fork": "node tools/setup-post-fork.js",
     "postinstall": "npm dedupe",
     "clean": "rimraf build",
     "prebuild": "npm run clean",
@@ -28,9 +27,10 @@
     "dev:eleventy": "eleventy --watch --quiet",
     "start": "npm run dev",
     "start:netlify:cms-proxy": "netlify-cms-proxy-server",
-    "fork": "node tools/fork-repo.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tools:setup-post-fork": "node tools/setup-post-fork.js",
+    "tools:fork-template": "node tools/fork-template.js"
+},
   "dependencies": {
     "lit-element": "^2.4.0",
     "lit-translate": "^1.2.1"
