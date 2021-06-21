@@ -90,7 +90,7 @@ async function replaceColors(response) {
   const allRegexes = PRIMARY_REGEXES.concat(SECONDARY_REGEXES);
   const allValues = pVals.concat(sVals);
   try {
-    await replaceRegexes(allRegexes, allValues, TARGET_PATHS, false);
+    await replaceRegexes(allRegexes, allValues, TARGET_PATHS);
   } catch (error) {
     console.error(error);
     logger.error(error);

@@ -1,5 +1,5 @@
 {
-  "name": "@hestia/‹REPO-PACKAGE-NAME›",
+  "name": "@hestia/~REPO-PACKAGE-NAME~",
   "version": "0.1.0",
   "description": "HestiaLabs ‹SITE-TITLE› website",
   "license": "UNLICENSED",
