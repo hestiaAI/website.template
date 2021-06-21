@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('./lib/check-runtime-env').assertNodeVersion();
 const prompts = require('prompts');
 const {
   findMatchingFiles,
@@ -16,7 +17,6 @@ const {
   areColorsReplaced,
   replaceColors
 } = require('./lib/replace-colors');
-const { assertNodeVersion } = require('./lib/check-runtime-env');
 const {loggers} = require('winston');
 const logger = loggers.get(SETUP_LOGGER_NAME)
 
@@ -246,7 +246,6 @@ async function main() {
 };
 
 try {
-  assertNodeVersion('v14');
   main();
 } catch (error) {
   logger.error(error);

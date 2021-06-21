@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('./lib/check-runtime-env').assertNodeVersion();
 const { Octokit } = require("octokit");
 const { retry } = require("@octokit/plugin-retry");
 const prompts = require('prompts');
@@ -7,7 +8,6 @@ const{
   requiredValidator,
   makeLogPrompt
 } = require('./lib/prompt-utils');
-const { assertNodeVersion } = require('./lib/check-runtime-env');
 const fs = require('fs');
 const path = require('path');
 const { createLogger, format, transports } = require('winston');
@@ -317,7 +317,6 @@ async function main(args) {
 }
 
 try {
-  assertNodeVersion('v14');
   main(process.argv.slice(2));
 } catch (error) {
   logger.error('error', { error });
