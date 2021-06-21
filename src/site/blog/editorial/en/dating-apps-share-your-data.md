@@ -11,7 +11,7 @@ post_authors:
   - mpv
 suggested:
   - type: interview
-    interview: interview-de-jessica-pidoux-journal-le-temps
+    post: interview-de-jessica-pidoux-journal-le-temps
 ---
 In this [report «Out Of Control»](https://www.forbrukerradet.no/undersokelse/no-undersokelsekategori/report-out-of-control/) published in January 2020, Norwegian Consumer Council demonstrate how every time we use our phones, a large number of shadowy entities that are virtually unknown to consumers are receiving personal data about our interests, habits, and behavior.
 
