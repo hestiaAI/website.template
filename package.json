@@ -29,7 +29,8 @@
     "start:netlify:cms-proxy": "netlify-cms-proxy-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tools:setup-post-fork": "node tools/setup-post-fork.js",
-    "tools:fork-template": "node tools/fork-template.js"
+    "tools:fork-template": "node tools/fork-template.js",
+    "tools:migrate:post-ids": "node tools/migrate-post-ids.js"
 },
   "dependencies": {
     "lit-element": "^2.4.0",

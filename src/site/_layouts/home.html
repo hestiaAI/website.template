@@ -34,9 +34,8 @@ inverse: true
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
     {% for item in news %}
-      {% set newsId = item[item.type] %}
       {% for post in collections[item.type] %}
-        {% if post.data.locale == locale and post.data.id == newsId %}
+        {% if post.data.locale == locale and post.data.id == item.post %}
           <article-breakout
               class="grid-cell" layout="box"
               href="{{post.url | url}}" img-src="{{post.data.image | url}}">

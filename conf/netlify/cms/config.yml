@@ -178,10 +178,10 @@ collections:
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -190,10 +190,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -202,10 +202,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"
@@ -473,10 +473,10 @@ collections:
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -485,10 +485,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -497,10 +497,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"
@@ -552,10 +552,10 @@ collections:
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: "post"
             widget: relation
             collection: editorials
             value_field: "id"
@@ -564,10 +564,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: "post"
             widget: relation
             collection: interviews
             value_field: "id"
@@ -576,10 +576,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: "post"
             widget: relation
             collection: infographics
             value_field: "id"
@@ -630,10 +630,10 @@ collections:
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -642,10 +642,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -654,10 +654,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"
