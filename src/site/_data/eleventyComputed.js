@@ -40,6 +40,9 @@ const findId = (data) => {
 };
 
 const omitSomeEleventySuppliedData = data => {
+  // declare dependencies
+  // https://www.11ty.dev/docs/data-computed/#declaring-your-dependencies
+  data.defaultTranslation
   const {pkg, collections, eleventyComputed, ...cosher} = data;
   return cosher;
 }

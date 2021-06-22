@@ -60,4 +60,14 @@ const formatDate = (date, locale, format) => {
   return formattedDate;
 }
 
-module.exports = { buildLocalesCollection, formatDate, determineLocale };
+const getLocalizedOrDefault = (data, name) => {
+  const localizedVal = data[name];
+  const defaultVal = data.defaultTranslation.page.data[name]
+  if(Array.isArray(localizedVal)){
+    return localizedVal.length > 0 ? localizedVal : defaultVal;
+  }
+  const localized = localizedVal !== undefined && localizedVal != '';
+  return localized ? localizedVal : defaultVal;
+}
+
+module.exports = { buildLocalesCollection, formatDate, determineLocale, getLocalizedOrDefault };

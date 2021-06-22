@@ -24,9 +24,11 @@ layout: defaultWithHero
       <h1>{% inlineMarkdown postSection.sectionTitle %}</h1>
       <div class="grid-layout-halves with-gutters">
         {% for post in posts[postSection.id] %}
-            <article-breakout class="grid-cell" layout="box"
-                href="{{post.url | url}}" img-src="{{post.data.image | url}}">
-              <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+            <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}"
+              img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+              <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
               <h2>{% inlineMarkdown post.data.title %}</h2>
               {% markdown post.data.lead %}
               <button>{{i18n.globals[locale].read_more}}</button>
