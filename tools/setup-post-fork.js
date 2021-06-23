@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('./lib/check-runtime-env').assertNodeVersion();
 const prompts = require('prompts');
 const {
   findMatchingFiles,
@@ -16,7 +17,6 @@ const {
   areColorsReplaced,
   replaceColors
 } = require('./lib/replace-colors');
-const { assertNodeVersion } = require('./lib/check-runtime-env');
 const {loggers} = require('winston');
 const logger = loggers.get(SETUP_LOGGER_NAME)
 
@@ -24,7 +24,7 @@ const P_SITE_TITLE = '‹SITE-TITLE›';
 const P_SITE_NAME = '‹SITE-NAME›';
 const P_SITE_SHORTNAME = '‹SITE-SHORTNAME›';
 const P_REPO_NAME = '‹REPO-NAME›';
-const P_REPO_PACKAGE_NAME = '‹REPO-PACKAGE-NAME›';
+const P_REPO_PACKAGE_NAME = '~REPO-PACKAGE-NAME~';
 const P_NEWSLETTER_FORM_NAME = '‹NEWSLETTER-FORM-NAME›';
 const P_CONTACT_FORM_NAME_INFO = '‹CONTACT-FORM-NAME-INFO›';
 const P_CONTACT_FORM_NAME_MEDIA = '‹CONTACT-FORM-NAME-MEDIA›';
@@ -207,7 +207,7 @@ async function replacePlaceHolders(response) {
   const replacements = toReplace.map(p => allValues[p]);
   try {
     await replaceRegexes(
-      toReplace.map(makeRegex), replacements, TARGET_PATHS, false);
+      toReplace.map(makeRegex), replacements, TARGET_PATHS);
   } catch (error) {
     console.error(error);
     logger.error(error);
@@ -246,7 +246,6 @@ async function main() {
 };
 
 try {
-  assertNodeVersion('v14');
   main();
 } catch (error) {
   logger.error(error);

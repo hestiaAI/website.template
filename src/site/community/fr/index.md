@@ -24,10 +24,10 @@ timeline_events:
     description: TODO
   - date: 2021-12
     description: TODO
-chat_groups_title: Join the conversation
-chat_groups:
-  - name: Forum
-    link: ‹FORUM-SITE-URL›
-  - name: Twitter
-    link: https://twitter.com/@‹TWITTER-ACCOUNT-NAME›
+conversation_channels_title: Join the conversation
+conversation_channels:
+  - type: forum_url
+    name: Forum
+  - type: twitter_url
+    name: Twitter
 ---

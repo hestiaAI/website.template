@@ -178,10 +178,10 @@ collections:
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -190,10 +190,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -202,10 +202,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"
@@ -253,16 +253,32 @@ collections:
       fields:
         - {label: "Date", name: date, required: false, widget: date, format: "YYYY-MM", date_format: "YYYY-MM", picker_utc: true }
         - {label: Description, name: description, required: false, widget: markdown }
-    - { label: "Chat groups title", name: chat_groups_title, required: false, widget: string, i18n: true }
-    - label: "Chat groups"
-      name: "chat_groups"
+    - { label: "Conversation channels title", name: converstion_channels_title, required: false, widget: string, i18n: true }
+    - label: "Conversation channels"
+      name: "conversation_channels"
       widget: "list"
       i18n: true
       summary: '{{fields.name}}'
-      fields:
-        - {label: Name, name: name, required: false, widget: text }
-        - {label: Link, name: link, required: false, widget: file }
-        - {label: Image, name: image, required: false, widget: image }
+      types:
+        - label: "Generic url"
+          name: generic_url
+          fields:
+            - {label: Name, name: name, required: false, widget: string}
+            - {label: Image, name: image, required: false, widget: image}
+            - {label: URL, name: url, required: false, widget: file}
+            # - {label: 'type', name: type, widget: "hidden", default: "link"}
+        - label: "Forum (see ‹Configuration›)"
+          name: "forum_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Forum",
+               hint: "This channel will have the forum URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
+        - label: "Twitter (see ‹Configuration›)"
+          name: "twitter_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Twitter",
+               hint: "This channel will have the twitter URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
 
 - label: Contact forms
   name: contact_channel
@@ -445,9 +461,11 @@ collections:
     - { label: Title, name: title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Date, name: date, required: false, widget: datetime, i18n: true }
-    - { label: Image, name: image, required: false, widget: image, i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
     - { label: "Image caption", name: image_caption, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used"}
     - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
     - { label: "Body", name: "body", required: false, widget: "markdown", i18n: true }
     - label: "categories"
@@ -468,15 +486,16 @@ collections:
       search_fields: ["name", "id", "description"]
     - label: "Suggested"
       name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
       widget: "list"
       i18n: true
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -485,10 +504,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -497,10 +516,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"
@@ -524,9 +543,11 @@ collections:
     - { label: Title, name: title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Date, name: date, required: false, widget: datetime, i18n: true }
-    - { label: Image, name: image, required: false, widget: image, i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
     - { label: "Image caption", name: image_caption, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used" }
     - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
     - { label: "Body", name: "body", required: false, widget: "markdown", i18n: true }
     - label: "categories"
@@ -547,15 +568,16 @@ collections:
       search_fields: ["name", "id", "description"]
     - label: "Suggested"
       name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
       widget: "list"
       i18n: true
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: "post"
             widget: relation
             collection: editorials
             value_field: "id"
@@ -564,10 +586,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: "post"
             widget: relation
             collection: interviews
             value_field: "id"
@@ -576,10 +598,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: "post"
             widget: relation
             collection: infographics
             value_field: "id"
@@ -604,9 +626,11 @@ collections:
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Date, name: date, required: false, widget: datetime, i18n: true }
     - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
-    - { label: Image, name: image, required: false, widget: image, i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
     - { label: "Image caption", name: image_caption, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used" }
     - label: "categories"
       name: "post_categories"
       widget: relation
@@ -625,15 +649,16 @@ collections:
       search_fields: ["name", "id", "description"]
     - label: "Suggested"
       name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
       widget: "list"
       i18n: true
       types:
         - label: "Editorial"
           name: "editorial"
-          summary: '{{fields.editorial}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Editorial
-            name: "editorial"
+            name: post
             widget: relation
             collection: editorials
             value_field: "id"
@@ -642,10 +667,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Interview"
           name: "interview"
-          summary: '{{fields.interview}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Interview
-            name: "interview"
+            name: post
             widget: relation
             collection: interviews
             value_field: "id"
@@ -654,10 +679,10 @@ collections:
             search_fields: ["title", "body"]
         - label: "Infographic"
           name: "infographic"
-          summary: '{{fields.infographic}}'
+          summary: '{{fields.post}}'
           fields:
           - label: Infographic
-            name: "infographic"
+            name: post
             widget: relation
             collection: infographics
             value_field: "id"

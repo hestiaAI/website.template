@@ -20,19 +20,18 @@ layout: defaultWithLeadTitle
     {% endfor %}
   </p>
   <figure>
-    <img src="{{image | url}}">
-    <figcaption>{% inlineMarkdown image_caption %}</figcaption>
+    <img src="{{pageData | getLocalizedOrDefault("image")| url}}">
+    <figcaption>{% inlineMarkdown pageData | getLocalizedOrDefault("image_caption") %}</figcaption>
   </figure>
   {{ content | safe }}
 </section>
-
-{% if suggested | length %}
+{% set suggested_lod = pageData | getLocalizedOrDefault("suggested") %}
+{% if suggested_lod | length %}
   <section id="suggested-posts">
     <h1>{% inlineMarkdown i18n.globals[locale].suggested_posts_title %}</h1>
-    {% for item in suggested %}
+    {% for item in suggested_lod %}
       {% for post in collections[item.type] %}
-      {% set newsId = item[item.type] %}
-        {% if post.data.locale == locale and post.data.id == newsId %}
+        {% if post.data.locale == locale and post.data.id == item.post %}
           <p><a href="{{post.url | url}}">
             {% inlineMarkdown post.data.title %}</a></p>
         {% endif %}
