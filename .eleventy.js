@@ -2,7 +2,8 @@
 // https://www.11ty.dev/docs/config/
 /* eslint-env node */
 
-const { buildLocalesCollection, formatDate} = require('./conf/11ty/locales');
+const { buildLocalesCollection, formatDate, getLocalizedOrDefault} =
+      require('./conf/11ty/locales');
 const { buildPosts } = require('./conf/11ty/blogPosts');
 const { backgroundImage } = require('./conf/11ty/backgroundImage')
 const { creditedImage } = require('./conf/11ty/creditedImage')
@@ -29,6 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("locales", buildLocalesCollection);
   eleventyConfig.addCollection("blogPosts", buildPosts);
 
+  eleventyConfig.addFilter("getLocalizedOrDefault", getLocalizedOrDefault);
   eleventyConfig.addFilter("readableDate", formatDate);
   eleventyConfig.addFilter("backgroundImage", backgroundImage);
   eleventyConfig.addShortcode("creditedImage", creditedImage);

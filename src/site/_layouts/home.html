@@ -34,13 +34,13 @@ inverse: true
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
     {% for item in news %}
-      {% set newsId = item[item.type] %}
       {% for post in collections[item.type] %}
-        {% if post.data.locale == locale and post.data.id == newsId %}
+        {% if post.data.locale == locale and post.data.id == item.post %}
           <article-breakout
               class="grid-cell" layout="box"
-              href="{{post.url | url}}" img-src="{{post.data.image | url}}">
-            <span slot="caption">{% inlineMarkdown post.data.image_caption %}</span>
+              href="{{post.url | url}}"
+              img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+            <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
             <h2>{% inlineMarkdown post.data.title %}</h2>
             {% markdown post.data.lead %}
             <button>{{i18n.globals[locale].read_more}}</button>

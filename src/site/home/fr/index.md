@@ -37,9 +37,9 @@ partners_link_text: Contact us
 news_title: News and events
 news:
   - type: infographic
-    editorial: what-bumble-collects-about-you
+    post: what-bumble-collects-about-you
   - type: editorial
-    editorial: dating-apps-share-your-data
+    post: dating-apps-share-your-data
   - type: interview
-    interview: interview-de-jessica-pidoux-journal-le-temps
+    post: interview-de-jessica-pidoux-journal-le-temps
 ---

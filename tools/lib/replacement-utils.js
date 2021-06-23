@@ -45,7 +45,7 @@ async function replaceRegexes(regexes, values, paths){
     .map(result => result.file);
   if (files.length > 0) {
     console.log(`replaced ${regexes.length} regexes`,
-      ` in ${files.length} files`);
+      `in ${files.length} files`);
   }
   files.forEach(f => {
     console.log(`wrote ${f}`);
