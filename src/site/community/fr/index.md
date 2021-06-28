@@ -1,6 +1,5 @@
 ---
-converstion_channels_title: Une idée ? Une question ? Discutons-en !
-conversation_channels_title: Join the conversation
+conversation_channels_title: Une idée ? Une question ? Discutons-en !
 people_title: People
 layout: community
 permalink: /fr/community/index.html
