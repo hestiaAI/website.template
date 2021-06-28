@@ -253,7 +253,7 @@ collections:
       fields:
         - {label: "Date", name: date, required: false, widget: date, format: "YYYY-MM", date_format: "YYYY-MM", picker_utc: true }
         - {label: Description, name: description, required: false, widget: markdown }
-    - { label: "Conversation channels title", name: converstion_channels_title, required: false, widget: string, i18n: true }
+    - { label: "Conversation channels title", name: conversation_channels_title, required: false, widget: string, i18n: true }
     - label: "Conversation channels"
       name: "conversation_channels"
       widget: "list"
