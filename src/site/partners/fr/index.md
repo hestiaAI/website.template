@@ -63,8 +63,6 @@ lead_image_caption: Photo de [Tania Van den
   Berghen](https://pixabay.com/users/taniavdb-54472/) sur
   [Pixabay](https://pixabay.com/photos/group-of-people-human-group-color-2471124/)
 ---
-We only collaborate and engage with partners who we trust and who meet
-our ethical chart.
+Les Eyeballs activent tous les canaux possibles pour rendre la curiosité contagieuse et sensibiliser toujours plus de personnes à la monétisation de leur attention.
 
-They structure and legitimize the project and amplify its results to 
-establish it in the long term.
+Journalistes, chercheurs, développeurs, esprits curieux, soyez les bienvenus. [Nous contacter](https://eyeballs.hestialabs.org/fr/contact/partners/).

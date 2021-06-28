@@ -63,4 +63,6 @@ lead_image_caption: Photo by [Tania Van den
   Berghen](https://pixabay.com/users/taniavdb-54472/) on
   [Pixabay](https://pixabay.com/photos/group-of-people-human-group-color-2471124/)
 ---
-The Eyeballs set up and activate communication networks to make curiosity contagious and more and more people aware of the monetization of their attention.
+Eyeballs activate every possible channel to make curiosity contagious and make more and more people aware of the monetization of their attention.
+
+Journalists, researchers, developers, curious minds, welcome. [Contact us](https://eyeballs.hestialabs.org/en/contact/partners/) for more information.
