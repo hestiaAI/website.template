@@ -1,12 +1,5 @@
 ---
 layout: partners
-inverse: true
-permalink: /en/partners/index.html
-title: Partners
-lead: "**Partners we trust**"
-lead_image: /assets/media/partners-hero-image.jpg
-lead_image_caption: Photo by [Tania Van den Berghen](https://pixabay.com/users/taniavdb-54472/)
-  on [Pixabay](https://pixabay.com/photos/group-of-people-human-group-color-2471124/)
 partners:
   - title: PersonalData.IO
     url: https://wiki.personaldata.io/wiki/Main_Page
@@ -58,13 +51,16 @@ partners:
     button: Join us
     image: /assets/media/partners-media-jamikaverhandlungen-nov-2017-7.jpg
     image_caption: Kasa Fue, CC BY-SA 4.0
-    description: >-
-      Help your audience connect the dots and play your role as the
+    description: Help your audience connect the dots and play your role as the
       fourth estate by covering our efforts  of dating app privacy risks and
       better practices.
+permalink: /en/partners/index.html
+inverse: true
+title: Partners
+lead: "**Partners we trust**"
+lead_image: /assets/media/partners-hero-image.jpg
+lead_image_caption: Photo by [Tania Van den
+  Berghen](https://pixabay.com/users/taniavdb-54472/) on
+  [Pixabay](https://pixabay.com/photos/group-of-people-human-group-color-2471124/)
 ---
-We only collaborate and engage with partners who we trust and who meet
-our ethical chart.
-
-They structure and legitimize the project and amplify its results to 
-establish it in the long term.
+The Eyeballs set up and activate communication networks to make curiosity contagious and more and more people aware of the monetization of their attention.
