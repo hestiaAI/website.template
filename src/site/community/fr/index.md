@@ -1,15 +1,17 @@
 ---
+converstion_channels_title: Une idée ? Une question ? Discutons-en !
+conversation_channels_title: Join the conversation
+people_title: People
 layout: community
-inverse: true
 permalink: /fr/community/index.html
 title: Community
 lead: "**The Eyeballs**'s community"
 lead_image: /assets/media/community-hero-image.jpg
-lead_image_caption: Illustration de [Pascale Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
+lead_image_caption: Illustration de [Pascale
+  Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
 story_title: A short story about us
 story: We are a small group of skilled individuals working to define a new
   relationship with data in dating.
-people_title: People
 people:
   - name: Jessica
     description: "[Jessica Pidoux](https://jessicapidoux.info/), Doctoral Researcher
@@ -24,10 +26,10 @@ timeline_events:
     description: TODO
   - date: 2021-12
     description: TODO
-conversation_channels_title: Join the conversation
 conversation_channels:
   - type: forum_url
     name: Forum
   - type: twitter_url
     name: Twitter
+inverse: true
 ---
