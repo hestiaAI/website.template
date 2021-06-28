@@ -27,8 +27,6 @@ timeline_events:
   - date: 2021-12
     description: TODO
 conversation_channels:
-  - type: forum_url
-    name: Forum
   - type: twitter_url
     name: Twitter
 inverse: true
