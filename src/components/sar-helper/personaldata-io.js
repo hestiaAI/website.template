@@ -1,0 +1,91 @@
+export const URL_WIKI_PERSONALDATA_IO = 'wiki.personaldata.io';
+export const URL_PERSONALDATA_IO = 'query.personaldata.io/proxy/wdqs/bigdata/namespace/wdq/';
+
+export const ITEM_ONLINE_DATING_APPLICATION = 'pdio:Q5066';
+export const vocabulary = {
+    items: {
+        onlineDatingApplication: ITEM_ONLINE_DATING_APPLICATION,
+    },
+    properties: {
+        instanceOf: 'pdiot:P3',
+        country: 'pdiot:P55',
+        email: 'pdiot:P17',
+        collects: "pdiot:P10",
+        requires: "pdiot:P122",
+    }
+};
+
+export const TEMPLATE_MAILTO_ACCESS = 'MailtoAccess';
+export const TEMPLATE_MAILTO_SWISS_ACCESS = 'MailtoSwissAccess';
+
+// sorry for the dumb enum
+export const templates = {
+    MailtoAccess: TEMPLATE_MAILTO_ACCESS,
+    MailtoSwissAccess: TEMPLATE_MAILTO_SWISS_ACCESS,
+    Access: 'Access',
+    SwissAccess: 'SwissAccess',
+    Mailto: 'Mailto'
+};
+
+const t = templates;
+const {properties: p} = vocabulary;
+
+const sparqlEmailAndItemsOfInstance = (item) =>
+`SELECT ?item ?itemLabel ?mail WHERE {
+  ?item ${p.instanceOf} ${item}.
+  ?item ${p.email} ?mail.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} `;
+
+export async function query(sparqlQuery, apiUrl) {
+    const response = await fetch(
+        `https://${apiUrl}?origin=*&query=${encodeURIComponent(sparqlQuery)}`,
+        { "headers": { "Accept": "application/sparql-results+json" } }
+    );
+    return await response.json();
+}
+
+export async function expandTemplate(itemId, templateName, wikiUrl) {
+    let formData = new URLSearchParams();
+    formData.append('action', 'expandtemplates');
+    formData.append('text', `{{${templateName}|${itemId}}}`);
+    formData.append('format', `json`);
+    formData.append('prop', `wikitext`);
+    formData.append('origin', `*`);
+    const response = await fetch(`https://${wikiUrl}/w/api.php`,
+                                 { body: formData, method: 'post'});
+    const data = await response.json();
+    return data.expandtemplates.wikitext;
+}
+
+export function bindingsAsKeyVals(result){
+    const {head: {vars}, results: {bindings}} = result;
+    return bindings.map(binding => {
+        return vars.reduce((keyVals, v) =>{
+            if(binding[v]){
+                keyVals[v] = binding[v].value;
+            }
+            return keyVals;
+        }, {} )
+    })
+};
+
+export async function fetchOrgsOfInstance(item){
+    const sparql =
+          sparqlEmailAndItemsOfInstance(item);
+    const data = await query(sparql, URL_PERSONALDATA_IO);
+    return bindingsAsKeyVals(data);
+}
+
+export async function fetchMailTo(item, template){
+    const entityId = item.split('/').pop();
+    const mailTo = await expandTemplate(entityId,
+        template || t.MailtoAccess,
+        URL_WIKI_PERSONALDATA_IO);
+    const url = new URL(mailTo);
+    const href = url.href;
+    const recipient = url.pathname;
+    const body = url.searchParams.get('body');
+    const subject = url.searchParams.get('subject');
+    return {recipient, body, subject, href};
+}

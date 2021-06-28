@@ -124,6 +124,24 @@ collections:
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
         - { label: Stories about, name: stories_about, required: true, i18n: true,
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - label: SAR Form text fragments
+      name: sar-form
+      file: src/site/_data/i18n/assets/sar-form.json
+      i18n: true
+      fields:
+        - { label: App type name, name: app_type_name, required: true, widget: string, i18n: true }
+        - { label: Select placeholder, name: select_placeholder, required: true, widget: string, i18n: true }
+        - { label: Search placeholder, name: search_placeholder, required: true, widget: string, i18n: true }
+        - { label: Recipient, name: recipient, required: true, widget: string, i18n: true }
+        - { label: Subject, name: subject, required: true, widget: string, i18n: true }
+        - { label: Body, name: body, required: true, widget: string, i18n: true }
+        - { label: Body placeholder, name: body_placeholder, required: true, widget: string, i18n: true }
+        - { label: Copy button, name: copy_button, required: true, widget: string, i18n: true }
+        - { label: E-mail button, name: email_button, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail, name: preview_of_email, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail to, name: preview_of_email_to, required: true, widget: string, i18n: true }
+        - { label: Explanation, name: explanation, required: true, widget: string, i18n: true }
+        - { label: Parts to fill in, name: to_fill_in, required: true, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:
@@ -300,6 +318,46 @@ collections:
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
     - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+
+- label: Act › SAR
+  name: sar
+  folder: src/site/act/sar
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/act/sar/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
+    - { label: "SAR title" , name: sar_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "SAR subtitle" , name: sar_sub_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Personaldata.io organization type, name: organization_type, required: true, widget: string,
+        hint: "Online dating application: Q5066"}
+    - { label: Name of personaldata.io wikitext template, name: mailto_template_name, required: true, widget: string, i18n: true }
+
+- label: Act › Catalog
+  name: catalog
+  folder: src/site/act/catalog
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/catalog/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
 
 - label: Legal
   name: legal
