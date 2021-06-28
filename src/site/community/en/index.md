@@ -1,6 +1,5 @@
 ---
-converstion_channels_title: A question? An idea? Let's talk!
-conversation_channels_title: Join the conversation
+conversation_channels_title: A question? An idea? Let's talk!
 people_title: People
 layout: community
 permalink: /en/community/index.html
