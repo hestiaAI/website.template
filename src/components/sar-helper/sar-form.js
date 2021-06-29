@@ -63,6 +63,9 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *
  *   organizationType (optional): String
  *     Id of a company type in the wikibase of personaldata io.
+ *     If organizationType is not set, or an empty string,
+ *     the list of organizations is loaded from file
+ *     /assets/data/sar-organizations.json
  *     Examples:
  *     - Q5066: online dating application
  *     - Q97: transportation network company
@@ -129,7 +132,7 @@ export class SubjectAccessRequestForm extends LitElement {
             lang: { type: String },
             organizationType: { type: String },
             mailtoTemplateName: { type: String },
-            apps: { type: Array, attribute: false },
+            organizations: { type: Array, attribute: false },
             selectedApp: { type: Object, attribute: false },
             search: { type: String, attribute: false },
             recipient: { type: String, attribute: false },
@@ -141,8 +144,8 @@ export class SubjectAccessRequestForm extends LitElement {
 
     constructor() {
         super();
-        this.apps = [];
-        this.organizationType = this.organizationType || ITEM_ONLINE_DATING_APPLICATION;
+        this.organizations = [];
+        this.organizationType = '';
         this.mailtoTemplateName = this.mailtoTemplateName || TEMPLATE_MAILTO_ACCESS;
         this.selectedApp = undefined;
         this.search = '';
@@ -154,18 +157,25 @@ export class SubjectAccessRequestForm extends LitElement {
 
     firstUpdated() {
         // Load the default language
-        this.fetchApps();
+        this.fetchOrganizations();
         use(this.lang);
     }
 
-    async fetchApps() {
-        const typeWithPrefix = `pdio:${this.organizationType}`
-        const fetched = await fetchOrgsOfInstance(typeWithPrefix);
-        const apps = fetched.map(app =>
+    async fetchOrganizations() {
+        let fetched;
+        if(this.organizationType){
+            const typeWithPrefix = `pdio:${this.organizationType}`
+            fetched = await fetchOrgsOfInstance(typeWithPrefix);
+        }else{
+            const response = await fetch('/assets/data/sar-organizations.json');
+            fetched = await response.json();
+        }
+        const organizations = fetched.map(app =>
             Object.assign(app,
                 { displayName: unCamelCase(app.itemLabel) }))
             .sort(compareItemLabel);
-        this.apps = apps;
+        this.organizations = organizations;
+
     }
 
     async displayEmail(item) {
@@ -178,8 +188,8 @@ export class SubjectAccessRequestForm extends LitElement {
         }
     }
 
-    findAppByDisplayName(searchString, exactMatch) {
-        const found = this.apps.filter(app => {
+    findOrgByDisplayName(searchString, exactMatch) {
+        const found = this.organizations.filter(app => {
             const name = app.displayName.toLowerCase();
             const search = searchString.toLowerCase();
             if (exactMatch) {
@@ -192,7 +202,7 @@ export class SubjectAccessRequestForm extends LitElement {
 
     onSearch(event){
         const search = event.target;
-        const app = this.findAppByDisplayName(search.value, true);
+        const app = this.findOrgByDisplayName(search.value, true);
         if (app) {
             this.selectApp(app);
         }
@@ -209,7 +219,7 @@ export class SubjectAccessRequestForm extends LitElement {
     onSearchType(event){
         if(event.key === 'Enter'){
             const search = event.target;
-            const app = this.findAppByDisplayName(search.value);
+            const app = this.findOrgByDisplayName(search.value);
             if (app) {
                 this.selectApp(app);
             }
@@ -250,7 +260,7 @@ export class SubjectAccessRequestForm extends LitElement {
                    @keyup="${that.onSearchType}"
                    @input="${that.onSearch}">
             <datalist  id="search-list">
-              ${this.apps.map(app =>
+              ${this.organizations.map(app =>
                 html`<option>${app.displayName}</option>`)}
             </datalist>
             <span class="copyIconSpacer">&nbsp;</span>

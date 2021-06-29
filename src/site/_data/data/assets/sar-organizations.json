@@ -1,0 +1,212 @@
+[
+ {
+  "item": "https://wiki.personaldata.io/entity/Q1022",
+  "itemLabel": "Tinder",
+  "mail": "mailto:privacy@gotinder.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q2989",
+  "itemLabel": "Grindr",
+  "mail": "mailto:DPO@grindr.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3555",
+  "itemLabel": "OkCupid",
+  "mail": "mailto:support@okcupid.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3563",
+  "itemLabel": "Scruff",
+  "mail": "mailto:dataprotection@perrystreet.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3569",
+  "itemLabel": "Bumble",
+  "mail": "mailto:DPO@team.bumble.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3570",
+  "itemLabel": "PlanetRomeo",
+  "mail": "mailto:support@planetromeo.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3571",
+  "itemLabel": "Badoo",
+  "mail": "mailto:DPO@corp.badoo.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3641",
+  "itemLabel": "Parship",
+  "mail": "mailto:datenschutz@parship.ch"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3770",
+  "itemLabel": "HER",
+  "mail": "mailto:mydata@weareher.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3771",
+  "itemLabel": "CoffeeMeetsBagel",
+  "mail": "mailto:privacy@coffeemeetsbagel.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3829",
+  "itemLabel": "AdopteUnMec",
+  "mail": "mailto:support@adopteunmec.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q3830",
+  "itemLabel": "Meetic",
+  "mail": "mailto:privacy@meetic.fr"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q4744",
+  "itemLabel": "happn",
+  "mail": "mailto:support@happn.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5034",
+  "itemLabel": "Hinge",
+  "mail": "mailto:privacyinquiries@gotinder.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5059",
+  "itemLabel": "Match.com",
+  "mail": "mailto:idriss.kechida@match.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5084",
+  "itemLabel": "Once",
+  "mail": "mailto:hello@getonce.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5087",
+  "itemLabel": "Fruitz",
+  "mail": "mailto:contact@fruitz.io"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5088",
+  "itemLabel": "lovescout24",
+  "mail": "mailto:privacy@lovescout24.de"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5089",
+  "itemLabel": "Pure",
+  "mail": "mailto:feedback@pure.app"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5090",
+  "itemLabel": "Rencontre coquine - Plan Cul",
+  "mail": "mailto:support@lemon-code.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5091",
+  "itemLabel": "PLAY",
+  "mail": "mailto:com.supernovaltd.play@gmail.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5092",
+  "itemLabel": "waiter",
+  "mail": "mailto:hello@waiter.love"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5093",
+  "itemLabel": "HUD",
+  "mail": "mailto:privacy@hudapp.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5106",
+  "itemLabel": "DisonsDemain - Site de rencontre pour les 50+",
+  "mail": "mailto:support.mobilefr@disonsdemain.fr"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5109",
+  "itemLabel": "Nos belles années",
+  "mail": "mailto:dataprotection@nosbellesannees.fr"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5110",
+  "itemLabel": "Singles50",
+  "mail": "mailto:privacy@be2.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5117",
+  "itemLabel": "Dua.com",
+  "mail": "mailto:privacy@dua.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5136",
+  "itemLabel": "Pickable",
+  "mail": "mailto:hello@pickable.app"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5137",
+  "itemLabel": "XO",
+  "mail": "mailto:info@spaceinch.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5138",
+  "itemLabel": "Zoosk",
+  "mail": "mailto:dataprotectionofficer@zoosk.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5140",
+  "itemLabel": "Christian mingle",
+  "mail": "mailto:dataprotection-EN@christianmingle.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5142",
+  "itemLabel": "Jdate",
+  "mail": "mailto:dataprotection-EN@jdate.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5144",
+  "itemLabel": "Inshallah",
+  "mail": "mailto:dpo@inshallah.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5145",
+  "itemLabel": "Shaadi",
+  "mail": "mailto:grievanceofficer@peopleinteractive.in"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5146",
+  "itemLabel": "Hornet",
+  "mail": "mailto:datarequest@hornet.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5217",
+  "itemLabel": "yoomee",
+  "mail": "mailto:kontakt@iqanta.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5218",
+  "itemLabel": "Hily",
+  "mail": "mailto:gdpr@hily.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5219",
+  "itemLabel": "eharmony",
+  "mail": "mailto:privacypolicy@eharmony.co.uk"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5220",
+  "itemLabel": "Mignonne",
+  "mail": "mailto:support@mignonne.com"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5221",
+  "itemLabel": "Evermatch",
+  "mail": "mailto:privacy@evermatch.me"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5222",
+  "itemLabel": "Mektoube",
+  "mail": "mailto:cnil@mektoube.fr"
+ },
+ {
+  "item": "https://wiki.personaldata.io/entity/Q5223",
+  "itemLabel": "Lovoo",
+  "mail": "mailto:datenschutz@lovoo.com"
+ }
+]
