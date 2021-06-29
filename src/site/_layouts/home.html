@@ -9,28 +9,46 @@ inverse: true
 <section id="purpose">
   <h1>{% inlineMarkdown paragraph1_title %}</h1>
   <div class="grid-layout-halves with-gutters">
+    {% if community_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown community_title %}</h2>
       {% markdown community_description %}
       <a href="/{{locale}}/community/"><button>{{community_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% if mission_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown mission_title %}</h2>
       {% markdown mission_description %}
       <a href="/{{locale}}/mission/"><button>{{mission_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% if partners_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown partners_title %}</h2>
       {% markdown partners_description %}
       <a href="/{{locale}}/partners/"><button>{{partners_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% for paragraph in paragraphs %}
+      <div class="grid-cell">
+        <h2>{% inlineMarkdown paragraph.title %}</h2>
+        {% markdown paragraph.description %}
+        {% if paragraph.link_text %}
+          <a href="{{paragraph.url}}">
+            <button
+              {% if paragraph.primary_button %}class="primary"{% endif %}
+              >{{paragraph.link_text}}</button>
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </section>
 
 {% if news | length %}
   <section id="news">
-    <h1>{% inlineMarkdown news_title %}</h1>
-    <noscript>You need JavaScript enabled to see
+    <h1>{% inlineMarkdown news_title %}</h1> enabled to see
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
     {% for item in news %}
