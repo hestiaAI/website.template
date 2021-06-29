@@ -12,7 +12,7 @@ lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
   on [Unsplash](https://unsplash.com/photos/79mNMAvSORg)
 sar_title: Ask for your data
 sar_sub_title: You can ask here for a copy of your personal data
-company_type: Q5066
+organization_type: Q5066
 mailto_template_name: MailtoAccess
 ---
 # These are your rights

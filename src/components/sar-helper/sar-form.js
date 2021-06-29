@@ -61,7 +61,7 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *     Determines what language configuration will be
  *     loaded from file /assets/i18n/sar-form.json
  *
- *   companyType (optional): String
+ *   organizationType (optional): String
  *     Id of a company type in the wikibase of personaldata io.
  *     Examples:
  *     - Q5066: online dating application
@@ -69,7 +69,7 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *
  * Sample usage:
  *
- *     <sar-form companyType="Q5066" lang="en"></sar-form>
+ *     <sar-form organizationType="Q5066" lang="en"></sar-form>
  */
 export class SubjectAccessRequestForm extends LitElement {
 
@@ -127,7 +127,7 @@ export class SubjectAccessRequestForm extends LitElement {
     static get properties() {
         return {
             lang: { type: String },
-            companyType: { type: String },
+            organizationType: { type: String },
             mailtoTemplateName: { type: String },
             apps: { type: Array, attribute: false },
             selectedApp: { type: Object, attribute: false },
@@ -142,7 +142,7 @@ export class SubjectAccessRequestForm extends LitElement {
     constructor() {
         super();
         this.apps = [];
-        this.companyType = this.companyType || ITEM_ONLINE_DATING_APPLICATION;
+        this.organizationType = this.organizationType || ITEM_ONLINE_DATING_APPLICATION;
         this.mailtoTemplateName = this.mailtoTemplateName || TEMPLATE_MAILTO_ACCESS;
         this.selectedApp = undefined;
         this.search = '';
@@ -159,7 +159,7 @@ export class SubjectAccessRequestForm extends LitElement {
     }
 
     async fetchApps() {
-        const typeWithPrefix = `pdio:${this.companyType}`
+        const typeWithPrefix = `pdio:${this.organizationType}`
         const fetched = await fetchOrgsOfInstance(typeWithPrefix);
         const apps = fetched.map(app =>
             Object.assign(app,
