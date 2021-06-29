@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/admin": "admin"});
   eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
   eleventyConfig.addPassthroughCopy({"src/site/_data/i18n/assets/": "assets/i18n" });
+  eleventyConfig.addPassthroughCopy({"src/site/_data/data/assets/": "assets/data" });
   eleventyConfig.addPassthroughCopy("src/site/favicon*");
   eleventyConfig.addPassthroughCopy("src/site/manifest.json");
   eleventyConfig.addPassthroughCopy("src/site/robots.txt");
