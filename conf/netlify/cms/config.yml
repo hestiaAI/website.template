@@ -188,6 +188,7 @@ collections:
       name: "paragraphs"
       widget: "list"
       summary: '{{fields.title}}'
+      i18n: true
       fields:
         - { label: "Title", name: title, required: false, i18n: true,
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
