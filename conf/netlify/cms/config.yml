@@ -124,6 +124,24 @@ collections:
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
         - { label: Stories about, name: stories_about, required: true, i18n: true,
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - label: SAR Form text fragments
+      name: sar-form
+      file: src/site/_data/i18n/assets/sar-form.json
+      i18n: true
+      fields:
+        - { label: App type name, name: app_type_name, required: true, widget: string, i18n: true }
+        - { label: Select placeholder, name: select_placeholder, required: true, widget: string, i18n: true }
+        - { label: Search placeholder, name: search_placeholder, required: true, widget: string, i18n: true }
+        - { label: Recipient, name: recipient, required: true, widget: string, i18n: true }
+        - { label: Subject, name: subject, required: true, widget: string, i18n: true }
+        - { label: Body, name: body, required: true, widget: string, i18n: true }
+        - { label: Body placeholder, name: body_placeholder, required: true, widget: string, i18n: true }
+        - { label: Copy button, name: copy_button, required: true, widget: string, i18n: true }
+        - { label: E-mail button, name: email_button, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail, name: preview_of_email, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail to, name: preview_of_email_to, required: true, widget: string, i18n: true }
+        - { label: Explanation, name: explanation, required: true, widget: string, i18n: true }
+        - { label: Parts to fill in, name: to_fill_in, required: true, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:
@@ -132,10 +150,20 @@ collections:
       file: src/site/_data/links.json
       i18n: false
       fields:
-        - { label: Twitter label, name: twitter_label, required: true, widget: string }
+        - { label: Twitter label, name: twitter_label, required: false, widget: string,
+            hint: "If this field is empty, the link to twitter will not appear in the website's footer" }
         - { label: Twitter URL, name: twitter_url, required: true, widget: string }
-        - { label: Forum label, name: forum_label, required: true, widget: string }
+        - { label: Forum label, name: forum_label, required: false, widget: string ,
+            hint: "If this field is empty, the link to the forum will not appear in the website's footer" }
         - { label: Forum URL, name: forum_url, required: true, widget: string }
+        - label: "Additional links"
+          name: "additional_links"
+          widget: "list"
+          summary: '{{fields.name}}'
+          fields:
+            - {label: Name, name: name, widget: string }
+            - {label: Link, name: url, widget: file}
+
 - label: Home page
   name: home
   # Configure i18n for this collection.
@@ -156,25 +184,45 @@ collections:
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
     - { label: "Paragraph 1 title", name: paragraph1_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    # community: remove when migrated to paragraphs
     - { label: "Community title", name: community_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: "Community description", name: community_description, required: false, widget: markdown, i18n: true }
     - { label: "Community link text", name: community_link_text, required: false, widget: string, i18n: true }
+    # end of community
+    # mission: remove when migrated to paragraphs
     - { label: "Mission title", name: mission_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: "Mission description", name: mission_description, required: false, widget: markdown, i18n: true }
     - { label: "Mission link text", name: mission_link_text, required: false, widget: string, i18n: true }
+    # end of mission
+    # partners: remove when migrated to paragraphs
     - { label: "Partners title", name: partners_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: "Partners description", name: partners_description, required: false, widget: markdown, i18n: true }
     - { label: "Partners link text", name: partners_link_text, required: false, widget: string, i18n: true }
+    # end of partners
+    - label: "Paragraphs"
+      name: "paragraphs"
+      widget: "list"
+      summary: '{{fields.title}}'
+      fields:
+        - { label: "Title", name: title, required: false, i18n: true,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+        - { label: "Description", name: description, required: false, widget: markdown, i18n: true }
+        - { label: "Link text", name: link_text, required: false, widget: string, i18n: true }
+        - { label: Link, name: url, required: false, widget: file, i18n: true,
+            hint: 'Write a relative url if you link to another page on this website. (for example "partners", not "/partners")'}
+        - { label: "Colored button", name: primary_button, required: false, widget: boolean, i18n: true }
+
     - { label: "News title", name: news_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - label: "News"
       name: "news"
+      hint: "Posts added here will be displayed instead of the latest news"
       widget: "list"
       i18n: true
-      max: 3
+      max: 4
       types:
         - label: "Editorial"
           name: "editorial"
@@ -300,6 +348,46 @@ collections:
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
     - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+
+- label: Act › SAR
+  name: sar
+  folder: src/site/act/sar
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/act/sar/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
+    - { label: "SAR title" , name: sar_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "SAR subtitle" , name: sar_sub_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Personaldata.io organization type, name: organization_type, required: true, widget: string,
+        hint: "Online dating application: Q5066"}
+    - { label: Name of personaldata.io wikitext template, name: mailto_template_name, required: true, widget: string, i18n: true }
+
+- label: Act › Catalog
+  name: catalog
+  folder: src/site/act/catalog
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/catalog/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
 
 - label: Legal
   name: legal

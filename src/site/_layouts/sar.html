@@ -1,0 +1,18 @@
+---
+layout: defaultWithHero
+---
+<section id="story">
+  {{ content | safe }}
+</section>
+
+<section id="sar" class="callout">
+  <h1>{{sar_title}}</h1>
+  <h2>{% inlineMarkdown sar_sub_title %}</h2>
+  <sar-form lang="{{locale}}"
+            organizationType="{{pageData | getLocalizedOrDefault("organization_type")}}"
+            mailtoTemplateName="{{mailto_template_name}}"></sar-form>
+</section>
+
+<script type="module">
+  import '/components/sar-helper/sar-form.js';
+</script>
