@@ -9,21 +9,40 @@ inverse: true
 <section id="purpose">
   <h1>{% inlineMarkdown paragraph1_title %}</h1>
   <div class="grid-layout-halves with-gutters">
+    {% if community_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown community_title %}</h2>
       {% markdown community_description %}
       <a href="/{{locale}}/community/"><button>{{community_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% if mission_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown mission_title %}</h2>
       {% markdown mission_description %}
       <a href="/{{locale}}/mission/"><button>{{mission_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% if partners_title %}
     <div class="grid-cell">
       <h2>{% inlineMarkdown partners_title %}</h2>
       {% markdown partners_description %}
       <a href="/{{locale}}/partners/"><button>{{partners_link_text}}</button></a>
     </div>
+    {% endif %}
+    {% for paragraph in paragraphs %}
+      <div class="grid-cell">
+        <h2>{% inlineMarkdown paragraph.title %}</h2>
+        {% markdown paragraph.description %}
+        {% if paragraph.link_text %}
+          <a href="{{paragraph.url}}">
+            <button
+              {% if paragraph.primary_button %}class="primary"{% endif %}
+              >{{paragraph.link_text}}</button>
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
   </div>
 </section>
 
@@ -33,6 +52,29 @@ inverse: true
     <noscript>You need JavaScript enabled to see
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
+    {% set latest_news = collections.blogPosts[locale].latest %}
+    {% set max_latest = latest_news.length - news.length %}
+    {% set latest_count = 0 %}
+    {% for post in latest_news %}
+         {% if latest_count < max_latest %}
+            {% set display = true %}
+            {% for chosen in news %}
+                {% set display = display and chosen.post != post.data.id %}
+            {% endfor %}
+            {% if display %}
+              {% set latest_count = latest_count + 1 %}
+              <article-breakout
+                  class="grid-cell" layout="box"
+                  href="{{post.url | url}}"
+                  img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+                <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
+                <h2>{% inlineMarkdown post.data.title %}</h2>
+                {% markdown post.data.lead %}
+                <button>{{i18n.globals[locale].read_more}}</button>
+              </article-breakout>
+            {% endif %}
+         {% endif %}
+    {% endfor %}
     {% for item in news %}
       {% for post in collections[item.type] %}
         {% if post.data.locale == locale and post.data.id == item.post %}
