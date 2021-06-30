@@ -48,9 +48,33 @@ inverse: true
 
 {% if news | length %}
   <section id="news">
-    <h1>{% inlineMarkdown news_title %}</h1> enabled to see
+    <h1>{% inlineMarkdown news_title %}</h1>
+    <noscript>You need JavaScript enabled to see
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
+    {% set latest_news = collections.blogPosts[locale].latest %}
+    {% set max_latest = latest_news.length - news.length %}
+    {% set latest_count = 0 %}
+    {% for post in latest_news %}
+         {% if latest_count < max_latest %}
+            {% set display = true %}
+            {% for chosen in news %}
+                {% set display = display and chosen.post != post.data.id %}
+            {% endfor %}
+            {% if display %}
+              {% set latest_count = latest_count + 1 %}
+              <article-breakout
+                  class="grid-cell" layout="box"
+                  href="{{post.url | url}}"
+                  img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+                <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
+                <h2>{% inlineMarkdown post.data.title %}</h2>
+                {% markdown post.data.lead %}
+                <button>{{i18n.globals[locale].read_more}}</button>
+              </article-breakout>
+            {% endif %}
+         {% endif %}
+    {% endfor %}
     {% for item in news %}
       {% for post in collections[item.type] %}
         {% if post.data.locale == locale and post.data.id == item.post %}

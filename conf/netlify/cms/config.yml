@@ -219,9 +219,10 @@ collections:
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - label: "News"
       name: "news"
+      hint: "Posts added here will be displayed instead of the latest news"
       widget: "list"
       i18n: true
-      max: 3
+      max: 4
       types:
         - label: "Editorial"
           name: "editorial"
