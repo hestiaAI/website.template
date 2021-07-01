@@ -2,8 +2,8 @@
 layout: home
 permalink: /en/index.html
 path: home
-title: ‹SITE-TITLE›
-lead: The community of **‹SITE-TITLE›**
+title: Hestia.ai
+lead: The community of **Hestia.ai**
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
