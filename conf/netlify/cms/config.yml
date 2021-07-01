@@ -330,7 +330,7 @@ collections:
   fields:
     - {label: Id, name: id, widget: hidden}
     - {label: "Form name", name: form_name, widget: hidden}
-    - {label: Subject, name: subject, widget: string, i18n: true}
+    - {label: Subject, name: subject, required: false, widget: string, i18n: true}
     - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
     - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
