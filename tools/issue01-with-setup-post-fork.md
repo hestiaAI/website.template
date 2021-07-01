@@ -7,6 +7,15 @@ You'll probably already defined values for the following main placeholders, befo
 - [x] Figure out a two letters short name for the new website ⟶ `‹SITE-SHORTNAME›`; _for instance, `dp`_ `TODO`
 - [x] Figure out a name for the new repository ⟶ `‹REPO-NAME›`; _for instance, `website.dp`_ `TODO`
 
+The following names can be derived by the script, but you can choose your own if you prefer:
+
+- [ ] `‹REPO-PACKAGE-NAME›`⟵ `website-‹SITE-SHORTNAME›` _package name for the new repository, used in `package.json_`; same as ‹REPO-NAME›, but with dash instead of dot: `website-dp`_
+- [x] #3
+- [ ] `‹CONTACT-FORM-NAME-INFO›` ⟵ `contact-‹SITE-SHORTNAME›-info`
+- [ ] `‹CONTACT-FORM-NAME-MEDIA›` ⟵ `contact-‹SITE-SHORTNAME›-media`
+- [ ] `‹CONTACT-FORM-NAME-PARTNERS›` ⟵ `contact-‹SITE-SHORTNAME›-partners`
+- [ ] `‹CONTACT-FORM-NAME-RESEARCHERS›` ⟵ `contact-‹SITE-SHORTNAME›-researchers`
+
 Optional at this stage, but have to be defined before site public launch:
 
 - [ ] Decide an URL for the new website ⟶ `‹SITE-URL›` _to be reserved in Gandi and used in Netlify; for instance, `your-showcase.hestialabs.org`_
@@ -22,7 +31,7 @@ Optional at this stage, but have to be defined before site public launch:
 — however please fill in the date and your initials after the `DONE` statuses —
 
 - [x] Forked the [WEBSITE.TEMPLATE](https://github.com/hestiaAI/website.template) repository to [this one](../) `DONE`  
-- [x] Edited the [`README.md`](../#readme), updated the first **`‹SITE-TITLE›`** placeholder, with the title of the new website, and removed the blockquoted comments preceding the title `DONE` 
+- [x] Edited the [`README.md`](../#readme) by removing the blockquoted comments preceding the title `DONE` 
 - [x] Updated the description in the repository details (`HestiaLabs ‹SITE-TITLE› website` usually) `DONE`
 - [x] Updated the tags in the repository details (please set `community` and `websites` at minimum) `DONE`
 - [x] Updated the Website URL in the repository details (`‹SITE-URL›.hestialabs.org` usually) `DONE`
@@ -32,7 +41,7 @@ Optional at this stage, but have to be defined before site public launch:
 - [ ] Optionally, update the list of contributors in [`package.json`](../blob/main/package.json)
 - [ ] Run `npm install` on the command-line `TODO` 
 - [ ] Commit your changes to `package.json` and the updated `package-lock.json` `TODO` 
-- [ ] Run `npm run setup-post-fork` on the command-line, set the four main placeholders `TODO` 
+- [ ] Run `npm run tools:setup-post-fork` on the command-line, set the four main placeholders `TODO` 
 - [ ] Optionally run `npm run setup-post-fork` on the command-line, set the remaining placeholders and theme colors `TODO` 
 
 #### Basic configuration
