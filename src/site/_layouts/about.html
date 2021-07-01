@@ -27,42 +27,11 @@ layout: defaultWithHero
   </div>
 </section>
 
-<section id="timeline" class="callout alt">
-  <h1>{{timeline_title}}</h1>
-  {% for event in timeline_events %}
-    <h2>{{event.date | readableDate(locale, "LLLL yyyy")}}</h2>
-    {% markdown event.description %}
-  {% endfor %}
+<section id="philosophy">
+  <h1>{% inlineMarkdown philosophy_title %}</h1>
+  {% markdown philosophy %}
 </section>
 
-{% if chat_groups | length %}
-  <section id="join-conversation" class="callout">
-    <h1>{{chat_groups_title}}</h1>
-    {% for group in chat_groups %}
-      <p><a href="{{group.link}}" target="_blank">
-        <img src="{{group.image}}">
-        <span>{{group.name}}</span>
-      </a></p>
-    {% endfor %}
-  </section>
-{% endif %}
-
-{% if conversation_channels | length %}
-  <section id="join-conversation" class="callout">
-    <h1>{{conversation_channels_title}}</h1>
-    {% for channel in conversation_channels %}
-      {% if channel.url %}
-        {% set channel_link = channel.url %}
-      {% else %}
-        {% set channel_link = links[channel.type] %}
-      {% endif %}
-      <p><a href="{{channel_link}}" target="_blank">
-        <img src="{{channel.image}}">
-        <span>{{channel.name}}</span>
-      </a></p>
-    {% endfor %}
-  </section>
-{% endif %}
 <script type="module">
   import '/components/contact-card.js';
 </script>

@@ -18,16 +18,4 @@ people:
       algorithms."
     image: /assets/media/blog-interview-jessica-pidoux-bw.jpg
     twitter: https://twitter.com/pidouxina
-timeline_title: How it started — how it's going
-timeline_events:
-  - date: 2021-05
-    description: TODO
-  - date: 2021-12
-    description: TODO
-conversation_channels_title: Join the conversation
-conversation_channels:
-  - type: forum_url
-    name: Forum
-  - type: twitter_url
-    name: Twitter
 ---
