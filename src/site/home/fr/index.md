@@ -10,11 +10,19 @@ lead_image_caption: Photo [Lianhao
 paragraphs_title: Que savent vraiment de vous les plateformes numériques?
 paragraphs:
   - title: Êtes-vous influencé·e ?
-    description: "Dating Privacy is you and me: dating app users and people keen to
+    description: >-
+      Dating Privacy is you and me: dating app users and people keen to
       understand privacy in relationships formed online. The collective is
       worried about the way our intimate life is being coded and exposed online.
       We aim to retake control of personal data on dating apps, understand the
-      privacy problems they create, and work to improve data literacy."
+      privacy problems they create, and work to improve data literacy.
+
+
+      ```
+
+      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F085801-009-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Dopamine%22%2C%22subtitle%22%3A%22Bande-annonce%22%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F085801-009-A%2F940x530%3Fts%3D1568726705%22%7D"></iframe>
+
+      ```
     link_text: Join us
     url: community/
   - title: We work to understand what's being done
