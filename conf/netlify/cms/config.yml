@@ -52,12 +52,7 @@ collections:
       i18n: true
       fields:
         - { label: Home, name: home, required: false, widget: string, i18n: true }
-        - { label: Blog, name: blog, required: false, widget: string, i18n: true }
-        - { label: Mission, name: mission, required: false, widget: string, i18n: true }
-        - { label: Partners, name: partners, required: false, widget: string, i18n: true }
-        - { label: Media, name: media, required: false, widget: string, i18n: true }
-        - { label: Community, name: community, required: false, widget: string, i18n: true }
-        - { label: Contact, name: contact, required: false, widget: string, i18n: true }
+        - { label: About, name: about, required: false, widget: string, i18n: true }
     - label: Newsletter signup text fragments
       name: i18n-newsletter-signup
       file: src/site/_data/i18n/assets/newsletter-signup.json
@@ -211,16 +206,16 @@ collections:
             multiple: false
             search_fields: ["title", "body"]
 
-- label: Community
-  name: community
-  folder: src/site/community
+- label: About
+  name: about
+  folder: src/site/about
   extension: md
   editor:
     preview: false
   create: false
   delete: false
   i18n: true
-  preview_path: /en/community/
+  preview_path: /en/about/
   fields:
     - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
     - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
