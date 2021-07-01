@@ -10,10 +10,7 @@
     </div>
     <div class="header-cell-two-thirds">
       <nav class="header-navigation">
-        {% ilink page, "blog", locale %}{{i18n.header_footer[locale].blog}}{% endilink %}
-        {% ilink page, "mission", locale %}{{i18n.header_footer[locale].mission}}{% endilink %}
         {% ilink page, "community", locale %}{{i18n.header_footer[locale].community}}{% endilink %}
-        {% ilink page, "partners", locale %}{{i18n.header_footer[locale].partners}}{% endilink %}
         {% for translation in translations %}
           {% ilink page, translation.page.url %}{{translation.locale}}{% endilink %}
         {% endfor %}

@@ -1,4 +1,0 @@
----
-id: news
-name: News
----
