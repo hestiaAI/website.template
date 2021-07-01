@@ -25,4 +25,4 @@ When you fill in your profile and navigate, you leave traces that are collected,
 
 Whether you rarely get matches and don’t find a partner, you go on tons of dates, or even if you've found your partner online, your privacy is not protected. In real time, the app tracks your conversations and geolocation. **Your data says a lot about you to others and the company**: what you like, what you hate, how healthy you are, where you live, where you go, who you meet and when. Data isn't just used to help you find a partner: **it is traded and sold to data brokers and advertisers.**
 
-For easier understanding of what this data represents, we are also maintaining a [<button class="primary big">catalog</button>](https://dating-privacy.hestialabs.org/en/act/catalog).
+For easier understanding of what this data represents, we are also maintaining a [<button class="primary">catalog</button>](https://dating-privacy.hestialabs.org/en/act/catalog).
