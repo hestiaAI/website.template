@@ -272,27 +272,6 @@ collections:
             - {label: Name, name: name, required: false, widget: string, default: "Twitter",
                hint: "This channel will have the twitter URL set under ‹Configuration› / External links"}
             - {label: Image, name: image, required: false, widget: image}
-- label: Contact forms
-  name: contact_channel
-  folder: src/site/contact
-  extension: md
-  editor:
-    preview: false
-  create: false
-  delete: false
-  i18n: true
-  preview_path: /en/contact/
-  identifier_field: id
-  fields:
-    - {label: Id, name: id, widget: hidden}
-    - {label: "Form name", name: form_name, widget: hidden}
-    - {label: Subject, name: subject, required: false, widget: string, i18n: true}
-    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
-    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
-    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
-    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
-
 - label: Legal
   name: legal
   folder: src/site/legal
