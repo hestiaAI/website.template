@@ -82,39 +82,6 @@ collections:
         - { label: "Subject", name: subject, required: false, widget: string, i18n: true }
         - { label: "Message", name: message, required: false, widget: string, i18n: true }
         - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
-    - label: Contact page text fragments
-      name: i18n-contact-page
-      file: src/site/_data/i18n/contact_page.json
-      i18n: true
-      fields:
-        - label: "Links"
-          name: "links"
-          widget: "list"
-          i18n: true
-          summary: '{{fields.title}}'
-          fields:
-            - { label: Title, name: title, required: false,  false, widget: string }
-            - { label: Description, name: description, required: false, widget: markdown }
-            - label: "Contact"
-              name: "contact"
-              widget: "list"
-              max: 1
-              types:
-                - label: "Link"
-                  name: link
-                  fields:
-                    - { label: 'Link', name: url, widget: file }
-                - label: "Contact channel"
-                  name: contact
-                  fields:
-                    - label: "Contact channel"
-                      name: channel
-                      widget: relation
-                      collection: contact_channel
-                      value_field: "id"
-                      display_fields: ["id"]
-                      multiple: false
-                      search_fields: ["id"]
     - label: Blog
       name: i18n-blog
       file: src/site/_data/i18n/blog.json
@@ -310,7 +277,45 @@ collections:
             - {label: Name, name: name, required: false, widget: string, default: "Twitter",
                hint: "This channel will have the twitter URL set under ‹Configuration› / External links"}
             - {label: Image, name: image, required: false, widget: image}
-
+- label: Contact menu
+  name: contact_menu
+  folder: src/site/contact/
+  extension: html
+  i18n: true
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - label: "Links"
+      name: "links"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.title}}'
+      fields:
+        - { label: Title, name: title, required: false,  false, widget: string }
+        - { label: Description, name: description, required: false, widget: string }
+        - label: "Contact"
+          name: "contact"
+          widget: "list"
+          max: 1
+          types:
+            - label: "Link"
+              name: link
+              fields:
+                - { label: 'Link', name: url, widget: file }
+            - label: "Contact channel"
+              name: contact
+              fields:
+                - label: "Contact channel"
+                  name: channel
+                  widget: relation
+                  collection: contact_channel
+                  value_field: "id"
+                  display_fields: ["id"]
+                  multiple: false
+                  search_fields: ["id"]
 - label: Contact forms
   name: contact_channel
   folder: src/site/contact
