@@ -171,6 +171,9 @@ collections:
         - { label: Twitter, name: twitter, required: false, widget: string }
         - { label: Linkedin, name: linkedin, required: false, widget: string }
         - { label: E-mail, name: email, required: false, widget: string }
+    - { label: "Philosophy title", name: philosophy_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "Philosophy", name: philosophy, required: false, widget: markdown, i18n: true }
 - label: Legal
   name: legal
   folder: src/site/legal
