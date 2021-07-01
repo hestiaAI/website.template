@@ -2,7 +2,7 @@
 path: home
 title: The Eyeballs
 lead: |-
-  Ils vous observent.
+  Ils vous observent.\
   Observez les !
 lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
 lead_image_caption: Photo [Lianhao
