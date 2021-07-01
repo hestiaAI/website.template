@@ -1,6 +1,6 @@
 # Hestia.ai website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/‹SITE-UUID›/deploy-status)](https://app.netlify.com/sites/hestia.ai/deploys) ⟵ `TODO`: update ‹SITE-UUID› and hestia.ai
+[![Netlify Status](https://api.netlify.com/api/v1/badges/be758961-4885-4138-8f0a-396b0d47a005/deploy-status)](https://app.netlify.com/sites/hestia.ai/deploys) ⟵ `TODO`: update be758961-4885-4138-8f0a-396b0d47a005 and hestia.ai
 
 # Access
 
