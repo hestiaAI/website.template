@@ -9,27 +9,6 @@ inverse: true
 <section id="purpose">
   <h1>{% inlineMarkdown paragraphs_title %}</h1>
   <div class="grid-layout-halves with-gutters">
-    {% if community_title %}
-    <div class="grid-cell">
-      <h2>{% inlineMarkdown community_title %}</h2>
-      {% markdown community_description %}
-      <a href="/{{locale}}/community/"><button>{{community_link_text}}</button></a>
-    </div>
-    {% endif %}
-    {% if mission_title %}
-    <div class="grid-cell">
-      <h2>{% inlineMarkdown mission_title %}</h2>
-      {% markdown mission_description %}
-      <a href="/{{locale}}/mission/"><button>{{mission_link_text}}</button></a>
-    </div>
-    {% endif %}
-    {% if partners_title %}
-    <div class="grid-cell">
-      <h2>{% inlineMarkdown partners_title %}</h2>
-      {% markdown partners_description %}
-      <a href="/{{locale}}/partners/"><button>{{partners_link_text}}</button></a>
-    </div>
-    {% endif %}
     {% for paragraph in paragraphs %}
       <div class="grid-cell">
         <h2>{% inlineMarkdown paragraph.title %}</h2>
