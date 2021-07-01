@@ -20,6 +20,13 @@ paragraphs:
 
       ```
 
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2Tq2gvGt80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      ```
+
+
+      ```
+
       <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What does history teach us about combating disinformation?<br><br>Watch Yuval answer Niko Woischnik’s (moderator + founder of <a href="https://twitter.com/TOABerlin?ref_src=twsrc%5Etfw">@TOABerlin</a>) question in the video below. <a href="https://t.co/ap0UkNVeYU">pic.twitter.com/ap0UkNVeYU</a></p>&mdash; Yuval Noah Harari (@harari_yuval) <a href="https://twitter.com/harari_yuval/status/1409851636969787392?ref_src=twsrc%5Etfw">June 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
       ```
