@@ -1,7 +1,4 @@
 ---
-layout: sar
-permalink: /fr/act/sar/index.html
-inverse: true
 title: Obtenez vos données
 lead: |-
   Faites-le advenir — \
@@ -13,6 +10,9 @@ lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
 sar_title: Demandez vos données
 sar_sub_title: Vous pouvez demander une copie de vos données personnelles
 mailto_template_name: MailtoAccessFR
+layout: sar
+permalink: /fr/act/sar/index.html
+inverse: true
 ---
 # Ce sont vos droits
 
