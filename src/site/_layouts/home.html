@@ -7,10 +7,33 @@ form_name: contact-hestia-info
   Would we need custom HTML per language, copy & override
   the code to `home/en/index.html` and `home/fr/index.html`
 #}
-<section id="purpose">
-  <h1>{% inlineMarkdown paragraphs_title %}</h1>
+<section id="introduction">
+  <h1>{% inlineMarkdown introduction_title %}</h1>
+  <div>
+        {% markdown introduction %}
+  </div>
+</section>
+<section id="expertise">
   <div class="grid-layout-halves with-gutters">
-    {% for paragraph in paragraphs %}
+    {% for paragraph in expertise %}
+      <div class="grid-cell">
+        <h2>{% inlineMarkdown paragraph.title %}</h2>
+        {% markdown paragraph.description %}
+        {% if paragraph.link_text %}
+          <a href="{{paragraph.url}}">
+            <button
+              {% if paragraph.primary_button %}class="primary"{% endif %}
+              >{{paragraph.link_text}}</button>
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="realization">
+  <h1>{% inlineMarkdown realizations_title %}</h1>
+  <div class="grid-layout-halves with-gutters">
+    {% for paragraph in realizations %}
       <div class="grid-cell">
         <h2>{% inlineMarkdown paragraph.title %}</h2>
         {% markdown paragraph.description %}
@@ -26,8 +49,9 @@ form_name: contact-hestia-info
   </div>
 </section>
 
-<section id="contact-form" class="callout">
-  <h3>{{title}}</h3>
+
+<section id="contact" class="callout">
+  <h1>{{contact_form_title}}</h1>
   <contact-form
     lang="{{locale}}"
     form-name="{{form_name}}"

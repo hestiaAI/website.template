@@ -7,7 +7,7 @@ lead: The community of **Hestia.ai**
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
-paragraphs_title: We define a new relationship to data
+introduction_title: We define a new relationship to data
 paragraphs:
   - title: We are a collective of users
     description: "Dating Privacy is you and me: dating app users and

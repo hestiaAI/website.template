@@ -1,11 +1,15 @@
 {
   "en": {
     "home": "home",
+    "expertise": "expertise",
+    "realization": "realization",
     "legal": "legal",
     "about": "about"
   },
   "fr": {
     "home": "accueil",
+    "expertise": "expertise",
+    "realization": "realization",
     "legal": "mentions légales",
     "about": "à propos"
   }

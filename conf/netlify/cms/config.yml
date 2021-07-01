@@ -53,18 +53,6 @@ collections:
       fields:
         - { label: Home, name: home, required: false, widget: string, i18n: true }
         - { label: About, name: about, required: false, widget: string, i18n: true }
-    - label: Newsletter signup text fragments
-      name: i18n-newsletter-signup
-      file: src/site/_data/i18n/assets/newsletter-signup.json
-      i18n: true
-      fields:
-        - { label: Title, name: title, required: false, widget: string, i18n: true }
-        - { label: Info, name: info, required: false, widget: string, i18n: true }
-        - { label: "First name", name: first_name, required: false, widget: string, i18n: true }
-        - { label: "Last name", name: last_name, required: false, widget: string, i18n: true }
-        - { label: "E-mail address", name: email, required: false, widget: string, i18n: true }
-        - { label: Message, name: message, required: false, widget: string, i18n: true }
-        - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
     - label: Contact form text fragments
       name: i18n-contact-form
       file: src/site/_data/i18n/assets/contact-form.json
@@ -77,33 +65,6 @@ collections:
         - { label: "Subject", name: subject, required: false, widget: string, i18n: true }
         - { label: "Message", name: message, required: false, widget: string, i18n: true }
         - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
-    - label: Blog
-      name: i18n-blog
-      file: src/site/_data/i18n/blog.json
-      i18n: true
-      fields:
-        - { label: Stories by, name: stories_by, required: true, i18n: true,
-            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-        - { label: Stories about, name: stories_about, required: true, i18n: true,
-            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: SAR Form text fragments
-      name: sar-form
-      file: src/site/_data/i18n/assets/sar-form.json
-      i18n: true
-      fields:
-        - { label: App type name, name: app_type_name, required: true, widget: string, i18n: true }
-        - { label: Select placeholder, name: select_placeholder, required: true, widget: string, i18n: true }
-        - { label: Search placeholder, name: search_placeholder, required: true, widget: string, i18n: true }
-        - { label: Recipient, name: recipient, required: true, widget: string, i18n: true }
-        - { label: Subject, name: subject, required: true, widget: string, i18n: true }
-        - { label: Body, name: body, required: true, widget: string, i18n: true }
-        - { label: Body placeholder, name: body_placeholder, required: true, widget: string, i18n: true }
-        - { label: Copy button, name: copy_button, required: true, widget: string, i18n: true }
-        - { label: E-mail button, name: email_button, required: true, widget: string, i18n: true }
-        - { label: Preview of e-mail, name: preview_of_email, required: true, widget: string, i18n: true }
-        - { label: Preview of e-mail to, name: preview_of_email_to, required: true, widget: string, i18n: true }
-        - { label: Explanation, name: explanation, required: true, widget: string, i18n: true }
-        - { label: Parts to fill in, name: to_fill_in, required: true, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:
@@ -144,10 +105,26 @@ collections:
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
     - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
-    - { label: "Paragraphs title", name: paragraphs_title, required: false, i18n: true,
+    - { label: "Introduction title", name: introduction_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: "Paragraphs"
-      name: "paragraphs"
+    - { label: Introduction , name: introduction, required: false, widget: markdown, i18n: true }
+    - label: "Expertise"
+      name: "expertise"
+      widget: "list"
+      summary: '{{fields.title}}'
+      i18n: true
+      fields:
+        - { label: "Title", name: title, required: false, i18n: true,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+        - { label: "Description", name: description, required: false, widget: markdown, i18n: true }
+        - { label: "Link text", name: link_text, required: false, widget: string, i18n: true }
+        - { label: Link, name: url, required: false, widget: file, i18n: true,
+            hint: 'Write a relative url if you link to another page on this website. (for example "partners/", not "/partners/")'}
+        - { label: "Colored button", name: primary_button, required: false, widget: boolean, i18n: true }
+    - { label: "Realizations title", name: realizations_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - label: "Realizations"
+      name: "realizations"
       widget: "list"
       summary: '{{fields.title}}'
       i18n: true
@@ -160,52 +137,9 @@ collections:
             hint: 'Write a relative url if you link to another page on this website. (for example "partners/", not "/partners/")'}
         - { label: "Colored button", name: primary_button, required: false, widget: boolean, i18n: true }
 
-    - { label: "News title", name: news_title, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: "News"
-      name: "news"
-      hint: "Posts added here will be displayed instead of the latest news"
-      widget: "list"
-      i18n: true
-      max: 4
-      types:
-        - label: "Editorial"
-          name: "editorial"
-          summary: '{{fields.post}}'
-          fields:
-          - label: Editorial
-            name: post
-            widget: relation
-            collection: editorials
-            value_field: "id"
-            display_fields: ["title"]
-            multiple: false
-            search_fields: ["title", "body"]
-        - label: "Interview"
-          name: "interview"
-          summary: '{{fields.post}}'
-          fields:
-          - label: Interview
-            name: post
-            widget: relation
-            collection: interviews
-            value_field: "id"
-            display_fields: ["title"]
-            multiple: false
-            search_fields: ["title", "body"]
-        - label: "Infographic"
-          name: "infographic"
-          summary: '{{fields.post}}'
-          fields:
-          - label: Infographic
-            name: post
-            widget: relation
-            collection: infographics
-            value_field: "id"
-            display_fields: ["title"]
-            multiple: false
-            search_fields: ["title", "body"]
 
+    - { label: "Contact form title", name: contact_form_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
 - label: About
   name: about
   folder: src/site/about
