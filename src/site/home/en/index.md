@@ -1,34 +1,52 @@
 ---
-layout: home
-permalink: /en/index.html
 path: home
 title: The Eyeballs
-lead: The community of **The Eyeballs**
-lead_image: /assets/media/home-hero-image.jpg
-lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
-  on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
-paragraphs_title: We define a new relationship to data
+lead: |-
+  They are watching you.\
+  Watch them!
+lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
+lead_image_caption: Photo by [Lianhao
+  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+paragraphs_title: ""
 paragraphs:
-  - title: We are a collective of users
-    description: "Dating Privacy is you and me: dating app users and
-      people keen to understand privacy in relationships formed online. The
-      collective is worried about the way our intimate life is being coded and
-      exposed online. We aim to retake control of personal data on dating apps,
-      understand the privacy problems they create, and work to improve data
-      literacy."
-    link_text: Join us
-    url: community/
-  - title: We work to understand what's being done
+  - title: How much is your attention worth?
     description: >-
-      We want to understand many privacy risks that we, as dating app users, are
-      confronted with when looking for a date online: unwanted ads, discrimination
-      resulting from data, incorrect profiling and predictions, and the possibility
-      of phishing and identity theft by rogue users.
-    
-    
-      Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
-    link_text: Learn more
-    url: mission/
+      Every second you spend online, thousands of sensors track your behaviour.
+      The best data experts have designed them to profile you and design the
+      message, the image, the video likely to arouse your interest. By any means
+      necessary.
+
+
+      ```
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      ```
+
+
+      To get your attention, advertisers have spent over US$375 billion on digital media in 2020 alone. 
+
+
+      How am I targeted? By whom? How much am I worth? More or less than my neighbour? Why? Join the Eyeballs and find out what digital sauce you are being eaten with.
+    link_text: Discover (and compare) your digital value
+    url: /en/act/sar/
+    primary_button: true
+  - title: You are influenced
+    description: >-
+      "No. Not me. I am not influenceable. My free will is not
+      threatened. "Don't be so sure.
+
+
+      ```
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      ```
+
+
+      Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in how your profile is perceived between the different networks and media you use.
+    link_text: Measure your influenceability
+    url: community/
   - title: We connect with many partners
     description: >-
       We are looking to collaborate with journalists, academics, researchers,
@@ -38,6 +56,8 @@ paragraphs:
       We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
     link_text: Contact us
     url: partners/
+layout: home
+permalink: /en/index.html
 news_title: News and events
 news:
   - type: infographic
