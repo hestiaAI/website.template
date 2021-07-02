@@ -1,5 +1,4 @@
 # Hestia.ai website
-1c3c088e-c11b-4854-beac-8cc41617ac0f
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1c3c088e-c11b-4854-beac-8cc41617ac0f/deploy-status)](https://app.netlify.com/sites/hestia-hai/deploys) 
 
 # Access
