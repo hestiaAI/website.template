@@ -13,7 +13,7 @@ form_name: contact-hai-info
         {% markdown introduction %}
   </div>
 </section>
-<section id="expertise">
+<section id="expertise" class="callout">
   <div class="grid-layout-halves with-gutters">
     {% for paragraph in expertise %}
       <div class="grid-cell">
@@ -30,7 +30,8 @@ form_name: contact-hai-info
     {% endfor %}
   </div>
 </section>
-<section id="realization">
+
+<section id="realization" class="callout">
   <h1>{% inlineMarkdown realizations_title %}</h1>
   <div class="grid-layout-halves with-gutters">
     {% for paragraph in realizations %}
@@ -48,7 +49,6 @@ form_name: contact-hai-info
     {% endfor %}
   </div>
 </section>
-
 
 <section id="contact" class="callout">
   <h1>{{contact_form_title}}</h1>
