@@ -9,6 +9,24 @@ lead_image_caption: Photo [Lianhao
   Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 paragraphs_title: Que savent vraiment de vous les plateformes numériques?
 paragraphs:
+  - title: Combien vaut votre attention?
+    description: >-
+      We want to understand many privacy risks that we, as dating app users, are
+      confronted with when looking for a date online: unwanted ads,
+      discrimination resulting from data, incorrect profiling and predictions,
+      and the possibility of phishing and identity theft by rogue users.
+
+
+      ```
+
+      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F085801-009-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Dopamine%22%2C%22subtitle%22%3A%22Bande-annonce%22%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F085801-009-A%2F940x530%3Fts%3D1568726705%22%7D"></iframe>
+
+      ```
+
+
+      Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
+    link_text: Learn more
+    url: mission/
   - title: Êtes-vous influencé·e ?
     description: >-
       Dating Privacy is you and me: dating app users and people keen to
@@ -53,24 +71,6 @@ paragraphs:
       ```
     link_text: Join us
     url: community/
-  - title: We work to understand what's being done
-    description: >-
-      We want to understand many privacy risks that we, as dating app users, are
-      confronted with when looking for a date online: unwanted ads,
-      discrimination resulting from data, incorrect profiling and predictions,
-      and the possibility of phishing and identity theft by rogue users.
-
-
-      ```
-
-      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F085801-009-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Dopamine%22%2C%22subtitle%22%3A%22Bande-annonce%22%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F085801-009-A%2F940x530%3Fts%3D1568726705%22%7D"></iframe>
-
-      ```
-
-
-      Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
-    link_text: Learn more
-    url: mission/
   - title: We connect with many partners
     description: >-
       We are looking to collaborate with journalists, academics, researchers,
