@@ -31,49 +31,21 @@ paragraphs:
     link_text: Découvrez (et comparez) votre valeur numérique
     url: /fr/act/sar/
     primary_button: true
-  - title: Êtes-vous influencé·e ?
+  - title: Vous êtes influencé·e
     description: >-
-      Dating Privacy is you and me: dating app users and people keen to
-      understand privacy in relationships formed online. The collective is
-      worried about the way our intimate life is being coded and exposed online.
-      We aim to retake control of personal data on dating apps, understand the
-      privacy problems they create, and work to improve data literacy.
+      « Non. Pas moi. Je ne suis pas influençable. Mon libre arbitre est
+      intact. » N’en soyez pas si sûr·e.
 
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
 
-      ```
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
-      ```
-
-      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F085801-009-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Dopamine%22%2C%22subtitle%22%3A%22Bande-annonce%22%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F085801-009-A%2F940x530%3Fts%3D1568726705%22%7D"></iframe>
-
-      ```
-
-
-      ```
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
-      ```
-
-      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F103282-000-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Influenceurs%2C%20les%20nouveaux%20hommes-sandwich%22%2C%22subtitle%22%3Anull%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F103282-000-A%2F940x530%3Fts%3D1618417307%22%7D"></iframe>
-
-      ```
-    link_text: Join us
+      Rejoignez the Eyeballs pour comprendre comment vous êtes influencée, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
+    link_text: Mesurez votre influençabilité
     url: community/
   - title: We connect with many partners
     description: >-
