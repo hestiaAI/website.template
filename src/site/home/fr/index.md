@@ -1,13 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  Ils vous observent.\
-  Observez les !
-lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
-lead_image_caption: Photo [Lianhao
-  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
@@ -58,6 +50,14 @@ paragraphs:
     url: partners/
 layout: home
 permalink: /fr/index.html
+title: The Eyeballs
+lead: |-
+  Ils vous observent.\
+  Observez les !
+lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
+lead_image_caption: Photo [Lianhao
+  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+paragraphs_title: ""
 news_title: News and events
 news:
   - type: infographic
