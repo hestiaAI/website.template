@@ -1,13 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  They are watching you.\
-  Watch them!
-lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
-lead_image_caption: Photo by [Lianhao
-  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
@@ -19,7 +11,7 @@ paragraphs:
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="315" height="197" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
@@ -58,6 +50,14 @@ paragraphs:
     url: partners/
 layout: home
 permalink: /en/index.html
+title: The Eyeballs
+lead: |-
+  They are watching you.\
+  Watch them!
+lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
+lead_image_caption: Photo by [Lianhao
+  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+paragraphs_title: ""
 news_title: News and events
 news:
   - type: infographic
