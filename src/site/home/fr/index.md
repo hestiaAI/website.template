@@ -1,45 +1,54 @@
 ---
+path: home
+realizations_title: See our projects
 layout: home
 permalink: /fr/index.html
-path: home
 title: Hestia.ai
-lead: >-
-  Personalized digital services
-  AND full respect of privacy
-  Made possible
+lead: Personalized digital services AND full respect of privacy Made possible
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
 introduction_title: The technology that tech was missing to be sustainable
-introduction: >- 
-  Thanks to the technology developed by
-  Hestia.ai, you can offer personalized services
-  without ever accessing users' data.
-  Respect privacy. Gain trust.
-  It's the new added value.
+introduction: Thanks to the technology developed by Hestia.ai, you can offer
+  personalized services without ever accessing users' data. Respect privacy.
+  Gain trust. It's the new added value.
 expertise:
   - title: Expertise
-    description: "Our roster of talent is ideally positioned to provide creative and strategic consultative services and custom development for innovative compaines and organisations."
+    description: Our roster of talent is ideally positioned to provide creative and
+      strategic consultative services and custom development for innovative
+      compaines and organisations.
     link_text: Contact
-    url: #contact
+    url: null
     primary_button: true
   - title: ""
-    description: "**Development** privacy-preserving machine learning / infrastructure building / site-app-software custom realization.\n\n**Consulting** data governance / data analysis / use case design / prototyping / consortium setup / tech communication."
+    description: >-
+      **Development** privacy-preserving machine learning / infrastructure
+      building / site-app-software custom realization.
+
+
+      **Consulting** data governance / data analysis / use case design / prototyping / consortium setup / tech communication.
   - title: Partnerships
-    description: "We team up with academic and industrial partners to respond to national or European calls for projects. Thanks to our track record and the quality of our work, we have already obtained XXX € in Y years."
+    description: We team up with academic and industrial partners to respond to
+      national or European calls for projects. Thanks to our track record and
+      the quality of our work, we have already obtained XXX € in Y years.
     link_text: Contact
-    url: #contact
+    url: null
   - title: About us
-    description: "With a unique blend of complementary skills, our team has a focused understanding of today's world and client needs. We leverage this experience to develop the ideal solution for a range of privacy-friendly challenges."
+    description: With a unique blend of complementary skills, our team has a focused
+      understanding of today's world and client needs. We leverage this
+      experience to develop the ideal solution for a range of privacy-friendly
+      challenges.
     link_text: Learn more
     url: about/
-realizations_title: See our projects
 realizations:
   - title: Sitra
-    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
   - title: Armasuisse
-    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
   - title: Personaldata.io
-    description: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia."
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
 contact_form_title: Let's start a conversation
 ---
