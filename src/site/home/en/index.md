@@ -7,7 +7,7 @@ lead: |-
 lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
 lead_image_caption: Photo by [Lianhao
   Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: What do digital platforms really know about you?
+paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
