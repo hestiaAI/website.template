@@ -7,7 +7,7 @@ lead: |-
 lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
 lead_image_caption: Photo [Lianhao
   Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: Que savent vraiment de vous les plateformes numériques?
+paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
