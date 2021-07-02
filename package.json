@@ -1,5 +1,5 @@
 {
-  "name": "@hestia/website-hestia",
+  "name": "@hestia/website-hai",
   "version": "0.1.0",
   "description": "HestiaLabs Hestia.ai website",
   "license": "UNLICENSED",
@@ -55,12 +55,12 @@
     "node": ">=14",
     "npm": ">=7"
   },
-  "homepage": "https://github.com/hestiaAI/website.hestia",
+  "homepage": "https://github.com/andreaskundig/website.hestia",
   "bugs": {
-    "url": "https://github.com/hestiaAI/website.hestia/issues"
+    "url": "https://github.com/andreaskundig/website.hestia/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hestiaAI/website.hestia.git"
+    "url": "git+https://github.com/andreaskundig/website.hestia.git"
   }
 }
