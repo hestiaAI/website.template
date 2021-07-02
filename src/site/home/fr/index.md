@@ -11,18 +11,26 @@ paragraphs_title: Que savent vraiment de vous les plateformes numériques?
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
-      Chaque seconde que vous passez en ligne, des milliers de capteurs traquent
-      vos comportements. Les meilleurs experts de la donnée les ont conçus pour
-      vous profiler et concevoir le message, l’image, la vidéo susceptible de
+      Chaque seconde passée en ligne, des milliers de capteurs traquent votre
+      comportements. Les meilleurs experts de la donnée les ont conçus pour vous
+      profiler et concevoir le message, l’image, la vidéo susceptible de
       susciter votre intérêt. Par tous les moyens.
 
 
-      Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars américains sur les supports numériques, rien qu'en 2020. 
+      ```
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      ```
 
 
-      Comment suis-je ciblé·e ? Par qui ? Combien est-ce que je vaux ? Plus ou moins que mon voisin ? Pourquoi ? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
-    link_text: Learn more
-    url: mission/
+      Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars sur les supports numériques, rien qu'en 2020. 
+
+
+      Comment suis-je ciblé·e ? Par qui ? Combien est-ce que je vaux ? Plus, ou moins que mon voisin ? Pourquoi ? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
+    link_text: Découvrez (et comparez) votre valeur numérique
+    url: /fr/act/sar/
+    primary_button: true
   - title: Êtes-vous influencé·e ?
     description: >-
       Dating Privacy is you and me: dating app users and people keen to
