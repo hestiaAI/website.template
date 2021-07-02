@@ -27,6 +27,7 @@
 
 # Repository contents
 
+
 ## Deliverables
 
 The website is made of two major deliverables, whose sources are available in this repository:
