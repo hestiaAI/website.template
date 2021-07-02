@@ -31,56 +31,21 @@ paragraphs:
     link_text: Discover (and compare) your digital value
     url: /en/act/sar/
     primary_button: true
-  - title: Are you being influenced?
+  - title: You are influenced
     description: >-
-      Dating Privacy is you and me: dating app users and people keen to
-      understand privacy in relationships formed online. The collective is
-      worried about the way our intimate life is being coded and exposed online.
-      We aim to retake control of personal data on dating apps, understand the
-      privacy problems they create, and work to improve data literacy.
+      "No. Not me. I am not influenceable. My free will is not
+      threatened. "Don't be so sure.
 
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
 
-      ```
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2Tq2gvGt80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
-      ```
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PSaybP1UivQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
-      ```
-
-      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What does history teach us about combating disinformation?<br><br>Watch Yuval answer Niko Woischnik’s (moderator + founder of <a href="https://twitter.com/TOABerlin?ref_src=twsrc%5Etfw">@TOABerlin</a>) question in the video below. <a href="https://t.co/ap0UkNVeYU">pic.twitter.com/ap0UkNVeYU</a></p>&mdash; Yuval Noah Harari (@harari_yuval) <a href="https://twitter.com/harari_yuval/status/1409851636969787392?ref_src=twsrc%5Etfw">June 29, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-      ```
-
-
-      ```
-
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
-      ```
-
-      <iframe allowfullscreen="true" style="transition-duration:0;transition-property:no;margin:0 auto;position:relative;display:block;background-color:#000000;" frameborder="0" scrolling="no" width="100%" height="100%" src="https://www.arte.tv/player/v6/index.php?json_url=https%3A%2F%2Fapi.arte.tv%2Fapi%2Fplayer%2Fv2%2Fconfig%2Ffr%2F103282-000-A&lang=fr&autoplay=true&mute=0&previewData=%7B%22title%22%3A%22Influenceurs%2C%20les%20nouveaux%20hommes-sandwich%22%2C%22subtitle%22%3Anull%2C%22image%22%3A%22https%3A%2F%2Fapi-cdn.arte.tv%2Fapi%2Fmami%2Fv1%2Fprogram%2Ffr%2F103282-000-A%2F940x530%3Fts%3D1618417307%22%7D"></iframe>
-
-      ```
-    link_text: Join us
+      Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in how your profile is perceived between the different networks and media you use.
+    link_text: Measure your influenceability
     url: community/
   - title: We connect with many partners
     description: >-
