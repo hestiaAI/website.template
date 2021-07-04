@@ -1,50 +1,54 @@
 ---
+path: home
+realizations_title: See our projects
 layout: home
 permalink: /fr/index.html
-path: home
-title: ‹SITE-TITLE›
-lead: The community of **‹SITE-TITLE›**
+title: Hestia.ai
+lead: Personalized digital services AND full respect of privacy Made possible
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
-paragraphs_title: We define a new relationship to data
-paragraphs:
-  - title: We are a collective of users
-    description: "Dating Privacy is you and me: dating app users and
-      people keen to understand privacy in relationships formed online. The
-      collective is worried about the way our intimate life is being coded and
-      exposed online. We aim to retake control of personal data on dating apps,
-      understand the privacy problems they create, and work to improve data
-      literacy."
-    link_text: Join us
-    url: community/
-  - title: We work to understand what's being done
+introduction_title: The technology that tech was missing to be sustainable
+introduction: Thanks to the technology developed by Hestia.ai, you can offer
+  personalized services without ever accessing users' data. Respect privacy.
+  Gain trust. It's the new added value.
+expertise:
+  - title: Expertise
+    description: Our roster of talent is ideally positioned to provide creative and
+      strategic consultative services and custom development for innovative
+      compaines and organisations.
+    link_text: Contact
+    url: null
+    primary_button: true
+  - title: ""
     description: >-
-      We want to understand many privacy risks that we, as dating app users, are
-      confronted with when looking for a date online: unwanted ads, discrimination
-      resulting from data, incorrect profiling and predictions, and the possibility
-      of phishing and identity theft by rogue users.
-    
-    
-      Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
+      **Development** privacy-preserving machine learning / infrastructure
+      building / site-app-software custom realization.
+
+
+      **Consulting** data governance / data analysis / use case design / prototyping / consortium setup / tech communication.
+  - title: Partnerships
+    description: We team up with academic and industrial partners to respond to
+      national or European calls for projects. Thanks to our track record and
+      the quality of our work, we have already obtained XXX € in Y years.
+    link_text: Contact
+    url: null
+  - title: About us
+    description: With a unique blend of complementary skills, our team has a focused
+      understanding of today's world and client needs. We leverage this
+      experience to develop the ideal solution for a range of privacy-friendly
+      challenges.
     link_text: Learn more
-    url: mission/
-  - title: We connect with many partners
-    description: >-
-      We are looking to collaborate with journalists, academics, researchers,
-      activists and NGOs in data protection and other related themes.
-
-
-      We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
-    link_text: Contact us
-    url: partners/
-
-news_title: News and events
-news:
-  - type: infographic
-    post: what-bumble-collects-about-you
-  - type: editorial
-    post: dating-apps-share-your-data
-  - type: interview
-    post: interview-de-jessica-pidoux-journal-le-temps
+    url: about/
+realizations:
+  - title: Sitra
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
+  - title: Armasuisse
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
+  - title: Personaldata.io
+    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+      aut fugit, sed quia.
+contact_form_title: Let's start a conversation
 ---
