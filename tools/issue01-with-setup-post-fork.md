@@ -42,6 +42,7 @@ Optional at this stage, but have to be defined before site public launch:
 - [ ] Run `npm install` on the command-line `TODO` 
 - [ ] Commit your changes to `package.json` and the updated `package-lock.json` `TODO` 
 - [ ] Run `npm run tools:setup-post-fork` on the command-line, set the four main placeholders `TODO` 
+- [ ] Update the urls for `homepage`, `bugs` and  `repository` in `package.json` `TODO` 
 - [ ] Optionally run `npm run setup-post-fork` on the command-line, set the remaining placeholders and theme colors `TODO` 
 
 #### Basic configuration
