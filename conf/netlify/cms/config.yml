@@ -52,7 +52,24 @@ collections:
       i18n: true
       fields:
         - { label: Home, name: home, required: false, widget: string, i18n: true }
-        - { label: About, name: about, required: false, widget: string, i18n: true }
+        - { label: Blog, name: blog, required: false, widget: string, i18n: true }
+        - { label: Mission, name: mission, required: false, widget: string, i18n: true }
+        - { label: Partners, name: partners, required: false, widget: string, i18n: true }
+        - { label: Media, name: media, required: false, widget: string, i18n: true }
+        - { label: Community, name: community, required: false, widget: string, i18n: true }
+        - { label: Contact, name: contact, required: false, widget: string, i18n: true }
+    - label: Newsletter signup text fragments
+      name: i18n-newsletter-signup
+      file: src/site/_data/i18n/assets/newsletter-signup.json
+      i18n: true
+      fields:
+        - { label: Title, name: title, required: false, widget: string, i18n: true }
+        - { label: Info, name: info, required: false, widget: string, i18n: true }
+        - { label: "First name", name: first_name, required: false, widget: string, i18n: true }
+        - { label: "Last name", name: last_name, required: false, widget: string, i18n: true }
+        - { label: "E-mail address", name: email, required: false, widget: string, i18n: true }
+        - { label: Message, name: message, required: false, widget: string, i18n: true }
+        - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
     - label: Contact form text fragments
       name: i18n-contact-form
       file: src/site/_data/i18n/assets/contact-form.json
@@ -65,6 +82,33 @@ collections:
         - { label: "Subject", name: subject, required: false, widget: string, i18n: true }
         - { label: "Message", name: message, required: false, widget: string, i18n: true }
         - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
+    - label: Blog
+      name: i18n-blog
+      file: src/site/_data/i18n/blog.json
+      i18n: true
+      fields:
+        - { label: Stories by, name: stories_by, required: true, i18n: true,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+        - { label: Stories about, name: stories_about, required: true, i18n: true,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - label: SAR Form text fragments
+      name: sar-form
+      file: src/site/_data/i18n/assets/sar-form.json
+      i18n: true
+      fields:
+        - { label: App type name, name: app_type_name, required: true, widget: string, i18n: true }
+        - { label: Select placeholder, name: select_placeholder, required: true, widget: string, i18n: true }
+        - { label: Search placeholder, name: search_placeholder, required: true, widget: string, i18n: true }
+        - { label: Recipient, name: recipient, required: true, widget: string, i18n: true }
+        - { label: Subject, name: subject, required: true, widget: string, i18n: true }
+        - { label: Body, name: body, required: true, widget: string, i18n: true }
+        - { label: Body placeholder, name: body_placeholder, required: true, widget: string, i18n: true }
+        - { label: Copy button, name: copy_button, required: true, widget: string, i18n: true }
+        - { label: E-mail button, name: email_button, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail, name: preview_of_email, required: true, widget: string, i18n: true }
+        - { label: Preview of e-mail to, name: preview_of_email_to, required: true, widget: string, i18n: true }
+        - { label: Explanation, name: explanation, required: true, widget: string, i18n: true }
+        - { label: Parts to fill in, name: to_fill_in, required: true, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:
@@ -105,26 +149,10 @@ collections:
     - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
     - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
-    - { label: "Introduction title", name: introduction_title, required: false, i18n: true,
+    - { label: "Paragraphs title", name: paragraphs_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - { label: Introduction , name: introduction, required: false, widget: markdown, i18n: true }
-    - label: "Expertise"
-      name: "expertise"
-      widget: "list"
-      summary: '{{fields.title}}'
-      i18n: true
-      fields:
-        - { label: "Title", name: title, required: false, i18n: true,
-            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-        - { label: "Description", name: description, required: false, widget: markdown, i18n: true }
-        - { label: "Link text", name: link_text, required: false, widget: string, i18n: true }
-        - { label: Link, name: url, required: false, widget: file, i18n: true,
-            hint: 'Write a relative url if you link to another page on this website. (for example "partners/", not "/partners/")'}
-        - { label: "Colored button", name: primary_button, required: false, widget: boolean, i18n: true }
-    - { label: "Realizations title", name: realizations_title, required: false, i18n: true,
-        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: "Realizations"
-      name: "realizations"
+    - label: "Paragraphs"
+      name: "paragraphs"
       widget: "list"
       summary: '{{fields.title}}'
       i18n: true
@@ -137,19 +165,62 @@ collections:
             hint: 'Write a relative url if you link to another page on this website. (for example "partners/", not "/partners/")'}
         - { label: "Colored button", name: primary_button, required: false, widget: boolean, i18n: true }
 
-
-    - { label: "Contact form title", name: contact_form_title, required: false, i18n: true,
+    - { label: "News title", name: news_title, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-- label: About
-  name: about
-  folder: src/site/about
+    - label: "News"
+      name: "news"
+      hint: "Posts added here will be displayed instead of the latest news"
+      widget: "list"
+      i18n: true
+      max: 4
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Editorial
+            name: post
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Interview
+            name: post
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Infographic
+            name: post
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+
+- label: Community
+  name: community
+  folder: src/site/community
   extension: md
   editor:
     preview: false
   create: false
   delete: false
   i18n: true
-  preview_path: /en/about/
+  preview_path: /en/community/
   fields:
     - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
     - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
@@ -171,9 +242,141 @@ collections:
         - { label: Twitter, name: twitter, required: false, widget: string }
         - { label: Linkedin, name: linkedin, required: false, widget: string }
         - { label: E-mail, name: email, required: false, widget: string }
-    - { label: "Philosophy title", name: philosophy_title, required: false, i18n: true,
+    - { label: "Timeline title", name: timeline_title, required: false, widget: string, i18n: true }
+    - label: "Timeline events"
+      name: "timeline_events"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.description}}'
+      fields:
+        - {label: "Date", name: date, required: false, widget: date, format: "YYYY-MM", date_format: "YYYY-MM", picker_utc: true }
+        - {label: Description, name: description, required: false, widget: markdown }
+    - { label: "Conversation channels title", name: conversation_channels_title, required: false, widget: string, i18n: true }
+    - label: "Conversation channels"
+      name: "conversation_channels"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.name}}'
+      types:
+        - label: "Generic url"
+          name: generic_url
+          fields:
+            - {label: Name, name: name, required: false, widget: string}
+            - {label: Image, name: image, required: false, widget: image}
+            - {label: URL, name: url, required: false, widget: file}
+            # - {label: 'type', name: type, widget: "hidden", default: "link"}
+        - label: "Forum (see ‹Configuration›)"
+          name: "forum_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Forum",
+               hint: "This channel will have the forum URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
+        - label: "Twitter (see ‹Configuration›)"
+          name: "twitter_url"
+          fields:
+            - {label: Name, name: name, required: false, widget: string, default: "Twitter",
+               hint: "This channel will have the twitter URL set under ‹Configuration› / External links"}
+            - {label: Image, name: image, required: false, widget: image}
+- label: Contact menu
+  name: contact_menu
+  folder: src/site/contact/
+  extension: html
+  i18n: true
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - label: "Links"
+      name: "links"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.title}}'
+      fields:
+        - { label: Title, name: title, required: false,  false, widget: string }
+        - { label: Description, name: description, required: false, widget: string }
+        - label: "Contact"
+          name: "contact"
+          widget: "list"
+          max: 1
+          types:
+            - label: "Link"
+              name: link
+              fields:
+                - { label: 'Link', name: url, widget: file }
+            - label: "Contact channel"
+              name: contact
+              fields:
+                - label: "Contact channel"
+                  name: channel
+                  widget: relation
+                  collection: contact_channel
+                  value_field: "id"
+                  display_fields: ["id"]
+                  multiple: false
+                  search_fields: ["id"]
+- label: Contact forms
+  name: contact_channel
+  folder: src/site/contact
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/contact/
+  identifier_field: id
+  fields:
+    - {label: Id, name: id, widget: hidden}
+    - {label: "Form name", name: form_name, widget: hidden}
+    - {label: Subject, name: subject, required: false, widget: string, i18n: true}
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+
+- label: Act › SAR
+  name: sar
+  folder: src/site/act/sar
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/act/sar/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
+    - { label: "SAR title" , name: sar_title , required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - { label: "Philosophy", name: philosophy, required: false, widget: markdown, i18n: true }
+    - { label: "SAR subtitle" , name: sar_sub_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Personaldata.io organization type, name: organization_type, required: true, widget: string,
+        hint: "Online dating application: Q5066"}
+    - { label: Name of personaldata.io wikitext template, name: mailto_template_name, required: true, widget: string, i18n: true }
+
+- label: Act › Catalog
+  name: catalog
+  folder: src/site/act/catalog
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/catalog/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Body , name: body, required: false, widget: markdown, i18n: true }
+
 - label: Legal
   name: legal
   folder: src/site/legal
@@ -189,5 +392,411 @@ collections:
     - { label: Lead, name: lead, required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
     - { label: Body, name: body, required: false, widget: markdown, i18n: true }
+
+- label: Media
+  name: media
+  folder: src/site/media
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/media/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: "Articles title" , name: articles_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "Read button" , name: read_button , required: false, widget: text, i18n: true }
+    - { label: "Media kit title" , name: media_kit_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "Media kit file" , name: media_kit_file , required: false, widget: file, i18n: true }
+    - { label: "Download title" , name: download_title , required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: "Download button" , name: download_button , required: false, widget: text, i18n: true }
+    - label: "Media articles"
+      name: "media_articles"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.title}}'
+      fields:
+        - { label: Title, name: title, required: false, widget: string }
+        - { label: Date, name: date, required: false, widget: date }
+        - { label: Publication, name: publication, required: false, widget: text }
+        - { label: Lead, name: lead, required: false, widget: text }
+        - { label: Article, name: url, required: false, widget: file }
+        - { label: Image, name: image, required: false, widget: image}
+        - { label: "Image caption", name: image_caption, required: false,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: "Press releases title" , name: press_releases_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - label: "Press releases"
+      name: "press_releases"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.title}}'
+      fields:
+        - {label: Title, name: title, required: false,
+           widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+        - {label: Date, name: date, required: false, widget: date}
+        - {label: File, name: url, required: false, widget: file }
+
+- label: Mission
+  name: mission
+  folder: src/site/mission
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/mission/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Body, name: body, required: false, widget: markdown, i18n: true }
+
+- label: Partners
+  name: partners
+  folder: src/site/partners
+  extension: md
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/partners/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Body, name: body, required: false, widget: markdown, i18n: true }
+    - label: "Partners"
+      name: "partners"
+      widget: "list"
+      i18n: true
+      summary: '{{fields.title}}'
+      fields:
+        - {label: Title, name: title, required: false,
+           widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+        - {label: Description, name: description, required: false, widget: markdown }
+        - {label: Website, name: url, required: false, widget: file}
+        - {label: Image, name: image, required: false, widget: image}
+        - {label: "Image caption", name: image_caption, required: false,
+            widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+
+- label: Blog (main page)
+  name: blog
+  folder: src/site/blog
+  editor:
+    preview: false
+  create: false
+  delete: false
+  i18n: true
+  preview_path: /en/blog/
+  fields:
+    - { label: "Browser tab title", name: title, required: false, widget: string, i18n: true }
+    - { label: Lead , name: lead, required: false, widget: markdown, i18n: true }
+    - { label: Lead image , name: lead_image, required: false, widget: image, i18n: true }
+    - { label: "Lead image caption", name: lead_image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true }
+    - { label: Latest posts title, name: latest_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Editorials title, name: editorials_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Interviews title, name: interviews_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Infographics title, name: infographics_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Categories title, name: categories_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Authors title, name: authors_title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+
+- label: Blog › Editorials
+  name: editorials
+  folder: src/site/blog/editorial
+  extension: md
+  editor:
+    preview: false
+  create: true
+  i18n: true
+  preview_path: /en/blog/editorial/{{slug}}
+  identifier_field: id
+  fields:
+    - { label: "Id (never change this, only set a unique value at creation)", name: id, widget: string }
+    - { label: Title, name: title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Date, name: date, required: false, widget: datetime, i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
+    - { label: "Image caption", name: image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used"}
+    - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
+    - { label: "Body", name: "body", required: false, widget: "markdown", i18n: true }
+    - label: "categories"
+      name: "post_categories"
+      widget: relation
+      collection: post_categories
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "author"
+      name: "post_authors"
+      widget: relation
+      collection: post_authors
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "Suggested"
+      name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
+      widget: "list"
+      i18n: true
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Editorial
+            name: post
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Interview
+            name: post
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Infographic
+            name: post
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+    - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
+
+- label: Blog › Interviews
+  name: interviews
+  folder: src/site/blog/interview
+  extension: md
+  editor:
+    preview: false
+  create: true
+  i18n: true
+  preview_path: /en/blog/interview/{{slug}}
+  identifier_field: id
+  fields:
+    - { label: "Id (never change this, only set a unique value at creation)", name: id, widget: string }
+    - { label: Title, name: title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Date, name: date, required: false, widget: datetime, i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
+    - { label: "Image caption", name: image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used" }
+    - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
+    - { label: "Body", name: "body", required: false, widget: "markdown", i18n: true }
+    - label: "categories"
+      name: "post_categories"
+      widget: relation
+      collection: post_categories
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "author"
+      name: "post_authors"
+      widget: relation
+      collection: post_authors
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "Suggested"
+      name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
+      widget: "list"
+      i18n: true
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Editorial
+            name: "post"
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Interview
+            name: "post"
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Infographic
+            name: "post"
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+    - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
+
+- label: Blog › Infographics
+  name: infographics
+  folder: src/site/blog/infographic
+  extension: md
+  editor:
+    preview: false
+  create: true
+  i18n: true
+  preview_path: /en/blog/infographic/{{slug}}
+  identifier_field: id
+  fields:
+    - { label: "Id (never change this, only set a unique value at creation)", name: id, widget: string }
+    - { label: Title, name: title, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
+    - { label: Date, name: date, required: false, widget: datetime, i18n: true }
+    - { label: "Lead", name: "lead", required: false, widget: "markdown", i18n: true }
+    - { label: Image, name: image, required: false, widget: image, i18n: true,
+        hint: "optional translation: if empty, main language value is used" }
+    - { label: "Image caption", name: image_caption, required: false, i18n: true,
+        widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true,
+        hint: "optional translation: if empty, main language value is used" }
+    - label: "categories"
+      name: "post_categories"
+      widget: relation
+      collection: post_categories
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "author"
+      name: "post_authors"
+      widget: relation
+      collection: post_authors
+      # i18n: true
+      value_field: "id"
+      multiple: true
+      search_fields: ["name", "id", "description"]
+    - label: "Suggested"
+      name: "suggested"
+      hint: "optional translation: if empty, main language value is used"
+      widget: "list"
+      i18n: true
+      types:
+        - label: "Editorial"
+          name: "editorial"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Editorial
+            name: post
+            widget: relation
+            collection: editorials
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Interview"
+          name: "interview"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Interview
+            name: post
+            widget: relation
+            collection: interviews
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+        - label: "Infographic"
+          name: "infographic"
+          summary: '{{fields.post}}'
+          fields:
+          - label: Infographic
+            name: post
+            widget: relation
+            collection: infographics
+            value_field: "id"
+            display_fields: ["title"]
+            multiple: false
+            search_fields: ["title", "body"]
+    - { label: "Show social media sharing", name: show_social_sharing, required: false, widget: boolean, i18n: true }
+
+- label: Blog › Categories
+  name: post_categories
+  folder: src/site/blog/category
+  create: true
+  editor:
+    preview: false
+  preview_path: /en/blog/category/{{slug}}
+  identifier_field: id
+  i18n: true
+  # i18n:
+  #   structure: single_file
+  fields:
+    - { label: "Id (never change this, only set a unique value at creation)", name: id, widget: string }
+    - { label: "Name", name: name, required: false, widget: string, i18n: true }
+    - { label: Lead, name: lead, required: false, widget: markdown, i18n: true }
+
+- label: Blog › Authors
+  name: post_authors
+  folder: src/site/blog/author
+  create: true
+  editor:
+    preview: false
+  preview_path: /en/blog/author/{{slug}}
+  identifier_field: id
+  i18n: true
+  # i18n:
+  #   structure: single_file
+  fields:
+    - { label: "Id (never change this, only set a unique value at creation)", name: id, widget: string }
+    - { label: "Name", name: name, required: false, widget: string, i18n: true}
+    - { label: Lead, name: lead, required: false, widget: markdown, i18n: true }
 
 # eof

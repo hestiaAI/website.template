@@ -1,16 +1,22 @@
 {
   "en": {
     "home": "home",
-    "expertise": "expertise",
-    "realization": "realization",
+    "blog": "blog",
+    "mission": "mission",
+    "partners": "partners",
+    "media": "media",
     "legal": "legal",
-    "about": "about"
+    "community": "community",
+    "contact": "contact us"
   },
   "fr": {
     "home": "accueil",
-    "expertise": "expertise",
-    "realization": "realization",
+    "blog": "blog",
+    "mission": "mission",
+    "partners": "partenaires",
+    "media": "médias",
     "legal": "mentions légales",
-    "about": "à propos"
+    "community": "communauté",
+    "contact": "contactez-nous"
   }
 }

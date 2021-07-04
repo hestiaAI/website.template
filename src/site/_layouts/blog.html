@@ -1,0 +1,67 @@
+---
+layout: defaultWithHero
+---
+<section id="newsletter" class="newsletter floating-on-hero with-no-space">
+  <newsletter-signup
+    lang="{{locale}}" layout="compact"
+    form-name="‹NEWSLETTER-FORM-NAME›">
+  </newsletter-signup>
+</section>
+
+{% set posts = collections.blogPosts[locale] %}
+{% set postSections = [{id: "latest",
+                        sectionTitle: latest_title,
+                        posts: posts.latest },
+                       {sectionTitle: editorials_title,
+                        id: "editorial" },
+                       {sectionTitle: interviews_title,
+                        id: "interview" },
+                       {sectionTitle: infographics_title,
+                        id: "infographic" }] %}
+{% for postSection in postSections %}
+  {% if posts[postSection.id] %}
+    <section id="{{postSection.id}}">
+      <h1>{% inlineMarkdown postSection.sectionTitle %}</h1>
+      <div class="grid-layout-halves with-gutters">
+        {% for post in posts[postSection.id] %}
+            <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}"
+              img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+              <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
+              <h2>{% inlineMarkdown post.data.title %}</h2>
+              {% markdown post.data.lead %}
+              <button>{{i18n.globals[locale].read_more}}</button>
+            </article-breakout>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endfor %}
+
+<section id="categories">
+  <h1>{% inlineMarkdown categories_title %}</h1>
+  <ul>
+    {% for category in collections.post_category %}
+      {% if category.data.locale == locale %}
+        <li><a href="{{category.data.page.url | url}}">{{category.data.name}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="authors">
+  <h1>{% inlineMarkdown authors_title %}</h1>
+  <ul>
+    {% for author in collections.post_author %}
+      {% if author.data.locale == locale %}
+        <li><a href="{{author.data.page.url | url}}">{{author.data.name}}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<script type="module">
+  import '/components/article-breakout.js';
+  import '/components/newsletter-signup.js';
+</script>

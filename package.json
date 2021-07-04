@@ -1,9 +1,9 @@
 {
-  "name": "@hestia/website-hai",
+  "name": "@hestia/~REPO-PACKAGE-NAME~",
   "version": "0.1.0",
-  "description": "HestiaLabs Hestia.ai website",
+  "description": "HestiaLabs ‹SITE-TITLE› website",
   "license": "UNLICENSED",
-  "author": "Charles Foucault-Dumas",
+  "author": "‹SITE-OWNER-NAME›",
   "contributors": [
     "Paul-Olivier Dehaye",
     "Charles Foucault-Dumas",
@@ -55,12 +55,12 @@
     "node": ">=14",
     "npm": ">=7"
   },
-  "homepage": "https://github.com/andreaskundig/website.hestia",
+  "homepage": "https://github.com/hestiaAI/‹REPO-NAME›",
   "bugs": {
-    "url": "https://github.com/andreaskundig/website.hestia/issues"
+    "url": "https://github.com/hestiaAI/‹REPO-NAME›/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreaskundig/website.hestia.git"
+    "url": "git+https://github.com/hestiaAI/‹REPO-NAME›.git"
   }
 }

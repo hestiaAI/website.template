@@ -1,21 +1,15 @@
 ---
 layout: defaultWithHero
 inverse: true
-form_name: contact-hai-info
 ---
 {#
   Would we need custom HTML per language, copy & override
   the code to `home/en/index.html` and `home/fr/index.html`
 #}
-<section id="introduction">
-  <h1>{% inlineMarkdown introduction_title %}</h1>
-  <div>
-        {% markdown introduction %}
-  </div>
-</section>
-<section id="expertise" class="callout">
+<section id="purpose">
+  <h1>{% inlineMarkdown paragraphs_title %}</h1>
   <div class="grid-layout-halves with-gutters">
-    {% for paragraph in expertise %}
+    {% for paragraph in paragraphs %}
       <div class="grid-cell">
         <h2>{% inlineMarkdown paragraph.title %}</h2>
         {% markdown paragraph.description %}
@@ -30,46 +24,62 @@ form_name: contact-hai-info
     {% endfor %}
   </div>
 </section>
-
-<section id="realization" class="callout">
-  <h1>{% inlineMarkdown realizations_title %}</h1>
-  <div class="grid-layout-halves with-gutters">
-    {% for paragraph in realizations %}
-      <div class="grid-cell">
-        <h2>{% inlineMarkdown paragraph.title %}</h2>
-        {% markdown paragraph.description %}
-        {% if paragraph.link_text %}
-          <a href="{{paragraph.url}}">
-            <button
-              {% if paragraph.primary_button %}class="primary"{% endif %}
-              >{{paragraph.link_text}}</button>
-          </a>
-        {% endif %}
-      </div>
+{% set latest_news = collections.blogPosts[locale].latest %}
+{% if news|length or latest_news|length %}
+  <section id="news">
+    <h1>{% inlineMarkdown news_title %}</h1>
+    <noscript>You need JavaScript enabled to see
+      the additional news articles hereafter.</noscript>
+    <div class="grid-layout-halves with-gutters">
+      {% set max_latest = latest_news|length - news|length %}
+    {% set latest_count = 0 %}
+    {% for post in latest_news %}
+         {% if latest_count < max_latest %}
+            {% set display = true %}
+            {% for chosen in news %}
+                {% set display = display and chosen.post != post.data.id %}
+            {% endfor %}
+            {% if display %}
+              {% set latest_count = latest_count + 1 %}
+              <article-breakout
+                  class="grid-cell" layout="box"
+                  href="{{post.url | url}}"
+                  img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+                <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
+                <h2>{% inlineMarkdown post.data.title %}</h2>
+                {% markdown post.data.lead %}
+                <button>{{i18n.globals[locale].read_more}}</button>
+              </article-breakout>
+            {% endif %}
+         {% endif %}
     {% endfor %}
-  </div>
-</section>
+    {% for item in news %}
+      {% for post in collections[item.type] %}
+        {% if post.data.locale == locale and post.data.id == item.post %}
+          <article-breakout
+              class="grid-cell" layout="box"
+              href="{{post.url | url}}"
+              img-src="{{post.data | getLocalizedOrDefault("image") | url}}">
+            <span slot="caption">{% inlineMarkdown post.data| getLocalizedOrDefault("image_caption") %}</span>
+            <h2>{% inlineMarkdown post.data.title %}</h2>
+            {% markdown post.data.lead %}
+            <button>{{i18n.globals[locale].read_more}}</button>
+          </article-breakout>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </div>
+  </section>
+{% endif %}
 
-<section id="contact" class="callout">
-  <h1>{{contact_form_title}}</h1>
-  <contact-form
+<section id="newsletter" class="newsletter">
+  <newsletter-signup
     lang="{{locale}}"
-    form-name="{{form_name}}"
-    subject="{{subject}}"></contact-form>
+    form-name="‹NEWSLETTER-FORM-NAME›">
+  </newsletter-signup>
 </section>
-
-<!-- A little help for the Netlify post-processing bots -->
-<!-- for use with web-component contact-form -->
-<form name="{{form_name}}" method="POST" data-netlify="true">
-      <input type="hidden" name="email">
-      <input type="hidden" name="first-name">
-      <input type="hidden" name="last-name">
-      <input type="hidden" name="subject">
-      <input type="hidden" name="message">
-      <input type="hidden" name="lang" />
-</form>
 
 <script type="module">
   import '/components/article-breakout.js';
-  import '/components/contact-form.js';
+  import '/components/newsletter-signup.js';
 </script>
