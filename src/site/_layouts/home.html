@@ -24,15 +24,14 @@ inverse: true
     {% endfor %}
   </div>
 </section>
-
-{% if news | length %}
+{% set latest_news = collections.blogPosts[locale].latest %}
+{% if news|length or latest_news|length %}
   <section id="news">
     <h1>{% inlineMarkdown news_title %}</h1>
     <noscript>You need JavaScript enabled to see
       the additional news articles hereafter.</noscript>
     <div class="grid-layout-halves with-gutters">
-    {% set latest_news = collections.blogPosts[locale].latest %}
-    {% set max_latest = latest_news.length - news.length %}
+      {% set max_latest = latest_news|length - news|length %}
     {% set latest_count = 0 %}
     {% for post in latest_news %}
          {% if latest_count < max_latest %}
