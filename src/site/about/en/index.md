@@ -1,11 +1,15 @@
 ---
-layout: community
+layout: about
 inverse: true
-permalink: /fr/community/index.html
-title: Community
-lead: "**‹SITE-TITLE›**'s community"
+permalink: /en/about/index.html
+title: About
+lead: |+
+  **We are Hestia.ai**
+
+  The tech company that's changing tech standards.
+
 lead_image: /assets/media/community-hero-image.jpg
-lead_image_caption: Illustration de [Pascale Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
+lead_image_caption: Illustration by [Pascale Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
 story_title: A short story about us
 story: We are a small group of skilled individuals working to define a new
   relationship with data in dating.
@@ -18,16 +22,6 @@ people:
       algorithms."
     image: /assets/media/blog-interview-jessica-pidoux-bw.jpg
     twitter: https://twitter.com/pidouxina
-timeline_title: How it started — how it's going
-timeline_events:
-  - date: 2021-05
-    description: TODO
-  - date: 2021-12
-    description: TODO
-conversation_channels_title: Join the conversation
-conversation_channels:
-  - type: forum_url
-    name: Forum
-  - type: twitter_url
-    name: Twitter
+philosophy_title: Why "Hestia"
+philosophy: Le petit paragraphe poético-philosophico-homérique de PO
 ---
