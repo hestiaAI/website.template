@@ -1,0 +1,17 @@
+---
+layout: defaultWithHero
+---
+{% for link in links %}
+  {% if loop.first %}
+    <section id="contacts">
+  {% endif %}
+  <h3>{{link.title}}</h3>
+  {% if link.contact[0].type == "link" %}
+    <p><a href="{{link.contact[0].url}}">{{link.description}}</a></p>
+  {% elif link.contact[0].type == "contact" %}
+    <p><a href="{% contactUrl locale, link.contact[0].channel %}">{{link.description}}</a></p>
+  {% endif %}
+  {% if loop.last %}
+    </section>
+  {% endif %}
+{% endfor %}

@@ -5,14 +5,15 @@
         role="img" aria-label="{{i18n.header_footer[locale].home}}">
         <img src="/assets/img/placeholder-logo-web.export.svg"
           onerror="this.onerror=null; this.src='/assets/img/placeholder-logo-web.export-390x147.png'"
-          height="49" width="130" alt="Hestia.ai logo">
+          height="49" width="130" alt="‹SITE-TITLE› logo">
       </a>
     </div>
     <div class="header-cell-two-thirds">
       <nav class="header-navigation">
-        {% ilink page, "#expertise", locale %}{{i18n.header_footer[locale].expertise}}{% endilink %}
-        {% ilink page, "#realization", locale %}{{i18n.header_footer[locale].realization}}{% endilink %}
-        {% ilink page, "about", locale %}{{i18n.header_footer[locale].about}}{% endilink %}
+        {% ilink page, "blog", locale %}{{i18n.header_footer[locale].blog}}{% endilink %}
+        {% ilink page, "mission", locale %}{{i18n.header_footer[locale].mission}}{% endilink %}
+        {% ilink page, "community", locale %}{{i18n.header_footer[locale].community}}{% endilink %}
+        {% ilink page, "partners", locale %}{{i18n.header_footer[locale].partners}}{% endilink %}
         {% for translation in translations %}
           {% ilink page, translation.page.url %}{{translation.locale}}{% endilink %}
         {% endfor %}

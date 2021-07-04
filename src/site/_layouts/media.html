@@ -1,0 +1,43 @@
+---
+layout: defaultWithHero
+inverse: true
+---
+<section id="articles" class="callout alt">
+  <h1>{% inlineMarkdown articles_title %}</h1>
+  <div class="stack-layout with-gutters">
+    {% set articleLayout = cycler("card", "card-alt") %}
+    {% for article in media_articles %}
+      <article-breakout
+          class="stack-cell" layout="{{articleLayout.next()}}"
+          href="{{article.url | url}}" img-src="{{article.image | url}}">
+        <span slot="caption">{% inlineMarkdown article.image_caption %}</span>
+        <h2>{{article.title}}</h2>
+        <p>{{article.date | readableDate(locale)}}</p>
+        <button>{{i18n.globals[locale].read_more}}</button>
+      </article-breakout>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="contact" class="callout">
+  <h1>{% inlineMarkdown contact_title %}</h1>
+  <p><a href="{% contactUrl locale, contact_channel %}">{{contact_description}}</a></p>
+</section>
+
+<section id="downloads" class="callout alt">
+  <h1>{% inlineMarkdown download_title %}</h1>
+  <p>{% inlineMarkdown media_kit_title %}<br>
+    <a href="{{media_kit_file}}" download>{{download_button}}</a></p>
+</section>
+
+<section id="press-releases" class="callout">
+  <h1>{% inlineMarkdown press_releases_title %}</h1>
+  {% for release in press_releases %}
+    <h3>{{release.date | readableDate(locale)}}</h3>
+    <p><a href="{{release.url}}">{% inlineMarkdown release.title %}</a></p>
+  {% endfor %}
+</section>
+
+<script type="module">
+  import '/components/article-breakout.js';
+</script>
