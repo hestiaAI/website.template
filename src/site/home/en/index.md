@@ -5,9 +5,8 @@ lead: |-
   Personalized digital services\
   AND full respect of privacy\
   Made possible
-lead_image: /assets/media/home-hero-image.jpg
-lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
-  on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
+lead_image: /assets/media/hestia_hero.png
+lead_image_caption: ""
 introduction_title: The technology that tech was missing to be sustainable
 introduction: >-
   Thanks to the technology developed by Hestia.ai, you can offer personalized
