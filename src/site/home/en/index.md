@@ -53,11 +53,6 @@ realizations_title: See our projects
 layout: home
 permalink: /en/index.html
 realizations:
-  - title: Public interest innovation fund
-    description: >-
-      **Strategic foresight**
-
-      Data Literacy for executive leaders based on the analysis of their own data. Deciphering the influence of data on economic and political power.
   - title: Armasuisse
     description: >-
       **Trusted AI**
@@ -68,5 +63,10 @@ realizations:
       **Data for good**
 
       With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](www.hestialabs.org/en/) project enables citizens’ data to be used for social advancements.
+  - title: Public interest innovation fund
+    description: >-
+      **Strategic foresight**
+
+      Data Literacy for executive leaders based on the analysis of their own data. Deciphering the influence of data on economic and political power.
 contact_form_title: Let's start a conversation
 ---
