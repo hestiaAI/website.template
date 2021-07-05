@@ -20,33 +20,37 @@ introduction: >-
   Inspirez confiance.
 
 
-  C'est la nouvelle valeur ajoutée.
+  Une nouvelle valeur ajoutée.
 expertise:
   - title: Expertise
-    description: Our roster of talent is ideally positioned to provide creative and
-      strategic consultative services and custom development for innovative
-      compaines and organisations.
+    description: Notre équipe est idéalement positionnée pour proposer des conseils
+      créatifs et stratégiques et fournir des développements personnalisés à des
+      entreprises et organisations innovantes.
     link_text: Contact
     url: null
     primary_button: true
   - title: ""
     description: >-
-      **Development** privacy-preserving machine learning / infrastructure
-      building / site-app-software custom realization.
+      **Développement** machine learning respectueux la vie privée /
+      construction d'infrastructures / réalisation de logiciels, de sites web et
+      d'applications sur mesure.
 
 
-      **Consulting** data governance / data analysis / use case design / prototyping / consortium setup / tech communication.
-  - title: Partnerships
-    description: We team up with academic and industrial partners to respond to
-      national or European calls for projects. Thanks to our track record and
-      the quality of our work, we have already obtained XXX € in Y years.
+      **Conseil** gouvernance des données / analyse des données / conception de cas d'utilisation / prototypage / mise en place de consortium / communication
+  - title: Partenariats
+    description: Nous coopérons avec des partenaires académiques et industriels pour
+      répondre à des appels à projets nationaux ou européens. Notre approche
+      novatrice, l’expérience de notre équipe, et la qualité de ce que nous
+      proposons, nous a déjà permis d'obtenir plus de 200’000 € en moins d'un
+      an.
     link_text: Contact
     url: null
-  - title: About us
-    description: With a unique blend of complementary skills, our team has a focused
-      understanding of today's world and client needs. We leverage this
-      experience to develop the ideal solution for a range of privacy-friendly
-      challenges.
+  - title: A propos
+    description: Grâce à un mélange unique de compétences complémentaires, notre
+      équipe a une compréhension aigu du monde d'aujourd'hui et des besoins de
+      nos clients. Nous tirons parti de cette expérience pour élaborer la
+      réponse idéale à toute problématique liée à la protection de la vie
+      privée.
     link_text: Learn more
     url: about/
 realizations_title: Nos projets

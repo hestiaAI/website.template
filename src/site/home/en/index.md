@@ -25,7 +25,7 @@ expertise:
   - title: Expertise
     description: Our roster of talent is ideally positioned to provide creative and
       strategic consultative services and custom development for innovative
-      compaines and organisations.
+      companies and organisations.
     link_text: Contact
     url: "#contact"
     primary_button: true
@@ -39,7 +39,8 @@ expertise:
   - title: Partnerships
     description: We team up with academic and industrial partners to respond to
       national or European calls for projects. Thanks to our track record and
-      the quality of our work, we have already obtained XXX € in Y years.
+      the quality of our work, we have already obtained more than 200'000 € in
+      less than a year.
     link_text: Contact
     url: "#contact"
   - title: About us
