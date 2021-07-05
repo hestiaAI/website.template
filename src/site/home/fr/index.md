@@ -5,9 +5,8 @@ lead: |-
   Des services numériques personnalisés\
   ET le respect total de la vie privée\
   C’est possible
-lead_image: /assets/media/home-hero-image.jpg
-lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
-  on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
+lead_image: /assets/media/hestia_hero.png
+lead_image_caption: ""
 introduction_title: La technologie qui manquait à la tech pour devenir durable
 introduction: >-
   Grâce à la technologie développée par Hestia.ai, vous pouvez proposer des
