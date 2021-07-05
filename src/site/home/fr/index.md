@@ -56,11 +56,6 @@ realizations_title: Nos projets
 layout: home
 permalink: /fr/index.html
 realizations:
-  - title: Fonds d'innovation d'intérêt public
-    description: >-
-      **Prospective stratégique**
-
-      Data Literacy pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur les pouvoirs économique et politique.
   - title: Armasuisse
     description: >-
       **AI for good**
@@ -71,5 +66,10 @@ realizations:
       **Data for good**
 
       Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social.
+  - title: Fonds d'innovation d'intérêt public
+    description: >-
+      **Prospective stratégique**
+
+      Data Literacy pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur les pouvoirs économique et politique.
 contact_form_title: Contact
 ---
