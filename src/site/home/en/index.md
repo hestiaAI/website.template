@@ -1,17 +1,26 @@
 ---
 path: home
-realizations_title: See our projects
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
-lead: Personalized digital services AND full respect of privacy Made possible
+lead: |-
+  Personalized digital services\
+  AND full respect of privacy\
+  Made possible
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
 introduction_title: The technology that tech was missing to be sustainable
-introduction: Thanks to the technology developed by Hestia.ai, you can offer
-  personalized services without ever accessing users' data. Respect privacy.
-  Gain trust. It's the new added value.
+introduction: >-
+  Thanks to the technology developed by Hestia.ai, you can offer personalized
+  services without ever accessing users' data.
+
+
+  Respect privacy.
+
+
+  Gain trust.
+
+
+  It's the new added value.
 expertise:
   - title: Expertise
     description: Our roster of talent is ideally positioned to provide creative and
@@ -40,15 +49,24 @@ expertise:
       challenges.
     link_text: Learn more
     url: about/
+realizations_title: See our projects
+layout: home
+permalink: /en/index.html
 realizations:
-  - title: Sitra
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
+  - title: Public interest innovation fund
+    description: >-
+      **Strategic foresight**
+
+      Data Literacy for executive leaders based on the analysis of their own data. Deciphering the influence of data on economic and political power.
   - title: Armasuisse
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
-  - title: Personaldata.io
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
+    description: >-
+      **Trusted AI**
+
+      Research and development project to study the security of a well-known distributed system (data distribution and calculations performed on it).
+  - title: Migros Pioneer Fund
+    description: >-
+      **Data for good**
+
+      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](www.hestialabs.org/en/) project enables citizens’ data to be used for social advancements.
 contact_form_title: Let's start a conversation
 ---
