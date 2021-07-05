@@ -1,17 +1,26 @@
 ---
 path: home
-realizations_title: See our projects
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
-lead: Personalized digital services AND full respect of privacy Made possible
+lead: |-
+  Des services numériques personnalisés\
+  ET le respect total de la vie privée\
+  C’est possible
 lead_image: /assets/media/home-hero-image.jpg
 lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
   on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
-introduction_title: The technology that tech was missing to be sustainable
-introduction: Thanks to the technology developed by Hestia.ai, you can offer
-  personalized services without ever accessing users' data. Respect privacy.
-  Gain trust. It's the new added value.
+introduction_title: La technologie qui manquait à la tech pour devenir durable
+introduction: >-
+  Grâce à la technologie développée par Hestia.ai, vous pouvez proposer des
+  services personnalisés sans jamais accéder aux données des utilisateurs.
+
+
+  Respectez la vie privée.
+
+
+  Inspirez confiance.
+
+
+  C'est la nouvelle valeur ajoutée.
 expertise:
   - title: Expertise
     description: Our roster of talent is ideally positioned to provide creative and
@@ -40,15 +49,24 @@ expertise:
       challenges.
     link_text: Learn more
     url: about/
+realizations_title: Nos projets
+layout: home
+permalink: /fr/index.html
 realizations:
-  - title: Sitra
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
+  - title: Fonds d'innovation d'intérêt public
+    description: >-
+      **Prospective stratégique**
+
+      Data Literacy pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur les pouvoirs économique et politique.
   - title: Armasuisse
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
-  - title: Personaldata.io
-    description: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-      aut fugit, sed quia.
-contact_form_title: Let's start a conversation
+    description: >-
+      **AI for good**
+
+      Projet de recherche et développement visant à étudier la sécurité d'un système distribué bien connu (distribution des données et calculs effectués sur celles-ci).
+  - title: Fonds pionnier Migros
+    description: >-
+      **Data for good**
+
+      Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social.
+contact_form_title: Contact
 ---
