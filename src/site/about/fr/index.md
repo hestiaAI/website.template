@@ -1,7 +1,5 @@
 ---
 people_title: People
-layout: about
-permalink: /fr/about/index.html
 title: About
 lead: |+
   **Nous sommes Hestia.ai**
@@ -37,5 +35,32 @@ people:
       est PDG de Hestia.ai.
     image: /assets/media/paul-olivier-dehaye-c-hestia.ai-c.jpg
     twitter: https://twitter.com/podehaye
+  - description: Marie-Pierre est physicienne. Après plusieurs années passées en R&D
+      dans les secteurs public et privé, Marie-Pierre a rejoint Hestia.ai en
+      février 2021 en tant qu'**analyste, responsable des subventions et
+      bâtisseuse de consortiums**.
+    name: Marie-Pierre Vidonne
+    image: /assets/media/marie-pierre-vidonne-c-hestia.ai-c.jpg
+  - linkedin: https://www.linkedin.com/in/charlesfoucaultdumas/
+    twitter: https://twitter.com/lettweetbe
+    image: /assets/media/charles-foucault-dumas-c-hestia.ai-c.jpg
+    name: Charles Foucault-Dumas
+    description: Journaliste scientifique et [écrivain](https://foucault-dumas.ch/),
+      Charles a lancé le média L'Usine Digitale avant de diriger l'ONG
+      Empowerment Foundation pour un monde numérique plus humain. Il a rejoint
+      Hestia.ai en janvier 2021 en tant que **Responsable de la communication**.
+  - name: Andreas Kündig
+    description: Economiste de formation, Andreas Kündig est développeur de
+      logiciels et [auteur de bandes dessinées](http://www.andreaskundig.ch/).
+      Depuis mars 2021, il utilise au moins une de ces compétences pour faire
+      avancer Hestia.ai. Andreas a travaillé dans un large éventail d'industries
+      et d'organisations, y compris deux startups technologiques en phase de
+      démarrage.
+    image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
+    linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+philosophy_title: Pourquoi «Hestia»
+layout: about
+permalink: /fr/about/index.html
 inverse: true
+philosophy: Le petit paragraphe poético-philosophico-homérique de PO
 ---

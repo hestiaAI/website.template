@@ -31,12 +31,33 @@ people:
       fellowships Oxford and ETH Zurich) who became interested in the role of
       personal data in society. He has most notably helped uncover the Cambridge
       Analytica scandal. He has led the NGO PersonalData.io and sits on the
-      board of MyData Global. He is the CEO of Hestia.ai.
+      board of MyData Global. He is the **CEO** of Hestia.ai.
     image: /assets/media/paul-olivier-dehaye-c-hestia.ai-c.jpg
     twitter: https://twitter.com/podehaye
-philosophy_title: Why "Hestia"
+  - name: " Marie-Pierre Vidonne"
+    image: /assets/media/marie-pierre-vidonne-c-hestia.ai-c.jpg
+    description: Marie-Pierre is a Physicist. After several years spent in R&D in
+      both public and private sectors, Marie-Pierre joined Hestia.ai in February
+      2021 as **analyst, grant officer and consortiums builder**.
+  - name: Charles Foucault-Dumas
+    description: A science journalist and [writer](https://foucault-dumas.ch/),
+      Charles launched the media L'Usine Digitale before heading the NGO
+      Empowerment Foundation for a human-centered digital world. He joined
+      Hestia.ai in January 2021 as **Head of Communications**.
+    image: /assets/media/charles-foucault-dumas-c-hestia.ai-c.jpg
+    twitter: https://twitter.com/lettweetbe
+    linkedin: https://www.linkedin.com/in/charlesfoucaultdumas/
+  - name: Andreas Kündig
+    description: Andreas Kündig is an economist by training, a software developer,
+      and a [comic book author](http://www.andreaskundig.ch/). Since March 2021,
+      he has been using at least one of these skills to drive HestiaLabs
+      forward. Andreas has worked in a wide range of industries and
+      organisations, including two early-stage tech startups.
+    image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
+    linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+philosophy_title: Why “Hestia”
 layout: about
 permalink: /en/about/index.html
 inverse: true
-philosophy: Le petit paragraphe poético-philosophico-homérique de PO
+philosophy: PO's little poetic-philosophico-homeric statement
 ---
