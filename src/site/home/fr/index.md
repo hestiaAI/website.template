@@ -2,8 +2,8 @@
 path: home
 title: Hestia.ai
 lead: |-
-  Des services numériques personnalisés\
-  ET le respect total de la vie privée\
+  Services personnalisés\
+  ET respect de la vie privée\
   C’est possible
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
