@@ -5,7 +5,7 @@
     "email": "E-mail address",
     "subject": "Subject",
     "submit_button": "Send",
-    "message": "I have a project that requires access to users' personal data in order to provide them with a valuable and personalized service, but I would like to do so in full respect of their privacy. I would be able to do this with the Hestia.ai technology. Can we discuss this?"
+    "message": "Type your message here"
   },
   "fr": {
     "first_name": "Prénom",
@@ -13,6 +13,6 @@
     "email": "Adresse e-mail",
     "subject": "Objet",
     "submit_button": "Envoyer",
-    "message": "J'ai un projet qui nécessite l'accès aux données personnelles des utilisateurs afin de leur fournir un service personnalisé à haute valeur ajoutée. Je voudrais le faire dans le plein respect de leur vie privée. Je pourrais y parvenir grâce à la technologie Hestia.ai. Pourrions-nous en discuter ?"
+    "message": "Saisissez votre message ici"
   }
 }
