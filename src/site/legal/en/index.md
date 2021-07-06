@@ -6,22 +6,22 @@ lead: ""
 ---
 ## Impressum
 
-* Publisher <strong>hestia.ai LLC</strong>, registered in the Commercial Register \
+* Publisher **hestia.ai LLC**, registered in the Commercial Register \
   of the Canton of Geneva [IDE CHE-416.261.732](https://www.zefix.ch/en/search/entity/list/firm/1224854?name=hestia.ai&searchType=exact)
-* Manager <strong>Paul-Olivier Dehaye</strong>
-* E-mail <strong>contact (at) hestia.ai</strong>
+* Manager **Paul-Olivier Dehaye**
+* E-mail **contact (at) hestia.ai**
 
 ## Copyrights
 
 All content (trademarks, names, titles, logos, images, graphics, text and other elements) on this website is protected by copyright. Any reproduction is therefore subject to the written consent of the author.
 
-The various contents of the site may not be freely reproduced without the indication of the source and the explicit permission of the authors. Similarly, the pages of HestiaLabs’ website must not be embedded within the pages of another site.
+The various contents of the site may not be freely reproduced without the indication of the source and the explicit permission of the authors. Similarly, the pages of Hestia.ai’s website must not be embedded within the pages of another site.
 
 ## Liability
 
-HestiaLabs’ website is compiled with the utmost care. Nevertheless, HestiaLabs cannot guarantee that the information contained herein is free of errors. Liability for damages is excluded unless based on intent or gross negligence on our part.
+Hestia.ai’s website is compiled with the utmost care. Nevertheless, Hestia.ai cannot guarantee that the information contained herein is free of errors. Liability for damages is excluded unless based on intent or gross negligence on our part.
 
-HestiaLabs can change the content of its websites at any time at its own discretion and without prior notice. HestiaLabs websites contain links to other websites. We are not responsible for the data protection strategy or the content of these websites.
+Hestia.ai can change the content of its websites at any time at its own discretion and without prior notice. Hestia.ai's website contain links to other websites. We are not responsible for the data protection strategy or the content of these websites.
 
 ## Privacy Policy
 
@@ -36,14 +36,14 @@ You may request a copy of our Personal Data, withdraw Your previously given cons
 For the purposes of this policy, the words of which the initial letter is capitalized have meanings defined as follows :
 
 * Personal Data is any information that relates to an identified or identifiable individual.
-* Website refers to Our website, <https://hestialabs.org>.
+* Website refers to Our website, [https://hestia.ai](/en/).
 * You means the individual accessing or using the Website, or other legal entity on behalf of which such individual is accessing or using the Website, as applicable.
 
 ### 3. Data processing
 
-| Purpose of the processing                                         | Collected data                                                    | Lawful basis            | Recipients                  | Retention period                                         |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- | --------------------------- | -------------------------------------------------------- |
-| Newsletter                                                        | Email address                                                     | Execution of a contract | Hestia.ai and subprocessors | As long as registered                                    |
+| Purpose of the processing                                         | Collected data                                                    | Lawful basis            | Recipients                  | Retention period                                        |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- | --------------------------- | ------------------------------------------------------- |
+| Newsletter                                                        | Email address                                                     | Execution of a contract | Hestia.ai and subprocessors | As long as registered                                   |
 | Basic analytics (no tracking), technical maintenance and security | IP address, user agent, date and time of connection (server logs) | Legitimate interest     | Hestia.ai and subprocessors | [See here](https://www.netlify.com/products/analytics/) |
 
 Please be aware that your Personal Data may be disclosed under the following circumstances, provided such disclosure occurs under sufficient security measures and does not lead to uncontrolled spread of information:

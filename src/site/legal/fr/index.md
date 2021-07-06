@@ -36,14 +36,14 @@ You may request a copy of our Personal Data, withdraw Your previously given cons
 For the purposes of this policy, the words of which the initial letter is capitalized have meanings defined as follows :
 
 * Personal Data is any information that relates to an identified or identifiable individual.
-* Website refers to Our website, <https://hestialabs.org>.
+* Website refers to Our website, [https://hestia.ai](/fr/).
 * You means the individual accessing or using the Website, or other legal entity on behalf of which such individual is accessing or using the Website, as applicable.
 
 ### 3. Data processing
 
-| Purpose of the processing                                         | Collected data                                                    | Lawful basis            | Recipients                  | Retention period                                         |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- | --------------------------- | -------------------------------------------------------- |
-| Newsletter                                                        | Email address                                                     | Execution of a contract | Hestia.ai and subprocessors | As long as registered                                    |
+| Purpose of the processing                                         | Collected data                                                    | Lawful basis            | Recipients                  | Retention period                                        |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- | --------------------------- | ------------------------------------------------------- |
+| Newsletter                                                        | Email address                                                     | Execution of a contract | Hestia.ai and subprocessors | As long as registered                                   |
 | Basic analytics (no tracking), technical maintenance and security | IP address, user agent, date and time of connection (server logs) | Legitimate interest     | Hestia.ai and subprocessors | [See here](https://www.netlify.com/products/analytics/) |
 
 Please be aware that your Personal Data may be disclosed under the following circumstances, provided such disclosure occurs under sufficient security measures and does not lead to uncontrolled spread of information:
