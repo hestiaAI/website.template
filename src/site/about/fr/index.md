@@ -6,7 +6,7 @@ title: About
 lead: |+
   **Nous sommes Hestia.ai**
 
-  L'entreprise tech qui change les normes de la tech.
+  L'entreprise tech qui change les normes de la tech
 
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
