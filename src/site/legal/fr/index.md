@@ -2,78 +2,81 @@
 layout: legal
 permalink: /fr/legal/index.html
 title: Mentions légales
-lead: ""
+lead: |-
+  **Mentions légales**
+
+  Derniière mise à jour: Juillet 2021
 ---
 ## Impressum
 
-* Publisher <strong>hestia.ai LLC</strong>, registered in the Commercial Register \
-  of the Canton of Geneva [IDE CHE-416.261.732](https://www.zefix.ch/en/search/entity/list/firm/1224854?name=hestia.ai&searchType=exact)
-* Manager <strong>Paul-Olivier Dehaye</strong>
-* E-mail <strong>contact (at) hestia.ai</strong>
+* Editeur **hestia.ai LLC**, inscrit au registre du commerce \
+  du Canton de Genève [IDE CHE-416.261.732](https://www.zefix.ch/en/search/entity/list/firm/1224854?name=hestia.ai&searchType=exact)
+* Gérant **Paul-Olivier Dehaye**.
+* Courriel **contact (at) hestia.ai**.
 
-## Copyrights
+## Droits d'auteur
 
-All content (trademarks, names, titles, logos, images, graphics, text and other elements) on this website is protected by copyright. Any reproduction is therefore subject to the written consent of the author.
+Tout le contenu (marques, noms, titres, logos, images, graphiques, textes et autres éléments) de ce site est protégé par le droit d'auteur. Toute reproduction est donc soumise à l'accord écrit de l'auteur.
 
-The various contents of the site may not be freely reproduced without the indication of the source and the explicit permission of the authors. Similarly, the pages of HestiaLabs’ website must not be embedded within the pages of another site.
+Les différents contenus du site ne peuvent être reproduits librement sans l'indication de la source et l'autorisation explicite des auteurs. De même, les pages du site Hestia.ai ne doivent pas être imbriquées à l'intérieur des pages d'un autre site.
 
-## Liability
+## Responsabilité
 
-HestiaLabs’ website is compiled with the utmost care. Nevertheless, HestiaLabs cannot guarantee that the information contained herein is free of errors. Liability for damages is excluded unless based on intent or gross negligence on our part.
+Le site Internet d'Hestia.ai est élaboré avec le plus grand soin. Néanmoins, Hestia.ai ne peut garantir que les informations qu'il contient sont exemptes d'erreurs. Toute responsabilité en matière de dommages est exclue, sauf si elle repose sur une intention ou une négligence grave de notre part.
 
-HestiaLabs can change the content of its websites at any time at its own discretion and without prior notice. HestiaLabs websites contain links to other websites. We are not responsible for the data protection strategy or the content of these websites.
+Hestia.ai peut modifier le contenu de son site Web à tout moment, à sa propre discrétion et sans préavis. Le site Internet d'Hestia.ai contient des liens vers d'autres sites Internet. Nous ne sommes pas responsables de la stratégie de protection des données ou du contenu de ces sites.
 
-## Privacy Policy
+## Politique de confidentialité
 
-This privacy policy provides you information on data processed by Hestia.ai when operating HestiaLabs.org, your rights and how to exercise them. We may update this policy from time to time, the updated policy will be posted on this page and is effective as of its date of publication.
+Cette politique de confidentialité vous fournit des informations sur les données traitées par Hestia.ai, vos droits et la manière de les exercer. Nous pouvons mettre à jour cette politique de temps en temps, la politique mise à jour sera publiée sur cette page et sera effective à partir de sa date de publication.
 
-### 1. Contact Us / Request
+### 1. Nous contacter / Demande
 
-You may request a copy of our Personal Data, withdraw Your previously given consent or request deletion of Your data (when relevant), or just contact Us, by sending an email at: legal@hestia.ai
+Vous pouvez demander une copie des données à caractère personnel, retirer le consentement que vous avez donné précédemment ou demander la suppression de vos données (le cas échéant), ou simplement nous contacter, en envoyant un courrier électronique à l'adresse suivante : legal (at) hestia.ai.
 
-### 2. Definitions
+### 2. Définitions
 
-For the purposes of this policy, the words of which the initial letter is capitalized have meanings defined as follows :
+Aux fins de la présente politique, les mots dont la lettre initiale est en majuscule ont des significations définies comme suit :
 
-* Personal Data is any information that relates to an identified or identifiable individual.
-* Website refers to Our website, [https://hestia.ai](/fr/).
-* You means the individual accessing or using the Website, or other legal entity on behalf of which such individual is accessing or using the Website, as applicable.
+* Données personnelles désigne toute information qui se rapporte à une personne physique identifiée ou identifiable.
+* Le Site Web fait référence à Notre site Web, [https://hestia.ai](/en/).
+* Vous désigne la personne physique qui accède ou utilise le Site Web, ou toute autre entité juridique pour le compte de laquelle cette personne physique accède ou utilise le Site Web, selon le cas.
 
-### 3. Data processing
+### 3. Traitement des données
 
-| Purpose of the processing                                         | Collected data                                                    | Lawful basis            | Recipients                  | Retention period                                        |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------- | --------------------------- | ------------------------------------------------------- |
-| Newsletter                                                        | Email address                                                     | Execution of a contract | Hestia.ai and subprocessors | As long as registered                                   |
-| Basic analytics (no tracking), technical maintenance and security | IP address, user agent, date and time of connection (server logs) | Legitimate interest     | Hestia.ai and subprocessors | [See here](https://www.netlify.com/products/analytics/) |
+| Finalité du traitement                                               | Données collectées                                                          | Base légale            | Destinataires                           | Période de conservation                                 |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------- | --------------------------------------- | ------------------------------------------------------- |
+| Newsletter                                                           | Adresse e-mail                                                              | Exécution d'un contrat | Hestia.ai et sous traitants             | Aussi longtemps que l'on est enregistré                 |
+| Analyse de base (pas de tracking), maintenance technique et sécurité | Adresse IP, agent utilisateur, date et heure de connexion (logs du serveur) | Intérêt légitime       | Hestia.ai et sous-traitants secondaires | [Voir ici](https://www.netlify.com/products/analytics/) |
 
-Please be aware that your Personal Data may be disclosed under the following circumstances, provided such disclosure occurs under sufficient security measures and does not lead to uncontrolled spread of information:
+Veuillez noter que vos Données Personnelles peuvent être divulguées dans les circonstances suivantes, à condition que cette divulgation se fasse dans le cadre de mesures de sécurité suffisantes et ne conduise pas à une diffusion incontrôlée de l'information :
 
-* if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency);
-* if necessary to:
+* si la loi l'exige ou en réponse à des demandes valables des autorités publiques (par exemple, un tribunal ou une agence gouvernementale) ;
+* si cela est nécessaire pour :
 
-  * Comply with a legal obligation 
-  * Protect and defend the rights of Hestia.ai 
-  * Prevent or investigate possible wrongdoing in connection with the website or the community or any other services offered by Hestia.ai
-  * Protect against legal liability 
+  * Se conformer à une obligation légale 
+  * protéger et défendre les droits d'Hestia.ai 
+  * prévenir ou enquêter sur d'éventuels actes répréhensibles en rapport avec le site Internet, la communauté ou tout autre service offert par Hestia.ai.
+  * Protection contre la responsabilité juridique 
 
-### 4. Locations of processing
+### 4. Lieux de traitement
 
-Information, including Personal Data, may be processed in various places. The main place of processing is Switzerland, but our subprocessors may be located in the EU, US, and other places. The transfers shall only occur under sufficient security measures and according to the applicable law (we have agreed with [Netlify](https://www.netlify.com), our hosting provider, to a [Data Processing Agreement](https://www.netlify.com/v3/static/pdf/netlify-dpa.pdf) which includes standard contractual clauses).
+Les informations, y compris les Données personnelles, peuvent être traitées dans différents lieux. Le lieu principal de traitement est la Suisse, mais nos sous-traitants peuvent être situés dans l'UE, aux États-Unis et dans d'autres endroits. Les transferts ne se font que dans le cadre de mesures de sécurité suffisantes et conformément au droit applicable (nous avons convenu avec [Netlify](https://www.netlify.com), notre hébergeur, d'un [Accord de traitement des données](https://www.netlify.com/v3/static/pdf/netlify-dpa.pdf) qui comprend des clauses contractuelles standard).
 
-### 5. Subprocessors
+### 5. Sous-traitants
 
-Hestia.ai may work with different technical providers to provide You access to the services, such as [Netlify](https://www.netlify.com) (for hosting and analytics). These providers act on Our behalf as subprocessors, and do not have an independent access to Your Personal Data.
+Hestia.ai peut travailler avec différents prestataires techniques pour Vous donner accès aux services, tels que [Netlify](https://www.netlify.com) (pour l'hébergement et l'analyse). Ces fournisseurs agissent pour Notre compte en tant que sous-traitants secondaires, et n'ont pas un accès indépendant à Vos Données Personnelles.
 
-### 6. Liability
+### 6. Responsabilité
 
-Hestia.ai endeavors to ensure the security of their systems and all information used, including Your Personal Data. Nevertheless, it is very hard to guarantee absolute security of any  method of electronic storage or any method of transmission over the Internet. In case of breach, the competent data protection authority shall be informed according to applicable law, and if need be, You will be contacted.
+Hestia.ai s'efforce d'assurer la sécurité de ses systèmes et de toutes les informations utilisées, y compris Vos Données Personnelles. Néanmoins, il est très difficile de garantir la sécurité absolue de toute méthode de stockage électronique ou de toute méthode de transmission sur Internet. En cas de violation, l'autorité compétente en matière de protection des données sera informée conformément à la législation applicable et, le cas échéant, Vous serez contacté.
 
-The Website may contain links to other websites that are not operated by Us. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+Le Site Web peut contenir des liens vers d'autres sites Web qui ne sont pas exploités par Nous. Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site ou service tiers.
 
-Generally speaking, our purpose is to provide awareness and information around Privacy and Data Protection, and to the extent permitted by law, we shall not be liable for any direct, indirect or consequential damages. If the applicable law doesn’t allow a full exclusion of a liability, our aggregated liability shall be limited to the minimal amount allowed by law, and in no case superior to an amount of CHF 100.— (one hundred Swiss Francs), whether arising in tort, for breach of contract or otherwise.
+D'une manière générale, notre objectif est d'améliorer la confidentialité et la protection des données, et dans la mesure où la loi le permet, nous ne serons pas responsables de tout dommage direct, indirect ou consécutif. Si la loi applicable ne permet pas l'exclusion totale d'une responsabilité, notre responsabilité cumulée sera limitée au montant minimal autorisé par la loi, et en aucun cas supérieur à un montant de CHF 100.- (cent francs suisses), qu'il s'agisse d'un délit, d'une rupture de contrat ou autre.
 
-### 7. Applicable law and right to file a complaint
+### 7. Droit applicable et droit de déposer une plainte
 
-We are based in Switzerland, Swiss Law shall govern this policy and the Swiss courts be competent.
+Nous sommes basés en Suisse, le droit suisse régit cette politique et les tribunaux suisses sont compétents.
 
-You will find more information about the procedure in Switzerland through this [contact form](https://www.edoeb.admin.ch/edoeb/fr/home/le-pfpdt/contact/formulaire-de-contact.html).
+Vous trouverez de plus amples informations sur la procédure en Suisse par le biais de ce [formulaire de contact](https://www.edoeb.admin.ch/edoeb/fr/home/le-pfpdt/contact/formulaire-de-contact.html).

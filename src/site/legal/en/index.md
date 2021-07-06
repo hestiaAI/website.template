@@ -2,7 +2,10 @@
 layout: legal
 permalink: /en/legal/index.html
 title: Legal notice
-lead: ""
+lead: |-
+  **Legal notice**
+
+  Last Updated: July 2021
 ---
 ## Impressum
 
@@ -25,11 +28,11 @@ Hestia.ai can change the content of its websites at any time at its own discreti
 
 ## Privacy Policy
 
-This privacy policy provides you information on data processed by Hestia.ai when operating HestiaLabs.org, your rights and how to exercise them. We may update this policy from time to time, the updated policy will be posted on this page and is effective as of its date of publication.
+This privacy policy provides you information on data processed by Hestia.ai, your rights and how to exercise them. We may update this policy from time to time, the updated policy will be posted on this page and is effective as of its date of publication.
 
 ### 1. Contact Us / Request
 
-You may request a copy of our Personal Data, withdraw Your previously given consent or request deletion of Your data (when relevant), or just contact Us, by sending an email at: legal@hestia.ai
+You may request a copy of our Personal Data, withdraw Your previously given consent or request deletion of Your data (when relevant), or just contact Us, by sending an email at: legal (at) hestia.ai
 
 ### 2. Definitions
 
