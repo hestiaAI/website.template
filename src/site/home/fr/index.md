@@ -32,8 +32,7 @@ paragraphs:
     url: /fr/act/sar/
     primary_button: true
   - title: |-
-      Vous êtes
-
+      Vous êtes\
       influencé·e
     description: >-
       «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
