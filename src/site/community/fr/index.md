@@ -19,7 +19,7 @@ story: >-
   On ne change rien en faisant la politique de l’autruche.
 
 
-  <button class="primary big">Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e.</button>
+  <button class="primary big">Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e</button>
 people:
   - name: Jessica
     description: "[Jessica Pidoux](https://jessicapidoux.info/), Doctoral Researcher
@@ -28,8 +28,11 @@ people:
       algorithms."
     image: /assets/media/blog-interview-jessica-pidoux-bw.jpg
     twitter: https://twitter.com/pidouxina
-timeline_title: How it started — how it's going
-timeline_events: []
+timeline_title: Où en sommes-nous?
+timeline_events:
+  - date: 2021-07
+    description: Lancement de The Eyeballs, propulsé par
+      [HestiaLabs](www.hestialabs.org/fr/)
 conversation_channels_title: Une question? Discutons-en!
 people_title: People
 layout: community
