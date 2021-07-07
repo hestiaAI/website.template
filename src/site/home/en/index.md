@@ -32,12 +32,12 @@ paragraphs:
     url: /en/act/sar/
     primary_button: true
   - title: |-
-      You are
+      You are \
       influenced
     description: >-
       “No way. I'm not. The influenced ones are the conspiracists and the kids
-      on Instagram, not me.” Don't be so sure...Brands and political parties use
-      profiling and brain mechanisms to subtly affect your opinions and
+      on Instagram, not me.” Don't be so sure... Brands and political parties
+      use profiling and brain mechanisms to subtly affect your opinions and
       behavior.
 
 
