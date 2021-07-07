@@ -19,7 +19,7 @@ paragraphs:
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
@@ -31,15 +31,17 @@ paragraphs:
     link_text: Découvrez (et comparez) votre valeur numérique
     url: /fr/act/sar/
     primary_button: true
-  - title: Vous êtes influencé·e
+  - title: |-
+      Vous êtes\
+      influencé·e
     description: >-
-      « Non. Pas moi. Je ne suis pas influençable. Mon libre arbitre est
-      intact. » N’en soyez pas si sûr·e.
+      «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
+      les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e.
 
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
@@ -47,6 +49,7 @@ paragraphs:
       Rejoignez the Eyeballs pour comprendre comment vous êtes influencée, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
     link_text: Mesurez votre influençabilité
     url: community/
+    primary_button: true
   - title: We connect with many partners
     description: >-
       We are looking to collaborate with journalists, academics, researchers,
