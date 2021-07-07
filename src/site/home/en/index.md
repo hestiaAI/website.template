@@ -31,7 +31,10 @@ paragraphs:
     link_text: Discover (and compare) your digital value
     url: /en/act/sar/
     primary_button: true
-  - title: You are influenced
+  - title: |-
+      You are
+
+      influenced
     description: >-
       "No way. I'm not. The influenced ones are the conspiracists and the kids
       on Instagram, not me." Don't be so sure.
@@ -47,6 +50,7 @@ paragraphs:
       Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in perception of your profile between the different apps and media you use.
     link_text: Measure your influenceability
     url: community/
+    primary_button: true
   - title: We connect with many partners
     description: >-
       We are looking to collaborate with journalists, academics, researchers,
