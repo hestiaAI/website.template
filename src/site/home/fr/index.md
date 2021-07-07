@@ -1,5 +1,13 @@
 ---
 path: home
+title: The Eyeballs
+lead: |-
+  Ils vous observent.\
+  Observez les !
+lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
+lead_image_caption: Photo [Lianhao
+  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
@@ -11,7 +19,7 @@ paragraphs:
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
@@ -25,13 +33,13 @@ paragraphs:
     primary_button: true
   - title: Vous êtes influencé·e
     description: >-
-      « Non. Pas moi. Je ne suis pas influençable. Mon libre arbitre est
-      intact. » N’en soyez pas si sûr·e.
+      «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
+      les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e.
 
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
@@ -50,14 +58,6 @@ paragraphs:
     url: partners/
 layout: home
 permalink: /fr/index.html
-title: The Eyeballs
-lead: |-
-  Ils vous observent.\
-  Observez les !
-lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
-lead_image_caption: Photo [Lianhao
-  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: ""
 news_title: News and events
 news:
   - type: infographic

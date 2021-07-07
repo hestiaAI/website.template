@@ -1,5 +1,13 @@
 ---
 path: home
+title: The Eyeballs
+lead: |-
+  They are watching you.\
+  Watch them!
+lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
+lead_image_caption: Photo by [Lianhao
+  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
@@ -25,18 +33,18 @@ paragraphs:
     primary_button: true
   - title: You are influenced
     description: >-
-      "No. Not me. I am not influenceable. My free will is not
-      threatened. "Don't be so sure.
+      "No way. I'm not. The influenced ones are the conspiracists and the kids
+      on Instagram, not me." Don't be so sure.
 
 
       ```
 
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       ```
 
 
-      Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in how your profile is perceived between the different networks and media you use.
+      Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in perception of your profile between the different apps and media you use.
     link_text: Measure your influenceability
     url: community/
   - title: We connect with many partners
@@ -50,14 +58,6 @@ paragraphs:
     url: partners/
 layout: home
 permalink: /en/index.html
-title: The Eyeballs
-lead: |-
-  They are watching you.\
-  Watch them!
-lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
-lead_image_caption: Photo by [Lianhao
-  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-paragraphs_title: ""
 news_title: News and events
 news:
   - type: infographic
