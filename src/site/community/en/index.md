@@ -19,10 +19,12 @@ story: >-
   You can't change anything by burying your head in the sand.
 
 
-  <button class="primary big">You too can raise your head : Understand how you are targeted.</button>
+  <button class="primary big">You too can raise your head : Understand how you are targeted</button>
 people: []
-timeline_title: How it started — how it's going
-timeline_events: []
+timeline_title: Where are we now?
+timeline_events:
+  - date: 2021-07
+    description: Launch of The Eyeballs, powered by [HestiaLabs](www.hestialabs.org/en/)
 conversation_channels_title: Any question? Let's talk!
 people_title: People
 layout: community
