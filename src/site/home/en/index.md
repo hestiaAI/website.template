@@ -31,14 +31,12 @@ paragraphs:
     link_text: Discover (and compare) your digital value
     url: /en/act/sar/
     primary_button: true
-  - title: ""
+  - title: You are influenced
     description: >-
-      ## You are
-
-      ## influenced
-
-
-      “No way. I'm not. The influenced ones are the conspiracists and the kids on Instagram, not me.” Don't be so sure... Brands and political parties use profiling and brain mechanisms to subtly affect your opinions and behavior.
+      “No way. I'm not. The influenced ones are the conspiracists and the kids
+      on Instagram, not me.” Don't be so sure... Brands and political parties
+      use profiling and brain mechanisms to subtly affect your opinions and
+      behavior.
 
 
       ```
