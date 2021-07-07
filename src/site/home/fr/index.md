@@ -31,9 +31,7 @@ paragraphs:
     link_text: Découvrez (et comparez) votre valeur numérique
     url: /fr/act/sar/
     primary_button: true
-  - title: |-
-      Vous êtes \
-      influencé·e
+  - title: Vous êtes influencé·e
     description: >-
       «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
       les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e... Les marques
