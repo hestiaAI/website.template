@@ -27,7 +27,7 @@ paragraphs:
       Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars sur les supports numériques, rien qu'en 2020. 
 
 
-      Comment suis-je ciblé·e ? Par qui ? Combien est-ce que je vaux ? Plus, ou moins que mon voisin ? Pourquoi ? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
+      Comment suis-je ciblé·e ? Combien est-ce que je vaux ? Plus, ou moins que mon voisin ? Pourquoi ? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
     link_text: Découvrez (et comparez) votre valeur numérique
     url: /fr/act/sar/
     primary_button: true
@@ -36,7 +36,9 @@ paragraphs:
       influencé·e
     description: >-
       «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
-      les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e.
+      les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e... Les marques
+      et les partis politiques utilisent le profilage et les mécanismes
+      cérébraux pour infléchir subtilement vos opinions et votre comportement.
 
 
       ```
@@ -46,19 +48,13 @@ paragraphs:
       ```
 
 
-      Rejoignez the Eyeballs pour comprendre comment vous êtes influencée, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
+      Qui essaie de vous convaincre ? De quoi ? Quelles traces avez-vous laissées en ligne pour qu'ils croient que vous êtes manipulable ?
+
+
+      Rejoignez the Eyeballs pour comprendre comment vous êtes influencé·e, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
     link_text: Mesurez votre influençabilité
     url: community/
     primary_button: true
-  - title: We connect with many partners
-    description: >-
-      We are looking to collaborate with journalists, academics, researchers,
-      activists and NGOs in data protection and other related themes.
-
-
-      We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
-    link_text: Contact us
-    url: partners/
 layout: home
 permalink: /fr/index.html
 news_title: News and events

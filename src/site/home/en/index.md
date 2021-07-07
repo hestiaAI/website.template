@@ -27,7 +27,7 @@ paragraphs:
       To get your attention, advertisers have spent over US$375 billion on digital media in 2020 alone. 
 
 
-      How am I targeted? By whom? How much am I worth? More or less than my neighbour? Why? Join the Eyeballs and find out what digital sauce you are being eaten with.
+      How am I targeted? How much am I worth? More or less than my neighbour? Why? Join the Eyeballs and find out what digital sauce you are being eaten with.
     link_text: Discover (and compare) your digital value
     url: /en/act/sar/
     primary_button: true
@@ -35,8 +35,10 @@ paragraphs:
       You are
       influenced
     description: >-
-      "No way. I'm not. The influenced ones are the conspiracists and the kids
-      on Instagram, not me." Don't be so sure.
+      “No way. I'm not. The influenced ones are the conspiracists and the kids
+      on Instagram, not me.” Don't be so sure...Brands and political parties use
+      profiling and brain mechanisms to subtly affect your opinions and
+      behavior.
 
 
       ```
@@ -46,27 +48,18 @@ paragraphs:
       ```
 
 
+      Who is trying to convince you? Of what? What traces did you leave online for them to believe that you are manipulable?
+
+
       Join the Eyeballs to understand how you are influenced, compare yourself to the average and see the difference in perception of your profile between the different apps and media you use.
     link_text: Measure your influenceability
     url: community/
     primary_button: true
-  - title: We connect with many partners
-    description: >-
-      We are looking to collaborate with journalists, academics, researchers,
-      activists and NGOs in data protection and other related themes.
-
-
-      We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
-    link_text: Contact us
-    url: partners/
 layout: home
 permalink: /en/index.html
 news_title: News and events
 news:
-  - type: infographic
-    post: what-bumble-collects-about-you
-  - type: editorial
-    post: dating-apps-share-your-data
   - type: interview
     post: interview-de-jessica-pidoux-journal-le-temps
+  - post: interview-de-jessica-pidoux-journal-le-temps
 ---
