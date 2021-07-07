@@ -1,6 +1,9 @@
 ---
 title: Community
-lead: We are the **“Targeted Audiences”**
+lead: |-
+  We are the
+
+  **“Targeted Audiences”**
 lead_image: /assets/media/community-hero-image.jpg
 lead_image_caption: Illustration by [Pascale
   Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
