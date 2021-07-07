@@ -32,7 +32,7 @@ paragraphs:
     url: /fr/act/sar/
     primary_button: true
   - title: |-
-      Vous êtes
+      Vous êtes \
       influencé·e
     description: >-
       «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
@@ -48,7 +48,7 @@ paragraphs:
       ```
 
 
-      Qui essaie de vous convaincre ? De quoi ? Quelles traces avez-vous laissées en ligne pour qu'ils croient que vous êtes manipulable ?
+      Qui essaie de vous convaincre? De quoi? Quelles traces avez-vous laissées en ligne qui leur laissent croire que vous êtes manipulable?
 
 
       Rejoignez the Eyeballs pour comprendre comment vous êtes influencé·e, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
