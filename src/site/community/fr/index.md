@@ -1,6 +1,6 @@
 ---
 title: Community
-lead: "**The Eyeballs**'s community"
+lead: Nous sommes les **«Publics cibles»**
 lead_image: /assets/media/community-hero-image.jpg
 lead_image_caption: Illustration de [Pascale
   Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
