@@ -32,8 +32,7 @@ paragraphs:
     url: /en/act/sar/
     primary_button: true
   - title: |-
-      You are
-
+      You are\
       influenced
     description: >-
       "No way. I'm not. The influenced ones are the conspiracists and the kids
