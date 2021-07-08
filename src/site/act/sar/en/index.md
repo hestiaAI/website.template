@@ -7,7 +7,7 @@ mailto_template_name: MailtoAccess
 layout: sar
 permalink: /en/act/sar/index.html
 inverse: true
-title: Claim your data back
+title: Your digital twin
 lead: Which kind of **target** are you?
 lead_image: /assets/media/31-jong-marshes-79mnmavsorg-unsplash.jpg
 ---
@@ -21,4 +21,4 @@ Thanks to your clicks, likes, how fast you click or scroll, who you chat with, w
 
 They are able to simulate the conversation you are having. They are able to know that you will change jobs in 6 months. Before you know it yourself.
 
-For easier understanding of what this data represents, we are also maintaining a [<button class="primary">catalog</button>](https://dating-privacy.hestialabs.org/en/act/catalog).
+To meet your digital self and understand how you are being targeted, download all the footprints you left online ⤵️
