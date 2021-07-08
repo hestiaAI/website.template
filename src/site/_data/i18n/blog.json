@@ -4,7 +4,7 @@
     "stories_about": "Stories about **{{name}}**"
   },
   "fr": {
-    "stories_by": "Histoires par **{{name}}**",
-    "stories_about": "Histoires de **{{name}}**"
+    "stories_by": "Articles signés **{{name}}**",
+    "stories_about": "Articles à propos de **{{name}}**"
   }
 }
