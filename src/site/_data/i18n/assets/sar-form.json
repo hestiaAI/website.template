@@ -1,32 +1,32 @@
 {
   "en": {
     "body": "Body",
+    "preview_of_email": "Preview of the e-mail",
     "subject": "Subject",
-    "app_type_name": "Dating app",
+    "preview_of_email_to": "Preview of the e-mail to",
     "select_placeholder": "Click to choose",
+    "app_type_name": "Social network / application / digital service",
     "email_button": "Open in your e-mail client",
-    "body_placeholder": "Choose an app to fill this automatically",
+    "body_placeholder": "Selecting a social network, application or digital service above will automatically fill this",
+    "explanation": "You can copy the e-mail fields or open it directly in your e-mail client",
     "recipient": "Recipient",
     "search_placeholder": "Search",
     "copy_button": "Copy to clipboard",
-    "preview_of_email": "Preview of the e-mail",
-    "preview_of_email_to": "Preview of the e-mail to",
-    "explanation": "You can copy the e-mail fields or open it directly in your e-mail client",
     "to_fill_in": "The following information needs to be filled in by hand in the e-mail body:"
   },
   "fr": {
     "body": "Message",
-    "subject": "Objet",
-    "app_type_name": "Application de rencontre",
-    "select_placeholder": "Cliquer pour choisir",
-    "email_button": "Ouvrir dans votre client e-mail",
-    "body_placeholder": "Choisir une app pour remplir ce champ automatiquement",
-    "recipient": "Destinataire",
-    "search_placeholder": "recherche",
-    "copy_button": "Copier",
     "preview_of_email": "Aperçu de l'e-mail",
+    "subject": "Objet",
     "preview_of_email_to": "Aperçu de l'e-mail à",
+    "select_placeholder": "Cliquer pour choisir",
+    "app_type_name": "Réseau social / application / service numérique",
+    "email_button": "Ouvrir dans votre client e-mail",
+    "body_placeholder": "Choisir un réseau social, une application ou un service numérique ci-dessus remplira automatiquement ce champ",
     "explanation": "Vous pouvez copier les champs de l'email ou l'ouvrir directement dans votre client email.",
-    "to_fill_in": "A compléter dans l'e-mail"
+    "recipient": "Destinataire",
+    "search_placeholder": "Rechercher",
+    "copy_button": "Copier",
+    "to_fill_in": "A compléter par vous dans l'e-mail avant envoi:"
   }
 }
