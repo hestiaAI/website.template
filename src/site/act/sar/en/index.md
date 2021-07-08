@@ -1,6 +1,6 @@
 ---
 lead_image_caption: ""
-sar_title: Ask for your data
+sar_title: Meet your digital twin
 sar_sub_title: You can ask here for a copy of your personal data
 organization_type: Q5066
 mailto_template_name: MailtoAccess
@@ -22,3 +22,5 @@ Thanks to your clicks, likes, how fast you click or scroll, who you chat with, w
 They are able to simulate the conversation you are having. They are able to know that you will change jobs in 6 months. Before you know it yourself.
 
 To meet your digital self and understand how you are being targeted, download all the footprints you left online ⤵️
+
+We will then explain your "targetingValue" (examples: interested in politics, likes sports, speaks English, lives in Zurich, follows @U2 on Twitter...). Suddenly, everything will become clearer and you will be able to compare your results with those of your friends.
