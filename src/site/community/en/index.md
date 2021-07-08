@@ -4,9 +4,8 @@ lead: |-
   We are the
 
   **“Targeted Audiences”**
-lead_image: /assets/media/community-hero-image.jpg
-lead_image_caption: Illustration by [Pascale
-  Cerchio](https://www.peoplerise.net/wp-content/uploads/2020/07/ale-cerchio.png)
+lead_image: /assets/media/hero-rouge.png
+lead_image_caption: ""
 story_title: Targeted, head held high
 story: >-
   The Eyeballs brings together all those who have accepted to face the truth:
