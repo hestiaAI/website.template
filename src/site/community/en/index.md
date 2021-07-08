@@ -23,6 +23,22 @@ story: >-
 
 
   <button class="primary big">You too can raise your head : Understand how you are targeted</button>
+
+
+  ### 1+1+1+... = huge impact
+
+
+  The classic journey of an Eyeballs community member:
+
+
+  I understand how I am being targeted -> I am shocked -> I adapt my online behavior -> I talk about it around me -> My entourage understands, adapts and talks about it -> Bad digital practices are no longer accepted -> "clean" platforms are plebiscited and others boycotted (remember the [slaughter against Whatsapp](https://www.bfmtv.com/tech/tout-comprendre-pourquoi-les-nouvelles-regles-de-whats-app-provoquent-un-tolle-chez-les-utilisateurs_AN-202101110169.html) and the [exodus towards Signal](https://www.zdnet.fr/actualites/signal-un-record-de-47-millions-de-telechargements-en-deux-semaines-39916531.htm)) -> We all live happily in a healthy digital world!
+
+
+  ```
+
+  <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Ce que les messageries savent de vous <a href="https://t.co/HOMXNbXs0T">pic.twitter.com/HOMXNbXs0T</a></p>&mdash; Gilles Babinet (@babgi) <a href="https://twitter.com/babgi/status/1348003104856399873?ref_src=twsrc%5Etfw">January 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  ```
 people: []
 timeline_title: Where are we now?
 timeline_events:
