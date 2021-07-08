@@ -35,5 +35,8 @@ permalink: /en/community/index.html
 conversation_channels:
   - type: twitter_url
     name: Twitter
+  - type: generic_url
+    name: Contact us
+    url: /en/contact/
 inverse: true
 ---

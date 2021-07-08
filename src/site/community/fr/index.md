@@ -23,14 +23,7 @@ story: >-
 
 
   <button class="primary big">Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e</button>
-people:
-  - name: Jessica
-    description: "[Jessica Pidoux](https://jessicapidoux.info/), Doctoral Researcher
-      at the Digital Humanities Institute at École Polytechnique Fédérale de
-      Lausanne works on revealing biases in Tinder's secretive matching
-      algorithms."
-    image: /assets/media/blog-interview-jessica-pidoux-bw.jpg
-    twitter: https://twitter.com/pidouxina
+people: []
 timeline_title: Où en sommes-nous?
 timeline_events:
   - date: 2021-07
@@ -43,5 +36,8 @@ permalink: /fr/community/index.html
 conversation_channels:
   - type: twitter_url
     name: Twitter
+  - type: generic_url
+    url: /fr/contact/
+    name: Nous contacter
 inverse: true
 ---
