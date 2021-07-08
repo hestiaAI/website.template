@@ -1,12 +1,8 @@
 ---
 title: Obtenez vos données
-lead: |-
-  Faites-le advenir — \
-  **Récupérez vos données!** \
-  Maintenant  ⤵️
+lead: Quelle **cible** êtes-vous?
 lead_image: /assets/media/31-jong-marshes-79mnmavsorg-unsplash.jpg
-lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
-  on [Unsplash](https://unsplash.com/photos/79mNMAvSORg)
+lead_image_caption: ""
 sar_title: Demandez vos données
 sar_sub_title: Vous pouvez demander une copie de vos données personnelles
 mailto_template_name: MailtoAccessFR
@@ -14,12 +10,12 @@ layout: sar
 permalink: /fr/act/sar/index.html
 inverse: true
 ---
-# Ce sont vos droits
+# Vos données parlent de vous
 
-As a dating app user, you are a “data subject” in subject eyes of the law. This gives you “data subject rights”. **The dating app does not own your data, you do**. 
+Vous avez déjà vu une publicité qui vous a convaincu que votre téléphone vous écoute, non?
 
-You can recover your data in a file via a Subject Access Request. The dating app, as a private company, is obliged to send you this information within 30 days.
+[La réalité (non moins flippante)](https://qz.com/1609356/your-phone-is-not-recording-your-conversations/) c’est que tout ce que vous faites en ligne en dit bien plus sur vous que ce que vous pouvez imaginer.
 
-When you fill in your profile and navigate, you leave traces that are collected, processed and stored by the dating app. This data collection serves both positive and negative functions. It improves the app's profile recommendations but also feeds its malfunction and the malicious behaviours of others. **What, how and for what purposes data is used by the dating industry remains opaque to users and researchers**.
+Grâce à vos clicks, vos likes, la vitesse à laquelle vous cliquez ou scrollez, avec qui vous discutez, ce que font vos amis, où vous allez... les plateformes créent un double numérique de vous plus vrai que nature.
 
-Whether you rarely get matches and don’t find a partner, you go on tons of dates, or even if you've found your partner online, your privacy is not protected. In real time, the app tracks your conversations and geolocation. **Your data says a lot about you to others and the company**: what you like, what you hate, how healthy you are, where you live, where you go, who you meet and when. Data isn't just used to help you find a partner: **it is traded and sold to data brokers and advertisers.**
+Elles sont ainsi capables de simuler la conversation que vous êtes en train d’avoir. Elles sont capables de savoir que vous changerez de job dans 6 mois. Avant que vous ne le sachiez vous-même.
