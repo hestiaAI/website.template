@@ -31,7 +31,7 @@ story: >-
   Le parcours classique d'un membre de la communauté Eyeballs:
 
 
-  Je comprends comment je suis ciblé·e -> Je tombe des nues -> J'adapte mon comportement en ligne -> J'en parle autour de moi -> Mon entourage comprend, s'adapte et en parle -> Les mauvaises pratiques numériques ne sont plus acceptées -> Les plateformes "propres" sont plebiscitées et les autres boycottées (souvenez-vous de la [fronde contre Whatsapp](https://www.bfmtv.com/tech/tout-comprendre-pourquoi-les-nouvelles-regles-de-whats-app-provoquent-un-tolle-chez-les-utilisateurs_AN-202101110169.html) et de l'[exode vers Signal](https://www.zdnet.fr/actualites/signal-un-record-de-47-millions-de-telechargements-en-deux-semaines-39916531.htm))
+  Je comprends comment je suis ciblé·e -> Je tombe des nues -> J'adapte mon comportement en ligne -> J'en parle autour de moi -> Mon entourage comprend, s'adapte et en parle -> Les mauvaises pratiques numériques ne sont plus acceptées -> Les plateformes "propres" sont plebiscitées et les autres boycottées (souvenez-vous de la [fronde contre Whatsapp](https://www.bfmtv.com/tech/tout-comprendre-pourquoi-les-nouvelles-regles-de-whats-app-provoquent-un-tolle-chez-les-utilisateurs_AN-202101110169.html) et de l'[exode vers Signal](https://www.zdnet.fr/actualites/signal-un-record-de-47-millions-de-telechargements-en-deux-semaines-39916531.htm)) -> Nous vivons tous heureux dans un monde numérique assaini!
 
 
   ```
