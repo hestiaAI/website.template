@@ -27,7 +27,7 @@ paragraphs:
       Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars sur les supports numériques, rien qu'en 2020. 
 
 
-      Comment suis-je ciblé·e ? Combien est-ce que je vaux ? Plus, ou moins que mon voisin ? Pourquoi ? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
+      Comment suis-je ciblé·e? Combien est-ce que je vaux? Plus, ou moins que mon voisin? Pourquoi? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
     link_text: Découvrez (et comparez) votre valeur numérique
     url: /fr/act/sar/
     primary_button: true
