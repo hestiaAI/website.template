@@ -1,7 +1,7 @@
 ---
 title: Votre jumeau numérique
 lead: Quelle **cible** êtes-vous?
-lead_image: /assets/media/31-jong-marshes-79mnmavsorg-unsplash.jpg
+lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
 sar_title: Rencontrez votre jumeau numérique
 sar_sub_title: Récupérez ici vos données personnelles
@@ -22,4 +22,6 @@ Elles sont ainsi capables de simuler la conversation que vous êtes en train d�
 
 Rencontrez ce jumeau numérique et comprenez comment vous-êtes ciblé·e en téléchargeant ci-dessous toutes les empreintes que vous avez laissées en ligne ⤵️
 
-Nous vous expliquerons ensuite vos "targetingValue" (exemples: s'intéresse à la politique, aime le sport, parle français, habite à Lausanne, abonné·e à @U2 sur Twitter...). Soudain, tout deviendra plus clair et vous pourrez comparer vos résultats avec ceux de vos proches.
+Nous vous expliquerons ensuite vos "targetingValue" (exemples: s'intéresse à la politique, aime le sport, parle français, habite à Lausanne, abonné·e à @U2 sur Twitter...). Soudain, tout deviendra clair et vous pourrez comparer vos résultats avec ceux de vos proches.
+
+À noter: pour faciliter la compréhension de ce que représente l’ensemble de ces données, nous tenons également à jour un [catalogue de données](/fr/act/catalog/) librement accessible.

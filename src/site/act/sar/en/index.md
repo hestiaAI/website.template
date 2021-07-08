@@ -9,7 +9,7 @@ permalink: /en/act/sar/index.html
 inverse: true
 title: Your digital twin
 lead: Which kind of **target** are you?
-lead_image: /assets/media/31-jong-marshes-79mnmavsorg-unsplash.jpg
+lead_image: /assets/media/hero-rouge.png
 ---
 # Your data speaks for you
 
@@ -23,4 +23,6 @@ They are able to simulate the conversation you are having. They are able to know
 
 To meet your digital self and understand how you are being targeted, download all the footprints you left online ⤵️
 
-We will then explain your "targetingValue" (examples: interested in politics, likes sports, speaks English, lives in Zurich, follows @U2 on Twitter...). Suddenly, everything will become clearer and you will be able to compare your results with those of your friends.
+We will then explain your "targetingValue" (examples: interested in politics, likes sports, speaks English, lives in Zurich, follows @U2 on Twitter...). Suddenly, everything will become clear and you'll be able to compare your results with those of your friends.
+
+Please note: for easier understanding of what this data represents, we also maintain a freely accessible [data catalog](/en/act/catalog/).
