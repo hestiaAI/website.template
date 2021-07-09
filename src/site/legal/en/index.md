@@ -2,7 +2,7 @@
 layout: legal
 permalink: /en/legal/index.html
 title: Legal notice
-lead: "Last Updated: July 2021"
+lead: "Last Update: July 2021"
 ---
 ## Impressum
 
