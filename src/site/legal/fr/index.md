@@ -6,7 +6,7 @@ lead: "Dernière mise à jour: Juillet 2021"
 ---
 ## Impressum
 
-* Editeur **hestia.ai LLC**, inscrit au registre du commerce \
+* Editeur **hestia.ai LLC**, inscrite au registre du commerce \
   du Canton de Genève [IDE CHE-416.261.732](https://www.zefix.ch/en/search/entity/list/firm/1224854?name=hestia.ai&searchType=exact)
 * Gérant **Paul-Olivier Dehaye**.
 * Courriel **contact (at) hestia.ai**.
