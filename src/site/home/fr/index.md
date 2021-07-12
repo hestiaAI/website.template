@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Nos projets
+layout: home
+permalink: /fr/index.html
 title: Hestia.ai
 lead: |-
   Services personnalisés\
@@ -52,24 +55,21 @@ expertise:
       privée.
     link_text: Learn more
     url: about/
-realizations_title: Nos projets
-layout: home
-permalink: /fr/index.html
 realizations:
   - title: Armasuisse
     description: >-
-      **AI for good**
+      **Sécurité de systèmes distribués**
 
       Projet de recherche et développement visant à étudier la sécurité d'un système distribué bien connu (distribution des données et calculs effectués sur celles-ci).
   - title: Fonds pionnier Migros
     description: >-
-      **Data for good**
+      **Collectifs de données**
 
-      Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social.
+      Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up".
   - title: Fonds d'innovation d'intérêt public
     description: >-
-      **Prospective stratégique**
+      **Prospective stratégique et litératie des données**
 
-      Data Literacy pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur les pouvoirs économique et politique.
+      Litératie des données pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur la distribution des pouvoirs économique et politique.
 contact_form_title: Contact
 ---
