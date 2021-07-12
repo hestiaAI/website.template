@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Ongoing projects
+layout: home
+permalink: /en/index.html
 title: Hestia.ai
 lead: |-
   Personalized digital services\
@@ -38,8 +41,8 @@ expertise:
   - title: Partnerships
     description: We team up with academic and industrial partners to respond to
       national or European calls for projects. Thanks to our track record and
-      the quality of our work, we have already obtained more than 200'000 € in
-      less than a year.
+      the quality of our work, we have already obtained funds in less than a
+      year.
     link_text: Contact
     url: "#contact"
   - title: About us
@@ -49,24 +52,21 @@ expertise:
       challenges.
     link_text: Learn more
     url: about/
-realizations_title: See our projects
-layout: home
-permalink: /en/index.html
 realizations:
   - title: Armasuisse
     description: >-
-      **Trusted AI**
+      **Trusted distributed system**
 
-      Research and development project to study the security of a well-known distributed system (data distribution and calculations performed on it).
+      Research and development project to study the security of a well-known distributed system, including the way it distributes information and performs computations.
   - title: Migros Pioneer Fund
     description: >-
-      **Data for good**
+      **Data collectives**
 
-      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](www.hestialabs.org/en/) project enables citizens’ data to be used for social advancements.
+      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](www.hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
   - title: Public interest innovation fund
     description: >-
-      **Strategic foresight**
+      **Strategic foresight & data literacy**
 
-      Data Literacy for executive leaders based on the analysis of their own data. Deciphering the influence of data on economic and political power.
+      Data Literacy for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
 contact_form_title: Let's start a conversation
 ---
