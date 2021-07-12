@@ -12,7 +12,7 @@ paragraphs:
   - title: Combien vaut votre attention?
     description: >-
       Chaque seconde passée en ligne, des milliers de capteurs traquent votre
-      comportements. Les meilleurs experts de la donnée les ont conçus pour vous
+      comportement. Les meilleurs experts de la donnée les ont conçus pour vous
       profiler et concevoir le message, l’image, la vidéo susceptible de
       susciter votre intérêt. Par tous les moyens.
 
