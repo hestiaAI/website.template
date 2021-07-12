@@ -1,7 +1,7 @@
 ---
 lead_image_caption: ""
-sar_title: Meet your digital twin
-sar_sub_title: You can ask here for a copy of your personal data
+sar_title: "To meet your digital twin:"
+sar_sub_title: Ask here for a copy of your personal data
 organization_type: Q5066
 mailto_template_name: MailtoAccess
 layout: sar
