@@ -21,7 +21,7 @@ story: >-
   You can't change anything by burying your head in the sand.
 
 
-  <button class="primary big">You too can raise your head : Understand how you are targeted</button>
+  <button class="primary big">[Raise your head too: Understand how you are targeted](/en/act/sar/)</button>
 
 
   ### 1+1+1+... = huge impact
