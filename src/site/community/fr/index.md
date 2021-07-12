@@ -21,7 +21,7 @@ story: >-
   On ne change rien en faisant la politique de l’autruche.
 
 
-  <button class="primary big">Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e</button>
+  <button class="primary big">[Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e](/fr/act/sar/)</button>
 
 
   ### 1+1+1+... = énormément d'impact
