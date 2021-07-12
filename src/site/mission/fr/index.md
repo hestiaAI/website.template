@@ -17,6 +17,6 @@ Le monde numérique est un miroir sans tain. Vous ne voyez que les images qu’i
 <iframe src="//coub.com/embed/1h9ok?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="354" allow="autoplay"></iframe>
 ```
 
-## Our plan 
+## Notre plan 
 
 Que vous cassiez le miroir! The Eyeballs rend visible l’invisible: toutes les traces que vous laissez en ligne et qui servent à dresser votre profil psychologique: vos failles, vos goûts, les mots et les images capables de vous convaincre. Nous vous donnons les outils pour que vous puissiez voir le monde numérique tel qu’il est vraiment et non pas comme ses acteurs veulent bien vous le montrer.
