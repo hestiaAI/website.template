@@ -7,8 +7,6 @@ lead: In The Eyeballs' sights
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
 ---
-# We aim to raise awareness about privacy risks and build new practices for both users and platforms
-
 ## The problem
 
 The digital world is a one-way mirror. You only see the images they show you: the content you consume every day (streaming, social networks, online media), mostly for free. What you don't see is that you are constantly being spied on by algorithms that, by spending days watching you, know you better than you know yourself.
