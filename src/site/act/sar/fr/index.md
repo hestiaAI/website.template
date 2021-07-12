@@ -3,7 +3,7 @@ title: Votre jumeau numérique
 lead: Quelle **cible** êtes-vous?
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
-sar_title: Rencontrez votre jumeau numérique
+sar_title: "Pour rencontrer votre jumeau numérique:"
 sar_sub_title: Récupérez ici vos données personnelles
 mailto_template_name: MailtoAccessFR
 layout: sar
