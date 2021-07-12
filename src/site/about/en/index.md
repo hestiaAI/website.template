@@ -32,7 +32,7 @@ people:
       he has been using at least one of these skills to drive HestiaLabs
       forward. Andreas has worked in a wide range of industries and
       organisations, including two early-stage tech startups.
-    image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
+    image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
 inverse: true
 title: About
