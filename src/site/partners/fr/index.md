@@ -49,7 +49,7 @@ partners:
     image: /assets/media/partners-media-jamikaverhandlungen-nov-2017-7.jpg
     image_caption: Kasa Fue, CC BY-SA 4.0
     description: >-
-      The Eyeballs ne produit pas d'opinions mais des faits : des études de cas
+      The Eyeballs ne produit pas d'opinions mais des faits: des études de cas
       réels basés sur l'analyse de données réelles.
 
 
