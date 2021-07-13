@@ -3,7 +3,10 @@ layout: mission
 permalink: /fr/mission/index.html
 inverse: true
 title: Mission
-lead: Dans le viseur des Eyeballs
+lead: |-
+  Dans le **viseur**
+
+  des Eyeballs
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
 ---
