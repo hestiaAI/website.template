@@ -3,7 +3,7 @@ path: home
 title: The Eyeballs
 lead: |-
   They are watching you\
-  Watch them!
+  **Watch them!**
 lead_image: /assets/media/eye_hero_yellow.png
 lead_image_caption: ""
 paragraphs_title: ""
