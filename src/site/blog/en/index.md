@@ -1,5 +1,5 @@
 ---
-title: Data stories
+title: Influence stories
 lead: |-
   An eye in the rear view mirror
 

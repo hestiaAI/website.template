@@ -1,5 +1,5 @@
 ---
-title: Histoires de données
+title: Histoires d'influence
 lead: |-
   Un œil dans le rétroviseur
 
