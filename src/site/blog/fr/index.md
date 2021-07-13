@@ -1,9 +1,6 @@
 ---
 title: Histoires d'influence
-lead: |-
-  Un œil dans le rétroviseur
-
-  Un œil sur l'horizon
+lead: Notre **regard**
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
 latest_title: Derniers articles

@@ -1,9 +1,6 @@
 ---
 title: Influence stories
-lead: |-
-  An eye in the rear view mirror
-
-  An eye to the horizon
+lead: Our **views**
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
 latest_title: Latest posts
