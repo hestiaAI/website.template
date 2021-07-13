@@ -2,7 +2,8 @@
 layout: partners
 title: Partners
 lead: |-
-  Ils méritent
+  Ils méritent 
+
   notre **confiance** aveugle
 lead_image: /assets/media/eye_hero_yellow.png
 lead_image_caption: ""
