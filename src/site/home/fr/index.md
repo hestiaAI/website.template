@@ -55,7 +55,7 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /fr/index.html
-news_title: News and events
+news_title: Nos actus
 news:
   - type: infographic
     post: what-bumble-collects-about-you
