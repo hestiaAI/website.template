@@ -4,9 +4,8 @@ title: The Eyeballs
 lead: |-
   Ils vous observent\
   Observez les !
-lead_image: /assets/media/eye_home_c-lianhao-qu-lfan1gswv5c-unsplash-c.jpeg
-lead_image_caption: Photo [Lianhao
-  Qu](https://unsplash.com/@lianhao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
 paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
@@ -55,7 +54,7 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /fr/index.html
-news_title: News and events
+news_title: Nos actus
 news:
   - type: infographic
     post: what-bumble-collects-about-you
