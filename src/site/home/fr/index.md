@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Nos projets
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
 lead: |-
   Services personnalisés\
@@ -55,6 +52,9 @@ expertise:
       privée.
     link_text: Learn more
     url: about/
+realizations_title: Nos projets
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: Armasuisse
     description: >-
@@ -68,7 +68,7 @@ realizations:
       Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up".
   - title: Fonds d'innovation d'intérêt public
     description: >-
-      **Prospective stratégique et litératie des données**
+      **Prospective stratégique et littératie des données**
 
       Litératie des données pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur la distribution des pouvoirs économique et politique.
 contact_form_title: Contact
