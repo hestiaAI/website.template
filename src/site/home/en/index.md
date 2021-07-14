@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Ongoing projects
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
 lead: |-
   Personalized digital services\
@@ -52,6 +49,9 @@ expertise:
       challenges.
     link_text: Learn more
     url: about/
+realizations_title: Ongoing projects
+layout: home
+permalink: /en/index.html
 realizations:
   - title: Armasuisse
     description: >-
