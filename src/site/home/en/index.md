@@ -62,7 +62,7 @@ realizations:
     description: >-
       **Data collectives**
 
-      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](www.hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
+      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
   - title: Public interest innovation fund
     description: >-
       **Strategic foresight & data literacy**
