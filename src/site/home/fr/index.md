@@ -65,7 +65,7 @@ realizations:
     description: >-
       **Collectifs de données**
 
-      Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](www.hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up".
+      Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](https://hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up".
   - title: Fonds d'innovation d'intérêt public
     description: >-
       **Prospective stratégique et littératie des données**
