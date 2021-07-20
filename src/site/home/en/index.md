@@ -1,12 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  They are watching you\
-  **Watch them!**
-lead_image: /assets/media/eye_hero_yellow.png
-lead_image_caption: ""
-paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
@@ -32,10 +25,10 @@ paragraphs:
     primary_button: true
   - title: You are influenced
     description: >-
-      “No way. I'm not. The influenced ones are the conspiracists and the kids
-      on Instagram, not me.” Don't be so sure... Brands and political parties
-      use profiling and brain mechanisms to subtly affect your opinions and
-      behavior.
+      “No way. I'm not. The only ones who get influenced are the conspiracists
+      and the kids on Instagram, not me.” Don't be so sure... Brands and
+      political parties use profiling and brain mechanisms to subtly affect your
+      opinions and behavior.
 
 
       ```
@@ -54,6 +47,13 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /en/index.html
+title: The Eyeballs
+lead: |-
+  They are watching you\
+  **Watch them!**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
 news_title: News and events
 news:
   - type: interview
