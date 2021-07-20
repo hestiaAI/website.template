@@ -52,12 +52,12 @@
 #  conditions = {Language = ["fr"]}
 #
 ## Default language, when no language switching redirects applied
-#[[redirects]]
-#  from = "/"
-#  to = "/en/"
-#  status = 302
-#  # NOTE: `force` property is required to shadow the static «splash
-#  # landing» page (index.html), which otherwise takes precedence
-#  force = true    # https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  # NOTE: `force` property is required to shadow the static «splash
+  # landing» page (index.html), which otherwise takes precedence
+  force = true    # https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing
 
 # eof
