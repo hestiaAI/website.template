@@ -1,12 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  Ils vous observent\
-  **Observez-les !**
-lead_image: /assets/media/eye_hero_yellow.png
-lead_image_caption: ""
-paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
@@ -54,6 +47,13 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /fr/index.html
+title: The Eyeballs
+lead: |-
+  Ils vous observent\
+  **Observez-les !**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
 news_title: Nos actus
 news:
   - type: infographic
