@@ -42,7 +42,13 @@ story: >-
   The classic journey of an Eyeballs community member:
 
 
-  I understand how I am being targeted -> I am shocked -> I adapt my online behavior -> I talk about it around me -> My entourage understands, adapts and talks about it -> Bad digital practices are no longer accepted -> "clean" platforms are plebiscited and others boycotted (remember the [slaughter against Whatsapp](https://www.bfmtv.com/tech/tout-comprendre-pourquoi-les-nouvelles-regles-de-whats-app-provoquent-un-tolle-chez-les-utilisateurs_AN-202101110169.html) and the [exodus towards Signal](https://www.zdnet.fr/actualites/signal-un-record-de-47-millions-de-telechargements-en-deux-semaines-39916531.htm)) -> We all live happily in a healthy digital world!
+  I understand how I am being targeted 
+
+
+  \-> I am shocked 
+
+
+  \-> I adapt my online behavior -> I talk about it around me -> My entourage understands, adapts and talks about it -> Bad digital practices are no longer accepted -> "clean" platforms are plebiscited and others boycotted (remember the [slaughter against Whatsapp](https://www.bfmtv.com/tech/tout-comprendre-pourquoi-les-nouvelles-regles-de-whats-app-provoquent-un-tolle-chez-les-utilisateurs_AN-202101110169.html) and the [exodus towards Signal](https://www.zdnet.fr/actualites/signal-un-record-de-47-millions-de-telechargements-en-deux-semaines-39916531.htm)) -> We all live happily in a healthy digital world!
 
 
   ```
