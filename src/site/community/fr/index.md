@@ -1,4 +1,17 @@
 ---
+conversation_channels_title: Une question? Discutons-en!
+people_title: People
+layout: community
+permalink: /fr/community/index.html
+story_title: Ciblés, la tête haute
+people: []
+conversation_channels:
+  - type: twitter_url
+    name: Twitter
+  - type: generic_url
+    url: /fr/contact/
+    name: Nous contacter
+inverse: true
 title: Community
 lead: |-
   Nous sommes les
@@ -6,7 +19,6 @@ lead: |-
   **«Publics cibles»**
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
-story_title: Ciblés, la tête haute
 story: >-
   The Eyeballs regroupe tous ceux qui ont accepté de regarder la réalité en face
   : le moindre de nos comportement en ligne est analysé, monitoré, revendu.
@@ -24,7 +36,7 @@ story: >-
   <button class="primary big">[Vous aussi, relevez la tête: Comprenez comment vous êtes ciblé·e](/fr/act/sar/)</button>
 
 
-  ### 1+1+1+... = énormément d'impact
+  ## 1+1+1+... = énormément d'impact
 
 
   Le parcours classique d'un membre de la communauté Eyeballs:
@@ -38,21 +50,9 @@ story: >-
   <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Ce que les messageries savent de vous <a href="https://t.co/HOMXNbXs0T">pic.twitter.com/HOMXNbXs0T</a></p>&mdash; Gilles Babinet (@babgi) <a href="https://twitter.com/babgi/status/1348003104856399873?ref_src=twsrc%5Etfw">January 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   ```
-people: []
 timeline_title: Où en sommes-nous?
 timeline_events:
   - date: 2021-07
     description: Lancement de The Eyeballs, propulsé par
       [HestiaLabs](www.hestialabs.org/fr/)
-conversation_channels_title: Une question? Discutons-en!
-people_title: People
-layout: community
-permalink: /fr/community/index.html
-conversation_channels:
-  - type: twitter_url
-    name: Twitter
-  - type: generic_url
-    url: /fr/contact/
-    name: Nous contacter
-inverse: true
 ---
