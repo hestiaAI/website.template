@@ -56,5 +56,4 @@ layout: home
 permalink: /en/index.html
 news_title: News and events
 news:
-  - post: interview-de-jessica-pidoux-journal-le-temps
 ---
