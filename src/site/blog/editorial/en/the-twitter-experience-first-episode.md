@@ -18,10 +18,10 @@ show_social_sharing: true
 Hello, my name is Charles Foucault-Dumas, I'm 39 years old and have very few qualities other than curiosity. So when [HestiaLabs](www.hestialabs.org), for whom I work, decided to support The Eyeballs initiative by developing software tools capable of revealing digital traces each of us leaves online and how they are used to convince us (to buy this, to vote for that...), I immediately raised my finger.
 
 * Can I try?
-* Charles? Do you want to be a beta tester for The Eyeballs?
+* Do you want to be a beta tester for The Eyeballs?
 * Yes!
 * Well, okay. Which social network do you use the most? 
-* Twitter, it's the network I use the most.
+* Twitter.
 * So here we go.
 
 The very next day (see thread below), I learned (not without a little pride) that I was a woman and that I spoke German. I also discovered my interest in the footballer Jérémie Boga (whom I didn't know existed), my passion for Land Rovers (???) and my immoderate taste for milk (I never drink it).
