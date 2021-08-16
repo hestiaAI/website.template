@@ -3,7 +3,7 @@ title: Je suis une femme, je parle allemand et j’aime le lait, m’apprend Twi
 date: 2021-08-16T14:38:01.030Z
 lead: Si vous voulez savoir comment je me suis retrouvé cobaye du super projet
   The Eyeballs et suivre mes premiers pas dans le labyrinthe des données que
-  Twitter a accumulé sur moi, c’est par ici.
+  Twitter a accumulées sur moi, c’est par ici.
 post_categories:
   - news
 post_authors:
