@@ -2,6 +2,12 @@
 id: The Twitter experience, first episode
 title: I am a woman, I speak German and I like milk, so says Twitter
 date: 2021-08-16T14:55:02.268Z
+image: /assets/media/eyeballs_twitter_blog_first-episode.png
+image_caption: Photo by [Ravi
+  Sharma](https://unsplash.com/@ravinepz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+lead: If you want to know how I ended up being a guinea pig for the great
+  project The Eyeballs and follow my first steps in the labyrinth of data that
+  Twitter has accumulated on me, it's here.
 post_categories:
   - news
 post_authors:
