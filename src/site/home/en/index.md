@@ -1,5 +1,12 @@
 ---
 path: home
+title: The Eyeballs
+lead: |-
+  They are watching you\
+  **Watch them!**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
@@ -47,16 +54,7 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /en/index.html
-title: The Eyeballs
-lead: |-
-  They are watching you\
-  **Watch them!**
-lead_image: /assets/media/eye_hero_yellow.png
-lead_image_caption: ""
-paragraphs_title: ""
 news_title: News and events
 news:
-  - type: interview
-    post: interview-de-jessica-pidoux-journal-le-temps
   - post: interview-de-jessica-pidoux-journal-le-temps
 ---
