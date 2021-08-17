@@ -9,7 +9,7 @@ lead_image_caption: ""
 ---
 ## The problem
 
-The digital world is a one-way mirror. You only see the images they show you: the content you consume every day (streaming, social networks, online media), mostly for free. What you don't see is that you are constantly being spied on by algorithms that, by spending days watching you, know you better than you know yourself.
+The digital world is a one-way mirror. You only see the images it shows you: the content you consume every day (streaming, social networks, online media), mostly for free. What you don't see is that you are constantly being spied on by algorithms that, by spending days watching you, know you better than you know yourself.
 
 ```
 <iframe src="//coub.com/embed/1h9ok?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="354" allow="autoplay"></iframe>
