@@ -12,7 +12,7 @@ lead_image_caption: ""
 ---
 ## Le problème
 
-Le monde numérique est un miroir sans tain. Vous ne voyez que les images qu’ils vous montre : les contenus que vous consommez tous les jours (streaming, réseaux sociaux, media en ligne), gratuitement le plus souvent. Ce que vous ne voyez pas c’est que vous êtes épié·e en permanence par des algorithmes qui, à force de passer des journées entières à vous observer, vous connaissent mieux que vous-même. 
+Le monde numérique est un miroir sans tain. Vous ne voyez que les images qu’il vous montre : les contenus que vous consommez tous les jours (streaming, réseaux sociaux, media en ligne), gratuitement le plus souvent. Ce que vous ne voyez pas c’est que vous êtes épié·e en permanence par des algorithmes qui, à force de passer des journées entières à vous observer, vous connaissent mieux que vous-même. 
 
 ```
 <iframe src="//coub.com/embed/1h9ok?muted=false&autostart=false&originalSize=false&startWithHD=false" allowfullscreen frameborder="0" width="640" height="354" allow="autoplay"></iframe>
