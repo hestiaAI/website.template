@@ -29,4 +29,7 @@ The very next day, I learned (not without a little pride) that I was a woman and
 ```
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">To Read: the thread of <a href="https://twitter.com/LetTweetBe?ref_src=twsrc%5Etfw">@lettweetbe</a>, the first of <a href="https://twitter.com/hashtag/TheEyeballs?src=hash&amp;ref_src=twsrc%5Etfw">#TheEyeballs</a>, one twitto among many, who just wants to understand what <a href="https://twitter.com/hashtag/Twitter?src=hash&amp;ref_src=twsrc%5Etfw">#Twitter</a> knows about him and how that information is used to get his attention. <a href="https://t.co/E8uBYxVnSl">https://t.co/E8uBYxVnSl</a></p>&mdash; The Eyeballs (EN) (@TheEyeballsEN) <a href="https://twitter.com/TheEyeballsEN/status/1417440984972025857?ref_src=twsrc%5Etfw">July 20, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 ```
+
 But all this is just the tip of the iceberg. Twitter knows a lot more about me. The Eyeballs team is currently developing the software tools to reveal all the things we don't see: why I am the ideal target for this or that advertising campaign. Why I am likely to adhere to this message, to click on this video. All this is about to be ready soon and will be the subject of a future post...
+
+*Charles Foucault-Dumas*
