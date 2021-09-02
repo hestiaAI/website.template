@@ -5,6 +5,10 @@ date: 2021-09-02T06:58:41.305Z
 lead: Facebook veut récupérer les données en dehors de ses plateformes, sur les
   sites et dans les magasins physiques de ses clients-annonceurs, pour le
   meilleur ? C’est en tout cas pour le pire, pour les utilisateurs.
+post_categories:
+  - worth-reading
+post_authors:
+  - cfd
 show_social_sharing: true
 ---
 Dans un [article](https://www.pixeldetracking.com/fr/les-signaux-resilients-de-facebook-ou-comment-la-surveillance-sadapte) très fouillé, le site pixel tracking décrit comment Facebook fait preuve de pédagogie auprès des annonceurs pour leur expliquer l’intérêt d’une surveillance généralisée du grand-public (vous et moi) : suivre les internautes sur ses applications (Facebook, Instagram, Whatsapp et bientôt Oculus) mais aussi en dehors (sites tiers, voire hors ligne) permet à Facebook d’assurer aux annonceurs le chiffre d’affaires dont ils rêvent lorsqu’ils conçoivent une campagne de marketing.
