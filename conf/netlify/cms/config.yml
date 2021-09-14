@@ -52,6 +52,9 @@ collections:
       i18n: true
       fields:
         - { label: Home, name: home, required: false, widget: string, i18n: true }
+        - { label: Expertise, name: expertise, required: false, widget: string, i18n: true }
+        - { label: Realization, name: realization, required: false, widget: string, i18n: true }
+        - { label: Legal, name: legal, required: false, widget: string, i18n: true }
         - { label: About, name: about, required: false, widget: string, i18n: true }
     - label: Contact form text fragments
       name: i18n-contact-form
