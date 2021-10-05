@@ -8,8 +8,8 @@ title: Your digital twin
 lead: Which kind of **target** are you?
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
-sar_title: ""
-sar_sub_title: ""
+sar_title: Media that have data about you
+sar_sub_title: If you want to know what your favorite media know about you, use this form.
 ---
 # Your data speaks for you
 
