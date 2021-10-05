@@ -7,8 +7,9 @@ title: Votre jumeau numérique
 lead: Quelle **cible** êtes-vous?
 lead_image: /assets/media/hero-rouge.png
 lead_image_caption: ""
-sar_title: ""
-sar_sub_title: ""
+sar_title: Médias qui ont des données à votre sujet
+sar_sub_title: Si vous voulez savoir ce que vos médias préférés savent de vous,
+  utilisez ce formulaire.
 ---
 # Vos données parlent de vous
 
