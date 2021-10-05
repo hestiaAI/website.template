@@ -38,6 +38,6 @@ There we explain you your "targetingValue" (examples: interested in politics, li
 
 We also developed another tool: a browser extension that reveals the price paid by an advertiser to display an ad on websites (work only on websites using the [header bidding technology](https://headerbidding.co/header-bidding/) to display adds). 
 
-It's still in beta version but you can already have a preview (and even try it) by following this link.
+It's still in beta version but you can already have a preview (and even try it) [by following this link](https://github.com/hestiaAI/my-worth-extension).
 
 Please note: for easier understanding of what this data represents, we also maintain a freely accessible [data catalog](/en/act/catalog/).
