@@ -32,8 +32,6 @@ D’autres plateformes vont suivre, on y travaille.
 
 Une fois vos données récupérées (fichier zip), [rendez-vous sur notre web app](https://experiences.hestialabs.org) pour comprendre quels annonceurs vous ciblent, dans quelle mesure, et pourquoi.
 
-<center><button class="primary big">[Essayez notre web app](https://github.com/hestiaAI/my-worth-extension)</button></center>
-
 Là, nous vous expliquons vos "targetingValue" (exemples: s'intéresse à la politique, aime le sport, parle français, habite à Lausanne, abonné·e à @U2 sur Twitter...). Soudain, tout deviendra clair et vous pourrez comparer vos résultats avec ceux de vos proches.
 
 ### Deuxième étape : site affichant des publicités
