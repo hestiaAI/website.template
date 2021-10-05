@@ -38,4 +38,6 @@ Là, nous vous expliquons vos "targetingValue" (exemples: s'intéresse à la pol
 
 Nous avons également développé un autre outil. Une extension de navigateur qui révèle le prix payé par un annonceur pour afficher une publicité sur des sites web (fonctionne uniquement sur les sites web utilisant la [technologie header bidding](https://headerbidding.co/header-bidding/) pour afficher des publicités).
 
+Elle est encore en version bêta mais vous pouvez déjà en avoir un aperçu (et même l'essayer) [en suivant ce lien](https://github.com/hestiaAI/my-worth-extension).
+
 À noter: pour faciliter la compréhension de ce que représente l’ensemble de ces données, nous tenons également à jour un [catalogue de données](/fr/act/catalog/) librement accessible.
