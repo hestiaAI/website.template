@@ -32,7 +32,7 @@ Other platforms will follow, we are working on it.
 
 Once your data is retrieved (zip file), [go to our web app](https://experiences.hestialabs.org) to understand which advertisers are targeting you, to what extent, and why.
 
-<button class="primary big">[Try our web app](https://github.com/hestiaAI/my-worth-extension)</button>
+<center><button class="primary big">[Try our web app](https://github.com/hestiaAI/my-worth-extension)</button></center>
 
 There we explain you your "targetingValue" (examples: interested in politics, likes sports, speaks English, lives in Zurich, follows @U2 on Twitter...). Suddenly, everything will become clear and you'll be able to compare your results with those of your friends.
 
