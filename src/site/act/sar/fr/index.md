@@ -26,6 +26,7 @@ Rencontrez ce jumeau numérique et comprenez comment vous-êtes ciblé·e en té
 ### Première étape : Réseaux sociaux
 
 [Cliquez ici pour demander vos données Twitter](https://help.twitter.com/fr/managing-your-account/how-to-download-your-twitter-archive)
+
 [Cliquez ici pour demander vos données Facebook](https://www.facebook.com/help/212802592074644) (Choisissez le format JSON, c'est important !)
 
 D’autres plateformes vont suivre, on y travaille.
