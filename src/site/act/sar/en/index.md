@@ -26,6 +26,7 @@ To meet your digital self and understand how you are being targeted, download al
 ### First step: Social Networks
 
 [Click here to request your Twitter data](https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive)
+
 [Click here to request your Facebook data](https://www.facebook.com/help/212802592074644) (Chose the JSON format, it's important!)
 
 Other platforms will follow, we are working on it.
