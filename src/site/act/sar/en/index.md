@@ -29,6 +29,8 @@ To meet your digital self and understand how you are being targeted, download al
 
 [Click here to request your Facebook data](https://www.facebook.com/help/212802592074644) (Chose the JSON format, it's important!)
 
+[Click here to request your Instagram data](https://help.instagram.com/181231772500920/)
+
 Other platforms will follow, we are working on it.
 
 Once your data is retrieved (zip file), [go to our web app](https://experiences.hestialabs.org) to understand which advertisers are targeting you, to what extent, and why.

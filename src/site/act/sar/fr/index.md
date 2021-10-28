@@ -29,6 +29,8 @@ Rencontrez ce jumeau numérique et comprenez comment vous-êtes ciblé·e en té
 
 [Cliquez ici pour demander vos données Facebook](https://www.facebook.com/help/212802592074644) (Choisissez le format JSON, c'est important !)
 
+[Cliquez ici pour demander vos données Instagram](https://help.instagram.com/181231772500920/)
+
 D’autres plateformes vont suivre, on y travaille.
 
 Une fois vos données récupérées (fichier zip), [rendez-vous sur notre web app](https://experiences.hestialabs.org) pour comprendre quels annonceurs vous ciblent, dans quelle mesure, et pourquoi.
