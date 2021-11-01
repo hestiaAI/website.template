@@ -1,12 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  They are watching you\
-  **Watch them!**
-lead_image: /assets/media/eye_hero_yellow.png
-lead_image_caption: ""
-paragraphs_title: ""
 paragraphs:
   - title: How much is your attention worth?
     description: >-
@@ -14,13 +7,6 @@ paragraphs:
       The best data experts have designed them to profile you and design the
       message, the image, the video likely to arouse your interest. By any means
       necessary.
-
-
-      ```
-
-      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
 
 
       To get your attention, advertisers have spent over US$375 billion on digital media in 2020 alone. 
@@ -38,13 +24,6 @@ paragraphs:
       opinions and behavior.
 
 
-      ```
-
-      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
       Who is trying to convince you? Of what? What traces did you leave online for them to believe that you are manipulable?
 
 
@@ -54,6 +33,13 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /en/index.html
+title: The Eyeballs
+lead: |-
+  They are watching you\
+  **Watch them!**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
 news_title: News and events
-news:
+news: null
 ---
