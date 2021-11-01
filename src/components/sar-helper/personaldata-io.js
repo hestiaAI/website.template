@@ -12,6 +12,7 @@ export const vocabulary = {
         email: 'pdiot:P17',
         collects: "pdiot:P10",
         requires: "pdiot:P122",
+        target: 'pdiot:P99',
     }
 };
 
@@ -35,6 +36,15 @@ const sparqlEmailAndItemsOfInstance = (item) =>
   ?item ${p.instanceOf} ${item}.
   ?item ${p.email} ?mail.
   SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+} `;
+
+export const sparqlEmailAndItemsTargetedBy = (project) =>
+`SELECT ?item ?itemLabel ?mail WHERE {
+  ${project} ${p.target} ?targeted.
+  ?item ${p.instanceOf} ?targeted.
+  ?item ${p.email} ?mail.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  # OPTIONAL { ?item pdiot:P17 ?mail. }
 } `;
 
 export async function query(sparqlQuery, apiUrl) {
@@ -73,6 +83,13 @@ export function bindingsAsKeyVals(result){
 export async function fetchOrgsOfInstance(item){
     const sparql =
           sparqlEmailAndItemsOfInstance(item);
+    const data = await query(sparql, URL_PERSONALDATA_IO);
+    return bindingsAsKeyVals(data);
+}
+
+export async function fetchOrgsTargetedBy(item){
+    const sparql =
+          sparqlEmailAndItemsTargetedBy(item);
     const data = await query(sparql, URL_PERSONALDATA_IO);
     return bindingsAsKeyVals(data);
 }
