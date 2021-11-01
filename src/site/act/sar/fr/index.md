@@ -1,4 +1,5 @@
 ---
+mailto_template_name: MailtoAccessFR
 layout: sar
 permalink: /fr/act/sar/index.html
 inverse: true
@@ -12,7 +13,6 @@ lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
   on [Unsplash](https://unsplash.com/photos/79mNMAvSORg)
 sar_title: Demandez vos données
 sar_sub_title: Vous pouvez demander une copie de vos données personnelles
-mailto_template_name: MailtoAccessFR
 ---
 # Ce sont vos droits
 

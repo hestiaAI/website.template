@@ -1,7 +1,7 @@
 import { LitElement, html, css, svg } from 'lit-element';
 import { registerTranslateConfig, use, translate, get } from "lit-translate";
 import {
-    fetchOrgsOfInstance, fetchMailTo,
+    fetchOrgsOfInstance, fetchOrgsTargetedBy, fetchMailTo,
     TEMPLATE_MAILTO_ACCESS, ITEM_ONLINE_DATING_APPLICATION
 } from './personaldata-io.js';
 
@@ -60,6 +60,14 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *   lang (optional): String
  *     Determines what language configuration will be
  *     loaded from file /assets/i18n/sar-form.json
+ *
+ *   collective (optional): String
+ *     Id of a project in the wikibase of personaldata io.
+ *     If collective is not set, or an empty string,
+ *     the option organizationType is used to determine
+ *     the targeted organizations
+ *     Examples:
+ *     - Q5393: the eyeballs
  *
  *   organizationType (optional): String
  *     Id of a company type in the wikibase of personaldata io.
@@ -131,6 +139,7 @@ export class SubjectAccessRequestForm extends LitElement {
         return {
             lang: { type: String },
             organizationType: { type: String },
+            collective: { type: String },
             mailtoTemplateName: { type: String },
             organizations: { type: Array, attribute: false },
             selectedApp: { type: Object, attribute: false },
@@ -146,6 +155,7 @@ export class SubjectAccessRequestForm extends LitElement {
         super();
         this.organizations = [];
         this.organizationType = '';
+        this.collective = '';
         this.mailtoTemplateName = this.mailtoTemplateName || TEMPLATE_MAILTO_ACCESS;
         this.selectedApp = undefined;
         this.search = '';
@@ -163,7 +173,10 @@ export class SubjectAccessRequestForm extends LitElement {
 
     async fetchOrganizations() {
         let fetched;
-        if(this.organizationType){
+        if(this.collective){
+            const collWithPrefix = `pdio:${this.collective}`
+            fetched = await fetchOrgsTargetedBy(collWithPrefix);
+        }else if(this.organizationType){
             const typeWithPrefix = `pdio:${this.organizationType}`
             fetched = await fetchOrgsOfInstance(typeWithPrefix);
         }else{
@@ -175,7 +188,6 @@ export class SubjectAccessRequestForm extends LitElement {
                 { displayName: unCamelCase(app.itemLabel) }))
             .sort(compareItemLabel);
         this.organizations = organizations;
-
     }
 
     async displayEmail(item) {

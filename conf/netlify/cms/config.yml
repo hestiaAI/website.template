@@ -358,8 +358,10 @@ collections:
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: "SAR subtitle" , name: sar_sub_title , required: false, i18n: true,
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - { label: Personaldata.io organization type, name: organization_type, required: true, widget: string,
-        hint: "Online dating application: Q5066"}
+    - { label: Personaldata.io collective, name: collective, required: false, widget: string,
+        hint: 'If this field is set, the organization type will be ignored. Example value for "the eyeballs": Q5393'}
+    - { label: Personaldata.io organization type, name: organization_type, required: false, widget: string,
+        hint: 'This field will be ignored if the field collective is set. Example value for "online dating application": Q5066'}
     - { label: Name of personaldata.io wikitext template, name: mailto_template_name, required: true, widget: string, i18n: true }
 
 - label: Act › Catalog
