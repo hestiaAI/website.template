@@ -1,12 +1,5 @@
 ---
 path: home
-title: The Eyeballs
-lead: |-
-  Ils vous observent\
-  **Observez-les !**
-lead_image: /assets/media/eye_hero_yellow.png
-lead_image_caption: ""
-paragraphs_title: ""
 paragraphs:
   - title: Combien vaut votre attention?
     description: >-
@@ -14,13 +7,6 @@ paragraphs:
       comportement. Les meilleurs experts de la donnée les ont conçus pour vous
       profiler et concevoir le message, l’image, la vidéo susceptible de
       susciter votre intérêt. Par tous les moyens.
-
-
-      ```
-
-      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/G1_ryVCLWoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
 
 
       Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars sur les supports numériques, rien qu'en 2020. 
@@ -38,13 +24,6 @@ paragraphs:
       cérébraux pour infléchir subtilement vos opinions et votre comportement.
 
 
-      ```
-
-      <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/rPcrvRuEv9k?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      ```
-
-
       Qui essaie de vous convaincre? De quoi? Quelles traces avez-vous laissées en ligne qui leur laissent croire que vous êtes manipulable?
 
 
@@ -54,6 +33,13 @@ paragraphs:
     primary_button: true
 layout: home
 permalink: /fr/index.html
+title: The Eyeballs
+lead: |-
+  Ils vous observent\
+  **Observez-les !**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
 news_title: Nos actus
 news: []
 ---
