@@ -1,7 +1,7 @@
 {
-  "canonical_base_url": "‹SITE-URL›",
-  "twitter_label": "Twitter",
-  "twitter_url": "https://twitter.com/‹TWITTER-ACCOUNT-NAME›",
-  "forum_label": "Forum",
-  "forum_url": "‹FORUM-SITE-URL›"
+  "canonical_base_url": "website.eye",
+  "twitter_label": "Twitter (EN)",
+  "twitter_url": "https://twitter.com/TheEyeballsEN",
+  "forum_label": "Twitter (FR)",
+  "forum_url": "https://twitter.com/TheEyeballsFR"
 }

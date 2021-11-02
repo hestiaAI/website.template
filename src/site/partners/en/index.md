@@ -1,13 +1,26 @@
 ---
 layout: partners
-inverse: true
-permalink: /en/partners/index.html
 title: Partners
-lead: "**Partners we trust**"
-lead_image: /assets/media/partners-hero-image.jpg
-lead_image_caption: Photo by [Tania Van den Berghen](https://pixabay.com/users/taniavdb-54472/)
-  on [Pixabay](https://pixabay.com/photos/group-of-people-human-group-color-2471124/)
+lead: |-
+  We **trust** them
+
+  with our eyes closed
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
 partners:
+  - title: HestiaLabs
+    url: https://hestialabs.org/
+    button: Website
+    image: /assets/img/hestialabs-logo.svg
+    image_caption: HestiaLabs logo
+    description: >-
+      HestiaLabs is a common good project. It supports "[data
+      collectives](https://hestialabs.org/en/projects/)" like The Eyeballs in
+      their governance, their goal setting and mostly in their technical
+      infrastructure.
+
+
+      HestiaLabs helps The Eyeballs do the hard work of analysing the data collected and turning it into actionable insights for its members, while fully respecting their privacy.
   - title: PersonalData.IO
     url: https://wiki.personaldata.io/wiki/Main_Page
     button: Website
@@ -19,52 +32,36 @@ partners:
       of its diversity (activists, researchers, educators, etc).
 
 
-      It helped our collective to emerge by gathering us and helped us to think together. Its wiki platform provided us with the structure we needed to start working on dating app data (giving us access to store, manage and access structured data).
-  - title: MyData Vaud
-    url: https://mydata.org/swiss-vaud/
-    button: Website
-    image: /assets/media/partners-mydata-vaud-logo.png
-    image_caption: MyData Vaud logo
-    description: "[MyData is a global movement](http://mydata.org) encouraging
-      individual empowerment around personal data. Its local chapters in
-      French-speaking Switzerland are based in
-      [Geneva](https://mydatageneva.org/) and
-      [Vaud](https://medium.com/mydatavaud). Thanks to its [extensive
-      network](https://mydata.org/organisation-members/), MyData Vaud helps
-      Dating Privacy to find relevant partners and promote its events."
-  - title: HestiaLabs
-    url: https://hestialabs.org/
-    button: Website
-    image: /assets/img/hestialabs-logo.svg
-    image_caption: HestiaLabs logo
-    description: >-
-      HestiaLabs is a common good project. The core of HestiaLabs’ activities is
-      to support data collectives in their governance, their goal setting and
-      mostly in their infrastructure.
-
-
-      HestiaLabs helps Dating Privacy with the hard work of analysing the data collected and turning it into actionable insights.
+      Through its awareness-raising initiatives, it helps to change the perception of issues such as The Eyeballs'one and encourages individuals to become agents of change.
   - title: Academic partners
     url: /en/contact/partners/
     button: Join us
     image: /assets/media/partners-academic-epfl-rlc-2017.jpg
     image_caption: Mediacom EPFL, CC BY-SA 4.0
-    description: Dating privacy would be delighted to team up with an academic
-      partner or partners. Their expertise and legitimacy on these topics would
-      enhance the value of this knowledge and give it the scientific resonance
-      it deserves.
+    description: The Eyeballs would be delighted to team up with one or more
+      academic partners. Their expertise and legitimacy on our topics would
+      enhance the value of the knowledge we create and give it the scientific
+      resonance it deserves.
   - title: Media partners
     url: /en/contact/media/
     button: Join us
     image: /assets/media/partners-media-jamikaverhandlungen-nov-2017-7.jpg
     image_caption: Kasa Fue, CC BY-SA 4.0
     description: >-
-      Help your audience connect the dots and play your role as the
-      fourth estate by covering our efforts  of dating app privacy risks and
-      better practices.
----
-We only collaborate and engage with partners who we trust and who meet
-our ethical chart.
+      The Eyeballs does not produce opinions but facts: real case studies based
+      on the analysis of real data.
 
-They structure and legitimize the project and amplify its results to 
-establish it in the long term.
+
+      We build these real stories with and for real people, not without their knowledge.
+
+
+      Contact us to offer your readers/listeners/viewers this informative experience.
+
+
+      (Here is an example of what we did with [Le Temps](https://www.letemps.ch/societe/reprenez-controle-vos-donnees-temps-propose-une-experience-participative))
+permalink: /en/partners/index.html
+inverse: true
+---
+Eyeballs activate every possible channel to make curiosity contagious and make more and more people aware of the monetization of their attention.
+
+Journalists, researchers, developers, curious minds, welcome. [Contact us](https://eyeballs.hestialabs.org/en/contact/partners/) for more information.

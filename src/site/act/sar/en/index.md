@@ -1,28 +1,46 @@
 ---
+organization_type: Q1186
+mailto_template_name: MailtoAccess
 layout: sar
 permalink: /en/act/sar/index.html
 inverse: true
-title: Claim your data back
-lead: |-
-  Make it happen —\
-  **Claim your data back!**\
-  Now  ⤵️
-lead_image: /assets/media/31-jong-marshes-79mnmavsorg-unsplash.jpg
-lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
-  on [Unsplash](https://unsplash.com/photos/79mNMAvSORg)
-sar_title: Ask for your data
-sar_sub_title: You can ask here for a copy of your personal data
-organization_type: Q5066
-mailto_template_name: MailtoAccess
+title: Your digital twin
+lead: Which kind of **target** are you?
+lead_image: /assets/media/hero-rouge.png
+lead_image_caption: ""
+sar_title: Media that have data about you
+sar_sub_title: If you want to know what your favorite media know about you, use this form.
 ---
-# These are your rights
+# Your data speaks for you
 
-As a dating app user, you are a “data subject” in subject eyes of the law. This gives you “data subject rights”. **The dating app does not own your data, you do**. 
+You've already received an ad that convinced you that your phone is listening, right?
 
-You can recover your data in a file via a Subject Access Request. The dating app, as a private company, is obliged to send you this information within 30 days.
+[The (no less creepy) reality](https://qz.com/1609356/your-phone-is-not-recording-your-conversations/) is that everything you do online says more about you than you can imagine.
 
-When you fill in your profile and navigate, you leave traces that are collected, processed and stored by the dating app. This data collection serves both positive and negative functions. It improves the app's profile recommendations but also feeds its malfunction and the malicious behaviours of others. **What, how and for what purposes data is used by the dating industry remains opaque to users and researchers**.
+Thanks to your clicks, likes, how fast you click or scroll, who you chat with, what your friends are doing, where you go... platforms create a digital twin of you that is truer than life.
 
-Whether you rarely get matches and don’t find a partner, you go on tons of dates, or even if you've found your partner online, your privacy is not protected. In real time, the app tracks your conversations and geolocation. **Your data says a lot about you to others and the company**: what you like, what you hate, how healthy you are, where you live, where you go, who you meet and when. Data isn't just used to help you find a partner: **it is traded and sold to data brokers and advertisers.**
+They are able to simulate the conversation you are having. They are able to know that you will change jobs in 6 months. Before you know it yourself.
 
-For easier understanding of what this data represents, we are also [maintaining a catalog](https://dating-privacy.hestialabs.org/en/act/catalog).
+To meet your digital self and understand how you are being targeted, download all the footprints you left online or find out how much you are worth to an advertiser ⤵️
+
+### First step: Social Networks
+
+[Click here to request your Twitter data](https://help.twitter.com/en/managing-your-account/how-to-download-your-twitter-archive)
+
+[Click here to request your Facebook data](https://www.facebook.com/help/212802592074644) (Chose the JSON format, it's important!)
+
+[Click here to request your Instagram data](https://help.instagram.com/181231772500920/)
+
+Other platforms will follow, we are working on it.
+
+Once your data is retrieved (zip file), [go to our web app](https://experiences.hestialabs.org) to understand which advertisers are targeting you, to what extent, and why.
+
+There we explain you your "targetingValue" (examples: interested in politics, likes sports, speaks English, lives in Zurich, follows @U2 on Twitter...). Suddenly, everything will become clear and you'll be able to compare your results with those of your friends.
+
+### Second step: site displaying ads
+
+We also developed another tool: a browser extension that reveals the price paid by an advertiser to display an ad on websites (work only on websites using the [header bidding technology](https://headerbidding.co/header-bidding/) to display adds). 
+
+It's still in beta version but you can already have a preview (and even try it) [by following this link](https://github.com/hestiaAI/my-worth-extension).
+
+Please note: for easier understanding of what this data represents, we also maintain a freely accessible [data catalog](/en/act/catalog/).
