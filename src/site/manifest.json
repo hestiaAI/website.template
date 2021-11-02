@@ -1,6 +1,6 @@
 {
-  "name": "‹SITE-TITLE›: we create a new relationship to personal data, collectively",
-  "short_name": "‹SITE-TITLE›",
+  "name": "The Eyeballs: we create a new relationship to personal data, collectively",
+  "short_name": "The Eyeballs",
   "icons": [
     { "src": "/favicon-android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "/favicon-android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }

@@ -1,15 +1,14 @@
 ---
-layout: blog
-permalink: /en/blog/index.html
-title: Data stories
-lead: ""
-lead_image: /assets/media/blog-hero-image.jpg
-lead_image_caption: Photo by [Sincerely Media](https://unsplash.com/@sincerelymedia)
-  on [Unsplash](https://unsplash.com/photos/vcF5y2Edm6A)
+title: Influence stories
+lead: Our **views**
+lead_image: /assets/media/hero-rouge.png
+lead_image_caption: ""
 latest_title: Latest posts
 editorials_title: Articles
 interviews_title: Interviews
+authors_title: Authors
+layout: blog
+permalink: /en/blog/index.html
 infographics_title: Infographics
 categories_title: Categories
-authors_title: Authors
 ---

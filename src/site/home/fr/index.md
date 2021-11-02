@@ -1,50 +1,45 @@
 ---
+path: home
+paragraphs:
+  - title: Combien vaut votre attention?
+    description: >-
+      Chaque seconde passée en ligne, des milliers de capteurs traquent votre
+      comportement. Les meilleurs experts de la donnée les ont conçus pour vous
+      profiler et concevoir le message, l’image, la vidéo susceptible de
+      susciter votre intérêt. Par tous les moyens.
+
+
+      Pour attirer votre attention, les publicitaires ont dépensé plus de 375 milliards de dollars sur les supports numériques, rien qu'en 2020. 
+
+
+      Comment suis-je ciblé·e? Combien est-ce que je vaux? Plus, ou moins que mon voisin? Pourquoi? Rejoignez the Eyeballs et découvrez à quelle sauce numérique vous êtes mangé·e.
+    link_text: Découvrez (et comparez) votre valeur numérique
+    url: /fr/act/sar/
+    primary_button: true
+  - title: Vous êtes influencé·e
+    description: >-
+      «Pas du tout. Même pas en rêve. Les influencés ce sont les complotistes et
+      les gamins sur Instagram, pas moi.» N’en soyez pas si sûr·e... Les marques
+      et les partis politiques utilisent le profilage et les mécanismes
+      cérébraux pour infléchir subtilement vos opinions et votre comportement.
+
+
+      Qui essaie de vous convaincre? De quoi? Quelles traces avez-vous laissées en ligne qui leur laissent croire que vous êtes manipulable?
+
+
+      Rejoignez the Eyeballs pour comprendre comment vous êtes influencé·e, vous comparer à la moyenne et voir la différence de perception de votre profil entre les différents réseaux et médias que vous utilisez.
+    link_text: Mesurez votre influençabilité
+    url: community/
+    primary_button: true
 layout: home
 permalink: /fr/index.html
-path: home
-title: ‹SITE-TITLE›
-lead: The community of **‹SITE-TITLE›**
-lead_image: /assets/media/home-hero-image.jpg
-lead_image_caption: Photo by [Mary Eineman](https://unsplash.com/@maryeineman)
-  on [Unsplash](https://unsplash.com/photos/sQtGjRSOyGk)
-paragraphs_title: We define a new relationship to data
-paragraphs:
-  - title: We are a collective of users
-    description: "Dating Privacy is you and me: dating app users and
-      people keen to understand privacy in relationships formed online. The
-      collective is worried about the way our intimate life is being coded and
-      exposed online. We aim to retake control of personal data on dating apps,
-      understand the privacy problems they create, and work to improve data
-      literacy."
-    link_text: Join us
-    url: community/
-  - title: We work to understand what's being done
-    description: >-
-      We want to understand many privacy risks that we, as dating app users, are
-      confronted with when looking for a date online: unwanted ads, discrimination
-      resulting from data, incorrect profiling and predictions, and the possibility
-      of phishing and identity theft by rogue users.
-    
-    
-      Our ultimate goal is to bring together users and privacy enthusiasts to push for a paradigm shift.
-    link_text: Learn more
-    url: mission/
-  - title: We connect with many partners
-    description: >-
-      We are looking to collaborate with journalists, academics, researchers,
-      activists and NGOs in data protection and other related themes.
-
-
-      We push ideas for better user and company practices to control personal data and date safely online. We are particularly interested in raising awareness, as well as building methodological protocols and privacy tools for data protection and literacy.
-    link_text: Contact us
-    url: partners/
-
-news_title: News and events
-news:
-  - type: infographic
-    post: what-bumble-collects-about-you
-  - type: editorial
-    post: dating-apps-share-your-data
-  - type: interview
-    post: interview-de-jessica-pidoux-journal-le-temps
+title: The Eyeballs
+lead: |-
+  Ils vous observent\
+  **Observez-les !**
+lead_image: /assets/media/eye_hero_yellow.png
+lead_image_caption: ""
+paragraphs_title: ""
+news_title: Nos actus
+news: []
 ---

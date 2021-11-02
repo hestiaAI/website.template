@@ -1,13 +1,11 @@
 ---
 layout: catalog
 permalink: /fr/act/catalog/index.html
-title: Data Catalog
+title: Qui collecte quelles données?
 lead: ""
 ---
-## Why a catalog?
+Nous documentons soigneusement le type de données que chaque entreprise détient à votre sujet (uniquement le type de données, jamais les données elles-mêmes). La somme de ces informations constitue un **catalogue de données**.
 
-We are constituting a data catalog: we are carefully documenting what type of data each company holds about you.
+Ce catalogue ouvert facilitera le développement participatif d'outils et de services respectueux de la vie privée autour de ces données. Cet effort est réalisé en collaboration avec [d'autres projets de l'écosystème HestiaLabs](https://hestialabs.org/fr/projects/). Nous bénéficierons tous de ce travail.
 
-This will help us build more easily tools and services around this data, in a way that enables participation around this commons. This effort is done together with [other projects in the HestiaLabs ecosystem](https://hestialabs.org/en/projects/). We all benefit from working together on this. 
-
-You can access this catalog [here](https://github.com/hestiaAI/data-catalog).
+Vous pouvez accéder librement à ce catalogue [ici](https://github.com/hestiaAI/data-catalog).

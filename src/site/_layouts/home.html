@@ -24,6 +24,12 @@ inverse: true
     {% endfor %}
   </div>
 </section>
+
+<section id="newsletter" class="newsletter">
+  <newsletter-signup lang="{{locale}}" form-name="newsletter-eye-signup">
+  </newsletter-signup>
+</section>
+
 {% set latest_news = collections.blogPosts[locale].latest %}
 {% if news|length or latest_news|length %}
   <section id="news">
@@ -71,13 +77,6 @@ inverse: true
     </div>
   </section>
 {% endif %}
-
-<section id="newsletter" class="newsletter">
-  <newsletter-signup
-    lang="{{locale}}"
-    form-name="‹NEWSLETTER-FORM-NAME›">
-  </newsletter-signup>
-</section>
 
 <script type="module">
   import '/components/article-breakout.js';

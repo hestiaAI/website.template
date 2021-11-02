@@ -18,8 +18,8 @@
    see see https://css-tricks.com/snippets/javascript/lighten-darken-color/ */
 
 :root {
-  --theme-color-primary:           #04650f;
-  --theme-color-secondary:         #e4ffef;           /* LightenDarkenColor(var(--theme-color-primary),224) */
+  --theme-color-primary:           #FF6666;
+  --theme-color-secondary:         #ffcc66;           /* LightenDarkenColor(var(--theme-color-primary),224) */
 }
 
 body {
