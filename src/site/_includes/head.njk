@@ -11,8 +11,8 @@
 
   {# The Essential Meta Tags for Social Media
      https://css-tricks.com/essential-meta-tags-social-media/ #}
-  {% set canonical_base_url = links.canonical_base_url %}
-  {% set canonical_url = canonical_base_url + page.url %}
+  {% set https_base_url = 'https://' + links.canonical_base_url %}
+  {% set canonical_url = https_base_url + page.url %}
   <meta name="twitter:card" content="summary" >
   <meta name="twitter:site" content="@{{links.twitter_url | replace("https://twitter.com/", "")}}" >
   <meta name="twitter:title" content="{% inlineMarkdownP "plain" %}{% renderLiquid "title", pageData %}{% endinlineMarkdownP %}" >
@@ -21,11 +21,11 @@
     <meta name="twitter:description" content="{% inlineMarkdownP "plain" %}{{lead}}{% endinlineMarkdownP %}" >
   {% endif %}
   {% if image %}
-    <meta name="twitter:image" content="{{canonical_base_url}}{{image}}" >
-    <meta name="og:image" content="{{canonical_base_url}}{{image}}" >
+    <meta name="twitter:image" content="{{https_base_url}}{{image}}" >
+    <meta name="og:image" content="{{https_base_url}}{{image}}" >
   {% elif lead_image %}
-    <meta name="twitter:image" content="{{canonical_base_url}}{{lead_image}}" >
-    <meta name="og:image" content="{{canonical_base_url}}{{lead_image}}" >
+    <meta name="twitter:image" content="{{https_base_url}}{{lead_image}}" >
+    <meta name="og:image" content="{{https_base_url}}{{lead_image}}" >
   {% endif %}
   <meta property="og:type" content="article" >
   <meta property="og:url" content="{{canonical_url}}">
