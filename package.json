@@ -1,9 +1,9 @@
 {
-  "name": "@hestia/website-eye",
+  "name": "@hestia/~REPO-PACKAGE-NAME~",
   "version": "0.1.0",
-  "description": "HestiaLabs ‹Eyeballs› website",
+  "description": "HestiaLabs ‹SITE-TITLE› website",
   "license": "UNLICENSED",
-  "author": "Paul-Olivier Dehaye",
+  "author": "‹SITE-OWNER-NAME›",
   "contributors": [
     "Paul-Olivier Dehaye",
     "Charles Foucault-Dumas",
@@ -55,12 +55,12 @@
     "node": ">=14",
     "npm": ">=7"
   },
-  "homepage": "https://github.com/hestia-owner-eye/website.eye",
+  "homepage": "https://github.com/hestiaAI/‹REPO-NAME›",
   "bugs": {
-    "url": "https://github.com/hestia-owner-eye/website.eye/issues"
+    "url": "https://github.com/hestiaAI/‹REPO-NAME›/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hestia-owner-eye/website.eye.git"
+    "url": "git+https://github.com/hestiaAI/‹REPO-NAME›.git"
   }
 }
