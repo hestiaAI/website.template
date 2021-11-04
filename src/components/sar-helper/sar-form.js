@@ -29,18 +29,6 @@ const IDS = {
     partsToFillIn: 'email-parts-to-fill-in'
 };
 
-// is this really the place to do this?
-registerTranslateConfig({
-    loader: async (lang) => {
-        try{
-            const result = await fetch(`/assets/i18n/sar-form.json`);
-            const translations = await result.json();
-            return translations[lang] || DEFAULT_TRANSLATIONS;
-        }catch(error){
-           return  DEFAULT_TRANSLATIONS;
-        }
-    }});
-
 function compareItemLabel(appA, appB) {
     const nameA = appA.itemLabel.toUpperCase();
     const nameB = appB.itemLabel.toUpperCase();
@@ -168,6 +156,17 @@ export class SubjectAccessRequestForm extends LitElement {
     firstUpdated() {
         // Load the default language
         this.fetchOrganizations();
+        registerTranslateConfig({
+            loader: async (lang) => {
+                try {
+                    const result = await fetch(`/assets/i18n/sar-form.json`);
+                    const translations = await result.json();
+                    return translations[lang] || DEFAULT_TRANSLATIONS;
+                } catch (error) {
+                    return DEFAULT_TRANSLATIONS;
+                }
+            }
+        });
         use(this.lang);
     }
 

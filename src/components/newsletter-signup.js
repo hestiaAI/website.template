@@ -15,17 +15,6 @@ const DEFAULT_TRANSLATIONS = {
   "submit_button": "Send"
 };
 
-registerTranslateConfig({
-  loader: async (lang) => {
-    try {
-      const result = await fetch(`/assets/i18n/newsletter-signup.json`);
-      const translations = await result.json();
-      return translations[lang] || DEFAULT_TRANSLATIONS;
-    } catch(error) {
-      return  DEFAULT_TRANSLATIONS;
-    }
-  }});
-
 /**
  * ‹newsletter-signup› custom element, displaying a
  * form to sign up for a newsletter.
@@ -141,6 +130,17 @@ export class NewsletterSignup extends LitElement {
   }
 
   firstUpdated() {
+    registerTranslateConfig({
+      loader: async (lang) => {
+        try {
+          const result = await fetch(`/assets/i18n/newsletter-signup.json`);
+          const translations = await result.json();
+          return translations[lang] || DEFAULT_TRANSLATIONS;
+        } catch (error) {
+          return DEFAULT_TRANSLATIONS;
+        }
+      }
+    });
     // Load the default language
     use(this.lang);
   }
