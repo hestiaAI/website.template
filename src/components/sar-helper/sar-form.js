@@ -5,20 +5,38 @@ import {
     TEMPLATE_MAILTO_ACCESS, ITEM_ONLINE_DATING_APPLICATION
 } from './personaldata-io.js';
 
+const TRANSLATION_FIELDS = {
+    "subject": "sar-form-subject",
+    "app_type_name": "sar-form-app_type_name",
+    "select_placeholder": "sar-form-select_placeholder",
+    "email_button": "sar-form-email_button",
+    "body_placeholder": "sar-form-body_placeholder",
+    "recipient": "sar-form-recipient",
+    "search_placeholder": "sar-form-search_placeholder",
+    "copy_button": "sar-form-copy_button",
+    "preview_of_email": "sar-form-preview_of_email",
+    "preview_of_email_to": "sar-form-preview_of_email_to",
+    "explanation": "sar-form-explanation",
+    "to_fill_in": "sar-form-to_fill_in",
+    "mailto_template_name": "sar-form-mailto_template_name",
+};
+
+const t = TRANSLATION_FIELDS;
+
 const DEFAULT_TRANSLATIONS = {
-    "subject": "Subject",
-    "app_type_name": "Dating app",
-    "select_placeholder": "Click to choose",
-    "email_button": "Open in your e-mail client",
-    "body_placeholder": "Choose an app to fill this automatically",
-    "recipient": "Recipient",
-    "search_placeholder": "Search",
-    "copy_button": "Copy to clipboard",
-    "preview_of_email": "Preview of the e-mail",
-    "preview_of_email_to": "Preview of the e-mail to",
-    "explanation": "You can copy the e-mail fields or open it directly in your e-mail client",
-    "to_fill_in": "The following information needs to be filled in by hand in the e-mail body:",
-    "mailto_template_name": TEMPLATE_MAILTO_ACCESS
+    [t.subject]: "Subject",
+    [t.app_type_name]: "Dating app",
+    [t.select_placeholder]: "Click to choose",
+    [t.email_button]: "Open in your e-mail client",
+    [t.body_placeholder]: "Choose an app to fill this automatically",
+    [t.recipient]: "Recipient",
+    [t.search_placeholder]: "Search",
+    [t.copy_button]: "Copy to clipboard",
+    [t.preview_of_email]: "Preview of the e-mail",
+    [t.preview_of_email_to]: "Preview of the e-mail to",
+    [t.explanation]: "You can copy the e-mail fields or open it directly in your e-mail client",
+    [t.to_fill_in]: "The following information needs to be filled in by hand in the e-mail body:",
+    [t.mailto_template_name]: TEMPLATE_MAILTO_ACCESS
 };
 
 const IDS = {
@@ -47,7 +65,7 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *
  *   lang (optional): String
  *     Determines what language configuration will be
- *     loaded from file /assets/i18n/sar-form.json
+ *     loaded from file /assets/i18n/component-translations.json
  *
  *   collective (optional): String
  *     Id of a project in the wikibase of personaldata io.
@@ -159,7 +177,7 @@ export class SubjectAccessRequestForm extends LitElement {
         registerTranslateConfig({
             loader: async (lang) => {
                 try {
-                    const result = await fetch(`/assets/i18n/sar-form.json`);
+                    const result = await fetch(`/assets/i18n/component-translations.json`);
                     const translations = await result.json();
                     return translations[lang] || DEFAULT_TRANSLATIONS;
                 } catch (error) {
@@ -264,8 +282,8 @@ export class SubjectAccessRequestForm extends LitElement {
         const that = this;
         return html`
           <div class="app-selection"">
-            <label for="${IDS.search}">${translate("app_type_name")}</label>
-            <input placeholder="${translate("search_placeholder")}"
+            <label for="${IDS.search}">${translate(t.app_type_name)}</label>
+            <input placeholder="${translate(t.search_placeholder)}"
                    list="search-list"
                    id="${IDS.search}"
                    @keyup="${that.onSearchType}"
@@ -277,44 +295,44 @@ export class SubjectAccessRequestForm extends LitElement {
             <span class="copyIconSpacer">&nbsp;</span>
           </div>
           <h2>${this.selectedApp
-            ? html`${translate('preview_of_email_to')}
+            ? html`${translate(t.preview_of_email_to)}
                 <strong>${this.selectedApp.displayName}</strong>`
-            : translate('preview_of_email')
+            : translate(t.preview_of_email)
           }</h2>
-          <p>${translate('explanation')}</p>
+          <p>${translate(t.explanation)}</p>
           ${!this.partsToFillIn.length ? '' : html`
           <div class="parts-to-fill-in">
-            <p>${translate("to_fill_in")}</p>
+            <p>${translate(t.to_fill_in)}</p>
             <ul>
               ${this.partsToFillIn.map(p => html`<li>${p}</li>`)}
             </ul>
           </div>`}
           <div class="email-field">
-            <label for="${IDS.recipient}">${translate("recipient")}</label>
+            <label for="${IDS.recipient}">${translate(t.recipient)}</label>
             <input id="${IDS.recipient}" type="email" value="${this.recipient}">
-            <span class="copyIcon" title="${translate("copy_button")}"
+            <span class="copyIcon" title="${translate(t.copy_button)}"
                   @click="${_ => that.copyToClipboard(IDS.recipient)}">
               ${this.getCopyIcon()}
             </span>
           </div>
           <div class="email-field">
-            <label for="${IDS.subject}">${translate("subject")}</label>
+            <label for="${IDS.subject}">${translate(t.subject)}</label>
             <input id="${IDS.subject}" type="text" value="${this.subject}">
-            <span class="copyIcon" title="${translate("copy_button")}"
+            <span class="copyIcon" title="${translate(t.copy_button)}"
                   @click="${_ => that.copyToClipboard(IDS.subject)}">
                ${this.getCopyIcon()}
              </span>
           </div>
           <div class="email-body">
-            <textarea placeholder="${translate("body_placeholder")}"
+            <textarea placeholder="${translate(t.body_placeholder)}"
                       id="${IDS.body}">${this.body}</textarea>
-            <span class="copyIcon" title="${translate("copy_button")}"
+            <span class="copyIcon" title="${translate(t.copy_button)}"
                   @click="${_ => that.copyToClipboard(IDS.body)}">
                ${this.getCopyIcon()}
             </span>
           </div>
           <button @click="${this.openEmailClient}">
-            ${translate("email_button")}
+            ${translate(t.email_button)}
           </button>
      `;
     }

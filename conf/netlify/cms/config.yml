@@ -58,30 +58,37 @@ collections:
         - { label: Media, name: media, required: false, widget: string, i18n: true }
         - { label: Community, name: community, required: false, widget: string, i18n: true }
         - { label: Contact, name: contact, required: false, widget: string, i18n: true }
-    - label: Newsletter signup text fragments
+    - label: Components text fragments (newsletter, contact and sar forms)
       name: i18n-newsletter-signup
-      file: src/site/_data/i18n/assets/newsletter-signup.json
+      file: src/site/_data/i18n/assets/component-translations.json
       i18n: true
       fields:
-        - { label: Title, name: title, required: false, widget: string, i18n: true }
-        - { label: Info, name: info, required: false, widget: string, i18n: true }
-        - { label: "First name", name: first_name, required: false, widget: string, i18n: true }
-        - { label: "Last name", name: last_name, required: false, widget: string, i18n: true }
-        - { label: "E-mail address", name: email, required: false, widget: string, i18n: true }
-        - { label: Message, name: message, required: false, widget: string, i18n: true }
-        - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
-    - label: Contact form text fragments
-      name: i18n-contact-form
-      file: src/site/_data/i18n/assets/contact-form.json
-      i18n: true
-      fields:
-        - { label: Title, name: title, required: false, widget: string, i18n: true }
-        - { label: "First name", name: first_name, required: false, widget: string, i18n: true }
-        - { label: "Last name", name: last_name, required: false, widget: string, i18n: true }
-        - { label: "E-mail address", name: email, required: false, widget: string, i18n: true }
-        - { label: "Subject", name: subject, required: false, widget: string, i18n: true }
-        - { label: "Message", name: message, required: false, widget: string, i18n: true }
-        - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > Title", name: newsletter-signup-title, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > Info", name: newsletter-signup-info, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > First name", name: newsletter-signup-first_name, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > Last name", name: newsletter-signup-last_name, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > E-mail address", name: newsletter-signup-email, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > Message", name: newsletter-signup-message, required: false, widget: string, i18n: true }
+        - { label: "Newsletter signup > Submit button", name: newsletter-signup-submit_button, required: false, widget: string, i18n: true }
+        - { label: "Contact form > First name", name: contact-form-first_name, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Last name", name: contact-form-last_name, required: false, widget: string, i18n: true }
+        - { label: "Contact form > E-mail address", name: contact-form-email, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Subject", name: contact-form-subject, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Message", name: contact-form-message, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Submit button", name: contact-form-submit_button, required: false, widget: string, i18n: true }
+        - { label: "Sar form > App type name", name: sar-form-app_type_name, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Select placeholder", name: sar-form-select_placeholder, required: true, widget: string, i18n: true }
+        - { label:"Sar form >  Search placeholder", name: sar-form-search_placeholder, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Recipient", name: sar-form-recipient, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Subject", name: sar-form-subject, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Body", name: sar-form-body, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Body placeholder", name: sar-form-body_placeholder, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Copy button", name: sar-form-copy_button, required: true, widget: string, i18n: true }
+        - { label: "Sar form > E-mail button", name: sar-form-email_button, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Preview of e-mail", name: sar-form-preview_of_email, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Preview of e-mail to", name: sar-form-preview_of_email_to, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Explanation", name: sar-form-explanation, required: true, widget: string, i18n: true }
+        - { label: "Sar form > Parts to fill in", name: sar-form-to_fill_in, required: true, widget: string, i18n: true }
     - label: Blog
       name: i18n-blog
       file: src/site/_data/i18n/blog.json
@@ -91,24 +98,6 @@ collections:
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
         - { label: Stories about, name: stories_about, required: true, i18n: true,
             widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
-    - label: SAR Form text fragments
-      name: sar-form
-      file: src/site/_data/i18n/assets/sar-form.json
-      i18n: true
-      fields:
-        - { label: App type name, name: app_type_name, required: true, widget: string, i18n: true }
-        - { label: Select placeholder, name: select_placeholder, required: true, widget: string, i18n: true }
-        - { label: Search placeholder, name: search_placeholder, required: true, widget: string, i18n: true }
-        - { label: Recipient, name: recipient, required: true, widget: string, i18n: true }
-        - { label: Subject, name: subject, required: true, widget: string, i18n: true }
-        - { label: Body, name: body, required: true, widget: string, i18n: true }
-        - { label: Body placeholder, name: body_placeholder, required: true, widget: string, i18n: true }
-        - { label: Copy button, name: copy_button, required: true, widget: string, i18n: true }
-        - { label: E-mail button, name: email_button, required: true, widget: string, i18n: true }
-        - { label: Preview of e-mail, name: preview_of_email, required: true, widget: string, i18n: true }
-        - { label: Preview of e-mail to, name: preview_of_email_to, required: true, widget: string, i18n: true }
-        - { label: Explanation, name: explanation, required: true, widget: string, i18n: true }
-        - { label: Parts to fill in, name: to_fill_in, required: true, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:
