@@ -76,6 +76,8 @@ collections:
       file: src/site/_data/links.json
       i18n: false
       fields:
+        - { label: Base url of the website, name: canonical_base_url, required: false, widget: string,
+            hint: "Without https://" }
         - { label: Twitter label, name: twitter_label, required: false, widget: string,
             hint: "If this field is empty, the link to twitter will not appear in the website's footer" }
         - { label: Twitter URL, name: twitter_url, required: true, widget: string }
