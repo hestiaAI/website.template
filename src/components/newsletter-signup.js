@@ -6,13 +6,24 @@ const LAYOUT_NORMAL = "normal",
       LAYOUT_DEFAULT = LAYOUT_NORMAL,
       LAYOUT_ENUM = [LAYOUT_NORMAL, LAYOUT_COMPACT];
 
+const TRANSLATION_FIELDS = {
+  "title": "newsletter-signup-title",
+  "info": "newsletter-signup-info",
+  "first_name": "newsletter-signup-first_name",
+  "last_name": "newsletter-signup-last_name",
+  "email": "newsletter-signup-email",
+  "submit_button": "newsletter-signup-submit_button",
+};
+
+const t = TRANSLATION_FIELDS;
+
 const DEFAULT_TRANSLATIONS = {
-  "title": "Sign up to our newsletter",
-  "info": "We won't really spam you",
-  "first_name": "First name",
-  "last_name": "Last name",
-  "email": "Email address",
-  "submit_button": "Send"
+  [t.title]: "Sign up to our newsletter",
+  [t.info]: "We won't really spam you",
+  [t.first_name]: "First name",
+  [t.last_name]: "Last name",
+  [t.email]: "Email address",
+  [t.submit_button]: "Send"
 };
 
 /**
@@ -133,7 +144,7 @@ export class NewsletterSignup extends LitElement {
     registerTranslateConfig({
       loader: async (lang) => {
         try {
-          const result = await fetch(`/assets/i18n/newsletter-signup.json`);
+          const result = await fetch(`/assets/i18n/component-translations.json`);
           const translations = await result.json();
           return translations[lang] || DEFAULT_TRANSLATIONS;
         } catch (error) {
@@ -147,9 +158,9 @@ export class NewsletterSignup extends LitElement {
 
   render() {
     return html`
-      <h3>${translate("title")}</h3>
-      ${this.layout === LAYOUT_COMPACT || !translate("info")
-        ? '' : html`<p>${translate("info")}</p>` }
+      <h3>${translate(t.title)}</h3>
+      ${this.layout === LAYOUT_COMPACT || !translate(t.info)
+        ? '' : html`<p>${translate(t.info)}</p>` }
       <form class="signup" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="${this.netlifyFormName}" />
         <input type="hidden" name="lang" value="${this.lang}" />
@@ -157,35 +168,35 @@ export class NewsletterSignup extends LitElement {
           <div class="signup-field">
             ${this.layout === LAYOUT_COMPACT ? '' : html`
               <label for="signup-first-name">
-                ${translate("first_name")}
+                ${translate(t.first_name)}
               </label>`}
             <input type="text" name="first-name"
                    id="signup-first-name"
-                   placeholder="${translate("first_name")}">
+                   placeholder="${translate(t.first_name)}">
           </div>
           <div class="signup-field">
             ${this.layout === LAYOUT_COMPACT ? '' : html`
               <label for="signup-last-name">
-                ${translate("last_name")}
+                ${translate(t.last_name)}
               </label>`}
             <input type="text" name="last-name"
                    id="signup-last-name"
-                   placeholder="${translate("last_name")}">
+                   placeholder="${translate(t.last_name)}">
           </div>
         </div>
         <div class="signup-fields">
           <div class="signup-field">
             ${this.layout === LAYOUT_COMPACT ? '' : html`
               <label for="signup-email">
-                  ${translate("email")}
+                  ${translate(t.email)}
               </label>`}
             <input type="email" name="email"
                    id="signup-email"
-                   placeholder="${translate("email")}">
+                   placeholder="${translate(t.email)}">
           </div>
         </div>
         <div>
-          <button type="submit">${translate("submit_button")}</button>
+          <button type="submit">${translate(t.submit_button)}</button>
         </div>
       </form>
     `;

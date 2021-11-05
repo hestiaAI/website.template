@@ -1,0 +1,18 @@
+{
+  "en": {
+    "contact-form-first_name": "First name",
+    "contact-form-last_name": "Last name",
+    "contact-form-email": "E-mail address",
+    "contact-form-subject": "Subject",
+    "contact-form-submit_button": "Send",
+    "contact-form-message": "Type your message here"
+  },
+  "fr": {
+    "contact-form-first_name": "Prénom",
+    "contact-form-last_name": "Nom",
+    "contact-form-email": "Adresse e-mail",
+    "contact-form-subject": "Objet",
+    "contact-form-submit_button": "Envoyer",
+    "contact-form-message": "Saisissez votre message ici"
+  }
+}

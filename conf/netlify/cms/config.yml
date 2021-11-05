@@ -56,18 +56,17 @@ collections:
         - { label: Realization, name: realization, required: false, widget: string, i18n: true }
         - { label: Legal, name: legal, required: false, widget: string, i18n: true }
         - { label: About, name: about, required: false, widget: string, i18n: true }
-    - label: Contact form text fragments
-      name: i18n-contact-form
-      file: src/site/_data/i18n/assets/contact-form.json
+    - label: Components text fragments (newsletter, contact and sar forms)
+      name: i18n-newsletter-signup
+      file: src/site/_data/i18n/assets/component-translations.json
       i18n: true
       fields:
-        - { label: Title, name: title, required: false, widget: string, i18n: true }
-        - { label: "First name", name: first_name, required: false, widget: string, i18n: true }
-        - { label: "Last name", name: last_name, required: false, widget: string, i18n: true }
-        - { label: "E-mail address", name: email, required: false, widget: string, i18n: true }
-        - { label: "Subject", name: subject, required: false, widget: string, i18n: true }
-        - { label: "Message", name: message, required: false, widget: string, i18n: true }
-        - { label: "Submit button", name: submit_button, required: false, widget: string, i18n: true }
+        - { label: "Contact form > First name", name: contact-form-first_name, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Last name", name: contact-form-last_name, required: false, widget: string, i18n: true }
+        - { label: "Contact form > E-mail address", name: contact-form-email, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Subject", name: contact-form-subject, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Message", name: contact-form-message, required: false, widget: string, i18n: true }
+        - { label: "Contact form > Submit button", name: contact-form-submit_button, required: false, widget: string, i18n: true }
 - label: ‹Configuration›
   name: configuration
   files:

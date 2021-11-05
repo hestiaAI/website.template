@@ -1,19 +1,30 @@
 import { LitElement, html, css } from 'lit-element';
 import { registerTranslateConfig, use, translate } from "lit-translate";
 
+const TRANSLATION_FIELDS = {
+    first_name: "contact-form-first_name",
+    last_name: "contact-form-last_name",
+    email: "contact-form-email",
+    subject: "contact-form-subject",
+    message: "contact-form-message",
+    submit_button: "contact-form-submit_button"
+};
+
+const t = TRANSLATION_FIELDS;
+
 const DEFAULT_TRANSLATIONS = {
-    "subject": "Subject",
-    "first_name": "First name",
-    "last_name": "Last name",
-    "email": "Email address",
-    "message": "Type your message here",
-    "submit_button": "Send"
+    [t.subject]: "Subject",
+    [t.first_name]: "First name",
+    [t.last_name]: "Last name",
+    [t.email]: "Email address",
+    [t.message]: "Type your message here",
+    [t.submit_button]: "Send"
 };
 
 registerTranslateConfig({
   loader: async (lang) => {
     try {
-      const result = await fetch(`/assets/i18n/contact-form.json`);
+      const result = await fetch(`/assets/i18n/component-translations.json`);
       const translations = await result.json();
       return translations[lang] || DEFAULT_TRANSLATIONS;
     } catch(error) {
@@ -134,39 +145,39 @@ export class ContactForm extends LitElement {
         <input type="hidden" name="lang" value="${this.lang}" />
         <div class="fields">
           <div class="field">
-            <label for="first-name"> ${translate("first_name")} </label>
+            <label for="first-name"> ${translate(t.first_name)} </label>
             <input type="text" name="first-name" id="first-name"
-                   placeholder="${translate("first_name")}">
+                   placeholder="${translate(t.first_name)}">
           </div>
           <div class="field">
-            <label for="last-name"> ${translate("last_name")} </label>
+            <label for="last-name"> ${translate(t.last_name)} </label>
             <input type="text" name="last-name" id="last-name"
-                   placeholder="${translate("last_name")}">
+                   placeholder="${translate(t.last_name)}">
           </div>
         </div>
         <div class="fields">
           <div class="field">
-            <label for="email"> ${translate("email")} </label>
+            <label for="email"> ${translate(t.email)} </label>
             <input type="email" name="email" id="email"
-                   placeholder="${translate("email")}">
+                   placeholder="${translate(t.email)}">
           </div>
         </div>
         <div class="fields">
           <div class="field">
-            <label for="subject"> ${translate("subject")} </label>
+            <label for="subject"> ${translate(t.subject)} </label>
             <input type="text" name="subject" id="subject"
                    value="${this.subjectContent}"
-                   placeholder="${translate("subject")}">
+                   placeholder="${translate(t.subject)}">
           </div>
         </div>
         <div class="fields">
           <div class="field">
-            <label for="message"> ${translate("message")} </label>
-            <textarea placeholder="${translate("message")}"
+            <label for="message"> ${translate(t.message)} </label>
+            <textarea placeholder="${translate(t.message)}"
                       name="message" id="message" ></textarea>
           </div>
         </div>
-        <button type="submit">${translate("submit_button")}</button>
+        <button type="submit">${translate(t.submit_button)}</button>
       </form>
     `;
   }
