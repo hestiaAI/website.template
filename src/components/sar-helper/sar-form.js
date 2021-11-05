@@ -205,6 +205,10 @@ export class SubjectAccessRequestForm extends LitElement {
                 { displayName: unCamelCase(app.itemLabel) }))
             .sort(compareItemLabel);
         this.organizations = organizations;
+        if(this.organizations.length === 1){
+            console.log('found', organizations[0])
+            this.selectApp(organizations[0])
+        }
     }
 
     async displayEmail(item) {
@@ -241,7 +245,9 @@ export class SubjectAccessRequestForm extends LitElement {
         this.selectedApp = app;
         console.log('s', this.selectedApp)
         const search = this.byId(IDS.search);
-        search.value = app.displayName;
+        if (search) {
+            search.value = app.displayName;
+        }
         await this.displayEmail(app.item);
     }
 
@@ -280,7 +286,9 @@ export class SubjectAccessRequestForm extends LitElement {
 
     render() {
         const that = this;
-        return html`
+        let appSelection = '';
+        if(this.organizations.length > 1){
+            appSelection = html`
           <div class="app-selection"">
             <label for="${IDS.search}">${translate(t.app_type_name)}</label>
             <input placeholder="${translate(t.search_placeholder)}"
@@ -294,6 +302,10 @@ export class SubjectAccessRequestForm extends LitElement {
             </datalist>
             <span class="copyIconSpacer">&nbsp;</span>
           </div>
+            `;
+        }
+        return html`
+          ${appSelection}
           <h2>${this.selectedApp
             ? html`${translate(t.preview_of_email_to)}
                 <strong>${this.selectedApp.displayName}</strong>`
