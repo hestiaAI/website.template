@@ -12,6 +12,7 @@ const TRANSLATION_FIELDS = {
     "email_button": "sar-form-email_button",
     "body_placeholder": "sar-form-body_placeholder",
     "recipient": "sar-form-recipient",
+    "carbon_copy": "sar-form-carbon_copy",
     "search_placeholder": "sar-form-search_placeholder",
     "copy_button": "sar-form-copy_button",
     "preview_of_email": "sar-form-preview_of_email",
@@ -30,6 +31,7 @@ const DEFAULT_TRANSLATIONS = {
     [t.email_button]: "Open in your e-mail client",
     [t.body_placeholder]: "Choose an app to fill this automatically",
     [t.recipient]: "Recipient",
+    [t.carbon_copy]: "Copy to",
     [t.search_placeholder]: "Search",
     [t.copy_button]: "Copy to clipboard",
     [t.preview_of_email]: "Preview of the e-mail",
@@ -43,7 +45,9 @@ const IDS = {
     search: 'dating-app-search',
     body: 'email-body',
     recipient: 'email-recipient',
+    carbonCopyCheck: 'email-cc-check',
     subject: 'email-subject',
+    carbonCopy: 'email-cc',
     partsToFillIn: 'email-parts-to-fill-in'
 };
 
@@ -111,6 +115,12 @@ export class SubjectAccessRequestForm extends LitElement {
         .app-selection > input {
           flex-grow: 1; }
 
+        .email-checkbox{
+          margin-bottom: 0.5rem; }
+
+        .email-checkbox > input{
+          margin-right: 0.2rem; }
+
         .email-field {
           display:flex;
           margin-bottom: 0.5rem; }
@@ -151,6 +161,9 @@ export class SubjectAccessRequestForm extends LitElement {
             selectedApp: { type: Object, attribute: false },
             search: { type: String, attribute: false },
             recipient: { type: String, attribute: false },
+            carbonCopyDescription: { type: String },
+            carbonCopyRecipient: { type: String },
+            carbonCopyChecked: { type: Boolean, attribute: false },
             subject: { type: String, attribute: false },
             body: { type: String, attribute: false },
             partsToFillIn: { type: Array, attribute: false }
@@ -166,6 +179,9 @@ export class SubjectAccessRequestForm extends LitElement {
         this.selectedApp = undefined;
         this.search = '';
         this.recipient = '';
+        this.carbonCopyDescription = '';
+        this.carbonCopyRecipient = '';
+        this.carbonCopyChecked = false;
         this.subject = '';
         this.body = '';
         this.partsToFillIn = [];
@@ -261,6 +277,10 @@ export class SubjectAccessRequestForm extends LitElement {
         }
     }
 
+    onToggleCarbonCopy(event){
+        this.carbonCopyChecked = event.target.checked;
+    }
+
     copyToClipboard(textId) {
         const copyText = this.byId(textId);
         copyText.select();
@@ -272,7 +292,12 @@ export class SubjectAccessRequestForm extends LitElement {
         const email = this.byId(IDS.recipient).value;
         const subject = encodeURIComponent(this.byId(IDS.subject).value);
         const body = encodeURIComponent(this.byId(IDS.body).value);
-        const urlString = `mailto:${email}?subject=${subject}&body=${body}`;
+        let urlString = `mailto:${email}?subject=${subject}&body=${body}`;
+        if(this.carbonCopyChecked){
+            const carbonCopy =
+                  encodeURIComponent(this.byId(IDS.carbonCopy).value);
+            urlString += `&cc=${carbonCopy}`
+        }
         const url = new URL(urlString);
         window.location.href = url.href;
     }
@@ -304,6 +329,17 @@ export class SubjectAccessRequestForm extends LitElement {
           </div>
             `;
         }
+        let carbonCopyChoice = '';
+        if(this.carbonCopyRecipient){
+            carbonCopyChoice = html`
+          <div class="email-checkbox">
+            <input type="checkbox"
+                   id="${IDS.carbonCopyCheck}"
+                   @change=${that.onToggleCarbonCopy}>
+            <label for="${IDS.carbonCopyCheck}">${this.carbonCopyDescription}</label>
+          </div>
+            `;
+        }
         return html`
           ${appSelection}
           <h2>${this.selectedApp
@@ -327,6 +363,19 @@ export class SubjectAccessRequestForm extends LitElement {
               ${this.getCopyIcon()}
             </span>
           </div>
+          ${carbonCopyChoice}
+          ${this.carbonCopyChecked ?
+             html`
+          <div class="email-field">
+            <label for="${IDS.carbonCopy}">${translate(t.carbon_copy)}</label>
+            <input id="${IDS.carbonCopy}" type="text" readonly
+                   value="${this.carbonCopyRecipient}" >
+            <span class="copyIcon" title="${translate(t.copy_button)}"
+                  @click="${_ => that.copyToClipboard(IDS.carbonCopy)}">
+               ${this.getCopyIcon()}
+             </span>
+          </div> `
+             : ''}
           <div class="email-field">
             <label for="${IDS.subject}">${translate(t.subject)}</label>
             <input id="${IDS.subject}" type="text" value="${this.subject}">
