@@ -11,7 +11,9 @@ layout: defaultWithHero
   <sar-form lang="{{locale}}"
             collective="{{pageData | getLocalizedOrDefault("collective")}}"
             organizationType="{{pageData | getLocalizedOrDefault("organization_type")}}"
-            mailtoTemplateName="{{mailto_template_name}}"></sar-form>
+            mailtoTemplateName="{{mailto_template_name}}"
+            carbonCopyDescription="{{carbon_copy_description}}"
+            carbonCopyRecipient="{{carbon_copy_recipient}}"></sar-form>
 </section>
 
 <script type="module">

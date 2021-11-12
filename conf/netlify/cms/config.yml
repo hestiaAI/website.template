@@ -80,6 +80,7 @@ collections:
         - { label: "Sar form > Select placeholder", name: sar-form-select_placeholder, required: true, widget: string, i18n: true }
         - { label:"Sar form >  Search placeholder", name: sar-form-search_placeholder, required: true, widget: string, i18n: true }
         - { label: "Sar form > Recipient", name: sar-form-recipient, required: true, widget: string, i18n: true }
+        - { label: "Sar form > CC", name: sar-form-carbon_copy, required: true, widget: string, i18n: true }
         - { label: "Sar form > Subject", name: sar-form-subject, required: true, widget: string, i18n: true }
         - { label: "Sar form > Body", name: sar-form-body, required: true, widget: string, i18n: true }
         - { label: "Sar form > Body placeholder", name: sar-form-body_placeholder, required: true, widget: string, i18n: true }
@@ -351,6 +352,9 @@ collections:
         widget: markdown, buttons: [bold, italic, link], editor_components: [], minimal: true}
     - { label: Personaldata.io collective, name: collective, required: false, widget: string,
         hint: 'If this field is set, the organization type will be ignored. Example value for "the eyeballs": Q5393'}
+    - { label: CC email, name: carbon_copy_recipient, required: false, widget: string, i18n: true,
+        hint: 'The user will be able to choose whether to send a copy of his email to this address'}
+    - { label: CC description, name: carbon_copy_description, required: false, widget: string, i18n: true  }
     - { label: Personaldata.io organization type, name: organization_type, required: false, widget: string,
         hint: 'This field will be ignored if the field collective is set. Example value for "online dating application": Q5066'}
     - { label: Name of personaldata.io wikitext template, name: mailto_template_name, required: true, widget: string, i18n: true }

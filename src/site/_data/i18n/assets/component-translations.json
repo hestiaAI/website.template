@@ -22,6 +22,7 @@
     "sar-form-body_placeholder": "Selecting a social network, application or digital service above will automatically fill this",
     "sar-form-explanation": "You can copy the e-mail fields or open it directly in your e-mail client",
     "sar-form-recipient": "Recipient",
+    "sar-form-carbon_copy": "Copy to",
     "sar-form-search_placeholder": "Search",
     "sar-form-copy_button": "Copy to clipboard",
     "sar-form-to_fill_in": "The following information needs to be filled in by hand in the e-mail body:"
@@ -49,6 +50,7 @@
     "sar-form-body_placeholder": "Choisir un réseau social, une application ou un service numérique ci-dessus remplira automatiquement ce champ",
     "sar-form-explanation": "Vous pouvez copier les champs de l'email ou l'ouvrir directement dans votre client email.",
     "sar-form-recipient": "Destinataire",
+    "sar-form-carbon_copy": "Copie à",
     "sar-form-search_placeholder": "Rechercher",
     "sar-form-copy_button": "Copier",
     "sar-form-to_fill_in": "A compléter par vous dans l'e-mail avant envoi:"
