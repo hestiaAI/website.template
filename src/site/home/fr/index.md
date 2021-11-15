@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Nos projets
+layout: home
+permalink: /fr/index.html
 title: Hestia.ai
 lead: |-
   Services personnalisés\
@@ -52,15 +55,7 @@ expertise:
       privée.
     link_text: Learn more
     url: about/
-realizations_title: Nos projets
-layout: home
-permalink: /fr/index.html
 realizations:
-  - title: Armasuisse
-    description: >-
-      **Sécurité de systèmes distribués**
-
-      Projet de recherche et développement visant à étudier la sécurité d'un système distribué bien connu (distribution des données et calculs effectués sur celles-ci).
   - title: Fonds pionnier Migros
     description: >-
       **Collectifs de données**

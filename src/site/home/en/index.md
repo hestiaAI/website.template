@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Ongoing projects
+layout: home
+permalink: /en/index.html
 title: Hestia.ai
 lead: |-
   Personalized digital services\
@@ -49,15 +52,7 @@ expertise:
       challenges.
     link_text: Learn more
     url: about/
-realizations_title: Ongoing projects
-layout: home
-permalink: /en/index.html
 realizations:
-  - title: Armasuisse
-    description: >-
-      **Trusted distributed system**
-
-      Research and development project to study the security of a well-known distributed system, including the way it distributes information and performs computations.
   - title: Migros Pioneer Fund
     description: >-
       **Data collectives**
