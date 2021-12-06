@@ -1,6 +1,6 @@
 ---
 path: home
-realizations_title: Nos projets
+realizations_title: Réalisations
 layout: home
 permalink: /fr/index.html
 title: Hestia.ai
@@ -61,10 +61,35 @@ realizations:
       **Collectifs de données**
 
       Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](https://hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up".
-  - title: Fonds d'innovation d'intérêt public
+    link_text: HestiaLabs
+    url: https://hestialabs.org/en/
+  - title: Sitra (Fonds d'innovation finlandais)
     description: >-
       **Prospective stratégique et littératie des données**
 
-      Litératie des données pour dirigeants haut placés, basée sur l'analyse de leurs propres données. Décryptage de l'influence des données sur la distribution des pouvoirs économique et politique.
+      L'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
+    link_text: Digipower
+    url: https://www.sitra.fi/en/projects/digipower-investigation/
+  - title: Ils en parlent
+    description: >-
+      **alp ict**
+
+      Plateforme de promotion des technologies de l'information et du numérique en Suisse occidentale, alp ict s'est intéressé aux activités d'Hestia.ai et d'HestiaLabs dans sa newsletter vidéo de novembre 2021.
+
+      [](https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs)
+
+
+      {% creditedImage "/assets/media/h_media_alp-ict-c-alp-ict-c87.jpg", "", "", "" %}
+    link_text: Regarder l'interview
+    url: https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs
+  - description: >-
+      **Radio Lac**
+
+      Le 2 décembre 2021, Benjamin Smadja a reçu Hestia.ai dans le cadre de son émission Parlons économie, en partenariat avec la Chambre de commerce, d'industrie et des services de Genève.
+
+
+      {% creditedImage "/assets/media/h_media_radiolac.png", "", "", "" %}
+    url: https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/
+    link_text: Ecouter l'interview
 contact_form_title: Contact
 ---
