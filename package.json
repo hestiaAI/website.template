@@ -55,12 +55,12 @@
     "node": ">=14",
     "npm": ">=7"
   },
-  "homepage": "https://github.com/andreaskundig/website.hestia",
+  "homepage": "https://github.com/hestia-owner-hai/website.hestia",
   "bugs": {
-    "url": "https://github.com/andreaskundig/website.hestia/issues"
+    "url": "https://github.com/hestia-owner-hai/website.hestia/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreaskundig/website.hestia.git"
+    "url": "git+https://github.com/hestia-owner-hai/website.hestia.git"
   }
 }
