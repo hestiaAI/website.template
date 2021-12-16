@@ -24,13 +24,14 @@ expertise:
     url: "#contact"
     primary_button: false
   - title: Solutions for data compliance
-    description: |
+    description: |-
       Everything to make life easier for DPOs and CDOs:
 
       * Data request processing automation
       * Privacy-preserving softwares and infrastructures
       * Governance consulting
       * Transparency enhancing technologies
+      * Data orchestration solutions
     link_text: Contact
     url: "#contact"
   - title: Tools for academics
@@ -53,7 +54,7 @@ realizations:
     description: >-
       **Data collectives**
 
-      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives dealing with mobility data, platform workers, [dating app users](https://dating-privacy.hestialabs.org/en/), data literacy and the [attention economy](https://eyeballs.hestialabs.org/en/).
+      With the support of the [Migros Pioneer Fund](https://www.migros-engagement.ch/en/news-projects/technology-ethics/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives dealing with mobility data, platform workers, [dating app users](https://dating-privacy.hestialabs.org/en/), data literacy and the [attention economy](https://eyeballs.hestialabs.org/en/).
     link_text: Discover HestiaLabs
     url: https://hestialabs.org/en/
   - title: Digipower
