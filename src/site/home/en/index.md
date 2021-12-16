@@ -5,7 +5,7 @@ layout: home
 permalink: /en/index.html
 title: Hestia.ai
 lead: Software, infrastructure and expertise for a digital world that respects
-  users and their data
+  users and their **data**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""

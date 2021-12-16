@@ -5,7 +5,7 @@ layout: home
 permalink: /fr/index.html
 title: Hestia.ai
 lead: Logiciels, infrastructure et expertise pour un monde numérique respectueux
-  des utilisateurs et de leurs données
+  des utilisateurs et de leurs **données**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
@@ -18,12 +18,12 @@ expertise:
       données personnelles.
 
 
-      * [Dirigeants d'entreprise] (https://drive.infomaniak.com/app/share/193995/b8bd701b-00ae-4dea-abc3-46073c0899f7) et [décideurs politiques](https://drive.infomaniak.com/app/share/193995/768533b3-b0dd-42e6-a6ae-b0535968a75e) plongent en profondeur dans leur propre "vie numérique" (expérience impressionnante)
+      * [Dirigeants d'entreprise](https://drive.infomaniak.com/app/share/193995/b8bd701b-00ae-4dea-abc3-46073c0899f7) et [décideurs politiques](https://drive.infomaniak.com/app/share/193995/768533b3-b0dd-42e6-a6ae-b0535968a75e) plongent en profondeur dans leur propre "vie numérique" (expérience impressionnante)
 
       * Identification des risques (sécurité, réputation, défiance) et contre-mesures.
     link_text: Contact
     url: null
-    primary_button: true
+    primary_button: false
   - title: Solutions de conformité en matière de données
     description: |-
       Tout pour faciliter la vie des DPO et CDO :
@@ -47,6 +47,7 @@ expertise:
     description: >-
       Une petite démonstration vaut mieux qu'un long discours.
 
+
       Cliquez sur ce bouton👇 et [nous](/about) viendrons vous montrer de quoi nous sommes capables.
     link_text: Demander une démo
     url: "#contact"
@@ -63,7 +64,7 @@ realizations:
     description: >-
       **Prospective stratégique et littératie des données**
 
-      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra] (https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
+      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
     link_text: "En savoir plus sur #Digipower"
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
