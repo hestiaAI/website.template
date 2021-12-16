@@ -4,25 +4,12 @@ realizations_title: Réalisations
 layout: home
 permalink: /fr/index.html
 title: Hestia.ai
-lead: |-
-  Services personnalisés\
-  ET respect de la vie privée\
-  C’est possible
+lead: Logiciels, infrastructure et expertise pour un monde numérique respectueux
+  des utilisateurs et de leurs données
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
-introduction_title: La technologie qui manquait à la tech pour devenir durable
-introduction: >-
-  Grâce à la technologie développée par Hestia.ai, vous pouvez proposer des
-  services personnalisés sans jamais accéder aux données des utilisateurs.
-
-
-  Respectez la vie privée.
-
-
-  Inspirez confiance.
-
-
-  Une nouvelle valeur ajoutée.
+introduction_title: ""
+introduction: ""
 expertise:
   - title: Expertise
     description: Notre équipe est idéalement positionnée pour proposer des conseils
