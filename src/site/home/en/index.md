@@ -10,63 +10,60 @@ lead: |-
   Made possible
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
-introduction_title: The technology that tech was missing to be sustainable
-introduction: >-
-  Thanks to the technology developed by Hestia.ai, you can offer personalized
-  services without ever accessing users' data.
-
-
-  Respect privacy.
-
-
-  Gain trust.
-
-
-  It's the new added value.
+introduction_title: ""
+introduction: ""
 expertise:
-  - title: Expertise
-    description: Our roster of talent is ideally positioned to provide creative and
-      strategic consultative services and custom development for innovative
-      companies and organisations.
+  - title: Consulting for executives
+    description: >-
+      We help business and government leaders feel empowered when discussing
+      personal data strategies.
+
+
+      * Deep dive into their own "digital life" (awe-inspiring experience) for [corporate executives](https://drive.infomaniak.com/app/share/193995/b8bd701b-00ae-4dea-abc3-46073c0899f7) and [policy makers](https://drive.infomaniak.com/app/share/193995/768533b3-b0dd-42e6-a6ae-b0535968a75e)
+
+      * Risk identification (security, reputation, mistrust) and countermeasures
     link_text: Contact
+    url: "#contact"
+    primary_button: false
+  - title: Tools for academics
+    description: >-
+      Focus on your research in data governance/processing/economics/policies...
+
+      We take care of the infrastructure and software to obtain, secure, process and visualise the data you need with the utmost respect for those who produce it.
+    url: "#contact"
+  - title: Solutions for data compliance
+    description: |
+      Everything to make life easier for DPOs and CDOs:
+
+      * Data request processing automation
+      * Privacy-preserving softwares and infrastructures
+      * Governance consulting
+      * Transparency enhancing technologies
+    link_text: Contact
+    url: "#contact"
+  - title: Digital trust at your fingertips
+    description: >-
+      We prefer short demonstrations to long speeches.
+
+      Click on this button👇 and [we](/about) will come to show you what we are made of.
+    link_text: Request a demo
     url: "#contact"
     primary_button: true
-  - title: ""
-    description: >-
-      **Development** privacy-preserving machine learning / infrastructure
-      building / site-app-software custom realization.
-
-
-      **Consulting** data governance / data analysis / use case design / prototyping / consortium setup / tech communication.
-  - title: Partnerships
-    description: We team up with academic and industrial partners to respond to
-      national or European calls for projects. Thanks to our track record and
-      the quality of our work, we have already obtained funds in less than a
-      year.
-    link_text: Contact
-    url: "#contact"
-  - title: About us
-    description: With a unique blend of complementary skills, our team has a focused
-      understanding of today's world and client needs. We leverage this
-      experience to develop the ideal solution for a range of privacy-friendly
-      challenges.
-    link_text: Learn more
-    url: about/
 realizations:
-  - title: Migros Pioneer Fund
+  - title: HestiaLabs
     description: >-
       **Data collectives**
 
       With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
-    link_text: HestiaLabs
+    link_text: Discover HestiaLabs
     url: https://hestialabs.org/en/
-  - title: Sitra (Finnish Innovation Fund)
+  - title: \#Digipower
     description: >-
       **Strategic foresight & data literacy**
 
-      The Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
+      Designed for and with the Finnish Innovation Fund [Sitra](https://www.sitra.fi/en/), the Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
     url: https://www.sitra.fi/en/projects/digipower-investigation/
-    link_text: Digipower
+    link_text: "Learn more about #Digipower"
   - description: >-
       **alp ict**
 
