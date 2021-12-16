@@ -4,10 +4,7 @@ realizations_title: Achievements
 layout: home
 permalink: /en/index.html
 title: Hestia.ai
-lead: |-
-  Personalized digital services\
-  AND full respect of privacy\
-  Made possible
+lead: Software, infrastructure and expertise for a cleaner digital world
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
@@ -25,12 +22,6 @@ expertise:
     link_text: Contact
     url: "#contact"
     primary_button: false
-  - title: Tools for academics
-    description: >-
-      Focus on your research in data governance/processing/economics/policies...
-
-      We take care of the infrastructure and software to obtain, secure, process and visualise the data you need with the utmost respect for those who produce it.
-    url: "#contact"
   - title: Solutions for data compliance
     description: |
       Everything to make life easier for DPOs and CDOs:
@@ -40,6 +31,12 @@ expertise:
       * Governance consulting
       * Transparency enhancing technologies
     link_text: Contact
+    url: "#contact"
+  - title: Tools for academics
+    description: >-
+      Focus on your research in data governance/processing/economics/policies...
+
+      We take care of the infrastructure and software to obtain, secure, process and visualise the data you need with the utmost respect for those who produce it.
     url: "#contact"
   - title: Digital trust at your fingertips
     description: >-
