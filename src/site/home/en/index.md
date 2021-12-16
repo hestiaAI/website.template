@@ -41,28 +41,29 @@ expertise:
       * Transparency enhancing technologies
     link_text: Contact
     url: "#contact"
-  - title: About us
-    description: With a unique blend of complementary skills, our team has a focused
-      understanding of today's world and client needs. We leverage this
-      experience to develop the ideal solution for a range of privacy-friendly
-      challenges.
-    link_text: Learn more
-    url: about/
+  - title: Digital trust at your fingertips
+    description: >-
+      We prefer short demonstrations to long speeches.
+
+      Click on this button👇 and [we](/about) will come to show you what we are made of.
+    link_text: Request a demo
+    url: "#contact"
+    primary_button: true
 realizations:
-  - title: Migros Pioneer Fund
+  - title: HestiaLabs
     description: >-
       **Data collectives**
 
       With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
-    link_text: HestiaLabs
+    link_text: Discover HestiaLabs
     url: https://hestialabs.org/en/
-  - title: Sitra (Finnish Innovation Fund)
+  - title: \#Digipower
     description: >-
       **Strategic foresight & data literacy**
 
-      The Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
+      Designed for and with the Finnish Innovation Fund [Sitra](https://www.sitra.fi/en/), the Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
     url: https://www.sitra.fi/en/projects/digipower-investigation/
-    link_text: Digipower
+    link_text: "Learn more about #Digipower"
   - description: >-
       **alp ict**
 
