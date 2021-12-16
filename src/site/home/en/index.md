@@ -4,7 +4,8 @@ realizations_title: Achievements
 layout: home
 permalink: /en/index.html
 title: Hestia.ai
-lead: Software, infrastructure and expertise for a cleaner digital world
+lead: Software, infrastructure and expertise for a digital world that respects
+  users and their data
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
@@ -38,6 +39,7 @@ expertise:
 
       We take care of the infrastructure and software to obtain, secure, process and visualise the data you need with the utmost respect for those who produce it.
     url: "#contact"
+    link_text: Contact
   - title: Digital trust at your fingertips
     description: >-
       We prefer short demonstrations to long speeches.
@@ -51,10 +53,10 @@ realizations:
     description: >-
       **Data collectives**
 
-      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives.
+      With the support of the [Migros Pioneer Fund](https://www.migros-pionierfonds.ch/en/pioneers/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives dealing with mobility data, platform workers, [dating app users](https://dating-privacy.hestialabs.org/en/), data literacy and the [attention economy](https://eyeballs.hestialabs.org/en/).
     link_text: Discover HestiaLabs
     url: https://hestialabs.org/en/
-  - title: \#Digipower
+  - title: Digipower
     description: >-
       **Strategic foresight & data literacy**
 
@@ -65,9 +67,6 @@ realizations:
       **alp ict**
 
       Platform for the promotion of information and digital technologies in Western Switzerland, alp ict has taken an interest in the activities of Hestia.ai and HestiaLabs in its November 2021 video newsletter.
-
-
-      {% creditedImage "/assets/media/h_media_alp-ict-c-alp-ict-c87.jpg", "", "", "" %}
     title: They talk about it
     url: https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs
     link_text: Watch the interview
@@ -75,9 +74,6 @@ realizations:
       **Radio Lac**
 
       On December 2, 2021, Benjamin Smadja hosted Hestia.ai on his program Parlons économie, in partnership with the Geneva Chamber of Commerce, Industry and Services.
-
-
-      {% creditedImage "/assets/media/h_media_radiolac.png", "", "", "" %}
     url: https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/
     link_text: Listen to the interview
 contact_form_title: Contact
