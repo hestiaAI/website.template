@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
 lead: Logiciels, infrastructure et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -52,6 +49,9 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -69,16 +69,38 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
     description: >-
+      **heidi.news**
+
+      Revenant sur une année 2021 « particulièrement riche en avancée dans le domaine de la confidentialité numérique », heidi.news a interrogé le CEO d’Hestia.ai pour imaginer une année 2022 « cruciale pour la préservation de la vie privée. »
+
+
+      [Lire l'article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
+
+
       **alp ict**
 
       Plateforme de promotion des technologies de l'information et du numérique en Suisse occidentale, alp ict s'est intéressé aux activités d'Hestia.ai et d'HestiaLabs dans sa newsletter vidéo de novembre 2021.
-    link_text: Regarder l'interview
-    url: https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs
+
+
+      [Regarder l'interview](https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs)
+    link_text: ""
+    url: ""
   - description: >-
+      **Sitra**
+
+      Dans un article très fouillé, Sitra détaille comment les chercheurs d'Hestia.ai coachent les décideurs·euses participant à l'enquête Digipower à « prendre le contrôle de leur propre vie numérique. »
+
+
+      [Lire le billet de blog](https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/)
+
+
       **Radio Lac**
 
       Le 2 décembre 2021, Benjamin Smadja a reçu Hestia.ai dans le cadre de son émission Parlons économie, en partenariat avec la Chambre de commerce, d'industrie et des services de Genève.
-    url: https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/
-    link_text: Ecouter l'interview
+
+
+      [Ecouter l'interview](https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/)
+    url: ""
+    link_text: ""
 contact_form_title: Contact
 ---
