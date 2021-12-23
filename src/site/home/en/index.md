@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
 lead: Software, infrastructure and expertise for a digital world that respects
   users and their **data**
@@ -49,6 +46,9 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -65,17 +65,39 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-
+      **heidi.news**
+
+      Looking back on a 2021 that was "particularly rich in digital privacy advancements," heidi.news interviewed the CEO of Hestia.ai to envision a 2022 that will be "crucial for privacy preservation." 
+
+
+      [Read the article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
+
+
       **alp ict**
 
       Platform for the promotion of information and digital technologies in Western Switzerland, alp ict has taken an interest in the activities of Hestia.ai and HestiaLabs in its November 2021 video newsletter.
+
+
+      [Watch the interview](https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs)
     title: They talk about it
-    url: https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs
-    link_text: Watch the interview
+    url: ""
+    link_text: ""
   - description: >-
+      **Sitra**
+
+      In an in-depth article, Sitra details how Hestia.ai researchers are training the decision-makers participating in the Digipower investigation to "take control of their own digital lives."
+
+
+      [Read the blog post](https://www.sitra.fi/en/articles/data-economy-giants-are-like-the-clergy-in-the-middle-ages-they-are-asking-us-to-have-blind-faith-in-them/)
+
+
       **Radio Lac**
 
       On December 2, 2021, Benjamin Smadja hosted Hestia.ai on his program Parlons économie, in partnership with the Geneva Chamber of Commerce, Industry and Services.
-    url: https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/
-    link_text: Listen to the interview
+
+
+      [Listen to the interview](https://www.radiolac.ch/podcasts/parlons-economie-02122021-1422-143007/)
+    url: ""
+    link_text: ""
 contact_form_title: Contact
 ---
