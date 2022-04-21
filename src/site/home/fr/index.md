@@ -66,6 +66,12 @@ realizations:
       **Collectifs de données**
 
       Avec le soutien du [Fonds pionnier Migros](https://www.migros-pionierfonds.ch/fr/pionniers/hestialabs), le projet [HestiaLabs](https://hestialabs.org/fr/) rend nos données exploitables à des fins de progrès social, via des collectifs "bottom-up" qui s'intéressent aux données de mobilité, aux travailleurs des plateformes, aux [utilisateurs d'applis de rencontre](https://dating-privacy.hestialabs.org/en/), à la littératie des données et à [l'économie de l'attention](https://eyeballs.hestialabs.org/en/).
+
+
+      Hestia.ai est lauréate 2022 du "Social Innovation Award" du fonds Herbert & Audrey Rosenfield parmi les 12 entreprises sélectionnées pour participer au [programme Tech4Trust de la Trust Valley](https://trustvalley.swiss/tech4trust/).
+
+
+      ![](/assets/media/social-impact-tech4trust-price.png)
     link_text: Découvrir HestiaLabs
     url: https://hestialabs.org/fr/
   - title: Digipower
