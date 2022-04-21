@@ -64,6 +64,9 @@ realizations:
       **Data collectives**
 
       With the support of the [Migros Pioneer Fund](https://www.migros-engagement.ch/en/news-projects/technology-ethics/hestialabs), the [HestiaLabs](https://hestialabs.org/en/) project enables citizens’ data to be used for social advancements, through bottom-up collectives dealing with mobility data, platform workers, [dating app users](https://dating-privacy.hestialabs.org/en/), data literacy and the [attention economy](https://eyeballs.hestialabs.org/en/).
+
+
+      Hestia.ai is the winner 2022 of the Herbert & Audrey Rosenfield Fund's "Social Innovation Award" among the 12 companies selected to attend the [Trust Valley's Tech4Trust programme.](https://trustvalley.swiss/tech4trust/)
     link_text: Discover HestiaLabs
     url: https://hestialabs.org/en/
   - title: Digipower
