@@ -1,23 +1,34 @@
 ---
 path: home
 title: Hestia.ai
-lead: Logiciels, infrastructure et expertise pour un monde numérique respectueux
+lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
 introduction: ""
 expertise:
-  - title: Conseil aux dirigeants
+  - title: Formations pour dirigeant·e·s et enseignant·e·s
     description: >-
-      Nous aidons chefs d'entreprises, top managers et hauts fonctionnaires à
-      maîtriser leurs sujets lorsqu'ils discutent stratégies d'utilisation de
-      données personnelles.
+      Nos ateliers emmènent les participants (politiciens, enseignants,
+      étudiants) dans un voyage vertigineux à travers leurs propres données
+      numériques.
 
 
-      * [Dirigeants d'entreprise](https://drive.infomaniak.com/app/share/193995/b8bd701b-00ae-4dea-abc3-46073c0899f7) et [décideurs politiques](https://drive.infomaniak.com/app/share/193995/768533b3-b0dd-42e6-a6ae-b0535968a75e) plongent en profondeur dans leur propre "vie numérique" (expérience impressionnante)
+      * Comment et par qui sont-elles collectées ?
 
-      * Identification des risques (sécurité, réputation, défiance) et contre-mesures.
+      * Quelles menaces ce pouvoir numérique représente-t-il ?
+
+      * Comment y faire face ?
+
+
+      Un aperçu avec le programme menée pour Sitra avec 15 personnalités européennes:
+
+      ```
+
+      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
+
+      ```
     link_text: Contact
     url: null
     primary_button: false
