@@ -1,22 +1,33 @@
 ---
 path: home
 title: Hestia.ai
-lead: Software, infrastructure and expertise for a digital world that respects
-  users and their **data**
+lead: Training, technology and expertise for a digital world that respects users
+  and their **data**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
 introduction: ""
 expertise:
-  - title: Consulting for executives
+  - title: Training for leaders and teachers
     description: >-
-      We help business and government leaders feel empowered when discussing
-      personal data strategies.
+      Our workshops take participants (politicians, teachers, students) on a
+      dizzying journey through their own digital data. 
 
 
-      * Deep dive into their own "digital life" (awe-inspiring experience) for [corporate executives](https://drive.infomaniak.com/app/share/193995/b8bd701b-00ae-4dea-abc3-46073c0899f7) and [policy makers](https://drive.infomaniak.com/app/share/193995/768533b3-b0dd-42e6-a6ae-b0535968a75e)
+      * How and by whom is it collected?
 
-      * Risk identification (security, reputation, mistrust) and countermeasures
+      * What problems does this digital power raise?
+
+      * How can we deal with it?
+
+
+      An overview with the programme conducted for Sitra with 15 European personalities:
+
+      ```
+
+      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
+
+      ```
     link_text: Contact
     url: "#contact"
     primary_button: false
