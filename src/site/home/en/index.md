@@ -10,8 +10,8 @@ introduction: ""
 expertise:
   - title: Training for leaders and teachers
     description: >-
-      Our workshops take participants (politicians, teachers, students) on a
-      dizzying journey through their own digital data. 
+      Our workshops take participants on a dizzying journey through their own
+      digital data. 
 
 
       * How and by whom is it collected?
@@ -21,13 +21,7 @@ expertise:
       * How can we deal with it?
 
 
-      An overview with the programme conducted for Sitra with 15 European personalities:
-
-      ```
-
-      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
-
-      ```
+      It concerns:  politicians, civil servants, teachers, pupils
     link_text: Contact
     url: "#contact"
     primary_button: false
@@ -73,6 +67,12 @@ realizations:
       **Strategic foresight & data literacy**
 
       Designed for and with the Finnish Innovation Fund [Sitra](https://www.sitra.fi/en/), the Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
+
+      ```
+
+      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
+
+      ```
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-

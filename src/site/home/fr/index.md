@@ -8,11 +8,10 @@ lead_image_caption: ""
 introduction_title: ""
 introduction: ""
 expertise:
-  - title: Formations pour dirigeant·e·s et enseignant·e·s
+  - title: Ateliers pour administrations et écoles
     description: >-
-      Nos ateliers emmènent les participants (politiciens, enseignants,
-      étudiants) dans un voyage vertigineux à travers leurs propres données
-      numériques.
+      Nos ateliers emmènent les participant·e·s dans un voyage vertigineux à
+      travers leurs propres données numériques.
 
 
       * Comment et par qui sont-elles collectées ?
@@ -22,13 +21,7 @@ expertise:
       * Comment y faire face ?
 
 
-      Un aperçu avec le programme menée pour Sitra avec 15 personnalités européennes:
-
-      ```
-
-      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
-
-      ```
+      Sont concerné·e·s : les politiques, les fonctionnaires, les profs, les élèves
     link_text: Contact
     url: null
     primary_button: false
@@ -76,6 +69,12 @@ realizations:
       **Prospective stratégique et littératie des données**
 
       Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
+
+      ```
+
+      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
+
+      ```
     link_text: "En savoir plus sur #Digipower"
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
