@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 title: Hestia.ai
 lead: Training, technology and expertise for a digital world that respects users
   and their **data**
@@ -24,7 +27,10 @@ expertise:
       It concerns:  politicians, civil servants, teachers, pupils
 
       <video poster="https://eyeballs.hestialabs.org/assets/media/workshop_hestialabs-4.jpg" controls width="100%">
-        <source src="https://hestialabs.org/assets/media/workshop_collectives5.mp4" type="video/mp4">
+
+
+      <source src="https://hestialabs.org/assets/media/workshop_collectives.mp4" type="video/mp4">
+
       </video>
     link_text: Contact
     url: "#contact"
@@ -55,9 +61,6 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
