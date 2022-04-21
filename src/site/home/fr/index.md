@@ -69,6 +69,9 @@ realizations:
 
 
       Hestia.ai est lauréate 2022 du "Social Innovation Award" du fonds Herbert & Audrey Rosenfield parmi les 12 entreprises sélectionnées pour participer au [programme Tech4Trust de la Trust Valley](https://trustvalley.swiss/tech4trust/).
+
+
+      ![](/assets/media/social-impact-tech4trust-price.png)
     link_text: Découvrir HestiaLabs
     url: https://hestialabs.org/fr/
   - title: Digipower
