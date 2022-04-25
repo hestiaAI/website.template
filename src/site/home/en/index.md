@@ -12,8 +12,9 @@ introduction_title: ""
 introduction: ""
 expertise:
   - title: Training for leaders and teachers
-    description: "Our workshops take participants on a dizzying journey through
-      their own digital data.\ 
+    description: >-
+      Our workshops take participants on a dizzying journey through their own
+      digital data. 
 
 
       * How and by whom is it collected?
@@ -26,14 +27,11 @@ expertise:
       It concerns:  politicians, civil servants, teachers, pupils
 
 
-      <video width=\"100%\"
-      poster=\"/src/assets/media/workshop_hestialabs.jpg\"  controls>\r
+      <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>
 
-      <source
-      src=\"https://hestialabs.org/assets/media/workshop_collectives5.mp4\"
-      type=\"video/mp4\">\r
+      <source src="https://hestialabs.org/assets/media/workshop_collectives5.mp4" type="video/mp4">
 
-      </video> "
+      </video>
     link_text: Contact
     url: "#contact"
     primary_button: false
