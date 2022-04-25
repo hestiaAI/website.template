@@ -26,7 +26,7 @@ expertise:
       It concerns:  politicians, civil servants, teachers, pupils
 
 
-      <video width=\"50%\"
+      <video width=\"100%\"
       poster=\"/src/assets/media/workshop_hestialabs.jpg\"  controls>\r
 
       <source
