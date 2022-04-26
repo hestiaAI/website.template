@@ -26,7 +26,7 @@ expertise:
       <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>
 
 
-      <source src="https://hestialabs.org/assets/media/workshop_collectives5.mp4" type="video/mp4">
+      <source src="assets/media/hestialabs_workshop_final.mp4" type="video/mp4">
 
       </video>
     link_text: Contact
