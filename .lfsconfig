@@ -1,4 +1,4 @@
 # Netlify Large Media support
 # https://docs.netlify.com/large-media/
-#[lfs]
+[lfs]
 url = https://1c3c088e-c11b-4854-beac-8cc41617ac0f.netlify.app/.netlify/large-media
