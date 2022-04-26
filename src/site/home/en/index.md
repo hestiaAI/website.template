@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
 lead: Training, technology and expertise for a digital world that respects users
   and their **data**
@@ -11,7 +8,7 @@ lead_image_caption: ""
 introduction_title: ""
 introduction: ""
 expertise:
-  - title: Training for leaders and teachers
+  - title: Training for leaders, teachers and journalists
     description: >-
       Our workshops take participants on a dizzying journey through their own
       digital data. 
@@ -24,7 +21,7 @@ expertise:
       * How can we deal with it?
 
 
-      It concerns:  politicians, civil servants, teachers, pupils
+      It concerns:  politicians, civil servants, teachers, pupils and journalists
 
 
       <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>
@@ -61,6 +58,9 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-

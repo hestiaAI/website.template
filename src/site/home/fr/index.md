@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
 lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -11,7 +8,7 @@ lead_image_caption: ""
 introduction_title: ""
 introduction: ""
 expertise:
-  - title: Ateliers pour administrations et écoles
+  - title: Ateliers pour administrations, écoles et médias
     description: >-
       Nos ateliers emmènent les participant·e·s dans un voyage vertigineux à
       travers leurs propres données numériques.
@@ -24,9 +21,10 @@ expertise:
       * Comment y faire face ?
 
 
-      Sont concerné·e·s : les politiques, les fonctionnaires, les profs, les élèves
+      Sont concerné·e·s : les politiques, les fonctionnaires, les profs, les élèves et les journalistes
 
       <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>
+
 
       <source src="https://hestialabs.org/assets/media/workshop_collectives5.mp4" type="video/mp4">
 
@@ -62,6 +60,9 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
