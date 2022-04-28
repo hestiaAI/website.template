@@ -89,6 +89,14 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-
+      **Bilan**
+
+      "The ecosystem of digital trust in French-speaking Switzerland is undeniably growing," writes Bilan. With its training courses on data and its monetisation, Hestia.ai is one of the leading figures. 
+
+
+      [Read the article](https://www.bilan.ch/story/saporo-tune-insight-et-proddaft-primees-par-la-trust-valley-lemanique-792567715627)
+
+
       **heidi.news**
 
       Looking back on a 2021 that was "particularly rich in digital privacy advancements," heidi.news interviewed the CEO of Hestia.ai to envision a 2022 that will be "crucial for privacy preservation." 
