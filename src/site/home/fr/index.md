@@ -92,12 +92,20 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
     description: >-
-      **heidi.news**
+      **Bilan**
 
-      "L’écosystéme romand autour de la confiance numérique s’étoffe indéniablement » écrit Bilan. Avec ses formations sur les données et leur monétisation, Hestia.ai en est l’une des figures de proue.
+      «L’écosystéme romand autour de la confiance numérique s’étoffe indéniablement» écrit Bilan. Avec ses formations sur les données et leur monétisation, Hestia.ai en est l’une des figures de proue.
 
 
       [Lire l'article](https://www.bilan.ch/story/saporo-tune-insight-et-proddaft-primees-par-la-trust-valley-lemanique-792567715627)
+
+
+      **heidi.news**
+
+      Revenant sur une année 2021 «particulièrement riche en avancées en matière de protection de la vie privée numérique», heidi.news a interrogé le PDG d'Hestia.ai pour envisager une année 2022 qui sera «cruciale pour la préservation de la vie privée.» 
+
+
+      [Lire l'article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
 
 
       **alp ict**
