@@ -24,7 +24,7 @@ expertise:
       * How can we deal with it?
 
 
-      It concerns:  politicians, civil servants, teachers, pupils and journalists
+      It concerns:  politicians, civil servants, teachers, pupils and journalists.
 
 
       <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>

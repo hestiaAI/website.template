@@ -24,12 +24,12 @@ expertise:
       * Comment y faire face ?
 
 
-      Sont concerné·e·s : les politiques, les fonctionnaires, les profs, les élèves et les journalistes
+      Sont concerné·e·s : les politiques, les fonctionnaires, les profs, les élèves et les journalistes.
+
 
       <video width="100%" poster="/assets/media/workshop_hestialabs.jpg"  controls>
 
-
-      <source src="assets/media/hestialabs_workshop_final.mp4" type="video/mp4">
+      <source src="/assets/media/hestialabs_workshop_final.mp4" type="video/mp4">
 
       </video>
     link_text: Contact
