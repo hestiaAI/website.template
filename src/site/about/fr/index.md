@@ -3,13 +3,6 @@ people_title: People
 philosophy_title: Pourquoi «Hestia»
 layout: about
 permalink: /fr/about/index.html
-title: About
-lead: |+
-  **Nous sommes Hestia.ai**
-
-  L'entreprise tech qui change les normes de la tech
-
-lead_image: /assets/media/hestia_hero.png
 story_title: Notre histoire, en bref
 people:
   - name: Paul-Olivier Dehaye
@@ -38,12 +31,19 @@ people:
     description: Economiste de formation, Andreas Kündig est développeur de
       logiciels et [auteur de bandes dessinées](http://www.andreaskundig.ch/).
       Depuis mars 2021, il utilise au moins une de ces compétences pour faire
-      avancer Hestia.ai. Andreas a travaillé dans un large éventail d'industries
+      avancer Hestia.ai. Andréas a travaillé dans un large éventail d'industries
       et d'organisations, y compris deux startups technologiques en phase de
       démarrage.
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
 inverse: true
+title: About
+lead: |+
+  **Nous sommes Hestia.ai**
+
+  L'entreprise tech qui change les normes de la tech
+
+lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 story: >-
   Lorsque le mathématicien Paul-Olivier Dehaye a découvert ce que Cambridge

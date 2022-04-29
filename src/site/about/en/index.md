@@ -3,13 +3,6 @@ people_title: People
 philosophy_title: Why “Hestia”
 layout: about
 permalink: /en/about/index.html
-title: About
-lead: |+
-  **We are Hestia.ai**
-
-  The tech company that's changing tech standards
-
-lead_image: /assets/media/hestia_hero.png
 story_title: A short story about us
 people:
   - name: Paul-Olivier Dehaye
@@ -42,6 +35,13 @@ people:
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
 inverse: true
+title: About
+lead: |+
+  **We are Hestia.ai**
+
+  The tech company that's changing tech standards
+
+lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 story: >-
   When mathematician Paul-Olivier Dehaye discovered what Cambridge Analytica was
