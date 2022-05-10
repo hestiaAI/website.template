@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 title: Hestia.ai
 lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -60,9 +63,6 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -91,27 +91,27 @@ realizations:
     link_text: "En savoir plus sur #Digipower"
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
-    description: >-
+    description: >
       RTS Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à
       Jonas Schneiter pourquoi la maitrise des données est «une nouvelle manière
       de faire de la politique» devant une Micheline Calmy-Rey déconcertée
 
 
-      ```
+      <div style="position:relative; padding-top: 56.55%">
 
-      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+      <iframe src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 
-      ```
+      </div>
 
 
       Le CEO d’Hestia.ai a aussi été interviewé par le téléjournal suisse sur la liberté d’expression promise par Elon Musk suite à son annonce du rachat de Twitter.
 
 
-      ```
+      <div style="position:relative; padding-top: 56.55%">
 
-      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 
-      ```
+      </div>
     link_text: ""
     url: ""
   - description: >-
