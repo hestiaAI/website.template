@@ -91,8 +91,8 @@ realizations:
     link_text: "En savoir plus sur #Digipower"
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
-    description: >
-      RTS Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à
+    description: >-
+      **RTS** Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à
       Jonas Schneiter pourquoi la maitrise des données est «une nouvelle manière
       de faire de la politique» devant une Micheline Calmy-Rey déconcertée
 
