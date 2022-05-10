@@ -101,6 +101,18 @@ realizations:
       ```
 
 
+      The CEO of Hestia.ai was also interviewed by the Swiss TV news on the freedom of expression promised by Elon Musk following his announcement to buy Twitter.
+
+
+      ```
+
+      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+
+      ```
+    title: They talk about it
+    url: ""
+    link_text: ""
+  - description: >-
       **Bilan**
 
       "The ecosystem of digital trust in French-speaking Switzerland is undeniably growing," writes Bilan. With its training courses on data and its monetisation, Hestia.ai is one of the leading figures. 
@@ -115,10 +127,8 @@ realizations:
 
 
       [Read the article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
-    title: They talk about it
-    url: ""
-    link_text: ""
-  - description: >-
+
+
       **alp ict**
 
       Platform for the promotion of information and digital technologies in Western Switzerland, alp ict has taken an interest in the activities of Hestia.ai and HestiaLabs in its November 2021 video newsletter.
