@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
 lead: Training, technology and expertise for a digital world that respects users
   and their **data**
@@ -61,6 +58,9 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -89,6 +89,18 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-
+      **RTS** Invited by "Les beaux parleurs", Paul-Olivier Dehaye explained to
+      Jonas Schneiter why the control of data is "a new way of doing politics"
+      in front of a disconcerted Micheline Calmy-Rey.
+
+
+      ```
+
+      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+
+      ```
+
+
       **Bilan**
 
       "The ecosystem of digital trust in French-speaking Switzerland is undeniably growing," writes Bilan. With its training courses on data and its monetisation, Hestia.ai is one of the leading figures. 
@@ -103,18 +115,18 @@ realizations:
 
 
       [Read the article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
-
-
+    title: They talk about it
+    url: ""
+    link_text: ""
+  - description: >-
       **alp ict**
 
       Platform for the promotion of information and digital technologies in Western Switzerland, alp ict has taken an interest in the activities of Hestia.ai and HestiaLabs in its November 2021 video newsletter.
 
 
       [Watch the interview](https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs)
-    title: They talk about it
-    url: ""
-    link_text: ""
-  - description: >-
+
+
       **Sitra**
 
       In an in-depth article, Sitra details how Hestia.ai researchers are training the decision-makers participating in the Digipower investigation to "take control of their own digital lives."

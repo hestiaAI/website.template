@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
 lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -63,6 +60,9 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -92,6 +92,18 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
     description: >-
+      RTS Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à
+      Jonas Schneiter pourquoi la maitrise des données est «une nouvelle manière
+      de faire de la politique» devant une Micheline Calmy-Rey déconcertée
+
+
+      ```
+
+      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+
+      ```
+
+
       **Bilan**
 
       «L’écosystéme romand autour de la confiance numérique s’étoffe indéniablement» écrit Bilan. Avec ses formations sur les données et leur monétisation, Hestia.ai en est l’une des figures de proue.
@@ -106,17 +118,17 @@ realizations:
 
 
       [Lire l'article](https://www.heidi.news/innovation-solutions/l-annee-2022-sera-cruciale-pour-la-preservation-de-la-vie-privee)
-
-
+    link_text: ""
+    url: ""
+  - description: >-
       **alp ict**
 
       Plateforme de promotion des technologies de l'information et du numérique en Suisse occidentale, alp ict s'est intéressé aux activités d'Hestia.ai et d'HestiaLabs dans sa newsletter vidéo de novembre 2021.
 
 
       [Regarder l'interview](https://www.alpict.ch/actualites/post/interview-de-charles-foucault-dumas-hestialabs)
-    link_text: ""
-    url: ""
-  - description: >-
+
+
       **Sitra**
 
       Dans un article très fouillé, Sitra détaille comment les chercheurs d'Hestia.ai coachent les décideurs·euses participant à l'enquête Digipower à « prendre le contrôle de leur propre vie numérique. »
