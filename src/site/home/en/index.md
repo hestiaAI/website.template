@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 title: Hestia.ai
 lead: Training, technology and expertise for a digital world that respects users
   and their **data**
@@ -58,9 +61,6 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -94,21 +94,21 @@ realizations:
       in front of a disconcerted Micheline Calmy-Rey.
 
 
-      ```
+      <div style="position:relative; padding-top: 56.55%">
 
-      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+      <iframe src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 
-      ```
+      </div>
 
 
       The CEO of Hestia.ai was also interviewed by the Swiss TV news on the freedom of expression promised by Elon Musk following his announcement to buy Twitter.
 
 
-      ```
+      <div style="position:relative; padding-top: 56.55%">
 
-      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen allow="geolocation *; autoplay; encrypted-media"></iframe>
+      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
 
-      ```
+      </div>
     title: They talk about it
     url: ""
     link_text: ""
