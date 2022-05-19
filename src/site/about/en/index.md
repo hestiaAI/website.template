@@ -47,6 +47,8 @@ people:
       from Newcastle University in Human Data Relations, Alex joined Hestia in
       June 2021 as an **experience designer and R&D strategist**.
     image: /assets/media/alex-bowyer-li-photo-cropped.jpg
+    twitter: https://twitter.com/alexbfree
+    linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
 lead_image_caption: ""
 story: >-

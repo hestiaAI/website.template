@@ -51,6 +51,8 @@ people:
       Newcastle en *Relations Humaines avec les Données*, Alex a rejoint Hestia
       en juin 2021 en tant que **designer d'expérience et stratège R&D**.
     image: /assets/media/alex-bowyer-li-photo-cropped.jpg
+    twitter: https://twitter.com/alexbfree
+    linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
 lead_image_caption: ""
 story: >-
