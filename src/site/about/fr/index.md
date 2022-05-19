@@ -3,6 +3,13 @@ people_title: People
 philosophy_title: Pourquoi «Hestia»
 layout: about
 permalink: /fr/about/index.html
+title: About
+lead: |+
+  **Nous sommes Hestia.ai**
+
+  L'entreprise tech qui change les normes de la tech
+
+lead_image: /assets/media/hestia_hero.png
 story_title: Notre histoire, en bref
 people:
   - name: Paul-Olivier Dehaye
@@ -37,22 +44,13 @@ people:
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
 inverse: true
-title: About
-lead: |+
-  **Nous sommes Hestia.ai**
-
-  L'entreprise tech qui change les normes de la tech
-
-lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 story: >-
-  Lorsque le mathématicien Paul-Olivier Dehaye a découvert ce que Cambridge
-  Analytica faisait avec les données des utilisateurs de Facebook pour
-  influencer leurs votes, il a mené un travail de recherche hors norme qui a
-  conduit à l'affaire [Facebook-Cambridge
-  Analytica](https://www.letemps.ch/societe/paulolivier-dehaye-matheux-ennemi-facebook)
-  et à la réalisation du film Netflix [The Great
-  Hack](https://fr.wikipedia.org/wiki/The_Great_Hack).
+  Voici notre histoire, en bref:\
+
+  \
+
+  Lorsque le mathématicien Paul-Olivier Dehaye a découvert ce que Cambridge Analytica faisait avec les données des utilisateurs de Facebook pour influencer leurs votes, il a mené un travail de recherche hors norme qui a conduit à l'affaire [Facebook-Cambridge Analytica](https://www.letemps.ch/societe/paulolivier-dehaye-matheux-ennemi-facebook) et à la réalisation du film Netflix [The Great Hack](https://fr.wikipedia.org/wiki/The_Great_Hack).
 
 
   «Paul-Olivier Dehaye est aujourd'hui l'un des meilleurs experts mondiaux sur cette question», [écrit Paris-Match](https://paris-match.ch/labecedaire-de-paul-olivier-dehaye/). Plutôt que de vendre ses compétences au plus offrant, il a convaincu toute une équipe de talents de le rejoindre dans l'aventure Hestia.ai.
