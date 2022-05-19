@@ -1,16 +1,15 @@
 ---
 people_title: People
-philosophy_title: Why “Hestia”
+philosophy_title: Why “Hestia”?
 layout: about
 permalink: /en/about/index.html
 title: About
-lead: |+
+lead: |-
   **We are Hestia.ai**
 
-  The tech company that's changing tech standards
-
+  The tech company that's changing tech norms
 lead_image: /assets/media/hestia_hero.png
-story_title: A short story about us
+story_title: About Us
 people:
   - name: Paul-Olivier Dehaye
     description: Paul-Olivier is a mathematician by training (PhD Stanford,
@@ -41,15 +40,27 @@ people:
       organisations, including two early-stage tech startups.
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+  - name: Alex Bowyer
+    description: Alex Bowyer is a computer scientist, UX designer and researcher.
+      After a software engineering career in small and large tech companies in
+      the UK, Australia and Canada, a time as a web scientist with Zooniverse,
+      and a PhD from Newcastle University in *Human Data Relations*, Alex joined
+      Hestia in June 2021 as an **experience designer and R&D strategist**.
+    image: /assets/media/alex-bowyer-li-photo-cropped.jpg
+    twitter: https://twitter.com/alexbfree
+    linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
 lead_image_caption: ""
 story: >-
-  When mathematician Paul-Olivier Dehaye discovered what Cambridge Analytica was
-  doing with Facebook users' data to influence their votes, he did a hell of a
-  job that led to the [Facebook-Cambridge Analytica
-  affair](https://www.theguardian.com/news/2018/mar/17/data-war-whistleblower-christopher-wylie-faceook-nix-bannon-trump)
-  and the making of the Netflix movie [The Great
-  Hack](https://en.wikipedia.org/wiki/The_Great_Hack).
+  Hestia.ai is a data expertise consultancy and training company based in
+  Geneva, Switzerland.
+
+
+  Here's our story in brief:\
+
+  \
+
+  When mathematician Paul-Olivier Dehaye discovered what Cambridge Analytica was doing with Facebook users' data to influence their votes, he did a hell of a job that led to the [Facebook-Cambridge Analytica affair](https://www.theguardian.com/news/2018/mar/17/data-war-whistleblower-christopher-wylie-faceook-nix-bannon-trump) and the making of the Netflix movie [The Great Hack](https://en.wikipedia.org/wiki/The_Great_Hack).
 
 
   “Paul-Olivier Dehaye is now one of the world's leading experts on this issue”, [wrote Paris-Match](https://paris-match.ch/labecedaire-de-paul-olivier-dehaye/). Rather than selling his skills to the highest bidder, he convinced talented people to join him in the Hestia.ai adventure.

@@ -1,6 +1,6 @@
 ---
 people_title: People
-philosophy_title: Pourquoi «Hestia»
+philosophy_title: Pourquoi «Hestia»?
 layout: about
 permalink: /fr/about/index.html
 title: About
@@ -10,7 +10,7 @@ lead: |+
   L'entreprise tech qui change les normes de la tech
 
 lead_image: /assets/media/hestia_hero.png
-story_title: Notre histoire, en bref
+story_title: À propos
 people:
   - name: Paul-Olivier Dehaye
     description: Mathématicien de formation, Paul-Olivier s'est rapidement intéressé
@@ -38,21 +38,34 @@ people:
     description: Economiste de formation, Andreas Kündig est développeur de
       logiciels et [auteur de bandes dessinées](http://www.andreaskundig.ch/).
       Depuis mars 2021, il utilise au moins une de ces compétences pour faire
-      avancer Hestia.ai. Andreas a travaillé dans un large éventail d'industries
+      avancer Hestia.ai. Andréas a travaillé dans un large éventail d'industries
       et d'organisations, y compris deux startups technologiques en phase de
       démarrage.
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+  - name: Alex Bowyer
+    description: Alex Bowyer est informaticien, designer et chercheur. Après une
+      carrière d'ingénieur logiciel dans de petites et grandes entreprises
+      technologiques au Royaume-Uni, en Australie et au Canada, un temps en tant
+      que scientifique Web chez Zooniverse, et un doctorat de l'Université de
+      Newcastle en *Relations Humaines avec les Données*, Alex a rejoint Hestia
+      en juin 2021 en tant que **designer d'expérience et stratège R&D**.
+    image: /assets/media/alex-bowyer-li-photo-cropped.jpg
+    twitter: https://twitter.com/alexbfree
+    linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
 lead_image_caption: ""
 story: >-
-  Lorsque le mathématicien Paul-Olivier Dehaye a découvert ce que Cambridge
-  Analytica faisait avec les données des utilisateurs de Facebook pour
-  influencer leurs votes, il a mené un travail de recherche hors norme qui a
-  conduit à l'affaire [Facebook-Cambridge
-  Analytica](https://www.letemps.ch/societe/paulolivier-dehaye-matheux-ennemi-facebook)
-  et à la réalisation du film Netflix [The Great
-  Hack](https://fr.wikipedia.org/wiki/The_Great_Hack).
+  Hestia.ai est une société de conseil et de formation en expertise des données
+  basée à Genève, en Suisse.\
+
+  \
+
+  Voici notre histoire, en bref:\
+
+  \
+
+  Lorsque le mathématicien Paul-Olivier Dehaye a découvert ce que Cambridge Analytica faisait avec les données des utilisateurs de Facebook pour influencer leurs votes, il a mené un travail de recherche hors norme qui a conduit à l'affaire [Facebook-Cambridge Analytica](https://www.letemps.ch/societe/paulolivier-dehaye-matheux-ennemi-facebook) et à la réalisation du film Netflix [The Great Hack](https://fr.wikipedia.org/wiki/The_Great_Hack).
 
 
   «Paul-Olivier Dehaye est aujourd'hui l'un des meilleurs experts mondiaux sur cette question», [écrit Paris-Match](https://paris-match.ch/labecedaire-de-paul-olivier-dehaye/). Plutôt que de vendre ses compétences au plus offrant, il a convaincu toute une équipe de talents de le rejoindre dans l'aventure Hestia.ai.
@@ -75,5 +88,5 @@ philosophy: >-
 
   \
 
-  Cette interprétation est aussi racontée par Stephen Fry dans le [Graham Norton Show](https://www.youtube.com/watch?v=9KK2OBZIcRw).
+  Cette interprétation est aussi racontée par [Stephen Fry dans le Graham Norton Show](https://www.youtube.com/watch?v=9KK2OBZIcRw).
 ---
