@@ -1,6 +1,6 @@
 ---
 people_title: People
-philosophy_title: Pourquoi «Hestia»
+philosophy_title: Pourquoi «Hestia»?
 layout: about
 permalink: /fr/about/index.html
 title: About
@@ -43,6 +43,14 @@ people:
       démarrage.
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+  - name: Alex Bowyer
+    description: Alex Bowyer est informaticien, designer et chercheur. Après une
+      carrière d'ingénieur logiciel dans de petites et grandes entreprises
+      technologiques au Royaume-Uni, en Australie et au Canada, un temps en tant
+      que scientifique Web chez Zooniverse, et un doctorat de l'Université de
+      Newcastle en *Relations Humaines avec les Données*, Alex a rejoint Hestia
+      en juin 2021 en tant que **designer d'expérience et stratège R&D**.
+    image: /assets/media/alex-bowyer-li-photo-cropped.jpg
 inverse: true
 lead_image_caption: ""
 story: >-
@@ -78,5 +86,5 @@ philosophy: >-
 
   \
 
-  Cette interprétation est aussi racontée par Stephen Fry dans le [Graham Norton Show](https://www.youtube.com/watch?v=9KK2OBZIcRw).
+  Cette interprétation est aussi racontée par [Stephen Fry dans le Graham Norton Show](https://www.youtube.com/watch?v=9KK2OBZIcRw).
 ---

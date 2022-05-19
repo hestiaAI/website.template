@@ -1,14 +1,13 @@
 ---
 people_title: People
-philosophy_title: Why “Hestia”
+philosophy_title: Why “Hestia”?
 layout: about
 permalink: /en/about/index.html
 title: About
-lead: |+
+lead: |-
   **We are Hestia.ai**
 
-  The tech company that's changing tech standards
-
+  The tech company that's changing tech norms
 lead_image: /assets/media/hestia_hero.png
 story_title: About Us
 people:
@@ -41,6 +40,13 @@ people:
       organisations, including two early-stage tech startups.
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
+  - name: Alex Bowyer
+    description: Alex Bowyer is a computer scientist, designer and researcher. After
+      a software engineering career in small and large tech companies in the UK,
+      Australia and Canada, a time as a web scientist with Zooniverse, and a PhD
+      from Newcastle University in Human Data Relations, Alex joined Hestia in
+      June 2021 as an **experience designer and R&D strategist**.
+    image: /assets/media/alex-bowyer-li-photo-cropped.jpg
 inverse: true
 lead_image_caption: ""
 story: >-
