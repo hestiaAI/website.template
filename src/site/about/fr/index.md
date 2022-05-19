@@ -10,7 +10,7 @@ lead: |+
   L'entreprise tech qui change les normes de la tech
 
 lead_image: /assets/media/hestia_hero.png
-story_title: Notre histoire, en bref
+story_title: À propos
 people:
   - name: Paul-Olivier Dehaye
     description: Mathématicien de formation, Paul-Olivier s'est rapidement intéressé
