@@ -41,11 +41,11 @@ people:
     image: /assets/media/andreas-kündig-c-hestia.ai-c.jpg
     linkedin: https://www.linkedin.com/in/andreas-k%C3%BCndig-73b422b/
   - name: Alex Bowyer
-    description: Alex Bowyer is a computer scientist, designer and researcher. After
-      a software engineering career in small and large tech companies in the UK,
-      Australia and Canada, a time as a web scientist with Zooniverse, and a PhD
-      from Newcastle University in *Human Data Relations*, Alex joined Hestia in
-      June 2021 as an **experience designer and R&D strategist**.
+    description: Alex Bowyer is a computer scientist, UX designer and researcher.
+      After a software engineering career in small and large tech companies in
+      the UK, Australia and Canada, a time as a web scientist with Zooniverse,
+      and a PhD from Newcastle University in *Human Data Relations*, Alex joined
+      Hestia in June 2021 as an **experience designer and R&D strategist**.
     image: /assets/media/alex-bowyer-li-photo-cropped.jpg
     twitter: https://twitter.com/alexbfree
     linkedin: https://www.linkedin.com/in/alexbowyer/
