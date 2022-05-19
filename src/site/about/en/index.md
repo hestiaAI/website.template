@@ -44,7 +44,7 @@ people:
     description: Alex Bowyer is a computer scientist, designer and researcher. After
       a software engineering career in small and large tech companies in the UK,
       Australia and Canada, a time as a web scientist with Zooniverse, and a PhD
-      from Newcastle University in Human Data Relations, Alex joined Hestia in
+      from Newcastle University in *Human Data Relations*, Alex joined Hestia in
       June 2021 as an **experience designer and R&D strategist**.
     image: /assets/media/alex-bowyer-li-photo-cropped.jpg
     twitter: https://twitter.com/alexbfree
