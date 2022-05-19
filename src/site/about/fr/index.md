@@ -46,6 +46,11 @@ people:
 inverse: true
 lead_image_caption: ""
 story: >-
+  Hestia.ai est une société de conseil et de formation en expertise des données
+  basée à Genève, en Suisse.\
+
+  \
+
   Voici notre histoire, en bref:\
 
   \
