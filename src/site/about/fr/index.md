@@ -61,7 +61,7 @@ story: >-
 
   \
 
-  Voici notre histoire, en bref:\
+  Voici notre histoire en bref:\
 
   \
 
