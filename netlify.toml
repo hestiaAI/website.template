@@ -60,4 +60,15 @@
   # landing» page (index.html), which otherwise takes precedence
   force = true    # https://docs.netlify.com/routing/redirects/rewrites-proxies/#shadowing
 
+# This enables CORS, which allows our components
+# to be used on other websites
+[[headers]]
+  for = "/components/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/modules/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
 # eof
