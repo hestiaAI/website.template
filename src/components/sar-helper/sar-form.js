@@ -88,20 +88,44 @@ const unCamelCase = (string) => string.replace(/([a-z])([A-Z])/g, '$1 $2');
  *     - Q5066: online dating application
  *     - Q97: transportation network company
  *
+ *   mailtoTemplateName (optional): String
+ *     Name of a template from personaldata.io
+ *     that is used to generate the content of the email.
+ *     Default value: MailtoAccess
+ *
+ *   carbonCopyDescription (optional): String
+ *     Label for a checkbox that allows to add a bcc recipient.
+ *     If this attribute and carbonCopyRecipient are left empty,
+ *     the checkbox is not shown
+ *
+ *   carbonCopyRecipient (optional): String
+ *     Default value for the bcc recipient.
+ *     If this attribute and carbonCopyDescription are left empty,
+ *     the checkbox to enable bcc is not shown
+ *
  * Sample usage:
  *
- *     <sar-form organizationType="Q5066" lang="en"></sar-form>
+      <sar-form organizationType="Q5066"
+                mailtoTemplateName="MailtoAccess"
+                carbonCopyDescription="Send a copy another email address"
+                carbonCopyRecipient="bill@microsoft.com"
+                lang="en">
+      </sar-form>
  */
 export class SubjectAccessRequestForm extends LitElement {
 
-    static get styles() {
-      return css`
+/* This is no longer allowed in browsers.
+ * Firefox complains with this error message:
+ * @import rules are not yet valid in constructed stylesheets.
         @import '/assets/styles/vendor/normalize.css';
         @import '/assets/styles/base/typography.css';
         @import '/assets/styles/base/spacing.css';
         @import '/assets/styles/elements/buttons.css';
         @import '/assets/styles/elements/forms.css';
+*/
 
+    static get styles() {
+      return css`
         :host {
           display: block; }
 
@@ -340,6 +364,10 @@ export class SubjectAccessRequestForm extends LitElement {
           </div>
             `;
         }
+
+        // Adding this to the html would allow configuring the
+        // component's style where it is used
+        // <link rel="stylesheet" href="/assets/styles/sar-component.css">
         return html`
           ${appSelection}
           <h2>${this.selectedApp

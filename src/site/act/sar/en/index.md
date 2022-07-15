@@ -1,4 +1,9 @@
 ---
+carbon_copy_recipient: tehcitizns@yahoo.com
+carbon_copy_description: Copy in the Citizens and we will follow up and help
+  guide you through the process
+organization_type: Q5066
+mailto_template_name: MailtoAccess
 layout: sar
 permalink: /en/act/sar/index.html
 inverse: true
@@ -12,8 +17,6 @@ lead_image_caption: Photo by [Jong Marshes](https://unsplash.com/@turnlip19)
   on [Unsplash](https://unsplash.com/photos/79mNMAvSORg)
 sar_title: Ask for your data
 sar_sub_title: You can ask here for a copy of your personal data
-organization_type: Q5066
-mailto_template_name: MailtoAccess
 ---
 # These are your rights
 
