@@ -81,7 +81,14 @@ realizations:
     description: >-
       **Prospective stratégique et littératie des données**
 
-      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
+      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. 
+
+
+      📕Lire [ce rapport](https://zenodo.org/record/6554156) pour comprendre l'influence des données sur la distribution des pouvoirs économique et politique.
+
+
+      📗Lire [ce rapport](https://zenodo.org/record/6554178) pour découvrir comment nous auditons l'économie numérique grâce à l'accès aux données personnelles.
+
 
       ```
 
@@ -121,6 +128,14 @@ realizations:
     link_text: ""
     url: ""
   - description: >-
+      **CNBC**
+
+      Le CEO d’Hestia.ai commente l’impact qu'aura l’entrée en vigueur des Digital market act et Digital service act européens sur les relations entre l’Irelande et les géants du web.
+
+
+      [Lire l'article](https://www.cnbc.com/2022/05/04/how-ireland-lost-its-chance-to-become-big-techs-super-regulator.html)
+
+
       **Bilan**
 
       «L’écosystéme romand autour de la confiance numérique s’étoffe indéniablement» écrit Bilan. Avec ses formations sur les données et leur monétisation, Hestia.ai en est l’une des figures de proue.

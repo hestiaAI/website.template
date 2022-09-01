@@ -79,7 +79,14 @@ realizations:
     description: >-
       **Strategic foresight & data literacy**
 
-      Designed for and with the Finnish Innovation Fund [Sitra](https://www.sitra.fi/en/), the Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data. Deciphering the influence of data on the distribution of economic and political power.
+      Designed for and with the Finnish Innovation Fund [Sitra](https://www.sitra.fi/en/), the Digipower investigation is a data literacy program for executive leaders based on the analysis of their own data.
+
+
+      📕Read [this report](https://zenodo.org/record/6554156) to understand the influence of data on the distribution of economic and political power.
+
+
+      📗Read [this report](https://zenodo.org/record/6554178) to discover how we audit the digital economy through access to personal data
+
 
       ```
 
@@ -119,6 +126,14 @@ realizations:
     url: ""
     link_text: ""
   - description: >-
+      **CNBC**
+
+      Hestia.ai CEO comments on the impact that the entry into force of the European Digital Market Act and Digital Service Act will have on the relationship between Ireland and the web giants.
+
+
+      [Read the article](https://www.cnbc.com/2022/05/04/how-ireland-lost-its-chance-to-become-big-techs-super-regulator.html)
+
+
       **Bilan**
 
       "The ecosystem of digital trust in French-speaking Switzerland is undeniably growing," writes Bilan. With its training courses on data and its monetisation, Hestia.ai is one of the leading figures. 
