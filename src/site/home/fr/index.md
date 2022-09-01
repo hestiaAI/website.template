@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
 lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -63,6 +60,9 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -92,9 +92,15 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
     description: >-
-      **RTS** Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à
-      Jonas Schneiter pourquoi la maitrise des données est «une nouvelle manière
-      de faire de la politique» devant une Micheline Calmy-Rey déconcertée
+      **Le Temps** Deux experts d’Hestia.ai commentent la nouvelle loi suisse
+      sur la protection des données et invitent les entreprises à réagir avant
+      son entrée en vigueur le 1er septembre 2023.
+
+
+      [Lire l'article](https://www.letemps.ch/suisse/tant-attendue-future-loi-protection-donnees-divise-experts)
+
+
+      **RTS** Invité par «Les Beaux Parleurs», Paul-Olivier Dehaye a expliqué à Jonas Schneiter pourquoi la maitrise des données est «une nouvelle manière de faire de la politique» devant une Micheline Calmy-Rey déconcertée
 
 
       <div style="position:relative; padding-top: 56.55%">

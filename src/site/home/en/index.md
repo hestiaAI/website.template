@@ -1,8 +1,5 @@
 ---
 path: home
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 title: Hestia.ai
 lead: Training, technology and expertise for a digital world that respects users
   and their **data**
@@ -61,6 +58,9 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -89,9 +89,15 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-
-      **RTS** Invited by "Les beaux parleurs", Paul-Olivier Dehaye explained to
-      Jonas Schneiter why the control of data is "a new way of doing politics"
-      in front of a disconcerted Micheline Calmy-Rey.
+      **Le Temps** Two experts from Hestia.ai comment on the new Swiss Data
+      Protection Act and urge companies to react before it comes into force on 1
+      September 2023.
+
+
+      [Read the article](https://www.letemps.ch/suisse/tant-attendue-future-loi-protection-donnees-divise-experts)
+
+
+      **RTS** Invited by "Les beaux parleurs", Paul-Olivier Dehaye explained to Jonas Schneiter why the control of data is "a new way of doing politics" in front of a disconcerted Micheline Calmy-Rey.
 
 
       <div style="position:relative; padding-top: 56.55%">
