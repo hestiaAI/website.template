@@ -121,6 +121,14 @@ realizations:
     link_text: ""
     url: ""
   - description: >-
+      **CNBC**
+
+      Le CEO d’Hestia.ai commente l’impact qu'aura l’entrée en vigueur des Digital market act et Digital service act européens sur les relations entre l’Irelande et les géants du web.
+
+
+      [Lire l'article](https://www.cnbc.com/2022/05/04/how-ireland-lost-its-chance-to-become-big-techs-super-regulator.html)
+
+
       **Bilan**
 
       «L’écosystéme romand autour de la confiance numérique s’étoffe indéniablement» écrit Bilan. Avec ses formations sur les données et leur monétisation, Hestia.ai en est l’une des figures de proue.

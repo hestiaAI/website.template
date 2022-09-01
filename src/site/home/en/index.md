@@ -119,6 +119,14 @@ realizations:
     url: ""
     link_text: ""
   - description: >-
+      **CNBC**
+
+      Hestia.ai CEO comments on the impact that the entry into force of the European Digital Market Act and Digital Service Act will have on the relationship between Ireland and the web giants.
+
+
+      [Read the article](https://www.cnbc.com/2022/05/04/how-ireland-lost-its-chance-to-become-big-techs-super-regulator.html)
+
+
       **Bilan**
 
       "The ecosystem of digital trust in French-speaking Switzerland is undeniably growing," writes Bilan. With its training courses on data and its monetisation, Hestia.ai is one of the leading figures. 
