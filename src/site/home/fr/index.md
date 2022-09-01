@@ -81,7 +81,14 @@ realizations:
     description: >-
       **Prospective stratégique et littératie des données**
 
-      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. Il décrypte l'influence des données sur la distribution des pouvoirs économique et politique.
+      Conçu pour et avec le Fonds finlandais pour l'innovation [Sitra](https://www.sitra.fi/en/), l'enquête Digipower est un programme de littératie des données pour hauts fonctionnaires et dirigeants, basé sur l'analyse de leurs propres données. 
+
+
+      📕Lire [ce rapport](https://zenodo.org/record/6554156) pour comprendre l'influence des données sur la distribution des pouvoirs économique et politique.
+
+
+      📗Lire [ce rapport](https://zenodo.org/record/6554178) pour découvrir comment nous auditons l'économie numérique grâce à l'accès aux données personnelles.
+
 
       ```
 
