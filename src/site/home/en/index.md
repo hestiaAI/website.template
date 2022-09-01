@@ -85,7 +85,7 @@ realizations:
       📕Read [this report](https://zenodo.org/record/6554156) to understand the influence of data on the distribution of economic and political power.
 
 
-      📗Read [this report](https://zenodo.org/record/6554178) to discover how we audit the digital economy through access to personal data
+      📗Read [this report](https://zenodo.org/record/6554178) to discover how we audit the digital economy through access to personal data.
 
 
       ```
