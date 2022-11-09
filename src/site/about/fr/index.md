@@ -9,8 +9,8 @@ people:
     description: Mathématicien de formation, Paul-Olivier s'est rapidement intéressé
       au rôle des données personnelles dans la société. Il a notamment contribué
       à mettre à jour le scandale de Cambridge Analytica. Il a dirigé l'ONG
-      PersonalData.io et siège au conseil d'administration de MyData Global. Il
-      est PDG de Hestia.ai.
+      PersonalData.io et a siégé au conseil d'administration de MyData Global.
+      Il est PDG de Hestia.ai.
     image: /assets/media/paul-olivier-dehaye-c-hestia.ai-c.jpg
     twitter: https://twitter.com/podehaye
   - linkedin: https://www.linkedin.com/in/charlesfoucaultdumas/
