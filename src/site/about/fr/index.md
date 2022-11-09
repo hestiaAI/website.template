@@ -3,29 +3,16 @@ people_title: People
 philosophy_title: Pourquoi «Hestia»?
 layout: about
 permalink: /fr/about/index.html
-title: About
-lead: |+
-  **Nous sommes Hestia.ai**
-
-  L'entreprise tech qui change les normes de la tech
-
-lead_image: /assets/media/hestia_hero.png
 story_title: À propos
 people:
   - name: Paul-Olivier Dehaye
     description: Mathématicien de formation, Paul-Olivier s'est rapidement intéressé
       au rôle des données personnelles dans la société. Il a notamment contribué
       à mettre à jour le scandale de Cambridge Analytica. Il a dirigé l'ONG
-      PersonalData.io et siège au conseil d'administration de MyData Global. Il
-      est PDG de Hestia.ai.
+      PersonalData.io et a siégé au conseil d'administration de MyData Global.
+      Il est PDG de Hestia.ai.
     image: /assets/media/paul-olivier-dehaye-c-hestia.ai-c.jpg
     twitter: https://twitter.com/podehaye
-  - description: Marie-Pierre est physicienne. Après plusieurs années passées en R&D
-      dans les secteurs public et privé, Marie-Pierre a rejoint Hestia.ai en
-      février 2021 en tant qu'**analyste, responsable des subventions et
-      bâtisseuse de consortiums**.
-    name: Marie-Pierre Vidonne
-    image: /assets/media/marie-pierre-vidonne-c-hestia.ai-c.jpg
   - linkedin: https://www.linkedin.com/in/charlesfoucaultdumas/
     twitter: https://twitter.com/lettweetbe
     image: /assets/media/charles-foucault-dumas-c-hestia.ai-c.jpg
@@ -54,6 +41,13 @@ people:
     twitter: https://twitter.com/alexbfree
     linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
+title: About
+lead: |+
+  **Nous sommes Hestia.ai**
+
+  L'entreprise tech qui change les normes de la tech
+
+lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 story: >-
   Hestia.ai est une société de conseil et de formation en expertise des données
