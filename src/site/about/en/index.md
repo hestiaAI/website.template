@@ -3,27 +3,16 @@ people_title: People
 philosophy_title: Why “Hestia”?
 layout: about
 permalink: /en/about/index.html
-title: About
-lead: |-
-  **We are Hestia.ai**
-
-  The tech company that's changing tech norms
-lead_image: /assets/media/hestia_hero.png
 story_title: About Us
 people:
   - name: Paul-Olivier Dehaye
     description: Paul-Olivier is a mathematician by training (PhD Stanford,
       fellowships Oxford and ETH Zurich) who became interested in the role of
       personal data in society. He has most notably helped uncover the Cambridge
-      Analytica scandal. He has led the NGO PersonalData.io and sits on the
-      board of MyData Global. He is the **CEO** of Hestia.ai.
+      Analytica scandal. He has led the NGO PersonalData.io and sat on the board
+      of MyData Global. He is the **CEO** of Hestia.ai.
     image: /assets/media/paul-olivier-dehaye-c-hestia.ai-c.jpg
     twitter: https://twitter.com/podehaye
-  - name: " Marie-Pierre Vidonne"
-    image: /assets/media/marie-pierre-vidonne-c-hestia.ai-c.jpg
-    description: Marie-Pierre is a Physicist. After several years spent in R&D in
-      both public and private sectors, Marie-Pierre joined Hestia.ai in February
-      2021 as **analyst, grant officer and consortiums builder**.
   - name: Charles Foucault-Dumas
     description: A science journalist and [writer](https://foucault-dumas.ch/),
       Charles launched the media L'Usine Digitale before heading the NGO
@@ -50,6 +39,12 @@ people:
     twitter: https://twitter.com/alexbfree
     linkedin: https://www.linkedin.com/in/alexbowyer/
 inverse: true
+title: About
+lead: |-
+  **We are Hestia.ai**
+
+  The tech company that's changing tech norms
+lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 story: >-
   Hestia.ai is a data expertise consultancy and training company based in
