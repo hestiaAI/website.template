@@ -132,6 +132,13 @@ realizations:
     url: ""
     link_text: ""
   - description: >-
+      **MyData** Check out the vision for collective data governance we
+      presented at the nonprofit MyData's annual event.
+
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1TkDo3ZLMKU?start=1300" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
       **CNBC**
 
       Hestia.ai CEO comments on the impact that the entry into force of the European Digital Market Act and Digital Service Act will have on the relationship between Ireland and the web giants.
