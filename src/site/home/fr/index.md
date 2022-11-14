@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 title: Hestia.ai
 lead: Formations, technologies et expertise pour un monde numérique respectueux
   des utilisateurs et de leurs **données**
@@ -60,9 +63,6 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
@@ -99,9 +99,15 @@ realizations:
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent
     description: >-
-      **Le Temps** Deux experts d’Hestia.ai commentent la nouvelle loi suisse
-      sur la protection des données et invitent les entreprises à réagir avant
-      son entrée en vigueur le 1er septembre 2023.
+      **RTS** Cibler les parlementaires sur les réseaux sociaux pour tenter
+      d'influencer les parlementaires, un lobbying numérique complexe très peu
+      encadré qu'a décortiqué le CEO d'Hestia.ai pour La Matinale.
+
+
+      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450645" width="392" height="58" frameborder="0" allowfullscreen="true" allow="fullscreen; geolocation *; autoplay; encrypted-media" name="La Matinale"></iframe>
+
+
+      **Le Temps** Deux experts d’Hestia.ai commentent la nouvelle loi suisse sur la protection des données et invitent les entreprises à réagir avant son entrée en vigueur le 1er septembre 2023.
 
 
       [Lire l'article](https://www.letemps.ch/suisse/tant-attendue-future-loi-protection-donnees-divise-experts)
