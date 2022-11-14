@@ -101,7 +101,7 @@ realizations:
       of Hestia.ai deconstructed for La Matinale.
 
 
-      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" width="392" height="58" frameborder="0" allowfullscreen="true" allow="fullscreen; encrypted-media" name="Le poids des lobbys et le micro-ciblage des politiques en Suisse"></iframe>
+      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" width="392" height="250" frameborder="0" allowfullscreen="true" allow="fullscreen; encrypted-media" name="Le poids des lobbys et le micro-ciblage des politiques en Suisse"></iframe>
 
 
       **Le Temps** Two experts from Hestia.ai comment on the new Swiss Data Protection Act and urge companies to react before it comes into force on 1 September 2023.

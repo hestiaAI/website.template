@@ -104,7 +104,7 @@ realizations:
       encadré qu'a décortiqué le CEO d'Hestia.ai pour La Matinale.
 
 
-      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" width="392" height="58" frameborder="0" allowfullscreen="true" allow="fullscreen; encrypted-media" name="Le poids des lobbys et le micro-ciblage des politiques en Suisse"></iframe>
+      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" width="392" height="250" frameborder="0" allowfullscreen="true" allow="fullscreen; encrypted-media" name="Le poids des lobbys et le micro-ciblage des politiques en Suisse"></iframe>
 
 
       **Le Temps** Deux experts d’Hestia.ai commentent la nouvelle loi suisse sur la protection des données et invitent les entreprises à réagir avant son entrée en vigueur le 1er septembre 2023.
