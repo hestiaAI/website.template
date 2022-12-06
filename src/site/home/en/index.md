@@ -16,7 +16,7 @@ introduction: >-
   Hestia.ai helps you get that data and use it in a privacy-friendly way.
 
 
-  ### Use cases
+  ## Use cases
 
 
   <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
