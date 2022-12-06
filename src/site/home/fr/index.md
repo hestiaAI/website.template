@@ -1,11 +1,7 @@
 ---
 path: home
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 title: Hestia.ai
-lead: Formations, technologies et expertise pour un monde numérique respectueux
-  des utilisateurs et de leurs **données**
+lead: Libérez la puissance des **données**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
@@ -63,6 +59,9 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
