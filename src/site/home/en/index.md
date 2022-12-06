@@ -6,7 +6,7 @@ lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
 introduction: >-
-  Google, Uber, Facebook. Linkedin... data is the fuel for the world's biggest
+  Google, Uber, Facebook, Linkedin... data is the fuel for the world's biggest
   companies.
 
 
