@@ -14,6 +14,9 @@ introduction: >-
 
 
   Hestia.ai helps you get that data and use it in a privacy-friendly way.
+
+
+  ![](/assets/media/undraw_buffer_wq43.png)
 expertise:
   - title: Training for leaders, teachers and journalists
     description: >-

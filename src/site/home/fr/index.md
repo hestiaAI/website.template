@@ -14,6 +14,10 @@ introduction: >-
 
 
   Hestia.ai vous aide à obtenir ces données et à les utiliser, dans le respect de la vie privée.
+
+
+
+  ![](/assets/media/undraw_buffer_wq43.png)
 expertise:
   - title: Ateliers pour administrations, écoles et médias
     description: >-
