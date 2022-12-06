@@ -5,7 +5,15 @@ lead: Unlock the power of **data**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
-introduction: ""
+introduction: >-
+  Google, Uber, Facebook. Linkedin... data is the fuel for the world's biggest
+  companies.
+
+
+  You know what? **You too have access to this data** - thanks to the RGPD (EU) or the FADP (Swiss).
+
+
+  Hestia.ai helps you get that data and use it in a privacy-friendly way.
 expertise:
   - title: Training for leaders, teachers and journalists
     description: >-
