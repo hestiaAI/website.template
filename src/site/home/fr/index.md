@@ -5,7 +5,19 @@ lead: Libérez la puissance des **données**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
 introduction_title: ""
-introduction: ""
+introduction: >-
+  Google, Uber, Facebook, Linkedin... les données sont le carburant des plus
+  grandes entreprises du monde.
+
+
+  Et vous savez quoi ? **Vous avez vous aussi accès à ces données** - grâce au RGPD (UE) ou à la LPD (Suisse).
+
+
+  Hestia.ai vous aide à obtenir ces données et à les utiliser, dans le respect de la vie privée.
+
+
+
+  ![](/assets/media/undraw_buffer_wq43.png)
 expertise:
   - title: Ateliers pour administrations, écoles et médias
     description: >-
