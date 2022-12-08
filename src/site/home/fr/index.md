@@ -1,5 +1,8 @@
 ---
 path: home
+realizations_title: Réalisations
+layout: home
+permalink: /fr/index.html
 title: Hestia.ai
 lead: Libérez la puissance des **données**
 lead_image: /assets/media/hestia_hero.png
@@ -67,9 +70,6 @@ expertise:
     link_text: Demander une démo
     url: "#contact"
     primary_button: true
-realizations_title: Réalisations
-layout: home
-permalink: /fr/index.html
 realizations:
   - title: HestiaLabs
     description: >-
