@@ -1,11 +1,13 @@
 ---
 path: home
+realizations_title: Achievements
+layout: home
+permalink: /en/index.html
 title: Hestia.ai
 lead: Unlock the power of **data**
 lead_image: /assets/media/hestia_hero.png
 lead_image_caption: ""
-introduction_title: ""
-introduction: >-
+introduction_title: >-
   Google, Uber, Facebook, Linkedin... data is the fuel for the world's biggest
   companies.
 
@@ -14,8 +16,7 @@ introduction: >-
 
 
   Hestia.ai helps you get that data and use it in a privacy-friendly way.
-
-
+introduction: >-
   ## Use cases
 
 
@@ -77,9 +78,6 @@ expertise:
     link_text: Request a demo
     url: "#contact"
     primary_button: true
-realizations_title: Achievements
-layout: home
-permalink: /en/index.html
 realizations:
   - title: HestiaLabs
     description: >-
