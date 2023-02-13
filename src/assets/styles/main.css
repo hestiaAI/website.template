@@ -13,6 +13,8 @@
 @import './elements/tables.css';
 @import './elements/forms.css';
 @import './elements/lists.css';
+@import './elements/card.css';
+@import './elements/videos.css';
 
 /* NOTE: for the definition of the LightenDarkenColor() function used hereafter,
    see see https://css-tricks.com/snippets/javascript/lighten-darken-color/ */

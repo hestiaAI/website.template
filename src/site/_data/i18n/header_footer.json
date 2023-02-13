@@ -3,6 +3,7 @@
     "home": "home",
     "expertise": "expertise",
     "realization": "achievements",
+    "usecases": "use cases",
     "legal": "legal",
     "about": "about"
   },
@@ -10,6 +11,7 @@
     "home": "accueil",
     "expertise": "expertise",
     "realization": "réalisations",
+    "usecases": "applications",
     "legal": "mentions légales",
     "about": "à propos"
   }

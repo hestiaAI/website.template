@@ -97,11 +97,10 @@ realizations:
       📗Lire [ce rapport](https://zenodo.org/record/6554178) pour découvrir comment nous auditons l'économie numérique grâce à l'accès aux données personnelles.
 
 
-      ```
-
-      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
-
-      ```
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
+      </div>
+      
     link_text: "En savoir plus sur #Digipower"
     url: https://www.sitra.fi/en/projects/digipower-investigation/
   - title: Ils en parlent

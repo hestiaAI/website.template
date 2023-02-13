@@ -17,3 +17,6 @@ node_modules/
 
 # private auth token
 /tools/.fork-user-auth-token
+
+.env
+settings.json

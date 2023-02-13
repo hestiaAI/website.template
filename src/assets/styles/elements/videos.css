@@ -1,0 +1,15 @@
+video, iframe {
+  /* size */
+  width: 100%;
+  max-width: 100%;
+
+  /* style */
+  box-shadow: var(--breakout-img-shadow);
+  margin: var(--breakout-padding) 0;
+  border-radius: 4px;
+
+  /* Center */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

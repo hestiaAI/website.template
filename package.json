@@ -22,7 +22,7 @@
     "build": "run-s build:eleventy build:snowpack",
     "build:snowpack": "snowpack build",
     "build:eleventy": "eleventy",
-    "dev": "run-p dev:eleventy dev:snowpack",
+    "dev": "npm-run-all build:eleventy dev:snowpack",
     "dev:snowpack": "snowpack dev",
     "dev:eleventy": "eleventy --watch --quiet",
     "start": "npm run dev",
@@ -31,14 +31,17 @@
     "tools:setup-post-fork": "node tools/setup-post-fork.js",
     "tools:fork-template": "node tools/fork-template.js",
     "tools:migrate:post-ids": "node tools/migrate-post-ids.js"
-},
+  },
   "dependencies": {
+    "@snowpack/plugin-run-script": "^2.3.0",
     "lit-element": "^2.4.0",
     "lit-translate": "^1.2.1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
+    "@directus/sdk": "^10.3.1",
     "@octokit/plugin-retry": "^3.0.8",
+    "dotenv": "^16.0.3",
     "liquidjs": "^9.25.0",
     "luxon": "^1.26.0",
     "markdown-it-plain-text": "^0.2.1",
@@ -48,7 +51,7 @@
     "prompts": "^2.4.1",
     "replace-in-file": "^6.2.0",
     "rimraf": "^3.0.2",
-    "snowpack": "^3.5.2",
+    "snowpack": "^3.8.8",
     "winston": "^3.3.3"
   },
   "engines": {

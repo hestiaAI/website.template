@@ -13,22 +13,11 @@ introduction: >-
   companies.
 
 
-  You know what? **You too have access to this data** - thanks to the RGPD (EU) or the FADP (Swiss).
+  You know what? **You too have access to this data** - thanks to the GDPR (EU) or the FADP (Swiss).
 
 
   Hestia.ai helps you get that data and use it in a privacy-friendly way.
 
-
-  ## Use cases
-
-
-  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-   padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-   border-radius: 8px; will-change: transform;">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-      src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFT-FL9zs8&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
 expertise:
   - title: Training for leaders, teachers and journalists
     description: >-
@@ -106,12 +95,11 @@ realizations:
 
       📗Read [this report](https://zenodo.org/record/6554178) to discover how we audit the digital economy through access to personal data.
 
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
+      </div>
+      
 
-      ```
-
-      <iframe id='ivplayer' width='560' height='315' src='https://yewtu.be/embed/fOfEo9YKvBs?t=5' style='border:none;'></iframe>
-
-      ```
     url: https://www.sitra.fi/en/projects/digipower-investigation/
     link_text: "Learn more about #Digipower"
   - description: >-
@@ -119,9 +107,9 @@ realizations:
       them, a complex digital lobbying with very little supervision that the CEO
       of Hestia.ai deconstructed for La Matinale.
 
-
-      <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" width="392" height="250" frameborder="0" allowfullscreen="true" allow="fullscreen; encrypted-media" name="Le poids des lobbys et le micro-ciblage des politiques en Suisse"></iframe>
-
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src="https://www.rts.ch/play/embed/?urn=urn:rts:audio:13450657" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
+      </div>
 
       **Le Temps** Two experts from Hestia.ai comment on the new Swiss Data Protection Act and urge companies to react before it comes into force on 1 September 2023.
 
@@ -132,20 +120,16 @@ realizations:
       **RTS** Invited by "Les beaux parleurs", Paul-Olivier Dehaye explained to Jonas Schneiter why the control of data is "a new way of doing politics" in front of a disconcerted Micheline Calmy-Rey.
 
 
-      <div style="position:relative; padding-top: 56.55%">
-
-      <iframe src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src="https://www.rts.ch/play/embed?urn=urn:rts:video:13060016&startTime=3465&subdivisions=false"  allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
       </div>
 
 
       The CEO of Hestia.ai was also interviewed by the Swiss TV news on the freedom of expression promised by Elon Musk following his announcement to buy Twitter.
 
 
-      <div style="position:relative; padding-top: 56.55%">
-
-      <iframe width="560" height="315" src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src="https://www.rts.ch/play/embed?urn=urn:rts:video:13064649&startTime=1260&subdivisions=false" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
       </div>
     title: They talk about it
     url: ""
@@ -154,9 +138,9 @@ realizations:
       **MyData** Check out the vision for collective data governance we
       presented at the nonprofit MyData's annual event.
 
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/1TkDo3ZLMKU?start=1300" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+      <div style="position:relative; padding-top: 56.55%; margin-bottom: 1em">
+        <iframe src="https://www.youtube.com/embed/1TkDo3ZLMKU?start=1300" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"></iframe>
+      </div>
 
       **CNBC**
 

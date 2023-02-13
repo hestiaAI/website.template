@@ -39,7 +39,7 @@ function buildLocalesCollection(collectionApi) {
                 // uncomment to ignore current locale
                 // .filter(loc => loc != locale )
                 .map(loc => ts[loc]);
-          locsByPath[page.inputPath] =
+          locsByPath[page.url] =
             {locale, page, defaultTranslation, translations};
         });
         return locsByPath;

@@ -1,7 +1,7 @@
 <header class="header-outer">
   <div class="header-inner responsive-wrapper">
     <div class="header-cell-one-third">
-      <a href="/{{locale}}" class="header-logo"
+      <a href="/{{locale}}/#" class="header-logo"
         role="img" aria-label="{{i18n.header_footer[locale].home}}">
         <img src="/assets/img/placeholder-logo-web.export.svg"
           onerror="this.onerror=null; this.src='/assets/img/placeholder-logo-web.export-390x147.png'"
@@ -11,7 +11,8 @@
     <div class="header-cell-two-thirds">
       <nav class="header-navigation">
         {% ilink page, "#expertise", locale %}{{i18n.header_footer[locale].expertise}}{% endilink %}
-        {% ilink page, "#realization", locale %}{{i18n.header_footer[locale].realization}}{% endilink %}
+        <!--{% ilink page, "#realization", locale %}{{i18n.header_footer[locale].realization}}{% endilink %}-->
+        {% ilink page, "use-cases", locale %}{{i18n.header_footer[locale].usecases}}{% endilink %}
         {% ilink page, "about", locale %}{{i18n.header_footer[locale].about}}{% endilink %}
         {% for translation in translations %}
           {% ilink page, translation.page.url %}{{translation.locale}}{% endilink %}

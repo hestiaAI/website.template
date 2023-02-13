@@ -1,0 +1,20 @@
+---
+layout: defaultWithHero
+---
+
+<section>
+  {{ directus.usecases.translations[locale].body | safe }}
+</section>
+
+<section class="card-grid">
+  {% for content in directus.usecases.related_content %}
+    <a class="content-card" href="{{ content.url_name | slug }}/">
+      <div class="content-card__avatar" 
+        style="background-image: url('https://hestiaai.directus.app/assets/{{content.thumbnail}}');">
+      </div>
+      <div class="content-card__title">
+          {{ content.translations[locale].title }}
+      </div>
+    </a>
+  {% endfor %}
+</section>

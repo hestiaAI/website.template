@@ -1,5 +1,5 @@
 const getLocales = (data) =>
-      data.collections.locales[data.page.inputPath];
+      data.collections.locales[data.page.url];
 
 const findLocale = (data) =>
       getLocales(data) && getLocales(data).locale;

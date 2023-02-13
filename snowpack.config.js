@@ -57,5 +57,14 @@ module.exports = {
   },
   optimize: {
     target: 'es2020'
-  }
+  },
+  plugins: [
+    [
+      "@snowpack/plugin-run-script",
+      {
+        cmd: "eleventy", // production build command
+        watch: "eleventy --watch", // dev server command
+      },
+    ],
+  ],
 };
